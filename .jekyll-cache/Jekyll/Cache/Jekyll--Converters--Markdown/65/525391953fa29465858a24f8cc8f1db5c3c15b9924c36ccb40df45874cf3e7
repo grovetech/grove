@@ -1,0 +1,54 @@
+I"�<p>In Troubleshooting 101, one of the first questions is always, “What version of the operating system are you running?” There’s a big difference between Mac OS X 10.6 Snow Leopard and macOS 10.13 High Sierra, and the solution to any particular problem will likely revolve around knowing what operating system is in play.</p>
+
+<p>The same is true of Apple’s other operating systems: iOS, watchOS, and tvOS. And, although they aren’t quite in the same category, Apple’s AirPods and HomePod both have system software that can be updated as well.</p>
+
+<p>For the next time you’re experiencing a problem, here’s how to find the version of each of Apple’s operating systems.</p>
+
+<h3 id="macos">macOS</h3>
+<hr />
+<p>On the Mac, click the Apple menu in the upper-left corner of the screen and choose About This Mac. A window opens, displaying the name (macOS High Sierra shown here) and version (10.13.4) of the running version of macOS.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image002.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Every now and then, it can be important to learn the build number too—it’s one step more specific than the version number. A new Mac may have a different build number of the same version of macOS, for instance, or Apple may push out a silent security update that changes the build number. To find the build number, simply click the version number—the six-character build number (17E202) appears in parentheses, as above.</p>
+
+<h3 id="ios">iOS</h3>
+<hr />
+<p>On an iPhone, iPad, or iPod touch, you find the version number in Settings &gt; General &gt; About. Scan down the screen until you see the Version line, which tells you both the version of iOS and the build number.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image003.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<h3 id="watchos">watchOS</h3>
+<hr />
+<p>There are two ways to find the version of watchOS running on an Apple Watch:</p>
+
+<ul>
+  <li>On the watch, open the Settings app, scroll down to and tap General, tap About, and then scroll down until you see Version.</li>
+</ul>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image004.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<ul>
+  <li>On your iPhone, open the Watch app and make sure My Watch is selected in the bottom button bar. Then go to General &gt; About to see a screen that displays much the same information as the Settings app on the watch, including the version number.</li>
+</ul>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image005.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<h3 id="tvos">tvOS</h3>
+<hr />
+<p>By now, you can probably guess that on an Apple TV you go to Settings &gt; General &gt; About to find the tvOS version. Apple is nicely consistent in this regard. That said, only the fourth-generation Apple TV and Apple TV 4K run tvOS. The obsolete second- and third-generation Apple TVs are instead based on a stripped-down version of iOS, and the first-generation Apple TV is an entirely different beast yet, with its large white case and internal hard drive.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image006.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="airpods">AirPods</h3>
+<hr />
+<p>You’re unlikely to need to check the version of your AirPods, but if it ever comes up, make sure the AirPods are either connected to their host iOS device or in their case with the top open. Then, on the host iOS device, go to Settings &gt; General &gt; About &gt; AirPods and look for the Firmware Version line.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image007.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<h3 id="homepod">HomePod</h3>
+<hr />
+<p>Although the HomePod shipped only recently, Apple has promised software updates that will allow two HomePods in a room to provide true stereo sound and support multi-room audio if you’ve sprinkled HomePods around your house. To check the version of the HomePod software, open Apple’s Home app, make sure Home is selected in the bottom toolbar, and then press and hold on the HomePod’s tile until it opens. Then tap the Details button in the lower right and scroll down until you see the Version line.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/version/image008.png" class="img-fluid rounded m-2" width="400" /></p>
+:ET

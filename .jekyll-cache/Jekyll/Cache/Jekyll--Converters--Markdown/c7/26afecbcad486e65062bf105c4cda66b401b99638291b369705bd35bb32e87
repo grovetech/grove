@@ -1,0 +1,108 @@
+I"z<p>Beginning with the 0.9.1 builds of the munki tools, Munki can query a webserver to determine if there are available seats for licensed software (or any software you wish to make available via optional_installs, yet control the number of deployed copies). In order to use this wonderful new feature here are the things you need.</p>
+
+<ul>
+  <li>lient running munkitools 0.9.1.x or later</li>
+  <li>Web service that is tracking available seats and that provides information in a specific format in response to queries. One such server is MunkiWebAdmin as of 16 July 2013.</li>
+</ul>
+
+<p>If you have a running instance of MunkiWebAdmin, make sure you’ve updated to the latest code. <a href="https://grovetech.co/blog/updating-munki…vericks-server/ ‎">See this post</a> for instructions on how to update MunkiWebAdmin.</p>
+
+<p>This new functionality is basically a set of stored queries that query the inventory items database to count the number of machines that have a specific thing installed. To add items to the license seat tables, login to the admin interface (http:/your.munkiwebadmin.server/admin) — you may need to use your superuser account).</p>
+
+<p>Click on “Licenses”.</p>
+
+<p>Click the “Add license” button.</p>
+
+<p>tem name contains the name of the thing you are tracking. To take advantage of upcoming integration with the Munki client and Optional installs, this should be the same as the name of the related pkginfo item.</p>
+
+<p>Total is the total number of seats you have available (values seen here are fake).<br />
+Cost per seat can be used to track your “per seat” license cost (values seen here are fake).</p>
+
+<p>The next four fields control the query that will be done to find entries in the inventory items table.</p>
+
+<p><strong>Inventory name</strong> matches the name of the item in the inventory items table. This is the application name part of the path (minus .app).<br />
+<strong>Inventory version</strong> is the version number of the item. This value supports * as a wildcard to allow you to match all items starting with a major version number.<br />
+<strong>Inventory bundleid</strong> is the CFBundleIdentifier of the item<br />
+<strong>Inventory bundlename</strong> is the CFBundleName of the item<br />
+<strong>Inventory path</strong> is the full pathname of the item.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For any given item, you would use one of Inventory name</td>
+      <td>Inventory bundleid</td>
+      <td>Inventory bundlename</td>
+      <td>Inventory path and optionally Inventory version.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the example above, the query would be for all items with bundleid=”com.apple.iWork.Keynote” and version starting with “5.” Machines with this item are considered to have iWork09 installed.</p>
+
+<p>For each item you wish to track, you need to specify a unique item to count. For single applications, this is straightforward. For application “suites” this can be a bit trickier and may require some judgement calls.</p>
+
+<p>For Adobe CS4, CS5, and CS6 installs, I am using the presence of the _uninstaller_ application as the thing to count. This allows the mechanism to distinguish between the various suites and individual products.</p>
+
+<p>Outside of the admin interface, tracked installs display like this</p>
+
+<p><strong>How does this work?</strong><br />
+During a managedsoftwareupdate run that includes checking with the server for updates, if there are any uninstalled optional_installs, Munki crafts one or more queries of the form:</p>
+
+<p>LicenseInfoURL?name=ItemOne&amp;name=ItemTwo&amp;name=ItemThree</p>
+
+<p>where LicenseInfoURL is the license info URL (for MunkiWebAdmin, that’s something like https://mwaserver/licenses/available/) and ItemOne, ItemTwo and ItemThree are names of pkginfo items.</p>
+
+<p>The server then looks up license seat info for ItemOne, ItemTwo and ItemThree and responds with a plist</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="s2">"https://mwa:8444/licenses/available/?name=MicrosoftOffice2008&amp;name=MicrosoftOffice2011&amp;name=FooBarBaz"</span>
+
+&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">"UTF-8"</span>?&gt;
+&lt;<span class="o">!</span>DOCTYPE plist PUBLIC <span class="s2">"-//Apple Computer//DTD PLIST 1.0//EN"</span> <span class="s2">"https://www.apple.com/DTDs/PropertyList-1.0.dtd"</span><span class="o">&gt;</span>
+&lt;plist <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span><span class="o">&gt;</span>
+&lt;dict&gt;
+	&lt;key&gt;MicrosoftOffice2008&lt;/key&gt;
+	&lt;<span class="nb">false</span>/&gt;
+	&lt;key&gt;MicrosoftOffice2011&lt;/key&gt;
+	&lt;<span class="nb">true</span>/&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</code></pre></figure>
+
+<p>The returned plist should contain key/value pairs, where the key is the item name and the value is a boolean: true if there are available seats, false otherwise. If the server has no information for an item (as is the case for item “FooBarBaz”) it is acceptable to return nothing. A request and response for only “FooBarBaz” looks like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="s2">"https://mwa:8444/licenses/available/?name=FooBarBaz"</span>
+
+&lt;?xml <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span> <span class="nv">encoding</span><span class="o">=</span><span class="s2">"UTF-8"</span>?&gt;
+&lt;<span class="o">!</span>DOCTYPE plist PUBLIC <span class="s2">"-//Apple Computer//DTD PLIST 1.0//EN"</span> <span class="s2">"https://www.apple.com/DTDs/PropertyList-1.0.dtd"</span><span class="o">&gt;</span>
+&lt;plist <span class="nv">version</span><span class="o">=</span><span class="s2">"1.0"</span><span class="o">&gt;</span>
+&lt;dict&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</code></pre></figure>
+
+<p>The returned results are recorded in /Library/Managed Installs/InstallInfo.plist. Any optional_installs item with license seat info gets a new key — licensed_seats_available:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;dict&gt;
+	&lt;key&gt;description&lt;/key&gt;
+	&lt;string&gt;Installs Adobe Photoshop CS5 and related components.&lt;/string&gt;
+	&lt;key&gt;display_name&lt;/key&gt;
+	&lt;string&gt;Adobe Photoshop CS5&lt;/string&gt;
+	&lt;key&gt;installed&lt;/key&gt;
+	&lt;<span class="nb">false</span>/&gt;
+	&lt;key&gt;installed_size&lt;/key&gt;
+	&lt;integer&gt;1028875&lt;/integer&gt;
+	&lt;key&gt;installer_item_size&lt;/key&gt;
+	&lt;integer&gt;1028875&lt;/integer&gt;
+	&lt;key&gt;licensed_seats_available&lt;/key&gt;
+	&lt;<span class="nb">true</span>/&gt;
+	&lt;key&gt;name&lt;/key&gt;
+	&lt;string&gt;AdobePhotoshopCS5&lt;/string&gt;
+	&lt;key&gt;uninstallable&lt;/key&gt;
+	&lt;<span class="nb">true</span>/&gt;
+	&lt;key&gt;version_to_install&lt;/key&gt;
+	&lt;string&gt;12.0.0.0.0&lt;/string&gt;
+&lt;/dict&gt;</code></pre></figure>
+
+<p>When Managed Software Update is displaying Optional Software, any item with a licensed_seats_available key equal to false will have its checkbox greyed out, preventing a user from selecting it for install. Additionally, the Status column will read “No available licensed seats”.</p>
+
+<p>Note that there is no explicit mechanism for a client to notify the server that it has installed an item (or will install an item). Instead, the client submits an updated ApplicationInventory.plist to the server. The server uses this information to determine the number of installed seats. (A server other than MunkiWebAdmin is free to use some other method to determine the number of installed seats.)</p>
+
+:ET

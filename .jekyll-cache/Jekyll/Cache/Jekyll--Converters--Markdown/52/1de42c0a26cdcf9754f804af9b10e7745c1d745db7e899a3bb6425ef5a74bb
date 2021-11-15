@@ -1,0 +1,105 @@
+I"<p>If your Mac is acting up and you suspect a hardware problem, there’s an
+easy first step that you can—and should—try before calling for tech
+support: <a href="https://support.apple.com/en-us/HT202731" rel="nofollow">Apple
+Diagnostics</a>. (On Mac
+models released before June 2013, Apple instead included a similar set
+of diagnostics called <a href="https://support.apple.com/en-us/HT201257" rel="nofollow">Apple Hardware
+Test</a>.)</p>
+
+<p>Apple Diagnostics is a set of hardware test routines that Apple bakes
+into every Mac. It tests numerous internal subsystems in your Mac,
+including the CPU, memory, and firmware; displays and graphics adapters;
+connectivity via USB, Bluetooth, Wi-Fi, and Thunderbolt; batteries and
+power adapters on laptops; and more.</p>
+
+<p>Before you run Apple Diagnostics, prepare your Mac with these steps:</p>
+
+<ul>
+  <li>If you have a firmware password enabled, <a href="https://support.apple.com/en-us/HT204455" rel="nofollow">turn
+it off</a> before
+proceeding.</li>
+  <li>If possible, pick a situation when the Mac is
+most likely to experience the problem (such as right after turning
+it on for the day, or when it’s unusually warm).</li>
+  <li>Disconnect all external devices with the
+following exceptions: the keyboard and mouse or trackpad, display,
+Ethernet cable if you use it, and power adapter for laptops.</li>
+  <li>If you’re testing a laptop, make sure it’s on a
+flat, well-ventilated surface.</li>
+  <li>Shut down your Mac.</li>
+</ul>
+
+<p>Once you’re ready, turn your Mac on while holding down the D key. (If
+that doesn’t invoke Apple Diagnostics, try again, holding down Option-D
+to attempt to start Apple Diagnostics over the Internet.) Keep holding
+down until you see a screen asking you to choose your language. Once
+you’ve done that, you’ll see a bar showing the progress of the
+diagnostic tests, which should take only a few minutes.</p>
+
+<p><strong>What to do if Apple Diagnostics reports an issue</strong></p>
+
+<p>If Apple Diagnostics finds any issues, it suggests solutions and
+provides reference codes. Write the reference codes down so you can
+share them with tech support later, if necessary. Apple publishes a full
+list of <a href="https://support.apple.com/en-us/HT203747" rel="nofollow">reference
+codes</a>, but the list
+generally doesn’t tell you much beyond what the Apple Diagnostics report
+explains.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20200401Ha/Apple-Diagnostics-results.png" class="img-fluid rounded m-2" width="800" /></p>
+
+<p>After you’ve read about the issues and solutions, you have four options.</p>
+
+<ul>
+  <li>For a second opinion, click the “Run the test
+again” link. It’s not a bad idea to make sure that multiple tests
+come up with the same results. If they don’t, that’s useful
+information for tech support too.</li>
+  <li>To get more information, including details
+about service and support options from Apple, click the “Get
+started” link. Doing so causes your Mac to start up in macOS
+Recovery, open Safari, and display a Web page for Apple Support. It
+asks for your location along with permission to read your Mac’s
+serial number and reference codes before providing additional
+details. If your Mac can’t access the Internet at this time, none of
+this will work.</li>
+  <li>To restart your Mac normally, click the Restart
+button.</li>
+  <li>To shut your Mac down normally, click the Shut
+Down button.</li>
+</ul>
+
+<p>With a few exceptions, most problems identified by Apple Diagnostics
+require service from an Apple Authorized Service Provider or Apple
+itself.</p>
+
+<ul>
+  <li>If you get a note about USB or Thunderbolt
+hardware, make sure you’ve disconnected any devices other than the
+keyboard and pointing device and test again. If you have another
+wired keyboard or pointing device, swap those in and test again.</li>
+  <li>If Apple Diagnostics complains about your
+laptop’s power adapter, disconnect it from both the wall and the
+computer, reconnect it to both, and rerun the
+test.</li>
+  <li>One of the battery errors (PPT004) may require
+updated diagnostic information. To confirm the problem, run Apple
+Diagnostics over the Internet: shut down the Mac and start it up
+again while holding Option-D.​</li>
+</ul>
+
+<p><strong>What to do if Apple Diagnostics doesn’t find any problems</strong></p>
+
+<p>With any luck, you’ll see the coveted “No issues found” message. While
+that doesn’t mean you’re imagining any problems, it does suggest that
+they’re probably related to software and won’t require a hardware
+repair. However, some infuriating problems are intermittent due to
+solder connections being warm or cold, which is why it’s important to
+test when they’re most likely to occur.</p>
+
+<p>One final note: If you want to see the results of the last run of Apple
+Diagnostics, open the System Information app and click Diagnostics under
+the Hardware section.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20200401Ha/Apple-Diagnostics-checking.png" class="img-fluid rounded m-2" width="800" /></p>
+:ET

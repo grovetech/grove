@@ -1,0 +1,104 @@
+
+    <!-- CONTACT FORM
+    ================================================== -->
+    <section class="py-11 bg-gray-200">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40" style="overflow: hidden;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+                
+                    <!-- Image -->
+                    <div class="text-center">
+                      
+                      <picture>
+						<source srcset="{{ site.site_cdn }}/assets/img/illustrations/illustration-2.webp" type="image/webp">
+						<source srcset="{{ site.site_cdn }}/assets/img/illustrations/illustration-2.png" type="image/png" class="img-fluid mb-3 w-200"> 
+						<img src="{{ site.site_cdn }}/assets/img/illustrations/illustration-2.png" alt="Networking Services" class="img-fluid mb-3 w-200">
+					 </picture>
+				
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      MSP Partnership Application
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                     If you're looking to be part of the most successful Mac MSP in Washington DC please reach out.
+                    </p>
+
+                    <!-- Form -->
+                    <form name="form-contact-gated" id="form-contact-gated" action="https://formspree.io/f/xylrgbym" method="POST">
+                      <div class="row">
+                      </div>
+                      <div class="row">
+                      	<div class="col-12 col-md-12">
+
+                          <!-- Password -->
+                          <div class="form-floating">
+                            <input type="text" name="Contact[name]" class="form-control form-control-flush" id="contact_message_name" placeholder="Full Name" required>
+                            <label for="contact_message_name">Full Name</label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-12">
+
+                          <!-- Email -->
+                          <div class="form-floating">
+                            <input type="email" name="Contact[email]" class="form-control form-control-flush" id="contact_email_gated" placeholder="Email" required>
+                            <label for="contact_email_gated">Email</label>
+                          </div>
+
+                        </div>
+                        <div class="col-12 col-md-12">
+
+                          <!-- Password -->
+                          <div class="form-floating">
+                            <input type="text" name="Contact[phone]" id="contact_phone" class="form-control form-control-flush" placeholder="Phone Number" required>
+                          	<label for="contact_phone">Phone Number</label>
+                          </div>
+
+                        </div>
+                        
+                        <div class="col-12 col-md-12">
+
+                         
+                            <textarea name="Contact[message]" id="contact_message_gated" class="form-control form-control-flush" placeholder="What kind of PC MSP do you run and how could a partnership with Grove Technologies help?" rows="4" required></textarea>
+                         
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          
+                          <!-- Submit -->
+                          <button class="btn d-block w-100 btn-primary mt-3 lift" id="contact-submit">
+                            Apply for Partnership
+                          </button>
+
+                        </div>
+                      </div>
+                       <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+                    </form>
+                  	<div id="response-message"></div>
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>

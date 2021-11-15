@@ -1,0 +1,13 @@
+I"h<p>With iCloud Drive, Apple provides an Optimize Mac Storage checkbox that,
+when checked, stores the full contents of iCloud Drive on the Mac only
+if there’s enough space. However, you may wish to recover local storage
+space without selecting that option—luckily, that’s easy to do. Open
+iCloud Drive in the Finder, Control-click a file, and choose Remove
+Download. The file remains in iCloud Drive, and if you need it locally,
+you can click the cloud icon next to its name to download it. If you’re
+not sure which files in the iCloud Drive window occupy the most space,
+choose View &gt; As List, and then click the Size column so the largest
+files sort to the top (click again if they’re sorting to the bottom).</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Re/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+:ET

@@ -1,0 +1,18 @@
+I"¼<p>Apple has recently released fixes for older Macs running macOS Sierra and OS X El Capitan that also face critical vulnerabilities through the Meltdown and Spectre security flaws.</p>
+
+<p>Both Spectre and Meltdown allow attackers to gain unauthorized access to data on computers that have microprocessors running speculative execution. Modern micropro-cessors all use speculative execution to predict next steps and have faster processing speeds. This is common in chips made by Intel and AMD as well as Appleâ€™s A series SoCs.</p>
+
+<p>If the predicted path is not required, the instruction set is canceled and the memory cache discarded in a process that is meant to function seamlessly and be invisible to users. Researchers however found that you could access targeted areas within a memory cache, thus unfortunately opening the door to accessing user passwords and thus a ton of sensitive data.</p>
+
+<p>How do you combat the Meltdown and Spectre security flaw if you have an older Mac?</p>
+
+<h4 id="download-immediate-security-update">Download immediate security update.</h4>
+<p>Download the latest <a href="https://support.apple.com/en-us/HT208465">security update 2018-001</a> for both Sierra and El Capitan. In addition to addressing both Meltdown and Spectre security flaws, this update also improves kernel security to prevent security hacks through chip flaws.</p>
+
+<p>or</p>
+
+<h4 id="download-the-latest-version-of-macos-that-contains-security-patches-for-both">Download the latest version of macOS that contains security patches for both.</h4>
+<p>The latest version of <a href="https://support.apple.com/kb/DL1954?locale=en_US">macOS High Sierra 10.13.3</a> also includes patches for both Meltdown and Spectre. In addition, this version contains security patches to reduce risks associat-ed with read restricted memory, kernel privileges and memory corruption.</p>
+
+<p>You can download the security update and the latest version of macOs via the Mac App store.</p>
+:ET

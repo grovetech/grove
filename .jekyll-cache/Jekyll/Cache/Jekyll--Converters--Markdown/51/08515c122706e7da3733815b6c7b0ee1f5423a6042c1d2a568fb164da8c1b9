@@ -1,0 +1,2 @@
+I"+<p>Binding a Mac to an AD is fairly straight forward. Most Mac Admin’s worth their salt, know how this is done, many know how to do this via the command line. Once your Mac is bound, authentication is easy, local authentication that is. But what if you want to use your secure AD credentials over an SSH or Apple Remote Desktop connection? Well thats when things need a bit more configuration. Having recently deployed a series of servers with this configuration I figured I would share some of the commands needed to get this configured correctly.</p>
+:ET

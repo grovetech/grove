@@ -1,0 +1,24 @@
+I"�
+<p>FontAgent Pro is a great font management solution for OS X. One of the best things about it is that its 100% cloud based. You can run the entire thing hosted in their cloud instance or you can run it on your own server. Its a great solution for font management, and does everything from managing your font licenses, users, libraries and sets. The one problem however is the fact that when deploying a new font solution you find yourself in a quandary over the right way to deploy that kind of solution to a large number of computers.</p>
+
+<p>If the goal is to manage fonts and ensure that you’re legal and compliant with font usage you can’t let people have their own dubious fonts on their system, so how do you ensure that people safely remove and restore users font libraries? Enter Font Restore, a built in OS X command to safely reset the font library. Heres the command.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">fontrestore default</code></pre></figure>
+
+<p>Heres what it looks like when it runs, a command window pops up and asks a user for their password, the button is set to “Restore” when the process is done it removes all non standard system fonts into the ~/Library/Fonts (Removed) and /Library/Fonts (Removed) folder locations. Removed fonts are stored in date time stamped folders so that you can determine which fonts where moved at what time depending on when the command was run.</p>
+
+<p>This isn’t just something that works or to be used when people have to move to a different font manager its also a good tool to use when troubleshooting corrupt fonts. That got me thinking, without giving people the command and hoping they would run it the right way and risk them getting too comfortable in the terminal interface I decided this would be a good task for Automator.</p>
+
+<p>I have to be honest its been a while since I have used Automator but I was pleasantly surprised with some of the new commands and abilities of the system. Heres how I turned this simple command into a full functioning application that I was able to package and deploy to all users who have graphics software with MUNKI.</p>
+
+<p>Open Automator and create an Application.</p>
+
+<p>Drag the Run Shell Script to the workflow window. Once done add this command in the command field.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">fontrestore default</code></pre></figure>
+
+<p>Add the Notification action to the workflow. I put a short message to let the user know where to look for deactivated fonts.</p>
+
+<p>Thats it. I will post the source to this in the sample code section of the site for your reference.</p>
+
+:ET

@@ -1,0 +1,3 @@
+I"¡<p>We have been using XServes as our primary mail servers at my organization for about two years now, we upgraded from an older Linux system and we could not be happier, since moving over to the 10.6 platform, we have enjoyed almost no email downtime, very easy to manage mail system and of course all the goodies that you would expect to run, some of which I have already mentioned (<a href="https://grovetech.co/blog/2010/01/23/squirrelmail-ldap-sieve/">Squirrelmail</a>) and also Mailman. Through my time configuring the server, migrating data and through other requests I have compiled a list of a few tips and tricks for working with Mailman on the OSX platform.</p>
+
+:ET

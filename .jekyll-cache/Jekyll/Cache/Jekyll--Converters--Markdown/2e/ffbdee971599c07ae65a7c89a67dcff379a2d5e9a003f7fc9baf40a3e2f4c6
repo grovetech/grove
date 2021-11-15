@@ -1,0 +1,25 @@
+I"�<p>Tired of typing your admin account password whenever you try to install
+software or change security settings on your Mac? A new feature in macOS
+10.15 Catalina removes that requirement for Apple Watch owners. In
+System Preferences &gt; Security &amp; Privacy &gt; General, select the checkbox
+for “Use your Apple Watch to unlock apps and your Mac.” Then, whenever
+an app asks for your account credentials, you can instead just
+double-press the side button on your Apple Watch. Of course, if you
+forgot to wear it or its battery has died, you can always fall back on
+entering your password.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20200603Ap/Approve-app-requests.jpg" class="img-fluid rounded m-2" width="700" /></p>
+
+<p><br />
+<br />
+<br /></p>
+<h2>Video Blog</h2>
+<hr />
+
+<div class="video-container overlay overlay-black overlay-50 screenshot" style="overflow: hidden;">
+<a data-bigpicture="{&quot;ytSrc&quot;: &quot;Vd-aGdltIiw&quot;}" href="#">
+  <img src="https://grovetech.co/assets/img/2020/Header-Apple-Watch.jpg" class="img-fluid" width="700" alt="Blog Post" />
+  <img src="https://grovetech.co/assets/img/icons/duotone-icons/Media/Play.svg" class="play" />
+</a>
+</div>
+:ET

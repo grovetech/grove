@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="refresh" content="5;url={{ site.site_cdn }}{{ page.redirect }}" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-itunes-app" content="app-id=892102469">
+	
+	{% if site.production == true and page.sitemap != false  %}
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	{% else %}
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	{% endif %}
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://stats.g.doubleclick.net">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="icon" href="{{ site.site_cdn }}/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.site_cdn }}/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.site_cdn }}/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.site_cdn }}/assets/img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="{{ site.site_cdn }}/assets/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="{{ page.keywords }}">
+  	<meta name="twitter:description" content="{{ page.description }}">
+	<meta property="og:type" content="{{ page.ogtype }}">
+	
+	{% seo %}
+	
+	<link rel="manifest" href="{{ site.site_cdn }}/assets/js/manifest.json">
+	
+	<!-- Libs CSS -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ site.site_cdn }}/assets/css/libs.bundle.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.site_cdn }}/assets/css/theme.bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+		Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Subscribe to Grove Technologies Notifications', // sets a default title for push notifications
+		defaultNotificationImage: '{{ site.site_cdn }}/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		},
+		userId: 'user_id', // optional, set custom user ID
+		tags: {
+			'Name': 'John Smith'   	// optional, set custom Tags
+		}										
+	}]);
+	</script>
+
+
+</head>
+<body>

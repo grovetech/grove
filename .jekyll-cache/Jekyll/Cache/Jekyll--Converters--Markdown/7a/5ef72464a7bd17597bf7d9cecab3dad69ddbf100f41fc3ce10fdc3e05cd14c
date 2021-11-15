@@ -1,0 +1,42 @@
+I"�<p>Continuing with our run down of the sharing preference pane, we’ll look into File Sharing.</p>
+
+<p>File sharing is one of the most useful services available when you have a more than one computer, care should be taken not to open up the files on the networked computers in a way that allows anyone to access your files.</p>
+
+<p>To enable File Sharing on your Mac, go to System Preferences &gt; Sharing</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image4.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Next check the box for File Sharing</p>
+
+<p>Mac and Windows computers can now see your computer on the local network.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image6.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>To connect to the Mac you have turned file sharing on, look under the Shared section of the sidebar in any open Finder window.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image5.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>If you don’t have the shared item in your sidebar or you don’t have the sidebar turned on in the Finder open the Go menu in the finder and choose Network:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image8.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<p>Another option to connect to the Mac you have enabled File Sharing on is to use the Connect to Server option under the Go menu in the finder:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image7.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<p>Now enter the URL or, IP address of the Mac you want to connect to and then press connect:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>If you do not know the IP address of the Mac you want to connect to open System Preferences &gt; Network on the Mac you want to connect to and make a note of its IP address:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image1.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>If you want to connect to the Mac and share its files from a Windows PC then you must also enable each account you want to connect to from Windows, click on options and then add a checkbox to each account you want to connect to from Windows. This will then ask you to enter the users password when connecting from Windows.</p>
+
+<p>You can also disable AFP if you want to make file sharing more secure, Macs using Yosemite &amp; older versions of OS X require AFP to be enabled.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/filesharing/image3.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Again just like when using Screen Sharing Macs logged into the same iCloud user will not ask you to enter your user name and password, otherwise you will be using the same username and password that you use when logging into the Mac.</p>
+:ET

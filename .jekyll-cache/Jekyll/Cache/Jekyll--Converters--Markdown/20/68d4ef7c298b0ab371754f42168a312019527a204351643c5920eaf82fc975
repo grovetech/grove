@@ -1,0 +1,22 @@
+I"d<p>The App Library in iOS 14 ensures that you can find all the apps
+installed on your iPhone without having to hunt through Home screens. So
+if you already have a lot of Home screens that contain a random
+assemblage of apps, it might be easier to hide those screens than to
+remove all the apps on them. To do this in iOS 14, touch and hold any
+empty spot on the Home screen to enter jiggle mode. Then tap the lozenge
+around the dots that represent your Home screens. In the Edit Pages
+screen, tap the checkmark under any Home screen to hide it (or tap an
+empty circle to add a checkmark and show that Home screen). To save your
+changes, tap Done. As a bonus tip, notice that swiping on that lozenge
+of Home screen dots is now a quick way to navigate between the Home
+screens.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20201001To/Hide-Home-Screens.jpg" class="img-fluid rounded m-2" width="400" /></p>
+
+<div class="video-container overlay overlay-black overlay-50 screenshot" style="overflow: hidden;">
+<a data-bigpicture="{&quot;ytSrc&quot;: &quot;_pwXKviTqOg&quot;}" href="#">
+  <img src="https://grovetech.co/assets/img/2020/Too Many Home Screens in iOS 14- Heres How to Hide Them.jpg" class="img-fluid" width="700" alt="Blog Post" />
+  <img src="https://grovetech.co/assets/img/icons/duotone-icons/Media/Play.svg" class="play" />
+</a>
+</div>
+:ET

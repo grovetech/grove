@@ -1,0 +1,11 @@
+I"‰<p>When you double-click a document, macOS uses the documentâ€™s file
+extension to figure out which app should open the file. So, by default,
+a PDF file called laser-squid.pdf opens in Preview because the Finder
+knows that everything with a .pdf extension should open in Preview. But
+what if you would prefer to open .pdf files in Adobe Reader, or you want
+comma-separated value (.csv) text files to open in Numbers? To change
+any mapping, select a file of the type in question and choose File &gt;
+Get Info to open the Info window. In the Open With section, click the
+pop-up menu to choose the desired app and then click the Change All
+button.</p>
+:ET

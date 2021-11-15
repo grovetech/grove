@@ -1,0 +1,160 @@
+I"�"<p>In cybercriminal circles, ransomware is all the rage. Once it has
+infected a computer, it encrypts all the files and then presents a
+ransom demand—pay up to get the decryption software necessary to
+recover the data.</p>
+
+<p>Ransomware has been in the news all year, with the <a href="https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack">Colonial Pipeline
+attack</a>
+in particular spending weeks in the headlines. Attacks rose 485% in 2020
+and show no signs of abating. The amounts demanded by the attackers are
+increasing, too, with PC manufacturer
+<a href="https://www.bleepingcomputer.com/news/security/computer-giant-acer-hit-by-50-million-ransomware-attack/">Acer</a>
+and Apple supplier Quanta both hit with $50 million demands. Worse,
+some ransomware attackers are adding an extortion component where they
+threaten to reveal confidential data if the victim doesn’t pay. It’s
+scary, we know.</p>
+
+<p>First, the good news. Although there are several examples of ransomware
+that target the Mac, none of them have been particularly well done or
+(as far as we know) successful. Right now, the chances of Macs falling
+prey to ransomware are very low, and there’s no reason to panic.</p>
+
+<p>However, complacency is dangerous. There’s a trend toward “ransomware as
+a service” (RaaS). The RaaS operators maintain the ransomware malware,
+offer a payment portal for victims, and provide “customer service” for
+victims who don’t know how to pay with Bitcoin or other
+cryptocurrencies. Affiliates spread the ransomware and split the
+revenues with the operators. It’s a tidy little cybercriminal
+enterprise, and separating the malware development and network
+penetration tasks has made it significantly easier for more criminals to
+leverage ransomware. It’s only a matter of time before they turn their
+attention to Macs.</p>
+
+<p>For the most part, protecting your Macs from ransomware is no different
+than protecting against any number of other security problems. Follow
+this core advice:</p>
+
+<ul>
+  <li>
+    <p><strong>Keep Macs and apps up to date:</strong> Always install macOS and security
+updates, and keep other apps up to date. With every update, Apple
+addresses numerous security vulnerabilities, fixing the vast
+majority of them before attackers can exploit them with malware.
+Every so often, however, Apple’s security notes include this
+sentence: “Apple is aware of a report that this issue may have been
+actively exploited.” That means there may be malware that targets
+that vulnerability; install such updates immediately!
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Ra/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+  <li>
+    <p><strong>Use strong passwords with a password manager:</strong> You’ve heard it
+from us before, and you’ll hear it again, but it’s essential that
+everyone in your organization use strong, unique passwords through a
+password manager like <a href="https://1password.com/">1Password</a>,
+<a href="https://www.lastpass.com/">LastPass</a>, or even Apple’s <a href="https://support.apple.com/en-us/HT204085">iCloud
+Keychain</a>. Just one weak
+password could allow attackers to infiltrate a computer or server
+and install ransomware.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Ra/image3.png" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+  <li>
+    <p><strong>Be suspicious of links and attachments:</strong> Ensure that everyone in
+your organization is careful about opening attachments or clicking
+links in email messages from unknown people or that seem off in some
+way. Phishing attacks are one of the primary ways of distributing
+malware. (If your group needs training in phishing awareness,
+contact us.)
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Ra/image4.png" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+  <li>
+    <p><strong>Never download pirated software!</strong> Even aside from the fact that
+it’s ethically problematic, the most recent piece of Mac
+ransomware—ThiefQuest—was initially found in a malicious
+installer purporting to be for the LittleSnitch network security
+utility (ironic, eh?). Get apps only from the developers’ official
+sites or the Mac App Store.</p>
+  </li>
+  <li>
+    <p><strong>Make frequent backups:</strong> Backups are essential so, even if you do
+fall prey to ransomware, you can restore data from before the
+infection point. The caveat is that some of your backups <em>must</em> be
+isolated from the Macs in question—some ransomware intentionally
+tries to encrypt or delete connected backups.</p>
+  </li>
+  <li>
+    <p><strong>Monitor for ransomware:</strong> Although ransomware usually tries to
+stay below the radar while it’s encrypting files, the free
+<a href="https://objective-see.com/products/ransomwhere.html">RansomWhere</a>
+utility can identify processes that quickly create encrypted files.
+It will likely incorrectly flag some legitimate behavior too (like
+in the screenshot below), but it’s still a helpful tool.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Ra/image5.png" class="img-fluid rounded m-2" width="400" /></p>
+  </li>
+  <li>
+    <p><strong>Have anti-malware software:</strong> For the most part, if you’re careful
+about following the advice above, you’ll be fine. But it’s a good
+idea to have a current anti-malware app around and run it
+occasionally—if you don’t already have one, try the free version
+of <a href="https://www.malwarebytes.com/">Malwarebytes</a>. If you—or your
+users—aren’t good about the basic precautions, you might want to
+run anti-malware software all the time or set up broader network
+protections.  <br />
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Ra/image6.png" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+  <li>
+    <p><strong>Have a disaster management plan:</strong> Every business should think
+about how it would react to a fire, flood, earthquake, or other
+disaster. When building a disaster management plan, be sure to
+include ransomware. How would you shut down infected systems,
+rebuild them from scratch, and restore uninfected files?</p>
+  </li>
+</ul>
+
+<p>Setting up a backup strategy that protects against ransomware requires a
+little more thought. As noted, ransomware often tries to render backups
+useless in one way or another. You need to have versioned backups that
+allow you to restore from before the ransomware infection, and those
+backups need to be isolated from the computers and network being backed
+up. Techniques that help include:</p>
+
+<ul>
+  <li>
+    <p><strong>Isolate backup drives:</strong> Rotate multiple Time Machine drives, with
+at least one that’s always disconnected. However, this strategy
+assumes you’ll detect a ransomware infection before you’ve rotated
+all the drives. Ransomware could lie undetected for weeks or months
+before activating. Manually run current anti-malware software before
+connecting any backup drive.</p>
+  </li>
+  <li>
+    <p><strong>Use Internet backup:</strong> Set up an Internet backup system that will
+maintain versions of backed-up files, such as
+<a href="https://www.backblaze.com/">Backblaze</a> with its <a href="https://www.backblaze.com/version-history.html">Extended Version
+History</a> feature.
+<a href="https://www.retrospect.com/en/ransomware">Retrospect 18</a> also
+supports object locking on cloud storage systems, which provides
+<em>immutable storage</em>. It ensures that no one—even someone who
+acquires root credentials—can delete the backups during the
+retention period.</p>
+  </li>
+  <li>
+    <p><strong>Consider tape backups:</strong> Long ago, tape backups were the go-to
+solution for network backups, but as the price-per-gigabyte of hard
+drives dropped precipitously and Internet backups became feasible,
+tape has largely fallen by the wayside. But tape backups are still
+an option. They can hold a lot of data and are easily kept offline
+in a separate location. Plus, some tape drives can even operate in a
+write-once, read-many (WORM) mode that guarantees data can’t be
+erased or overwritten. Tape requires more human interaction than
+other backup methods, but it’s still a cost-effective way to protect
+hundreds of terabytes of data against ransomware.</p>
+  </li>
+</ul>
+
+<p>Again, there’s no reason to panic about ransomware, but if it could
+significantly damage your business, you should take steps to reduce the
+chance of getting hit and ensure that you could restore your data if
+your computers were to get infected. There is no single approach that’s
+ideal for everyone, but we can help you think about what’s involved and
+develop a strategy that balances protection, cost, and effort.</p>
+:ET

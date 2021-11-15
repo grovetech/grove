@@ -1,0 +1,30 @@
+I"9
+<p><img src="https://grovetech.co/assets/img/blog/2017/32b/image1.png" class="alignleft" width="200" /> High Sierra the new macOS being released later this year will be the last macOS to support 32-bit apps. This year you will need to look at which apps you cannot live without if you want to continue upgrading macOS after High Sierra, making sure you have versions of the apps you need that will run on a 64 bit system because as of macOS 10.14 32-bit apps will no longer be supported.</p>
+
+<p>You can see which apps you have that are 32-bit  by opening the Activity Monitor which you will find in Applications folder &gt; Utilities folder:</p>
+
+<p>If you filter by kind ascending all the 32 bit apps you have running will filter to the top. (Activity Monitor only shows apps that are currently open and running.)</p>
+
+<p>Forcing all the app developers to finally switch to 64-bit is not a bad thing taking advantage of the newer 64-bit architecture, developers can deliver better software making use of more than 4GB of RAM.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/32b/image3.png" class="img-fluid rounded m-2" width="582" /></p>
+
+<p>“new apps submitted to the Mac App Store must support 64-bit starting January 2018, and Mac app updates and existing apps must support 64-bit starting June 2018” <a href="https://developer.apple.com/news/?id=06282017a">https://developer.apple.com/news/?id=06282017a</a></p>
+
+<p>Just in case you missed that High Sierra will still support 32-bit apps , it is the version following on from this which I assume will be 10.14 that will no longer support 32-bit apps.</p>
+
+<p>This can only be a good thing as the 32-bit apps I have are slow and buggy compared to their 64-bit counterparts.</p>
+
+<h3 id="macbook-update">MacBook update</h3>
+<hr />
+<p>The MacBook and MacBook Pro have been updated following the WWDC (worldwide developer conference).</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/32b/image4.png" class="img-fluid rounded m-2" width="482" /></p>
+
+<p>Focusing on processors (CPUs) and hard drives (SSDs) with the new MacBook now delivering up to 20 percent faster performance with the seventh‑generation Intel Core m3, i5, and i7 processors, and up to 50 percent faster SSD storage. <a href="https://www.apple.com/macbook/">https://www.apple.com/macbook/</a></p>
+
+<p>And the MacBook Pro now using the Intel Kaby Lake CPUs. <a href="https://www.apple.com/macbook-pro/">https://www.apple.com/macbook-pro/</a></p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/32b/image2.png" class="img-fluid rounded m-2" width="482" /></p>
+
+:ET

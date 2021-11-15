@@ -1,0 +1,80 @@
+    <!-- IMAGE
+    ================================================== -->
+    <section class="py-11 py-md-11 overlay overlay-black overlay-60 bg-cover" style="background-image:url({{ site.site_cdn }}{{ page.thumbnail }});">
+    <div class="container mt-10">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              {{ page.title }}
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+        <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                	
+                	<picture>
+						<source srcset="{{ site.site_cdn }}/assets/img/avatars/avatar.png" class="avatar-img rounded-circle" style="margin-top: -15px !important;" title="{{ page.author }}" type="image/webp"> 
+						<img class="avatar-img rounded-circle" src="{{ site.site_cdn }}/assets/img/avatars/avatar.png" alt="{{ page.author }}"> 
+					</picture>
+							
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  {{ page.author }}
+                </h6>
+
+                <!-- Date -->
+                 <time datetime="{{ page.date | date: "%b %-d, %Y" }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style d-none d-md-block" data-a2a-url="{{ site.site_cdn }}{{ page.url }}" data-a2a-title="{{ page.title }}">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_pinterest"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<script>
+					var a2a_config = a2a_config || {};
+					a2a_config.counts = { recover_domain: 'imamac.guru', recover_protocol: 'http' };
+					</script>
+                </span>
+
+                
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    

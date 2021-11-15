@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-itunes-app" content="app-id=892102469">
+	
+	
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://stats.g.doubleclick.net">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="icon" href="https://grovetech.co/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://grovetech.co/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://grovetech.co/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://grovetech.co/assets/img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="https://grovetech.co/assets/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="">
+  	<meta name="twitter:description" content="">
+	<meta property="og:type" content="">
+	
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>10.7 Server Web Administration: Missing Manual | Mac Support DC</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="10.7 Server Web Administration: Missing Manual" />
+<meta name="author" content="Jon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I just started using 10.7 Lion Server at my organization and I have to admit it is nice in some ways and infuriating in others. Apple has certainly fixed and introduced quite a few new features such as Profile Manager but have removed features like Mobile Access. The hardest hit service in my opinion when it comes to 10.7 server administration is the Web service. Apple has stripped this service completely out of the Server Admin app and has added a dumbed down version of the service to the Server app. If your unfamiliar the Server app is a program called “Server” that has the worst possible GUI interface and the least possible settings for all services that run through it which is a shame." />
+<meta property="og:description" content="I just started using 10.7 Lion Server at my organization and I have to admit it is nice in some ways and infuriating in others. Apple has certainly fixed and introduced quite a few new features such as Profile Manager but have removed features like Mobile Access. The hardest hit service in my opinion when it comes to 10.7 server administration is the Web service. Apple has stripped this service completely out of the Server Admin app and has added a dumbed down version of the service to the Server app. If your unfamiliar the Server app is a program called “Server” that has the worst possible GUI interface and the least possible settings for all services that run through it which is a shame." />
+<link rel="canonical" href="https://grovetech.co/blog/10-7-server-web-administration-missing-manual/" />
+<meta property="og:url" content="https://grovetech.co/blog/10-7-server-web-administration-missing-manual/" />
+<meta property="og:site_name" content="Mac Support DC" />
+<meta property="og:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2011-12-09T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="twitter:title" content="10.7 Server Web Administration: Missing Manual" />
+<meta name="twitter:site" content="@thegrovetech" />
+<meta name="twitter:creator" content="@Jon" />
+<meta property="fb:admins" content="https://www.facebook.com/grovetechnologies" />
+<meta property="article:publisher" content="https://www.facebook.com/grovetechnologies" />
+<meta property="fb:app_id" content="2013404878733742" />
+<meta name="google-site-verification" content="google3e4955832745f7b9" />
+<meta name="msvalidate.01" content="C72803331AF77124C6D411BDE1FD13B3" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jon"},"url":"https://grovetech.co/blog/10-7-server-web-administration-missing-manual/","mainEntityOfPage":{"@type":"WebPage","@id":"https://grovetech.co/blog/10-7-server-web-administration-missing-manual/"},"image":"https://grovetech.co/assets/img/covers/cover-16.jpg","headline":"10.7 Server Web Administration: Missing Manual","dateModified":"2011-12-09T00:00:00-05:00","datePublished":"2011-12-09T00:00:00-05:00","description":"I just started using 10.7 Lion Server at my organization and I have to admit it is nice in some ways and infuriating in others. Apple has certainly fixed and introduced quite a few new features such as Profile Manager but have removed features like Mobile Access. The hardest hit service in my opinion when it comes to 10.7 server administration is the Web service. Apple has stripped this service completely out of the Server Admin app and has added a dumbed down version of the service to the Server app. If your unfamiliar the Server app is a program called “Server” that has the worst possible GUI interface and the least possible settings for all services that run through it which is a shame.","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://grovetech.co/img/favicons/android-chrome-512x512.png"},"name":"Jon"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	
+	<link rel="manifest" href="https://grovetech.co/assets/js/manifest.json">
+	
+	<!-- Libs CSS -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/libs.bundle.css">
+    <link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/theme.bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+		Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Subscribe to Grove Technologies Notifications', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		},
+		userId: 'user_id', // optional, set custom user ID
+		tags: {
+			'Name': 'John Smith'   	// optional, set custom Tags
+		}										
+	}]);
+	</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://grovetech.co/">
+          <img src="https://grovetech.co/assets/img/header-icon.png" class="navbar-brand-nav" alt="Grove Technologies">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="https://support.grovetech.co/" target="_new">
+                Support
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Security
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/security/training/" title="Security Training">
+                          Security Training
+                        </a>
+                        
+                       
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Strategy <span class="h6 text-uppercase text-primary">(new)</span>
+                        </h6>
+
+                        <!-- List -->
+                       <a class="dropdown-item" href="https://grovetech.co/products/security/cmmc/" title="CMMC Consulting">
+                          CMMC Consulting
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/ciso/" title="Virtual CISO">
+                          Virtual CISO
+                        </a>
+                        
+
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Managed
+                        </h6>
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/fleet/" title="Mac Support">
+                          Mac Support
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/network/" title="Network Services">
+                          Network Support
+                        </a>
+						
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPricing" data-toggle="dropdown" href="https://grovetech.co/pricing" title="Pricing" aria-haspopup="true" aria-expanded="false">
+                Pricing
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarPricing">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="https://grovetech.co/pricing/" title="Mac Support">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5 5v11h14V5H5zm0-2h14c1.42 0 2 .716 2 1.6v12.8c0 .884-.58 1.6-2 1.6H5c-1.42 0-2-.716-2-1.6V4.6C3 3.716 3.58 3 5 3zm7 15a.5.5 0 100-1 .5.5 0 000 1z" fill="#335EEA"/><path fill="#335EEA" opacity=".3" d="M5 5v11h14V5z"/><rect fill="#335EEA" opacity=".3" x="10" y="20" width="4" height="1" rx=".5"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Mac Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Mac Fleets of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="https://grovetech.co/pricing/network/" title="Managed Networks">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M19.366 13.93l-2.104 1.736a6.8 6.8 0 00-5.264-2.484 6.8 6.8 0 00-5.25 2.469l-2.1-1.741a9.527 9.527 0 017.35-3.455 9.527 9.527 0 017.368 3.476zm4.18-3.504l-2.099 1.742a12.242 12.242 0 00-9.449-4.44c-3.695 0-7.12 1.641-9.44 4.428L.463 10.412A14.969 14.969 0 0111.998 5c4.521 0 8.716 2.014 11.548 5.426z" fill="#335EEA" opacity=".3"/><path d="M15.119 17.354l-2.08 1.765-1.077.881-1.029-.851-2.128-1.706a4.085 4.085 0 013.193-1.534c1.217 0 2.35.536 3.121 1.445z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Network Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Networks of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  
+                  <a class="list-group-item" href="https://grovetech.co/pricing/government/" title="Government">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 4l7.631-1.43a2 2 0 01.738 0L20 4v9.283a8.51 8.51 0 01-4 7.217l-3.47 2.169a1 1 0 01-1.06 0L8 20.5a8.51 8.51 0 01-4-7.217V4z" fill="#335EEA" opacity=".3"/><path d="M14.5 11a1 1 0 011 1v3a1 1 0 01-1 1h-5a1 1 0 01-1-1v-3a1 1 0 011-1v-.5a2.5 2.5 0 115 0v.5zM12 9a1.5 1.5 0 00-1.5 1.5v.5h3v-.5A1.5 1.5 0 0012 9z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Government
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Supporting our Federal Agencies
+                      </p>
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarBlog" data-toggle="dropdown" href="https://grovetech.co/blog" title="Mac Support Blog" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarBlog">
+            		<div class="list-group list-group-flush">
+
+                        <!-- List -->
+                        <a class="list-group-item" href="https://grovetech.co/blog/" title="Mac Support Blog">
+                        
+						<!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 Mac Support Blog <span class="h6 text-uppercase text-primary">(new)</span>
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Check Back for New Posts Weekly.
+						  </p>
+						</div>
+                        </a>
+                        <a class="list-group-item" href="https://grovetech.co/blog/category/downloads/" title="E-Books For Download">
+                        <!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#335EEA"/><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#335EEA" opacity=".3"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 E-Books For Download
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Resources for Your Business.
+						  </p>
+						</div>
+
+                        </a>
+
+                    </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://portal.grovetech.co/" target="_blank" title="Login to Client Portal">
+            Login
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+    <!-- IMAGE
+    ================================================== -->
+    <section class="py-11 py-md-11 overlay overlay-black overlay-60 bg-cover" style="background-image:url(https://grovetech.co/assets/img/covers/cover-16.jpg);">
+    <div class="container mt-10">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              10.7 Server Web Administration: Missing Manual
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+        <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                	
+                	<picture>
+						<source srcset="https://grovetech.co/assets/img/avatars/avatar.png" class="avatar-img rounded-circle" style="margin-top: -15px !important;" title="Jon" type="image/webp"> 
+						<img class="avatar-img rounded-circle" src="https://grovetech.co/assets/img/avatars/avatar.png" alt="Jon"> 
+					</picture>
+							
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Jon
+                </h6>
+
+                <!-- Date -->
+                 <time datetime="Dec 9, 2011">Dec 9, 2011</time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style d-none d-md-block" data-a2a-url="https://grovetech.co/blog/10-7-server-web-administration-missing-manual/" data-a2a-title="10.7 Server Web Administration: Missing Manual">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_pinterest"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<script>
+					var a2a_config = a2a_config || {};
+					a2a_config.counts = { recover_domain: 'imamac.guru', recover_protocol: 'http' };
+					</script>
+                </span>
+
+                
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    
+
+
+    <!-- SECTION
+    ================================================== -->
+    <section class="pt-2 pt-md-2 bg-white" id="blog-post">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 blog-post">
+          
+              <p>I just started using 10.7 Lion Server at my organization and I have to admit it is nice in some ways and infuriating in others. Apple has certainly fixed and introduced quite a few new features such as Profile Manager but have removed features like Mobile Access. The hardest hit service in my opinion when it comes to 10.7 server administration is the Web service. Apple has stripped this service completely out of the Server Admin app and has added a dumbed down version of the service to the Server app. If your unfamiliar the Server app is a program called “Server” that has the worst possible GUI interface and the least possible settings for all services that run through it which is a shame.</p>
+
+<p>The purpose of this entry is to talk about 10.7 server and show you how to accomplish everything that you could accomplish from the Server Admin application through commands using terminal or edits to system files in the operating system. Everything below requires that you be logged in as the root user on the server in order to avoid permission issues.</p>
+
+<p><strong>How to enable PHP </strong><br />
+Run this command to check if PHP is enabled on 10.7 server.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> /etc/apache2/httpd.conf|grep libphp5.so</code></pre></figure>
+
+<p>If the output is</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">LoadModule php5_module libexec/apache2/libphp5.so</code></pre></figure>
+
+<p>and not</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#LoadModule php5_module libexec/apache2/libphp5.so</span></code></pre></figure>
+
+<p>then PHP is enabled. If it is the other way around with a # in the beginning of the line you can just edit the httpd.conf file manually with</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>pico /etc/apache2/httpd.conf </code></pre></figure>
+
+<p>and remove the bracket manually and then restart the web server with</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p>Alternatively you can also enable this via a checkbox in the terrible server.app in 10.7.</p>
+
+<p><strong>How to change the default file type </strong><br />
+By default the landing page on all new sites is index.html if you would like to change this or the order in which a webpage searches for the index page then you need to change the default file type.</p>
+
+<p>To do this edit the configuration file appropriate to your site name. Meaning you have to have already configured a site in the 10.7 server.app program once you have a site then you need to edit the site configuration file. If your site was called apple.com then your site configuration would be in /etc/apache2/sites/apple.com.conf or something like that.</p>
+
+<p>You need to edit that file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>look for the following in the file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;IfModule mod_dir.c&gt;
+    DirectoryIndex index.html
+&lt;/IfModule&gt;</code></pre></figure>
+
+<p>If you want to change the main page to index.php instead of index.html then replace index.html with index.php. If you want to add it as a secondary load page then you can change it to this.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;IfModule mod_dir.c&gt;
+    DirectoryIndex index.html index.php
+&lt;/IfModule&gt;</code></pre></figure>
+
+<p>once done save and restart apache.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to enable .htaccess </strong><br />
+If you are going to be using mod_rewwrite at all for redirects or pretty permalinks (which is very common now) then you need to have this enabled. Again as stated before you have to have a site setup on the server through the server.app program. Once done locate your configuration file as outlined above and make the following changes.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>Once your in the file look for something that looks similar to the following.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;Directory <span class="s2">"/Users/yourname/Sites/"</span><span class="o">&gt;</span>
+     Options Indexes +MultiViews
+     AllowOverride All
+     Order allow,deny
+     Allow from All
+&lt;/Directory&gt;</code></pre></figure>
+
+<p>It won’t look exactly the same but what you want to do is replace it with what you see above that will enable the .htaccess or mod_rewrite the line of code that actually does this is the “AllowOverride All” command.</p>
+
+<p><strong>How to enable WebDav</strong><br />
+To configure WebDAV Sharing for such users, follow these instructions before enabling any WebDAV share points.</p>
+
+<p>Note: The instructions in this article include editing configuration files. You must have root access to edit these files. You should make a backup copy of each file prior to editing it.</p>
+
+<p>This step is optional but highly recommended: Acquire and install a trusted SSL certificate, and use Server App to configure Web Service to use the certificate. You can use the server’s default, self-signed certificate for WebDAV Sharing, but iWork and other applications may warn that the certificate is “invalid”.</p>
+
+<p>You need to edit the following configuration file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/httpd_webdavsharing.conf</code></pre></figure>
+
+<p>Find the line “AuthType Digest” change Digest to Basic. This makes WebDAV Sharing use Basic authentication, which is required for Active Directory users.</p>
+
+<p>Now edit this configuration file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/webapps/com.apple.webapp.webdavsharing.plist</code></pre></figure>
+
+<p>find these lines</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;key&gt;sslPolicy&lt;/key&gt;
+&lt;integer&gt;0&lt;/integer&gt;</code></pre></figure>
+
+<p>Change the 0 to 1. This makes WebDAV Sharing require SSL, which is the only secure way to use Basic authentication. Advise users to configure the iWork clients on their iOS devices with an “https” WebDAV URL, like: https://example.com/webdav</p>
+
+<p><strong>How to enable the directory listing </strong><br />
+Again as stated before you have to have a site setup on the server through the server.app program. Once done locate your configuration file as outlined above and make the following changes.</p>
+
+<p>You need to edit that file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>find the words “AllowOverride” in that block where these words are you need to add this line. This line may already be in your file but it may be different simply update it to reflect these changes</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Options <span class="nt">-Indexes</span> FollowSymLinks</code></pre></figure>
+
+<p><strong>How to enable SSI</strong><br />
+If you need to use Server Side Includes in your scripts or website files then do the following to enable it.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>pico /etc/httpd/httpd.conf</code></pre></figure>
+
+<p>look for these lines</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># AddType text/html .shtml</span>
+<span class="c"># AddHandler server-parsed .shtml</span></code></pre></figure>
+
+<p>Uncomment those 2 lines (remove the # in front of each of them). Now look in the same file for the following</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Options FollowSymLinks</code></pre></figure>
+
+<p>Add “Includes” to the 2nd line so it looks like</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Options FollowSymLinks Includes</code></pre></figure>
+
+<p>save the file and restart apache</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to enable VHOSTS</strong><br />
+VHOSTS or Virtual Hosts enable you to have multiple domain names mapped to the same site or IP address. To enable this edit the httpd.conf file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>pico /etc/apache2/httpd.conf </code></pre></figure>
+
+<p>find this line</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#Include /private/etc/apache2/extra/httpd-vhosts.conf</span></code></pre></figure>
+
+<p>change it to</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Include /private/etc/apache2/extra/httpd-vhosts.conf</code></pre></figure>
+
+<p>this will effectively enable VHOSTS. Now you should restart apache.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to enable CGI</strong><br />
+Again as stated before you have to have a site setup on the server through the server.app program. Once done locate your configuration file as outlined above and make the following changes.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>Once your in the file look for something that looks similar to the following.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Options Indexes +MultiViews</code></pre></figure>
+
+<p>It won’t look exactly the same but what need to do is add “-ExecCGI” after “+MultiViews” it should look something like this.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">Options Indexes +MultiViews <span class="nt">-ExecCGI</span></code></pre></figure>
+
+<p>This will enable CGI and allow you to run CGI scripts in Apache. Now you should restart apache.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to enable Logging</strong><br />
+This one boggled my mind, by default website logging is not enabled and again there is no way to enable it in the GUI. You will want to have this enabled to catch errors and fix faulty code. To enable this again we are assuming you already have a site configured with the server.app program. Once done locate your configuration file as outlined above and make the following changes.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>find the line “DocumentRoot”, Under that line paste the following</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">CustomLog <span class="s2">"/var/log/apache2/access_log"</span> combinedvhost
+ErrorLog <span class="s2">"/var/log/apache2/error_log"</span></code></pre></figure>
+
+<p>it should now look like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">DocumentRoot <span class="s2">"/path/to/your/website/"</span>
+CustomLog <span class="s2">"/var/log/apache2/access_log"</span> combinedvhost
+ErrorLog <span class="s2">"/var/log/apache2/error_log"</span></code></pre></figure>
+
+<p>Now you should restart apache.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to add a domain alias</strong><br />
+This is a common thing that most web admins do to map domains to a single site. This again has been removed from the functionality of the server.app on 10.7 server but is a pretty easy to add. To enable this again we are assuming you already have a site configured with the server.app program. Once done locate your configuration file as outlined above and make the following changes.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pico /etc/apache2/sites/nameofyoursite.conf</code></pre></figure>
+
+<p>in the site definition file, look for a line that says</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ServerName example.com
+ServerAlias www.example.com</code></pre></figure>
+
+<p>where example.com is the domain of your site. You can have more than one alias, just separate them by a spaces on the same line like so.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ServerName example.com
+ServerAlias www.example.com alias2.example.com alias3.example.com</code></pre></figure>
+
+<p>Now you should restart apache.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apachectl restart</code></pre></figure>
+
+<p><strong>How to restore factory settings to 10.7 Web Service</strong><br />
+This one is important. As stated above you should be backing up these config files before you edit them and then making your changes. In the event that something went wrong you can always reset them back to the original settings.</p>
+
+<p>Run this command</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>serveradmin <span class="nb">command </span>web:command<span class="o">=</span>restoreFactorySettings</code></pre></figure>
+
+<p>I got this command by calling Apple directly they also suggested restarting the machine after the restore command, once the computer is back up turn off and then turn on web service to ensure it is working propperly.</p>
+
+<p><strong>Conclusion</strong><br />
+All of these commands allow you to leverage Apache and accomplish the tasks that were once easy to accomplish with the Server Admin tool in 10.6 server. There are two options here, learn to love the command line or do not upgrade to 10.7 Lion. Apple is streamlining their GUI interfaces for their tools however there is still power under the hood. Do not be afraid to re-configure these systems Apache, PHP and MYSQL can be installed, modified and improved all from the command line and in some cases they work better after you do. Its not time to quit in my opinion its time to roll up our sleeves and start learning the core of what makes an OSX server truly great and that starts with understanding the open source software that comes bundled with them.</p>
+
+<p>I hope that you all found this article and walkthrough educational, as always please feel free to interact with me by posting questions and comments and I will answer them as best as I can. If you feel like any of this is wrong or could be improved upon also please leave a comment below, thanks!</p>
+
+
+              
+              
+
+          </div>
+          
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+	    <!-- INFO
+    ================================================== -->
+    <section class="py-5 py-md-6 m-9" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Message Us (SMS)
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+12404518688" title="Text Us" class="h4 text-primary">
+                (240) 451-8688
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Call Us
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+18882539103" title="Call Us" class="h4">
+                (888) 253-9103
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email us
+            </h6>
+
+            <!-- Link -->
+            <a href="matilto:support@grovetech.co" class="h4">
+              support@grovetech.co
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+			
+	<!-- CONTACT FORM
+    ================================================== -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40" style="overflow: hidden;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+                
+                    <!-- Image -->
+                    <div class="text-center">
+                      
+                      <picture>
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.webp" type="image/webp">
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.png" type="image/png" class="img-fluid form-floating w-200"> 
+						<img src="https://grovetech.co/assets/img/illustrations/illustration-2.png" alt="Networking Services" class="img-fluid form-floating w-200">
+					 </picture>
+				
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      We'd like to hear from you
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                      We specialize in business problems and work to help increase profitability by reducing chronic issues.
+                    </p>
+
+                    <!-- Form -->
+                    <form name="form-contact" id="form-contact" action="https://formspree.io/f/xylrgbym" method="POST">
+					  <div class="row">
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+					
+							
+							<!-- Input -->
+							<input type="text" name="Contact[name]" id="contact_name" class="form-control form-control-flush" placeholder="Name" required>
+							<label for="contact_name">Name</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="email" name="Contact[email]" id="contact_email" class="form-control form-control-flush" placeholder="Email" required>
+							<label for="contact_email">Email</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   			
+							<!-- Input -->
+							<input type="text" name="Contact[phone]" id="contact_phone" class="form-control form-control-flush" placeholder="Phone" required>
+							<label for="contact_phone">Phone</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Company Name" required>
+							<label for="contact_subject">Company Name</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="mb-3">
+					
+				   
+
+							<!-- Input -->
+							<textarea name="Contact[message]" id="contact_message" class="form-control form-control-flush" placeholder="What challenges are you facing?" rows="8" required></textarea>
+
+						  </div>
+						</div>
+					  </div> <!-- / .row -->
+					  <div class="justify-content-center">
+				
+				  
+						  <!-- Submit -->
+						  <button type="submit" class="btn d-block w-100 btn-success">
+							Request a Consultation
+						  </button>
+
+			   
+					  </div> <!-- / .row -->
+					  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+					</form>
+					<div id="response-message"></div>   
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-dcab198a-8dc4-4215-959c-460c834666ca"></div>
+
+ <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      <footer class="py-6 py-md-9 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+        
+              <!-- Brand -->
+              <a href="https://consultants.apple.com/us/profile/2045642"><img src="https://grovetech.co/assets/img/icons/ACN.svg" alt="Grove Technologies a member of the Apple Consultants Network" class="footer-brand mb-2"></a>
+
+              <!-- Text -->
+              <p class="text-gray-900 mb-2 py-3">
+                Keeping Companies in DC Safe Since 2014.
+              </p>
+
+              <!-- Social -->
+              <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.instagram.com/thegrovetech/" title="Instagram" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Instagram">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.facebook.com/grovetechnologies" title="Facebook" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Facebook">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://twitter.com/thegrovetech" title="Twitter" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/twitter.svg" class="list-social-icon" alt="Twitter">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item">
+                  <a href="https://www.linkedin.com/company/grove-tech" title="LinkedIn" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="LinkedIn">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+        
+             
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Clients
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/experience" title="Client Experience" class="text-reset">
+                    Client Experience
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://portal.grovetech.co" title="Client Portal" class="text-reset">
+                    Client Portal
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Channels
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/contact" title="Contact Us" class="text-reset">
+                    Contact Us
+                  </a>
+                </li>
+                
+                <li class="mb-3">
+                  <a href="https://grovetech.co/app" title="Download App" class="text-reset">
+                   Download App
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Company
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/about" title="About Us" class="text-reset">
+                    About Us
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://grovetech.co/team" title="Meet the Team" class="text-reset">
+                    Meet the Team
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            
+            <div class="col-12 mt-10">
+        
+              <p class="text-gray-900">
+              	&copy; 2021 <strong>Grove</strong> Technologies is a registered service mark of Grove Technologies LLC. All Rights Reserved. <a href="https://grovetech.co/privacy/" class="text-reset">Privacy Policy.</a>
+              </p>
+
+            </div>
+            
+            
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+    </section>
+    
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120080861-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-120080861-1');
+	</script>
+	<script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+	Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Grove Technologies', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: true, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		}									
+	}]);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/beerslider@1.0.3/dist/BeerSlider.min.js"></script>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    <script src="https://grovetech.co/assets/js/theme.bundle.js"></script>
+    <script src="https://grovetech.co/assets/js/vendor.bundle.js"></script>
+    
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#efefef",
+		  "text": "#404040"
+		},
+		"button": {
+		  "background": "#8ec760",
+		  "text": "#ffffff"
+		}
+	  },
+	  "theme": "edgeless",
+	  "type": "opt-out",
+	  "content": {
+		"href": "https://grovetech.co/privacy/"
+	  }
+	});
+	</script>
+</body>
+</html>

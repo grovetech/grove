@@ -1,0 +1,51 @@
+I"�
+<p>Continuing our tips on using iOS11 this week we will look at the Photos App.</p>
+
+<h3 id="finally-apple-has-included-a-qr-scanner-in-the-photos-app">Finally Apple has included a QR scanner in the Photos App</h3>
+<hr />
+<p>I’ve been waiting for this since the original iPhone! You no longer need a third party App to use a QR code.</p>
+
+<p>In case you don’t know, this is a QR code:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/dmphotos/image001.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Simply open the Camera App and point your iDevice at the QR code and a pop up appears. Tap the pop up to use the information in the QR code.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/dmphotos/image003.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>In this QR code we have the URL: https://grovetech.co/blog/</p>
+
+<p>Use the links and phone numbers in QR codes with caution, as it has been known for attackers to inject malicious links and numbers into QR codes, check the pop up before taping it.</p>
+
+<h3 id="cellular-data-usage">Cellular Data Usage</h3>
+<hr />
+<p>iOS 11 now allows you to set cellular data usage for the Photos App, Go to:</p>
+
+<p>Settings &gt; Photos &gt; Mobile Data</p>
+
+<p>You can turn it off or on to save Mobile Data and if you have plenty of mobile Data you can also enable Unlimited Data usage:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/dmphotos/image005.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<h3 id="new-camera-file-formats">New Camera File Formats</h3>
+<hr />
+<p>With High Sierra and iOS 11, if you’re using an iPhone 7 or later the HEIF and HEVC formats will be used to store images and video.</p>
+
+<p>If you open Settings &gt; Photos Transfer to Mac or Pc will be set to Automatic which means the iPhone will transfer the original using a compatible format.</p>
+
+<p>If the PC , Mac or other App you are using does not support these formats you may wish to set the Camera to record in JPEG/H.264. To do this go to Settings &gt; Camera &gt; Formats , tap most compatible.</p>
+
+<h3 id="new-color-filters">New color filters</h3>
+<hr />
+<p>In the Camera App, filters are shown in a scrollable strip below the view finder, if you tap on a filter the view finder will show the image to be captured with the filter applied.</p>
+
+<p>Tap the filter icon top Right and then (left and right) scroll and tap on the filter you want.</p>
+
+<p>The filter will be applied even after you close the Camera App and go back to it.</p>
+
+<p>If the Filter icon in the top right corner is colored then a filter is being applied.</p>
+
+<p>There are 9 filters to choose from.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/dmphotos/image007.png" class="img-fluid rounded m-2" width="450" /></p>
+:ET

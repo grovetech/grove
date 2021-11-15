@@ -1,0 +1,270 @@
+I"sK<p>Over the years I have stored a file that has many of the day to day commands that I use to administer the computers at my workplace. After 4 years of saving these commands I am giving back and creating the ultimate post to aid all new sys admins out there.</p>
+
+<p><strong>The Adaptive Firewall</strong><br />
+The most basic task you can do with the firewall is to disable all of the existing rules. To do so, simply run afctl (all afctl options require sudo) with a -d option:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">afctl <span class="nt">-d</span></code></pre></figure>
+
+<p>When run, the adaptive firewall’s rules are disabled. To re-enable them, use the -e option:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">afctl <span class="nt">-e</span></code></pre></figure>
+
+<p>To remove a specific IP address that has been blacklisted, use the -r option followed by the IP address (rules are enforced by IP)</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/libexec/afctl <span class="nt">-r</span> <span class="c">###.###.###.0/24</span></code></pre></figure>
+
+<p>To add an IP to the blacklist, use the -a option, also followed by the IP</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/libexec/afctl <span class="nt">-a</span> <span class="c">###.###.###.0/24</span></code></pre></figure>
+
+<p>To permanently add a machine to the whitelist, use -w with the IP</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/libexec/afctl <span class="nt">-w</span> <span class="c">###.###.###.0/24</span></code></pre></figure>
+
+<p><strong>Recover a corrupt open directory</strong><br />
+10.5, 10.6, and 10.7 have a recover tool that will help you recover a damaged or corrupt ldap directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>db_recover <span class="nt">-h</span> /var/db/openldap/openldap-data/</code></pre></figure>
+
+<p><strong>Reset a corrupt open directory</strong><br />
+Note, this should only be done in the event that there is no possible way to recover or restore the OD. This will completely destroy your servers open directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>slapconfig <span class="nt">-destroyldapserver</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkpassdb <span class="nt">-dump</span></code></pre></figure>
+
+<p><strong>Change computer name</strong><br />
+Change the computer name over ARD or SSH.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">networksetup <span class="nt">-setcomputername</span> &lt;name&gt;</code></pre></figure>
+
+<p><strong>Cleanup files from users computers</strong><br />
+We do not allow .torrent files on users computers, so I run this via ARD every morning on the entire network. I later adapted these commands to a script that runs on login.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">rm</span> <span class="nt">-vrf</span> ~/Downloads/<span class="k">*</span>.torrent
+<span class="nb">rm</span> <span class="nt">-vrf</span> ~/Desktop/<span class="k">*</span>.torrent
+<span class="nb">rm</span> <span class="nt">-vrf</span> ~/Documents/<span class="k">*</span>.torrent</code></pre></figure>
+
+<p><strong>Establish Jailed SSH</strong><br />
+This command will allow you to establish a secure connection over ssh with an encrypted key pair.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cat</span> ~/.ssh/id_dsa.pub | ssh root@xx.xx.xx.xx <span class="s1">'cat - &gt;&gt; ~/.ssh/authorized_keys'</span></code></pre></figure>
+
+<p><strong>Unison</strong><br />
+Unison is an amazing utility that runs as a service on OSX that will do two way file syncing over ssh or locally. When setting up Unison you must copy it to /usr/bin/ and then create this directory for it to run.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mkdir</span> ~/.unison</code></pre></figure>
+
+<p>For more information on Unison you should check out this <a href="https://www.cis.upenn.edu/~bcpierce/unison/">site</a>.</p>
+
+<p><strong>Running A Unison Batch</strong><br />
+You can run this command with Unison to start a file syncronization.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">unison <span class="nt">-batch</span> <span class="s2">"/SRC/Dest/"</span> ssh://someuser@xx.xx.xx.xx/Dest/Folder/</code></pre></figure>
+
+<p><strong>Check a user record</strong><br />
+Often times its easier to lookup an account and see its attributes in the terminal rather than using Workroup Manager.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">dscl <span class="nt">-u</span> diradmin <span class="nt">-P</span> &lt;diradmin passwd&gt; /LDAPv3/fully.qualified.domain <span class="nt">-read</span> /Users/username</code></pre></figure>
+
+<p><strong>Sync MYSQL between servers</strong><br />
+If you need to do a backup from one MYSQL database to another you can use this command to do so. You can also use this as a way to dump a database to a different server.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mysqldump <span class="nt">--user</span><span class="o">=</span>&lt;username&gt; <span class="nt">--password</span><span class="o">=</span>&lt;passwd&gt; &lt;dbname&gt; | ssh &lt;username&gt;@xx.xx.xx.xx <span class="nt">-p8286</span> mysql <span class="nt">--user</span><span class="o">=</span>&lt;username&gt; <span class="nt">--password</span><span class="o">=</span>&lt;passwd&gt; &lt;dbname&gt;</code></pre></figure>
+
+<p><strong>RSYNC to remote server</strong><br />
+Sometimes you need to backup files across a network to a different computer this method allows you to do that over a secure ssh connection.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rsync <span class="nt">-av</span> <span class="nt">-e</span> ssh /SRC/Folder/ <span class="nt">--rsh</span><span class="o">=</span><span class="s1">'ssh -p8286'</span> &lt;username&gt;@xx.xx.xx.xx:/DEST/Folder/</code></pre></figure>
+
+<p><strong>Force remove a broken OD replica</strong><br />
+OD Replicas can be tricky, over time they can fail and sometimes when a replica fails, and you decommission it, it does not get fully removed on the OD Master. Here is how to update the Master to remove that stubborn old replica record.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/var/db/authserver
+mkpassdb <span class="nt">-dump</span>
+slapconfig <span class="nt">-removereplica</span> xx.xx.xx.xx</code></pre></figure>
+
+<p><strong>Fix broken Mobile Account run on the local machine</strong><br />
+Mobile accounts sometimes need to be removed from the local computer locally. Here is a simple terminal command to remove a mobile account from a local machine.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">dscl <span class="nb">.</span> <span class="nt">-delete</span> /Users/userName</code></pre></figure>
+
+<p><strong>Change local password with ARD</strong><br />
+This is the easiest way to change user passwords on remote computers with ARD. You can also use secure SSH but ARD is much easier.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">dscl <span class="nb">.</span> <span class="nt">-passwd</span> /Users/userName newpass newpass</code></pre></figure>
+
+<p><strong>Enable ARD remotely</strong><br />
+How can you enable ARD on a computer system that you have SSH access to? Hers how!</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart <span class="nt">-activate</span> <span class="nt">-configure</span> <span class="nt">-access</span> <span class="nt">-on</span> <span class="nt">-restart</span> <span class="nt">-agent</span> <span class="nt">-privs</span> <span class="nt">-all</span></code></pre></figure>
+
+<p><strong>Fix SSL on servers</strong><br />
+Sometimes SSL on an OSX Server can break, here is how to get it back up and running for your server and all of the ssl sites.</p>
+
+<ol>
+  <li>Put the bundle package “gd_bundle.crt” in the /etc/apache2/ directory</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>pico /etc/apache2/httpd.conf</code></pre></figure>
+
+<ol>
+  <li>Enter this line in the SSL block</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">SSLCertificateChainFile <span class="s2">"/etc/apache2/gd_bundle.crt"</span></code></pre></figure>
+
+<p><strong>Fix Apple SUS</strong><br />
+This sometimes happens, where the symlinks on the server will break, instead of changing all the clients to point to the other catalog that you mentioned, I changed the symbolic link at the server to point to it instead. In Teminal at the server:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /var/db/swupd/html</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo rm </span>index.sucatalog</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> <span class="nt">-u</span> _softwareupdate <span class="nb">ln</span> <span class="nt">-s</span> /var/db/swupd/html/content/catalogs/others/index-leopard-snowleopard.merged-1.sucatalog index.sucatalog</code></pre></figure>
+
+<p><strong>Enable Screen Share (VNC) from Terminal</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Library/Preferences
+<span class="nb">echo</span> <span class="nt">-n</span> enabled <span class="o">&gt;</span> com.apple.ScreenSharing.launchd</code></pre></figure>
+
+<p><strong>Remotely Set Volume level on a computer</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>osascript <span class="nt">-e</span> <span class="s2">"set Volume 10"</span></code></pre></figure>
+
+<p><strong>Manually Set SUS in OSX</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>defaults write /Library/Preferences/com.apple.SoftwareUpdate CatalogURL https://fully.qualified.domain:8088/index-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog</code></pre></figure>
+
+<p><strong>Remove Microsoft License</strong><br />
+If your not fortunate enough to be using a site license for Microsoft Office then you can remove or revoke a license in the terminal like this.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo rm</span> ~/Library/Preferences/Microsoft/Office 2008/Microsoft Office 2008 Settings.plist 
+<span class="nb">sudo rm</span> /Applications/Microsoft Office 2008/Office/OfficePID.plist</code></pre></figure>
+
+<p><strong>Search and replace in SQL</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">UPDATE wp_posts SET post_content <span class="o">=</span> replace<span class="o">(</span>post_content,<span class="s2">"coolstuff.com"</span>,<span class="s2">"lancelhoff.com"</span><span class="o">)</span></code></pre></figure>
+
+<p><strong>Change Mailman Password</strong><br />
+How to quickly change the mailman password on an OSX Server installation.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/share/mailman/bin/</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./mmsitepass</code></pre></figure>
+
+<ol>
+  <li>Change password</li>
+</ol>
+
+<p><strong>Export Mailman Lists</strong><br />
+How to export Mailman Lists to text files on an OSX Server installation.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/share/mailman/bin/</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./list_lists</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">./list_members FWW-Internal <span class="o">&gt;</span> ~/Desktop/somefile.txt</code></pre></figure>
+
+<p><strong>Reset the localKDC</strong><br />
+This is important to do, if you do not do this, you will not be able to bind your computer after an ASR restore to an OSX Directory. Tools like Deploy Studio Server and Casper run these commands for you.</p>
+
+<ol>
+  <li>Delete all 3 com.apple.kerberos.kdc in the login keychain</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo rm</span> <span class="nt">-fr</span> /var/db/krb5kdc</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/libexec/configureLocalKDC</code></pre></figure>
+
+<p><strong>Restart the Wiki Service</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>serveradmin stop teams
+<span class="nb">sudo </span>serveradmin start teams</code></pre></figure>
+
+<p><strong>List out the size of folders on the file system</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo du</span> <span class="nt">-d</span> 1 <span class="nt">-h</span> <span class="nt">-x</span> /Volumes/HDName/</code></pre></figure>
+
+<p><strong>Change the way the dock behaves</strong><br />
+Use Suck instead of Scale</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.dock mineffect <span class="nt">-string</span> suck
+killall Finder</code></pre></figure>
+
+<p><strong>Report on all activity from a specific user</strong><br />
+Good for seeing exactly what users are doing on the server or on their computers.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ps aux | <span class="nb">grep</span> <span class="s2">"root"</span> | more <span class="o">&gt;&gt;</span> ~/rootreport.txt</code></pre></figure>
+
+<p><strong>Export a list of contacts from MailMan OSX Server</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/usr/share/mailman/bin/list_members list_name <span class="o">&gt;</span> saved_subscribers</code></pre></figure>
+
+<p><strong>Restart the Mail Service Remotely</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>serveradmin stop mail &amp;#038<span class="p">;</span>&amp;#038<span class="p">;</span> <span class="nb">sudo </span>serveradmin start mail</code></pre></figure>
+
+<p><strong>Start the SSH service on a server remotely</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">echo</span> <span class="s2">"AdminsPassHere"</span> | <span class="nb">sudo </span>service ssh start</code></pre></figure>
+
+<p><strong>Enable universal access remotely</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">osascript <span class="nt">-e</span> <span class="s1">'tell application "System Events"'</span> <span class="nt">-e</span> <span class="s1">'tell application processes'</span> <span class="nt">-e</span> <span class="s1">'key code 28 using {command down, option down, control down}'</span> <span class="nt">-e</span> <span class="s1">'end tell'</span> <span class="nt">-e</span> <span class="s1">'end tell'</span></code></pre></figure>
+
+<p><strong>Change email from html to plain text only</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.mail PreferPlainText <span class="nt">-bool</span> TRUE</code></pre></figure>
+
+<p><strong>Change the scrollbars in OSX</strong><br />
+This will change how the scrollbar works there will be an up and down arrow, this only works in 10.5, 10.6.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write <span class="s2">"Apple Global Domain"</span> AppleScrollBarVariant DoubleBoth</code></pre></figure>
+
+<p><strong>Show hidden files in OSX</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.finder AppleShowAllFiles TRUE</code></pre></figure>
+
+<p><strong>Eject a stubborn or stuck disk remotely</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">disktool <span class="nt">-e</span> disk#</code></pre></figure>
+
+<p><strong>Change the text in the login window</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText <span class="s2">"Hi, I have missed you!"</span></code></pre></figure>
+
+<p><strong>Change the dock size</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.dock largesize <span class="nt">-int</span> 512
+killall Finder</code></pre></figure>
+
+<p><strong>Change the icon size</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.finder DesktopViewOptions <span class="nt">-dict</span> IconSize <span class="nt">-integer</span> 512
+killall Finder</code></pre></figure>
+
+<p><strong>Change the desktop tile size</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">defaults write com.apple.dock tilesize <span class="nt">-int</span> 256</code></pre></figure>
+
+<p><strong>Remove Spotlight from OSX</strong><br />
+This will destroy spotlight until you run repair permissions.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo chmod </span>0 /System/Library/CoreServices/Spotlight.app
+killall Spotlight</code></pre></figure>
+
+<p><strong>Restart the ethernet port</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>ifconfig en0 down</code></pre></figure>
+
+<p><strong>Copy a file remotely</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">scp test.zip adminname@fully.qualified.domain:~/Desktop</code></pre></figure>
+
+<p><strong>See the Serial Number of your 10.6 Server</strong><br />
+You can obtain the Mac OS X Server serial number (for Snow Leopard) via the command line. At the Terminal on the server itself (or via ssh if you wish), type:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">more /etc/systemserialnumbers/xsvr</code></pre></figure>
+
+:ET

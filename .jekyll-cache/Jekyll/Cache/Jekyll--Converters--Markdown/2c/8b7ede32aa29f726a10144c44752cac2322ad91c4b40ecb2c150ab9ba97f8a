@@ -1,0 +1,19 @@
+I"�<h2 id="use-copy-as-pathname-to-help-someone-find-a-file-on-the-mac">Use Copy as Pathname to Help Someone Find a File on the Mac</h2>
+<hr />
+
+<p>Have you ever needed to write directions for where to find a file on the
+Mac? That’s easy if it’s in a well-traveled location, like the Music or
+Pictures folder, but more difficult if it’s in an obscure hidey-hole.
+Rather than write out instructions like “Look in the Chrome folder
+inside Google’s Application Support folder in your user Library folder,”
+select the item in question, hold down the Option key, and choose Edit
+&gt; Copy “<em>ItemName</em>” as Pathname. (A <em>pathname,</em> or <em>path,</em> is the
+sequence of nested folders that holds a file or folder, such as
+/Users/adrian/Library/Application Support/Google/Chrome.) Then paste the
+path into an email message or word processing document (or wherever you
+like). You’ll now have the entire thing exactly where you need it, and
+you don’t have to worry that you’ve accidentally left out a navigational
+step.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/pathname/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+:ET

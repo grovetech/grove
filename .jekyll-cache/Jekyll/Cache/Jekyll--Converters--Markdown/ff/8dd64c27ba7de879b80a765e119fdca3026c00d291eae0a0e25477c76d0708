@@ -1,0 +1,62 @@
+I"<p>If your a fan and a user of MUNKI then you know what a great product it is and what community is behind it. Its backed by some of the largest companies around *(Disney, Google, etc..) and has consistently worked with all versions of OSX that have been around since Munki was created. The Munki client and admin tools requires Python 2.5 or higher with Objective-C Python bindings, which is included by default in Mac OS X. Munki is supported on Leopard through Mavericks.</p>
+
+<p>Many third party utilities have been created to work along side Munki to augment the ability to manage inventory and other aspects of Munki such as software reporting, software licensing escrow, and machine tracking. One of the best utilities has been Munki Web Admin. A great walkthrough can be found on setting up Munki Web Admin on an OSX Server here https://code.google.com/p/munki/wiki/MunkiWebAdminOSXSetup but very little documentation exists on how to update your current installation to run effectively on Mavericks.</p>
+
+<p>If your like me then you have updated your Mavericks server only to find that your old instance of Munki Web Admin no longer works. To fix this you must update your django and other components that make Munki Web Admin run.</p>
+
+<p>Upgrading an existing install is not too difficult if you are using virtualenv and git (as recommended), Here’s what I did to upgrade my production instance:</p>
+
+<p>cd into the virtualenv directory containing Munki Web Admin</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /Volumes/munki/munkiwebadmin_env/</code></pre></figure>
+
+<p>Activate the virtualenv (requires bash shell):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">source </span>bin/activate</code></pre></figure>
+
+<p>Stop the MWA server process. In my case, it’s run via launchd</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">launchctl unload /Library/LaunchDaemons/com.googlecode.munki.munkiwebadmin.plist</code></pre></figure>
+
+<p>Upgrade django</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip <span class="nb">install </span><span class="nv">django</span><span class="o">==</span>1.5.1 <span class="nt">--upgrade</span></code></pre></figure>
+
+<p>Upgrade django-wsgiserver</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip <span class="nb">install </span>django-wsgiserver<span class="o">==</span>0.8.0beta <span class="nt">--upgrade</span></code></pre></figure>
+
+<p>Change into the munkiwebadmin dir</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd </span>munki</code></pre></figure>
+
+<p>Use git to update munkiwebadmin</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git pull</code></pre></figure>
+
+<p>Optional — you may want to edit settings.py to avoid some deprecation warnings:</p>
+
+<ol>
+  <li>Comment out or remove the ADMIN_MEDIA_PREFIX line.</li>
+  <li>Replace the entire LOGGING section with the one from the (upgraded) settings_template.py.</li>
+</ol>
+
+<p>If you are not using django-wsgiserver, you may need to collect static files (doing this is harmless if you don’t actually need it):</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python manage.py collectstatic</code></pre></figure>
+
+<p>Make sure your database tables are updated:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">python manage.py syncdb</code></pre></figure>
+
+<p>Restart MunkiWebAdmin (again, in my case, using launchd)</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">launchctl load /Library/LaunchDaemons/com.googlecode.munki.munkiwebadmin.plist</code></pre></figure>
+
+<p>Hopefully your upgrade process won’t be too different. One of the gotchas that I found to be a little daunting was that my launch daemon had to be re-chowned in order to be loaded properly.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo chown </span>root /Library/LaunchDaemons/com.googlecode.munki.munkiwebadmin.plist</code></pre></figure>
+
+<p>Once done I could restart my system and have it automatically launch!</p>
+
+:ET

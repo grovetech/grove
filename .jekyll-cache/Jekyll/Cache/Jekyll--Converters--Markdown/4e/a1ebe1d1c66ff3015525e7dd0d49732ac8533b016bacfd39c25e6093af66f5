@@ -1,0 +1,13 @@
+I"w<p><img src="https://grovetech.co/assets/img/blog/2018/telugu/image1.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Apple also released updates for macOS 10.13.3, tvOS 11.2.6, and watchOS 4.2.3 , these updates are just patches to fix the “Telugu” bug which causes apps like messages to crash when a single character of the Telugu language is sent to them, Telugu is a Dravidian language native to India.</p>
+
+<p>These updates also fix other bugs, including a macOS bug which displays messages in the Messages app in the wrong order.</p>
+
+<p>The bug surfaced on a bug report site called Open Radar just over a week ago, and is as simple as sending a Telugu language character to the device which causes the device to crash.</p>
+
+<p>Apple’s security update outlines the bug as a “memory corruption issue” caused by “processing a maliciously crafted string”.</p>
+
+<p>The “Telugu” bug is the latest in a series of “text bomb” bugs to affect iOS devices.
+These updates are a quick install via Settings &gt; General &gt;Software Update, however the macOS update via the App store requires your Mac is restarted.</p>
+:ET

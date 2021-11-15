@@ -1,0 +1,18 @@
+I"�<p>For years, you’ve used the App Store app to install operating system and
+app updates on your Mac. That’s still true for apps, but with macOS
+10.14 Mojave, Apple moved operating system updates to the new Software
+Update preference pane, which replaces the old App Store preference
+pane. Open System Preferences &gt; Software Update to check your version
+of macOS and access available updates—there will be an Update Now
+button to click. You should also visit this pane to tell your Mac how to
+best handle system and app updates: Don’t select “Automatically keep my
+Mac up to date” because updates might come at an inconvenient time for
+you. Instead, click Advanced and then select “Check for updates” and
+“Install system data files and security updates”—they’re important.
+Unless you’re low on drive space, selecting “Download new updates when
+available” is fine, since that will make updating faster. However, keep
+“Install macOS updates” and “Install app updates from the App Store” off
+so you can choose when to update.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/prefpane/image2.png" class="img-fluid rounded m-2" width="750" /></p>
+:ET

@@ -1,0 +1,98 @@
+I"-'<p>We have been using XServes as our primary mail servers at my organization for about two years now, we upgraded from an older Linux system and we could not be happier, since moving over to the 10.6 platform, we have enjoyed almost no email downtime, very easy to manage mail system and of course all the goodies that you would expect to run, some of which I have already mentioned (<a href="https://grovetech.co/blog/2010/01/23/squirrelmail-ldap-sieve/">Squirrelmail</a>) and also Mailman. Through my time configuring the server, migrating data and through other requests I have compiled a list of a few tips and tricks for working with Mailman on the OSX platform.</p>
+
+<p><strong>1. Migrating Mailman data from one server to another.</strong><br />
+I had many problems making sure that mailing lists, users, and archives were preserved when moving from our old server to our new server. Here are the following things you must do in order to ensure that the lists are preserved.</p>
+
+<p>You must backup the old mailman lists these are more than likely stored in the /var/mailman directory</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo cp</span> <span class="nt">-Rp</span> /var/mailman /Volumes/setting-backups/</code></pre></figure>
+
+<p>Once your ready to restore the files to the new server run</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo cp</span> <span class="nt">-Rp</span> /Volumes/setting-backups/mailman /var</code></pre></figure>
+
+<p>the -Rp flags relate to the fact that it is a folder and that you are going to restore the permissions, once your done you will need to login through SSH or on the server itself and run</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/share/mailman/bin
+<span class="nb">sudo</span> ./genaliases</code></pre></figure>
+
+<p>the ./genaliases command will take the lists, and it will generate aliases for them. This plagued me for a while before I realized that when you migrate to the server, this database needs to be built.</p>
+
+<p><strong>2. Change the hostname of of your Mailman Server</strong><br />
+I have had to do this as well, normally the mailman web interface can be found at https://example.com/mailman/admin for the administrative side or https://example.com/mailman/listinfo for the list information side. If you are going to change the hostname of your server to example2.com then you will need to use the command line tools to move the lists over.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/share/mailman/bin
+./withlist <span class="nt">-l</span> <span class="nt">-r</span> fix_url <span class="nv">$listname</span> <span class="nt">-v</span></code></pre></figure>
+
+<p>This will update the host names for $listname from the main configuration file, and -v shows you what the changes are. Remember to change $listname with the actual name of your list, you will have to do this for every list you can however run all of the lists at once by running the command multiple times like so.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /usr/share/mailman/bin
+./withlist <span class="nt">-l</span> <span class="nt">-r</span> fix_url <span class="nv">$listname</span> <span class="nt">-v</span>
+./withlist <span class="nt">-l</span> <span class="nt">-r</span> fix_url <span class="nv">$listname1</span> <span class="nt">-v</span>
+./withlist <span class="nt">-l</span> <span class="nt">-r</span> fix_url <span class="nv">$listname2</span> <span class="nt">-v</span>
+./withlist <span class="nt">-l</span> <span class="nt">-r</span> fix_url <span class="nv">$listname3</span> <span class="nt">-v</span></code></pre></figure>
+
+<p><strong>3. Retrieving a text list of users subscribed to a list</strong><br />
+I have seen this question asked in almost every forum that I have visited, there are multiple ways to do this however I recently found out that Mailman has a built in tool that will automatically grant you what your looking for in the form of an email daemon. First, you must be an administrator or moderator of the list in question. Second you must know the password to the administration area for the list in question.</p>
+
+<p>You can get a list of users by sending an email to the list at $listname-request@yourdomain.com where $listname is the name of your mailing list. With the the following command in the subject line and the message body.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">who</span> <span class="nv">$listpassword</span></code></pre></figure>
+
+<p>where $listpassword is the password of the list in question, the list of users will be sent back to you in the form of an email.</p>
+
+<p><strong>4. Create a Mailman auditing script</strong><br />
+These commands can be used to export a list of users and then have that list automatically emailed to you so that you can regularly be reminded to make sure that your mailman lists are free from errors, and or people that should no longer be on the lists. I have created two scripts that do this.</p>
+
+<p>Script #1: The list querying script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> /usr/share/mailman/bin/
+./list_members <span class="nt">-f</span> Internal <span class="o">&gt;</span> <span class="s2">"/scripts/lists/audit/Internal.txt"</span>
+<span class="nb">touch</span> <span class="s2">"/scripts/lists/Internal.txt"</span>
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"XXX Mailing List -- For Auditing Purposes nn This is an automated email, please check your list of subscribers for accuracy, if there is a change that needs to be made please contact XXX, at XXX@XXX.XXX, thank you. nn"</span> <span class="o">&gt;&gt;</span> <span class="s2">"/scripts/lists/Internal.txt"</span>
+<span class="nb">cat</span> <span class="s2">"/scripts/lists/audit/Internal.txt"</span> <span class="o">&gt;&gt;</span> <span class="s2">"/scripts/lists/Internal.txt"</span>
+<span class="nv">SUBJECT</span><span class="o">=</span><span class="s2">"XXX Mailing List"</span>
+<span class="nv">EMAIL</span><span class="o">=</span><span class="s2">"XXX@XXX.XXX"</span>
+<span class="nv">EMAILMESSAGE</span><span class="o">=</span><span class="s2">"/scripts/lists/Internal.txt"</span>
+mail <span class="nt">-s</span> <span class="s2">"</span><span class="nv">$SUBJECT</span><span class="s2">"</span> <span class="s2">"</span><span class="nv">$EMAIL</span><span class="s2">"</span> &lt; <span class="s2">"</span><span class="nv">$EMAILMESSAGE</span><span class="s2">"</span>
+<span class="nb">rm</span> <span class="s2">"/scripts/lists/Internal.txt"</span></code></pre></figure>
+
+<p>This script runs the commands and generates the list, it then adds on the email text above the list of users and then sends it out as an email. I would name this script the name of the list so for example $listname.sh and then chmod the script 700 so that it is executable. You will want to use the above template for each of your mailing lists and save this into multiple scripts.</p>
+
+<p>Script #2: The the scheduled script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> <span class="s2">"/scripts/"</span>
+./list1.sh
+./list2.sh
+./list3.sh
+<span class="nb">rm</span> <span class="nt">-R</span> <span class="s2">"/scripts/lists/audit"</span>
+<span class="nb">mkdir</span> <span class="s2">"/scripts/lists/audit"</span></code></pre></figure>
+
+<p>You will want to schedule this script, I have mine set to once a month, what it does is, it runs all the scripts listed each script above uses the first template to query Mailman, generate the lists, append with email text and then send out to the list moderators.</p>
+
+<p>There is a bit of trial and error here, first of all the user account must have sudo rights, so you may need to add the user running these scripts to the sudoers file or make them an administrator. Scheduling is a matter of setting up a crontab, I am using</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">0	0	1	<span class="k">*</span>	<span class="k">*</span>	/bin/bash /scripts/run.sh</code></pre></figure>
+
+<p>this will make sure that it runs on the first day of each month.</p>
+
+<p><strong>5. Reset the Mailman master password</strong><br />
+I do this from time to time to make sure that I and the IT Staff at our organization have access to every list on the Mailman roster, but also as a security point, the password changes once every quarter. You can do this via the command line by running.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/share/mailman/bin/mmsitepass</code></pre></figure>
+
+<p>It will prompt you to enter a password, and confirm. I suggest that you choose a strong password. You can also change a single list password through the command line as well.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/share/mailman/bin/withlist <span class="nt">-l</span> mylistnamehere
+import sha
+m.password <span class="o">=</span> sha.new<span class="o">(</span><span class="s1">'supersecretpasswordhere'</span><span class="o">)</span>.hexdigest<span class="o">()</span>
+m.Save<span class="o">()</span>
+<span class="o">{</span>ctrl-D<span class="o">}</span></code></pre></figure>
+
+<p>The above will change the admin lists password and encrypt it at the same time.</p>
+
+<p>Well I hope you enjoyed my Mailman tips and tricks, please feel free to tell me of any other Mailman tricks that might help out the Mac community, as always comments are very welcome!</p>
+
+:ET

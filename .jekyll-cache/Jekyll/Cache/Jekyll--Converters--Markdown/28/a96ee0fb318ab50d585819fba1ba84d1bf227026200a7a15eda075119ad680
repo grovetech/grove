@@ -1,0 +1,14 @@
+I"�<p>The Mac’s Dock gives you quick access to frequently used apps,
+documents, and folders, and makes it easy to switch to a running app. In
+macOS 10.14 Mojave, the Dock has another feature: a list of apps you’ve
+used recently that aren’t on your default Dock. Icons for these apps
+appear between your Dock’s default apps and any documents or folders
+that you’ve added—look closely and you’ll notice subtle lines in the
+Dock that delineate this area. It always holds at least three apps, but
+expands to hold as many launched apps (note the subtle dot under the
+icon) as necessary; as you quit apps, their icons disappear until you’re
+back down to three. If you don’t like this change, turn off “Show recent
+applications in Dock” in System Preferences &gt; Dock.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mdock/image2.png" class="img-fluid rounded m-2" width="750" /></p>
+:ET

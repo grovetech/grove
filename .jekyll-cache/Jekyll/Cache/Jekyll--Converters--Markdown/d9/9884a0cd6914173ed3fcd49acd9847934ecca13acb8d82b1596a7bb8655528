@@ -1,0 +1,59 @@
+I"<h3 id="why-is-a-cybersecurity-training-so-important">Why is a cybersecurity training so important?</h3>
+
+<p>Security awareness training is one of the most critical and important security requirements for any size organization to consider implementing within their environment. Arguably, the greatest risk faced by any organization is the danger of insider threat as employees are can be considered a weak link in the chain as they are susceptible to curiosity, greed, envy, etc. To further increase risk, employees may be faced with the threat of social engineering attacks including phishing, baiting, spear phishing, tailgating, scareware, pretexting, quid pro quo, etc. To combat these risks,
+a strong security awareness training program can be leveraged to properly inform employees of the security risks they may be presented within the workplace and how to properly observe, defend, and report any suspected malicious activity.</p>
+
+<h3 id="what-is-social-engineering-and-am-i-affected">What is social engineering and am I affected?</h3>
+
+<p>Simply speaking, there is more to cybersecurity than computers and how they work. This statement includes how your network is setup or even how your firewall is configured, etc. Within cybersecurity there is actually a heavy emphasis on people as they interact directly with data within the organization. These people (employees) can have duties such as maintaining computers, configuring computers, helping others with computer problems, etc. and tend
+to not be as rational as computers as they can be swayed by emotion. This human factor is what social engineering attacks attempt to exploit to achieve whatever malicious goal may be present. In many serious cases, this can result in an attacker gaining access to systems that they would not normally be authorized.</p>
+
+<h3 id="download-the-full-white-paper-here">Download the full White Paper Here!</h3>
+
+<!-- Card -->
+<div class="card shadow-light-lg lift lift-lg" style="overflow: hidden;">
+
+  <!-- Image -->
+  <img src="https://grovetech.co/assets/img/photos/cybersecurity-header.png" alt="Best Cyberseucurity Training in DC" class="card-img-top" />
+
+  <!-- Shape -->
+  <div class="position-relative">
+	<div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+	  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor" /></svg>
+	</div>
+  </div>
+
+  <!-- Body -->
+  <div class="card-body">
+
+	<!-- Form -->
+	<form name="form-training" id="form-training" action="https://formspree.io/f/xoqpbalk" method="POST">
+	  <div class="form-floating">
+		<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Full Name" required="" />
+        <label for="contact_subject">Full Name</label>
+	  </div>
+	  <div class="form-floating">
+		<input type="email" name="Contact[email]" class="form-control form-control-flush" id="contact_email" placeholder="Email" required="" />
+        <label for="contact_email">Email</label>
+	  </div>
+	  <div class="form-floating">
+		<input type="text" name="Contact[phone]" class="form-control form-control-flush" id="contact_phone" placeholder="Phone" required="" />
+        <label for="contact_phone">Phone Number</label>
+	  </div>
+	  <div class="mt-6">
+		<button class="btn d-block w-100 btn-success lift" type="submit" id="contact-submit">
+		  Get The Training White Paper
+		</button>
+	  </div>
+	  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+	</form>
+	<div id="response-message"></div>
+  </div>
+
+</div>
+:ET

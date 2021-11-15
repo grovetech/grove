@@ -1,0 +1,43 @@
+I" <h2 id="how-to-fix-critical-high-sierra-security-vulnerability-in-macos-with-root-password">How to Fix Critical High Sierra Security Vulnerability in macOS with Root Password</h2>
+
+<p>An official fix is now available via Apple directly as of today, Nov 29 less than 24 hours after the vulnerability was discovered. You can also fix this via the steps below.</p>
+
+<p>After a security flaw was detected by a software developer who publicly announced the error Tuesday, Apple has now responded with a security update available through the mac App store (blue icon) in less than 24 hours. If you do not see the expected update for your Mac, install any updates listed and then return back to the Updates tab to see. You can also search for the app to update - in this case, that would be High Sierra. Here’s Apple’s guidelines.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/rootpw/macOS_hs_image_1.jpg" class="img-fluid rounded m-2" width="750" /></p>
+
+<p>This security update is important to install because a vulnerability in the ‘root’ user account can give a hacker access to other areas of your computer, including your private files, as Apple explains.</p>
+
+<p>Users with macOS Sierra 10.12.6 were not affected by this security vulnerability. The new update fixes a logic error that existed in the validation of credentials. This error has now been addressed with improved credential validation.</p>
+
+<p>There are two steps you can take to close this security hole on your own. They include limiting guest access and changing the root password.</p>
+
+<h2 id="limiting-guest-access">Limiting Guest Access</h2>
+<hr />
+<p><img src="https://grovetech.co/assets/img/blog/2017/rootpw/macOS_hs_image_2.png" class="img-fluid rounded m-2" width="750" /></p>
+
+<ol>
+  <li>Launch System Preferences.</li>
+  <li>Select Users and Groups.</li>
+  <li>Select Guest User.</li>
+  <li>Uncheck the box that says ‘Allow guests to log into this computer.’</li>
+</ol>
+
+<p>To access this page, you may have to first click on the lock on the lower left and authenticate your account before you can make any changes in this area.</p>
+
+<h2 id="changing-the-root-password">Changing the Root Password</h2>
+<hr />
+<p><img src="https://grovetech.co/assets/img/blog/2017/rootpw/macOS_hs_image_3.png" class="img-fluid rounded m-2" width="750" /></p>
+
+<ol>
+  <li>Launch System Preferences.</li>
+  <li>Select Users and Groups.</li>
+  <li>Select Log in Options.</li>
+  <li>Select Join next to Network Account Server.</li>
+  <li>In the next box, select Open Directory Utility.</li>
+  <li>Click on the lock on the lower left and enter your password to make changes.</li>
+  <li>Click on the menu bar (top toolbar) of the Directory Utility and select Change Root Password.</li>
+  <li>Create a strong password different from your current admin login.</li>
+</ol>
+
+:ET

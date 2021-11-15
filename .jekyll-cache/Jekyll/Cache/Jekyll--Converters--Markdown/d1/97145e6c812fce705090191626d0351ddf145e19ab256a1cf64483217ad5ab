@@ -1,0 +1,16 @@
+I"^<p>On the Mac, nearly every file has an <em>extension</em>, a set of characters
+after a period that indicates what type of file it is and determines
+which app opens it. So, <strong>.png</strong> indicates a PNG graphic that opens in
+Preview by default, <strong>.pages</strong> denotes a Pages document, and <strong>.docx</strong>
+identifies a file as belonging to and opening in Microsoft Word. Plus,
+the extension for all applications is <strong>.app</strong>. Depending on what you
+do, how often you exchange files with people on other platforms, and
+your personal preference, you may wish to see more or fewer extensions.
+You control that in Finder &gt; Preferences &gt; Advanced, with the “Show
+all filename extensions” checkbox. Individual files can override the
+setting, so if an extension isn’t doing what you want, select the file,
+choose File &gt; Get Info, and check or uncheck the Hide Extension
+checkbox in the Info window.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20201103Us/Filename-extensions-settings-info.png" class="img-fluid rounded m-2" width="700" /></p>
+:ET

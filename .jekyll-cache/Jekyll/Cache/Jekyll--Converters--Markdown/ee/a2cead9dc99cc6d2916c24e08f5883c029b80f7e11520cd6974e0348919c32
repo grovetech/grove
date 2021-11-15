@@ -1,0 +1,2 @@
+I"ç<p>Recently at our organization we were charged with the task of creating an auto failover solution for our websites. Basically the idea here is that we have our web server sitting in a data center but if for some reason the server were to ever go down then the website would fail over to a second server where a duplicate of the website is waiting to be accessed in the event that the primary ever had an issue. This is doable but it requires that you have all your ducks in a row.</p>
+:ET

@@ -1,0 +1,76 @@
+I"�<p>Enabling remote Apple events</p>
+
+<p>Continuing our run down of the sharing preference pane we’ll cover remote Apple events, remote Apple events allow apps running on other Macs to send commands directly to the Mac with remote Apple events enabled these commands can include “opening an app”, “printing a document” or even playing music.</p>
+
+<p>Basically, remote Apple events allow you to quickly run a task on another Mac without having to use screen sharing.</p>
+
+<p>Go to:</p>
+
+<p>System Preferences &gt; Sharing</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image3.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Check the Remote Apple events option:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image5.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Again, you should specify which users can use remote Apple events using Only these users option to be more specific:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image4.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>You will need to know the I.P address of the Mac you have enabled remote Apple events on, you can go back to System Preferences &gt; Network to find the local I.P address or if you want to run these events from outside your local network (home Wi-Fi etc) you will need to obtain your external I.P address from your router and enable port forwarding to your Mac.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image7.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>For a simple outline of how to use Apple Script on another Mac to send commands to the Mac you have enabled remote Apple events on:</p>
+
+<p>Firstly, open AppleScript Editor from Applications &gt; Utilities &gt; Script Editor.app</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image6.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>And for our first simple script we will simply tell iTunes to open and play on the remote machine.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">setremotemachineto <span class="s2">"eppc://192.168.2.3"</span>
+
+tellapplication<span class="s2">"finder"</span> ofmachineremotemachine
+
+open<span class="o">(</span><span class="s2">"/applications/iTunes.app"</span> asPOSIX fileasalias<span class="o">)</span>
+
+endtell
+
+using terms fromapplication <span class="s2">"iTunes"</span>
+
+tellapplication<span class="s2">"iTunes"</span> ofmachineremotemachine
+
+setlocalVariabletoplayplaylistnamed <span class="s2">"Rock"</span>
+
+endtell
+
+endusing terms from</code></pre></figure>
+
+<p>Set the I.P address to the machine you have enabled apple Remote events on:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">setremotemachine to <span class="s2">"eppc://YOUR I.P ADDRESS"</span></code></pre></figure>
+
+<p>You will also need to change the playlist name from rock to one of your playlists:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">setlocalVariabletoplayplaylistnamed <span class="s2">"Insert your playlist name”</span></code></pre></figure>
+
+<p>Alternatively change the command to just play and iTunes will open and play on the remote machine:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">setlocalVariabletoplay</code></pre></figure>
+
+<p>Now when you hit run in the Apple Script editor:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>When you first run the script, it will ask you to enter the username and password for the remote machine:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/remoteevents/image1.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>The remote machine will open iTunes and play the playlist called Rock.</p>
+
+<p>This Apple Script we have custom coded for this tutorial, if you want to learn more go to the Apple Script website <a href="https://www.google.com/url?q=https://www.macosxautomation.com/applescript/index.html&amp;sa=D&amp;ust=1523651586212000">Mac OS X Automation.</a></p>
+
+<p>And for more iTunes commands including building a remote player see the Apple  <a href="https://www.google.com/url?q=https://developer.apple.com/library/content/samplecode/AttachAScript/Listings/AttachedScripts_applescript.html&amp;sa=D&amp;ust=1523651586212000">website.</a></p>
+:ET

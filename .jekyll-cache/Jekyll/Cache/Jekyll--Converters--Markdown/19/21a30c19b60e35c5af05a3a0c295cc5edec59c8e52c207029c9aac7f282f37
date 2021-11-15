@@ -1,0 +1,46 @@
+I"�<p>I have heard this story it seems over and over again, I also have been the topic of many email horror stories. They usually go like this</p>
+
+<blockquote>
+  <p>“I just setup a new server and within days we were on a corporate email blacklist, I contacted the company in question and asked why are we on your blacklist, why won’t you deliver our email. They shared with me an email log of thousands of emails being sent from my mail server through several legitimate email accounts. I ensured that my server was not an open relay so I asked these users, if they had indeed sent this many emails in one shot without any kind of unsubscribe link in the footer of their email. They had! I was so shocked, now what do I do?”</p>
+</blockquote>
+
+<p>This is an uncomfortable and very perilous position. You want to allow your users to send email to get their job done however you as a systems administrator need to comply with the “Can Spam Act” passed by the FCC to ensure that email continues to flow. You also have companies out there who will block you for violating this act as a precaution on their part. All the while your users can not be bothered to learn about proper email procedures.</p>
+
+<p>In my experience the only thing you can do at this point is to limit how many emails are allowed to be sent at any given time. If you are using OSX Server for Mail or Postfix for Sendmail then this walkthrough will talk about how to limit email recipients and stay off those dreaded blacklists.</p>
+
+<p>Here are the basics that you should know, the following are all settings that can be added to the /etc/postfix/main.cf file of your postfix setup.</p>
+
+<p><strong>smtpd_recipient_limit (default 1000)</strong> parameter controls how many recipients the SMTP server will take per message delivery request. You can’t restrict this to a to/cc/bcc field – <strong>it’s for all recipients</strong>. For that you’d have to use a regular expression in header_checks to arbitrarily limit the length of each header to something reasonable.</p>
+
+<p><strong>smtpd_recipient_overshoot_limit (default 1000)</strong> The number of recipients that a remote SMTP client can send in excess of the hard limit specified with smtpd_recipient_limit, before the Postfix SMTP server increments the per-session error count for each excess recipient.</p>
+
+<p><strong>smtpd_hard_error_limit (default 20)</strong> parameter to know at what number of errors it will disconnect.</p>
+
+<p>So you technically need to consider the 3 values here which affect both inbound &amp; outbound mail. Then there’s the throttling tools.</p>
+
+<p><strong>smtpd_client_recipient_rate_limit (default: 0 no limit)</strong> The maximum number of recipient addresses that an SMTP client may specify in the time interval specified via anvil_rate_time_unit (default: 60s -careful adjusting this affects other things)” and note that this is “regardless of whether or not Postfix actually accepts those recipients” Those over will receive a 450 4.7.1 Error: too many recipients from [the.client.ip.address] It’s up to the client to deliver those recipients at some later time.</p>
+
+<p><strong>smtpd_client_connection_rate_limit (default: 0)</strong> The maximal number of connection attempts any client is allowed to make to this service per time unit. The time unit is specified with the anvil_rate_time_unit configuration parameter.</p>
+
+<p><strong>smtpd_client_message_rate_limit (default: 0)</strong> The maximal number of message delivery requests that any client is allowed to make to this service per time unit, regardless of whether or not Postfix actually accepts those messages. The time unit is specified with the anvil_rate_time_unit configuration parameter.</p>
+
+<p>The purpose of these features are to limit abuse, as opposed to regulating legitimate mail traffic, but I use them that way in order to mitigate spam blacklisting. In my organization we limit the recipients from one email to 25 you can see the code from my sample /etc/postfix/main.cf. If your file does not have these values you can add them to the bottom of the file.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">smtpd_recipient_limit <span class="o">=</span> 50
+smtpd_recipient_overshoot_limit <span class="o">=</span> 51
+smtpd_hard_error_limit <span class="o">=</span> 20
+smtpd_client_recipient_rate_limit <span class="o">=</span> 50
+smtpd_client_connection_rate_limit <span class="o">=</span> 10
+smtpd_client_message_rate_limit <span class="o">=</span> 25
+default_extra_recipient_limit <span class="o">=</span> 50
+duplicate_filter_limit <span class="o">=</span> 50
+default_destination_recipient_limit <span class="o">=</span> 50
+smtp_destination_recipient_limit <span class="o">=</span> <span class="nv">$default_destination_recipient_limit</span></code></pre></figure>
+
+<p>Once done you need to restart postfix</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>postfix reload</code></pre></figure>
+
+<p>I hope that you all found this article and walkthrough educational, as always please feel free to interact with me by posting questions and comments and I will answer them as best as I can. If you feel like any of this is wrong or could be improved upon also please leave a comment below, thanks!</p>
+
+:ET

@@ -1,0 +1,15 @@
+# filter pages and documents for the noindex key
+
+
+Sitemap: https://grovetech.co/sitemap.xml
+User-agent: *
+# robotstxt.org - if _config production variable is false robots will be disallowed.
+
+  
+    
+      Disallow: /privacy/
+    
+      Disallow: /atom.xml
+    
+    
+  

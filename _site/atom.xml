@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://grovetech.co/atom.xml" rel="self" type="application/atom+xml" /><link href="https://grovetech.co/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2021-11-12T16:38:51-05:00</updated><id>https://grovetech.co/atom.xml</id><title type="html"> - Mac Support DC</title><subtitle>Grove Technologies - Washington DC's best Mac Support company for Digital Agencies, Creative Professionals &amp; Non Profits.</subtitle><author><name>Jon Brown</name></author><entry><title type="html">Need to Resize Images in Various Ways? Give Preview a Try</title><link href="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/" rel="alternate" type="text/html" title="Need to Resize Images in Various Ways? Give Preview a Try" /><published>2021-11-11T00:00:00-05:00</published><updated>2021-11-11T00:00:00-05:00</updated><id>https://grovetech.co/blog/Need-to-Resize-Images-in-Various-Ways-Give-Preview-a-Try.docx</id><content type="html" xml:base="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/">&lt;h2 id=&quot;need-to-resize-images-in-various-ways-give-preview-a-try&quot;&gt;Need to Resize Images in Various Ways? Give Preview a Try&lt;/h2&gt;
+
+&lt;p&gt;Even those of us who don’t work with graphics professionally often find
+ourselves needing to resize images. Perhaps you have a large square
+headshot, but the site to which you’re uploading requires it to be
+exactly 100 by 100 pixels. Or maybe you have an iPhone 13 Pro photo
+that’s 4032 by 3024, but you need the long side to be 1280 pixels and
+the short side to be 800 pixels. You might even need to cut out an
+800-by-600 rectangle from a much larger image.&lt;/p&gt;
+
+&lt;p&gt;These tasks are easily accomplished with professional graphics apps like
+Photoshop, but you don’t need to pay for or learn Photoshop for a quick
+resizing and cropping of an image. That’s because Preview, which is
+built into macOS, can do many of these tasks with aplomb.&lt;/p&gt;
+
+&lt;p&gt;One note: You can resize images to be smaller with little or no loss of
+quality, but you can’t make images bigger without them looking fuzzier
+unless you employ specialized tools.&lt;/p&gt;
+
+&lt;h3 id=&quot;shrink-an-image-without-changing-aspect-ratio&quot;&gt;Shrink an Image without Changing Aspect Ratio&lt;/h3&gt;
+
+&lt;p&gt;Let’s take our first example above. We have a square headshot that we
+need to upload to an account, but the site won’t accept an image larger
+than 100 pixels square. To shrink the image to the specified size, we’ll
+first make a copy in the Finder or we’ll open the file in Preview and
+choose File &amp;gt; Duplicate. Then, with the image open in Preview, we’ll
+choose Tools &amp;gt; Adjust Size, make sure “pixels” is chosen to the right
+of the Width and Height fields, and enter 100 into the Width field.
+Because Scale Proportionally is selected, Height automatically changes
+to 100 to match. We’ll click OK to exit the dialog and then save the
+file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;shrink-an-image-and-crop-to-different-dimensions&quot;&gt;Shrink an Image and Crop to Different Dimensions&lt;/h3&gt;
+
+&lt;p&gt;Let’s move on to our second example above. We have a photo of some
+home-baked bread loaves that we’ve taken with the iPhone, and we need to
+resize it to 1280 by 800 pixels before uploading it to our food blog.
+There are two problems: the image is much larger than we need to start,
+and when we try resizing it to the desired pixel count in one dimension,
+the other dimension is wrong.&lt;/p&gt;
+
+&lt;p&gt;We’ll start the same way we did before, by making a copy of the original
+and in Preview choosing Tools &amp;gt; Adjust Size. In the Image Dimensions
+dialog, we’ll first type 1280 into the Width field. In this example,
+doing that causes the Height field to change to 752, which is too small
+(below left). Remember, shrinking images is easy and works well, but
+expanding them is hard. So instead, we’ll type 800 into the Height
+field, which causes the Width field to change to 1361 (below right).
+That’s good; we’ll click OK to resize the image. It will look small, but
+we can zoom it back to the window size by choosing View &amp;gt; Zoom to Fit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image3.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For the next step, we need to get the image width down from 1361 to 1280
+pixels, which we do by cropping. Choose Edit &amp;gt; Select All (or just
+press Command-A), and notice that there’s a selection rectangle around
+the entire image, with blue drag handles in the middle of each side and
+at each corner. We’ll need to take some off each side to keep the loaves
+centered, so we’ll drag the left side in a little to start. If you have
+trouble grabbing the blue drag handles instead of the edge of Preview’s
+window, choose View &amp;gt; Zoom Out to zoom out one step and separate the
+handles from the window edges.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Next, we’ll drag the right side in. Notice that as we drag, Preview
+displays the image dimensions in a little lozenge (at the right in the
+screenshot)—we’ve stopped at 1280. Since we’re moving only the edges,
+only the width changes—resizing from the corners would be much harder
+because both dimensions would change simultaneously.&lt;/p&gt;
+
+&lt;p&gt;One tip. If you’ve gotten the selection rectangle to 1280 by 800, but
+the content under it isn’t centered as you’d like, press and hold the
+left or right arrow key to move the selection rectangle to the left or
+right.&lt;/p&gt;
+
+&lt;p&gt;Once we have the selection rectangle at the right size and in the right
+place, we’ll choose Tools &amp;gt; Crop to discard the image content outside
+the selection.&lt;/p&gt;
+
+&lt;h3 id=&quot;extract-a-portion-of-an-image-with-specific-dimensions&quot;&gt;Extract a Portion of an Image with Specific Dimensions&lt;/h3&gt;
+
+&lt;p&gt;For our final example, let’s assume that we have a large picture of
+cherry tomatoes, and we need to cut out just the black tomatoes for a
+Web page that requires an 800-by-600 image. Once again, the image is too
+large, but the trickier problem is that we only need a small portion of
+it.&lt;/p&gt;
+
+&lt;p&gt;We’ll start by dragging out a selection rectangle that’s roughly 800 by
+600, using Preview’s measurement lozenge. All we’re doing here is
+getting a sense of what the shape of 800 by 600 looks like. Then we make
+another selection around the black cherry tomatoes that’s roughly the
+same aspect ratio, wider than it is tall. The details don’t matter much
+at this point.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The next step is to crop the photo to the selection with Tools &amp;gt; Crop.
+Then we choose Tools &amp;gt; Adjust Size and set the Width field to 800 to
+get the width correct. That reveals that the height of our rough crop
+was slightly too large, at 630 pixels. We’ll click OK to resize the
+image to those dimensions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we’ll use the same technique we did in the example above, with
+Select All, dragging the top handle down until the dimensions are 800 by
+600, and then using Tools &amp;gt; Crop to discard the extra content.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ne/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, you can do a lot with just three basic techniques in
+Preview:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using Tools &amp;gt; Adjust Size to resize the entire image&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Dragging out selection rectangles while paying attention to the
+measurements&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Using Tools &amp;gt; Crop to get rid of content outside the selection
+rectangle&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We won’t pretend that Preview is the ultimate graphics tool, but it’s
+capable, easy to use, and on every Mac.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Need to Resize Images in Various Ways? Give Preview a Try</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</title><link href="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/" rel="alternate" type="text/html" title="Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More" /><published>2021-11-09T00:00:00-05:00</published><updated>2021-11-09T00:00:00-05:00</updated><id>https://grovetech.co/blog/Use-Visual-Look-Up-in-Photos-in-iOS-15-to-Identify-Plants,-Pets,-and-More.docx</id><content type="html" xml:base="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/">&lt;h2 id=&quot;use-visual-look-up-in-photos-in-ios-15-to-identify-plants-pets-and-more&quot;&gt;Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More&lt;/h2&gt;
+
+&lt;p&gt;Have you ever wanted to identify a plant, flower, or pet breed, or find
+out what that famous painting is called? Us too. In iOS 15 and iPadOS
+15, Apple added a new AI-driven feature called Visual Look Up that
+provides more information about photos of plants, flowers, pets, books,
+artworks, and landmarks. When you’re viewing a photo, swipe up or tap
+the sparkle-badged info button ➊ to see metadata about the image (camera
+model, image details, location, and more) and then tap Look Up to learn
+more ➋. Depending on the item recognized, it will suggest Wikipedia
+articles, similar images from the Web, websites, bookstores, map
+locations, and more. Tap a suggestion to switch to Safari or another app
+for details. (If the info button doesn’t have the sparkle badge, Visual
+Look Up hasn’t identified anything in the photo.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Us/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Best Apple-Related Gifts for 2021</title><link href="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/" rel="alternate" type="text/html" title="The Best Apple-Related Gifts for 2021" /><published>2021-11-04T00:00:00-04:00</published><updated>2021-11-04T00:00:00-04:00</updated><id>https://grovetech.co/blog/The-Best-Apple-Related-Gifts-for-2021.docx</id><content type="html" xml:base="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/">&lt;h2 id=&quot;the-best-apple-related-gifts-for-2021&quot;&gt;The Best Apple-Related Gifts for 2021&lt;/h2&gt;
+
+&lt;p&gt;It may seem early to start thinking about the holiday shopping season,
+but with the global supply chain suffering pandemic-related slowdowns,
+there’s no telling how long it will take to get something you order
+today. Apple has generally done a good job of managing its supply chain
+issues, but even still, if you want to make sure you have an Apple
+something for that special someone, we recommend buying it soon. Here
+are our recommendations.&lt;/p&gt;
+
+&lt;h3 id=&quot;airtag&quot;&gt;AirTag&lt;/h3&gt;
+
+&lt;p&gt;Do you know someone who’s always misplacing their keys, purse, or
+backpack? Apple’s new &lt;a href=&quot;https://www.apple.com/airtag/&quot;&gt;AirTag&lt;/a&gt;
+tracker is the perfect gift for such a person. Attach one to a keyring
+(with a separate $29 &lt;a href=&quot;https://www.apple.com/shop/product/MLYY3ZM/A/airtag-loop-pink-citrus&quot;&gt;AirTag
+Loop&lt;/a&gt;
+or $39 &lt;a href=&quot;https://www.apple.com/shop/product/MM043ZM/A/airtag-leather-loop-baltic-blue&quot;&gt;AirTag Leather
+Loop&lt;/a&gt;)
+or drop it in a bag, and from then on, the person can use the Find My
+app to see where they left their stuff. Support for ultra-wideband
+enables precision finding with an iPhone 11 or later—with earlier
+iPhones, the detected location won’t be quite so precise. AirTag uses
+the Find My network, so even if the item is far away, passing Apple
+devices that detect it can securely share its location with you. One
+AirTag costs $29, or you can get a pack of four for $99. You can even
+have Apple personalize each AirTag with custom text and emoji.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Th/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;airpods-and-airpods-pro&quot;&gt;AirPods and AirPods Pro&lt;/h3&gt;
+
+&lt;p&gt;Apple’s wireless earbuds remain popular, and the company just released
+the &lt;a href=&quot;https://www.apple.com/airpods-3rd-generation/&quot;&gt;third-generation
+AirPods&lt;/a&gt; to
+supplement the &lt;a href=&quot;https://www.apple.com/airpods-2nd-generation/&quot;&gt;second-generation
+AirPods&lt;/a&gt; and the
+&lt;a href=&quot;https://www.apple.com/airpods-pro/&quot;&gt;AirPods Pro&lt;/a&gt;. All three make
+excellent gifts. The second-generation AirPods cost $129, have a
+relatively long stalk, and boast up to 5 hours of listening on one
+charge. The $179 third-generation AirPods shrink the stalk, switch to a
+force sensor for controls, add support for spatial audio with dynamic
+head tracking, feature sweat and water resistance, have a MagSafe
+wireless charging case, and last up to 6 hours on a single charge. For
+$249, the AirPods Pro include the features of the third-generation
+AirPods and add silicone ear tips and active noise cancellation with
+optional transparency mode, but they have only 4.5 hours of listening
+time. All three have charging cases, support Hey Siri commands, and
+automatically switch between Apple devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Th/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;homepod-mini&quot;&gt;HomePod mini&lt;/h3&gt;
+
+&lt;p&gt;Earlier this year, Apple discontinued the full-size HomePod, which
+wasn’t a big hit at its relatively high price of $299. However, the
+$99 &lt;a href=&quot;https://www.apple.com/homepod-mini/&quot;&gt;HomePod mini&lt;/a&gt; remains
+available, and Apple is now selling it in five colors, with blue,
+orange, and yellow joining white and black. (The new colors will become
+available at some point in November.) The grapefruit-sized HomePod mini
+may be small, but it produces great sound for its size, and it can do
+pretty much everything the larger HomePod could do. You can control it
+entirely via Siri, pair two for stereo sound, use it as a hub for your
+HomeKit home automation accessories, and even have it play the sound
+from your Apple TV. Put a HomePod mini in different rooms in the house,
+and you can use Intercom to communicate with family members using your
+voice. If you’re giving it as a gift, remember that it’s best when
+paired with an &lt;a href=&quot;https://www.apple.com/apple-music/&quot;&gt;Apple Music&lt;/a&gt;
+subscription.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Th/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ipad-and-ipad-mini&quot;&gt;iPad and iPad mini&lt;/h3&gt;
+
+&lt;p&gt;If you’re looking to give an iPad as a gift, you have a lot of choice.
+The top-of-the-line &lt;a href=&quot;https://www.apple.com/ipad-pro/&quot;&gt;iPad Pro&lt;/a&gt;
+may be overkill for most given its power and price—$799 for the
+11-inch model and $1099 for the 12.9-inch model. But the
+fourth-generation &lt;a href=&quot;https://www.apple.com/ipad-air/&quot;&gt;iPad Air&lt;/a&gt;,
+which starts at $599, provides sufficient power for even the most
+intensive tasks, especially when coupled with a second-generation
+&lt;a href=&quot;https://www.apple.com/apple-pencil/&quot;&gt;Apple Pencil&lt;/a&gt; ($129) and
+either a &lt;a href=&quot;https://www.apple.com/ipad-keyboards/&quot;&gt;Magic Keyboard&lt;/a&gt;
+($299) or &lt;a href=&quot;https://www.apple.com/ipad-keyboards/&quot;&gt;Smart Keyboard
+Folio&lt;/a&gt; ($179).&lt;/p&gt;
+
+&lt;p&gt;If those possibilities seem pricey for an iPad that’s destined for a kid
+or an adult with basic needs, look no further than the new
+ninth-generation &lt;a href=&quot;https://www.apple.com/ipad-10.2/&quot;&gt;iPad&lt;/a&gt;, which
+remains a bargain at $329. It works with the first-generation &lt;a href=&quot;https://www.apple.com/apple-pencil/&quot;&gt;Apple
+Pencil&lt;/a&gt; ($99), and those who
+need to write can add the $159 &lt;a href=&quot;https://www.apple.com/ipad-keyboards/&quot;&gt;Smart
+Keyboard&lt;/a&gt;. Finally, don’t
+forget the sixth-generation &lt;a href=&quot;https://www.apple.com/ipad-mini/&quot;&gt;iPad
+mini&lt;/a&gt;, which benefited from a
+major redesign back in September. It’s now more like a diminutive
+version of the iPad Air, with more colors and a squared-off industrial
+design compatible with the second-generation Apple Pencil. It’s $499,
+and if you need a keyboard, you’ll have to look to a third-party
+manufacturer or use a standard Bluetooth wireless keyboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Th/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;apple-watch-gift-certificate&quot;&gt;Apple Watch Gift Certificate&lt;/h3&gt;
+
+&lt;p&gt;Last but far from least, we love the &lt;a href=&quot;https://www.apple.com/watch/&quot;&gt;Apple
+Watch&lt;/a&gt;, and it would seem to make a
+great gift. However, we urge caution. Apple provides a dizzying number
+of options for case size, material, and color, plus the band and color,
+making it difficult to know what would be most appreciated. So we’d
+encourage giving a certificate that’s good for a conversation about what
+to purchase. Then sit down with the recipient to run through all the
+decisions in the &lt;a href=&quot;https://www.apple.com/shop/studio&quot;&gt;Apple Watch
+Studio&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;There are three options this year: the new &lt;a href=&quot;https://www.apple.com/apple-watch-series-6/&quot;&gt;Apple Watch Series
+7&lt;/a&gt; (starting at
+$399), last year’s less expensive &lt;a href=&quot;https://www.apple.com/apple-watch-se/&quot;&gt;Apple Watch
+SE&lt;/a&gt; (starting at $279), or
+the much older &lt;a href=&quot;https://www.apple.com/apple-watch-series-3/&quot;&gt;Apple Watch Series
+3&lt;/a&gt; (starting at
+$199). Get the Series 7 if you want an Always-On Display, blood oxygen
+sensor, and ECG capabilities—it also boasts a larger screen than last
+year’s Series 6 while remaining compatible with all the bands. The Apple
+Watch SE lacks the Series 7’s advanced sensors and has a slightly
+smaller screen size, but it still provides the compass, altimeter, and
+fall detection features. The screen on the Series 3 is smaller yet, and
+it lacks a number of key features. Unless keeping the cost to a minimum
+is essential, we have a hard time recommending the Series 3—it’s
+getting too old. Apple has a &lt;a href=&quot;https://www.apple.com/watch/compare/&quot;&gt;helpful comparison
+tool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Th/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You may have noticed that we didn’t include any Macs in this article.
+They are worthy gifts, but they’re quite a bit more expensive and more
+difficult to select without extensive discussion of the recipient’s
+needs. Let us know if you need help choosing the right Mac for someone
+on your list, but we’re partial to the M1-based &lt;a href=&quot;https://www.apple.com/macbook-air/&quot;&gt;MacBook
+Air&lt;/a&gt; and &lt;a href=&quot;https://www.apple.com/imac-24/&quot;&gt;24-inch
+iMac&lt;/a&gt; for many users.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">The Best Apple-Related Gifts for 2021</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</title><link href="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/" rel="alternate" type="text/html" title="With Apple Watch Faces, Too Much Choice Can Be Confusing" /><published>2021-11-02T00:00:00-04:00</published><updated>2021-11-02T00:00:00-04:00</updated><id>https://grovetech.co/blog/With-Apple-Watch-Faces,-Too-Much-Choice-Can-Be-Confusing.docx</id><content type="html" xml:base="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/">&lt;h2 id=&quot;with-apple-watch-faces-too-much-choice-can-be-confusing&quot;&gt;With Apple Watch Faces, Too Much Choice Can Be Confusing&lt;/h2&gt;
+
+&lt;p&gt;The Apple Watch has a lot to offer older people, including heart rate
+monitoring, atrial fibrillation detection, fall detection, and
+electrocardiogram recording. But if you are—or are helping someone who
+is—of the generation where watches once did nothing beyond telling the
+time, too many options can be overwhelming. Adding to the confusion is
+how easy it is to create and accidentally swipe between multiple watch
+faces, making it so the Apple Watch suddenly looks and works completely
+differently. If that’s an issue, use the Watch app to delete all but the
+preferred watch face. In Watch &amp;gt; My Watch, tap Edit to the right of My
+Faces ➊, tap the red delete button next to a face ➋, and then tap Remove
+➌.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Wi/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPadOS Multitasking</title><link href="https://grovetech.co/blog/ipados-multitasking/" rel="alternate" type="text/html" title="iPadOS Multitasking" /><published>2021-10-28T00:00:00-04:00</published><updated>2021-10-28T00:00:00-04:00</updated><id>https://grovetech.co/blog/iPadOS-Multitasking.docx</id><content type="html" xml:base="https://grovetech.co/blog/ipados-multitasking/">&lt;h2 id=&quot;apple-radically-improved-multitasking-in-ipados-15-heres-how-to-use-it&quot;&gt;Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It&lt;/h2&gt;
+
+&lt;p&gt;Multitasking has long been a mess on the iPad, not so much because it
+didn’t work but because it was tough to memorize the secret swipes
+necessary to put multiple apps into Split View, work with multiple
+windows in apps that supported them, and hide and show what you wanted
+in Slide Over. In iPadOS 15, Apple hasn’t changed the underlying
+multitasking capabilities much, but it has made them far more
+discoverable with onscreen controls and tips that supplement the
+previous gestures.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-multitasking-menu&quot;&gt;Use the Multitasking Menu&lt;/h3&gt;
+
+&lt;p&gt;Most important is the new multitasking menu button that appears in the
+top center of every app, represented by •••. Tap it to reveal a control
+with three options—Full Screen, Split View, and Slide Over—and then
+tap one of those to put the current app into that mode. From left:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Full Screen:&lt;/strong&gt; When only a single app is showing, the leftmost
+button is selected. When you have an app in Split View or Slide
+Over, tap the Full Screen button to make that app the only one
+onscreen.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Split View:&lt;/strong&gt; Tap the middle button to shove the current app to
+the left edge of the screen, revealing the Home screen and the Dock.
+A little lozenge replaces the multitasking menu, telling you that
+you’re working with Split View and to choose another app. Tap any
+other app to open it (on the right side) with the current app (on
+the left side), and remember that you can resize each app using the
+handle on the black bar in the middle.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Slide Over:&lt;/strong&gt; In the current app window, tap the rightmost button
+to push the app to the side of the screen, again revealing the Home
+screen and the Dock and showing a lozenge that tells you that you’re
+working with Slide Over and to choose another app. Tap any other to
+open it full screen but with the current app floating above it in
+Slide Over mode, and remember that you can hide the Slide Over app
+easily by swiping it to the right.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;use-the-app-switcher&quot;&gt;Use the App Switcher&lt;/h3&gt;
+
+&lt;p&gt;Apple also made it much easier to see and manage your Split View
+combinations by using the App Switcher. Once you go into it by swiping
+up from the bottom of the screen (or double-pressing the Home button, if
+your iPad has one), you have several multitasking-related options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Switch among apps:&lt;/strong&gt; Tap any app, Split View combination, or Slide
+Over app (located on the right side of the App Switcher) to switch
+to it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Make a Split View:&lt;/strong&gt; Drag any app or window onto another one to
+combine them into a Split View (as is shown with Drive and Docs
+below). Before you start to drag, pause for a moment to pick up the
+app; drag until the items turn into icon-emblazoned gray rectangles.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Replace a Split View app:&lt;/strong&gt; Drag any app or window onto the left
+or right side of a Split View combination to replace that app or
+window.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Break a Split View combination:&lt;/strong&gt; Drag the left or right side of a
+Split View combination off until it displays as a full-screen
+thumbnail.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the screenshot above, note the red arrow pointing to the little
+stacked square icons above the Safari Split View windows. Those indicate
+that the app in question has multiple windows. Tap the icon to display
+just that app’s windows in the App Switcher.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-shelf&quot;&gt;Use the Shelf&lt;/h3&gt;
+
+&lt;p&gt;The App Switcher may make it easier to see and switch among multiple
+windows in apps, but another new multitasking feature, the Shelf, is
+even more useful. When you use the Dock or a search to open an app with
+multiple windows available, the Shelf displays them all at the bottom of
+the screen. The Shelf doesn’t appear when you switch to an app using the
+App Switcher or four-finger swipe, but you can bring it up at any time
+by tapping the multitasking menu button at the top of the screen.&lt;/p&gt;
+
+&lt;p&gt;When you’re looking at items on the Shelf, tap one to switch to it. You
+can also swipe up on windows on the Shelf to close them. As soon as you
+tap anywhere else in the app to start working, the Shelf disappears.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;use-center-windows&quot;&gt;Use Center Windows&lt;/h3&gt;
+
+&lt;p&gt;In at least some apps with sidebars, such as Mail and Notes, you can now
+open an item like a message or a note in its own window in the center of
+the screen. That’s useful for previewing the full content of the item,
+and you can swipe down on the multitasking menu button to put the window
+on the Shelf, which keeps it available for quick reference while you
+work on something else. To create a center window, touch and hold the
+item in the sidebar and then tap Open in New Window. To close it, tap
+Close or swipe up on its Shelf thumbnail.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image8.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;use-the-multitasking-keyboard-shortcuts&quot;&gt;Use the Multitasking Keyboard Shortcuts&lt;/h3&gt;
+
+&lt;p&gt;If you’re seriously interested in using multitasking on an iPad, you’re
+probably also working with a physical keyboard much of the time. In
+iPadOS 15, Apple added a useful set of keyboard shortcuts that you can
+learn about by pressing and holding the Globe key and then tapping the
+Multitasking tab at the bottom. It may take a little while to
+internalize the shortcuts, but if you do most of your work on an iPad,
+you will probably find the effort worthwhile.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image9.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you like the idea of multitasking on the iPad but have never been
+able to remember all the necessary gestures, iPadOS 15’s changes will be
+welcome. Give them a try—we think they finally make multitasking
+obvious enough for everyone.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPhone 13 Upgrade Quick Start</title><link href="https://grovetech.co/blog/iphone-upgrade-quick-start/" rel="alternate" type="text/html" title="iPhone 13 Upgrade Quick Start" /><published>2021-10-26T00:00:00-04:00</published><updated>2021-10-26T00:00:00-04:00</updated><id>https://grovetech.co/blog/iPhone-upgrade-Quick-Start.docx</id><content type="html" xml:base="https://grovetech.co/blog/iphone-upgrade-quick-start/">&lt;h2 id=&quot;when-migrating-to-a-new-iphone-or-ipad-try-quick-start-first&quot;&gt;When Migrating to a New iPhone or iPad, Try Quick Start First&lt;/h2&gt;
+
+&lt;p&gt;You have a new iPhone or iPad—congratulations! When transferring your
+data to the new device, you have three options: &lt;a href=&quot;https://support.apple.com/en-us/HT210216&quot;&gt;Quick
+Start&lt;/a&gt;, an &lt;a href=&quot;https://support.apple.com/en-us/HT204184&quot;&gt;iCloud
+backup&lt;/a&gt;, or a &lt;a href=&quot;https://support.apple.com/en-us/HT204184&quot;&gt;Mac
+backup&lt;/a&gt;. All will work,
+but they don’t quite provide the same end result (particularly if you
+didn’t encrypt your Mac backup). Our advice—backed by &lt;a href=&quot;https://daringfireball.net/linked/2021/09/24/how-to-set-up-a-new-iphone-or-ipad&quot;&gt;this post from
+Apple expert John
+Gruber&lt;/a&gt;—is
+to try Quick Start first because it transfers everything directly from
+your old device to your new one, maintaining app logins in most cases
+and allowing you to transfer your Apple Watch pairing. It may seem like
+it’s taking a long time before you can use the device, but it’s worth it
+to avoid logging in to numerous apps and unpairing and repairing your
+Apple Watch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">When Migrating to a New iPhone or iPad, Try Quick Start First</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iMessages not delivered</title><link href="https://grovetech.co/blog/imessages-not-delivered/" rel="alternate" type="text/html" title="iMessages not delivered" /><published>2021-10-21T00:00:00-04:00</published><updated>2021-10-21T00:00:00-04:00</updated><id>https://grovetech.co/blog/iMessages-not-delivered.docx</id><content type="html" xml:base="https://grovetech.co/blog/imessages-not-delivered/">&lt;h2 id=&quot;messages-not-being-delivered-to-blue-bubble-friends-check-cellular-data&quot;&gt;Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data&lt;/h2&gt;
+
+&lt;p&gt;Here’s a tricky situation that threw one of our clients for a loop
+recently. Texts they sent in Messages via iMessage (indicated by blue
+bubbles) to their son, letting him know they were stopping by weren’t
+being delivered, making their visits a surprise. But other texts worked
+fine. The problem, it turned out, was that Cellular Data had somehow
+gotten turned off in Settings &amp;gt; Cellular. So messages worked fine as
+long as the iPhone was on Wi-Fi at home, but as soon as they were on the
+road using a cellular connection, the iPhone could no longer communicate
+with the Internet. In theory, Messages should fall back to SMS
+(indicated by green bubbles), which doesn’t require cellular data, but
+that doesn’t always happen. The fix? Just enable Settings &amp;gt; Cellular &amp;gt;
+Cellular Data again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iM/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros</title><link href="https://grovetech.co/blog/new-macbooks/" rel="alternate" type="text/html" title="New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros" /><published>2021-10-19T00:00:00-04:00</published><updated>2021-10-19T00:00:00-04:00</updated><id>https://grovetech.co/blog/New-MacBooks.docx</id><content type="html" xml:base="https://grovetech.co/blog/new-macbooks/">&lt;p&gt;Last year, Apple started to transition Macs away from Intel processors
+to its custom M1 system-on-a-chip. The M1’s performance is stellar, but
+Apple has used it only in low-end models so far: the MacBook Air,
+13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals
+looking for more power, Apple unveiled the future of high-end Macs at
+its October 18th
+&lt;a href=&quot;https://www.apple.com/apple-events/october-2021/&quot;&gt;Unleashed&lt;/a&gt;
+event.&lt;/p&gt;
+
+&lt;p&gt;Two new chips—the M1 Pro and M1 Max—increase performance
+significantly beyond the M1, and Apple built them into new 14-inch and
+16-inch MacBook Pro models along with features that respond to
+criticisms of previous models. Welcome as these new MacBook Pros are,
+many people were also hoping to see an Apple silicon refresh of the
+popular 27-inch iMac. That didn’t happen, but Apple released several
+other music-related products and services at the event.&lt;/p&gt;
+
+&lt;h3 id=&quot;airpods-homepod-mini-apple-music-and-monterey-announcements&quot;&gt;AirPods, HomePod mini, Apple Music, and Monterey Announcements&lt;/h3&gt;
+
+&lt;p&gt;In a quick set of announcements at the start of its event, Apple
+revealed an update to the popular AirPods, new colors of the HomePod
+mini, and a budget pricing tier for Apple Music. Plus, press releases
+revealed the ship date for macOS 12 Monterey.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Third-generation AirPods:&lt;/strong&gt; Building on the success of the classic
+AirPods and AirPods Pro, Apple redesigned the &lt;a href=&quot;https://www.apple.com/airpods-3rd-generation/&quot;&gt;third-generation
+AirPods&lt;/a&gt; to
+have shorter mic stalks, force sensor controls, support for spatial
+audio, Adaptive EQ, longer battery life, wireless case charging, and
+sweat and water resistance. They cost $179; the second-generation
+AirPods remain available for $129.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;New HomePod mini colors:&lt;/strong&gt; Looking to coordinate your electronics
+with your decor? In November, the $99 &lt;a href=&quot;https://www.apple.com/homepod-mini/&quot;&gt;HomePod
+mini&lt;/a&gt; will be available
+in blue, orange, and yellow, as well as the traditional black and
+white.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Apple Music Voice Plan:&lt;/strong&gt; A new $4.99-per-month &lt;a href=&quot;https://www.apple.com/apple-music/&quot;&gt;Apple Music
+Voice Plan&lt;/a&gt; reduces the
+cost of Apple Music for those who interact with the streaming
+service largely through Siri, but it lacks lyrics, music videos,
+spatial and lossless audio, and support for non-Apple devices.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;macOS 12 Monterey release date:&lt;/strong&gt; Hidden in the fine print in
+Apple’s press releases was the fact that &lt;a href=&quot;https://www.apple.com/macos/monterey/&quot;&gt;macOS 12
+Monterey&lt;/a&gt;—along with
+iOS 15.1, iPadOS 15.1, watchOS 8.1, and tvOS 15.1—will become
+available on October 25th. We strongly recommend that you do not
+upgrade to Monterey until we give the go-ahead. If you’ve already
+upgraded to the other new operating systems, it should be safe to
+install those updates a week or two after release.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;new-14-inch-and-16-inch-macbook-pros-answer-customer-desires&quot;&gt;New 14-inch and 16-inch MacBook Pros Answer Customer Desires&lt;/h3&gt;
+
+&lt;p&gt;Apple’s professional &lt;a href=&quot;https://www.apple.com/macbook-pro/&quot;&gt;MacBook
+Pro&lt;/a&gt; has been a workhorse of
+the Mac lineup for years, offering high-end performance in a portable
+package. Since 2016, however, customers have expressed irritation at
+Apple’s removal of ports other than Thunderbolt 3, the loss of MagSafe
+magnetic charging, and the Touch Bar replacing traditional F-keys.
+Here’s how the new MacBook Pros respond to those concerns.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ports:&lt;/strong&gt; Previously, the MacBook Pro had just four Thunderbolt 3
+ports, forcing users to carry dongles to connect to legacy devices.
+The new models still lack USB-A ports but supplement three
+Thunderbolt 4 ports with an HDMI port for video, an SDXC card slot
+for camera media, and a headphone jack.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;MagSafe:&lt;/strong&gt; Although you can charge using the Thunderbolt 4 ports,
+most people will rely on the dedicated MagSafe 3 charging port. The
+MacBook Pros (apart from the low-end 14-inch model) include powerful
+chargers and a USB-C to MagSafe 3 charging cable capable of
+fast-charging the devices. They should also provide longer battery
+life than previous models.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;F-keys with Touch ID:&lt;/strong&gt; The Touch Bar hasn’t been a success, never
+migrating to any other Mac models and eliciting tepid support from
+developers. With these new MacBook Pros, Apple has reversed course,
+replacing the Touch Bar with traditional F-keys. A Touch ID sensor
+remains available for authentication at the top-right corner of the
+keyboard.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although Apple did equip the 13-inch MacBook Pro with an M1 chip in
+November 2020, it wasn’t notably faster than the cheaper but largely
+comparable M1-based MacBook Air. We suspect no one will be complaining
+about the performance of the new 14-inch and 16-inch models thanks to
+the addition of Apple’s just-released M1 Pro and M1 Max chips.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;M1:&lt;/strong&gt; For reference, last year’s M1 chip—widely acclaimed for
+providing excellent performance—offers an 8-core CPU with four
+performance and four efficiency cores, a 7-core or 8-core GPU, and
+either 8 GB or 16 GB of unified memory.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;M1 Pro:&lt;/strong&gt; The M1 Pro offers up to 1.7 times the performance of the
+M1 thanks to a 10-core CPU that has eight performance and two
+efficiency cores. Plus, its 16-core GPU is up to twice as fast as
+the M1. The M1 Pro provides either 16 GB or 32 GB of unified memory,
+and it increases the memory bandwidth by nearly three times, up to
+200 gigabytes per second (GBps). To provide lower price points for
+14-inch MacBook Pro configurations, Apple offers versions of the M1
+Pro with an 8-core CPU (six performance and two efficiency cores) or
+a 14-core GPU.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;M1 Max:&lt;/strong&gt; The M1 Max has the same 10-core CPU as the M1 Pro but
+provides a massive 32-core GPU with up to four times the performance
+of the M1. The largest chip Apple has ever made, the M1 Max offers
+either 32 GB or 64 GB of memory, and it doubles the M1 Pro’s memory
+bandwidth to 400 GBps, nearly six times faster than the M1. A
+lower-cost M1 Max configuration has a 24-core GPU.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both the M1 Pro and M1 Max feature an Apple-designed media engine that
+accelerates video processing while maximizing battery life. Both also
+have dedicated acceleration for the ProRes professional video codec for
+working with 4K and 8K video. The M1 Max doubles the M1 Pro’s
+performance for video encoding and provides two ProRes accelerators. In
+other words, if you’re working with video, these new Macs are going to
+scream, particularly with an M1 Max.&lt;/p&gt;
+
+&lt;p&gt;Apple didn’t stop after radically improving performance and bringing
+back beloved features. The new MacBook Pros feature new Liquid Retina
+XDR displays based on technology used in the latest iPad Pro models.&lt;/p&gt;
+
+&lt;p&gt;Most notably, for those who need more screen space than the 13-inch
+MacBook Pro can provide, the new MacBook Pro models have higher
+resolution displays. The 14-inch screen has a 3024-by-1964 native
+resolution that’s slightly larger than the previous 16-inch MacBook Pro
+(3072‑by‑1920), and the new 16-inch model offers even more pixels with a
+3456-by-2234 resolution. The new displays are more than twice as bright
+as the previous models, and they support ProMotion, which adjusts the
+screen refresh rate (and thus power consumption) to match the needs of
+the onscreen content.&lt;/p&gt;
+
+&lt;p&gt;On the downside, Apple brought the new displays so close to the case
+edges that the new 1080p FaceTime HD camera (better videoconferencing
+quality but no Center Stage support) lives in an iPhone-like notch that
+cuts the Mac menu bar in half. Full-screen apps can avoid the notch.
+Although the notch isn’t ideal, iPhone users seldom notice it after a
+short while, and we expect the same will be true here.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image8.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The only other negative for the new 14-inch and 16-inch MacBook Pro
+models is weight. They’re both about 0.4 pounds (0.18 kg) heavier than
+the models they replace, at 3.5 pounds (1.6 kg) for the 14-inch model
+and 4.7 or 4.8 pounds (2.1 or 2.2 kg) for the 16-inch model—the M1 Max
+configurations are a bit heavier.&lt;/p&gt;
+
+&lt;p&gt;Despite the notch and the weight, these are impressive new entries in
+the Mac lineup, and we anticipate they’ll be well-received by users who
+are happy to pay more for top-of-the-line machines. The 14-inch MacBook
+Pro starts at $1999 and the 16-inch model at $2499. Numerous options
+are available, so you can choose an M1 Pro or M1 Max for either size,
+and pick from 16 GB, 32 GB, and 64 GB unified memory configurations.
+When it comes to storage (which Apple says is also more than twice as
+fast as previous SSDs), your choices are 512 GB, 1 TB, 2 TB, 4 TB, and 8
+TB. Beware that the 8 TB SSD will cost you $2400.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image9.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can’t make informed recommendations about what options you should
+choose until users start testing their real-world workflows against the
+M1 Pro and M1 Max and see how much memory is really necessary. For now,
+let your budget be your guide, and aim for an M1 Max if you work with
+video. You can place orders with Apple now, but be warned that global
+supply chain issues may mean waiting for some configurations.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Last year, Apple started to transition Macs away from Intel processors to its custom M1 system-on-a-chip. The M1’s performance is stellar, but Apple has used it only in low-end models so far: the MacBook Air, 13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals looking for more power, Apple unveiled the future of high-end Macs at its October 18th Unleashed event.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Safari 15</title><link href="https://grovetech.co/blog/safari/" rel="alternate" type="text/html" title="Safari 15" /><published>2021-10-18T00:00:00-04:00</published><updated>2021-10-18T00:00:00-04:00</updated><id>https://grovetech.co/blog/Safari.docx</id><content type="html" xml:base="https://grovetech.co/blog/safari/">&lt;h2 id=&quot;new-features-to-try-or-not-in-safari-15&quot;&gt;New Features to Try (Or Not) in Safari 15&lt;/h2&gt;
+
+&lt;p&gt;Along with a new version of Safari in iOS 15 and iPadOS 15, Apple has
+released Safari 15 for macOS 11 Big Sur and macOS 10.15 Catalina. Why do
+this before macOS 12 Monterey ships? Some of the browser’s new
+capabilities—notably the Tab Groups feature—integrate it more deeply
+into your Apple device experience by syncing across devices. So,
+assuming you have Safari 15 on at least some of your devices, what’s
+new, and is it any good?&lt;/p&gt;
+
+&lt;h3 id=&quot;new-tab-bar-interface&quot;&gt;New Tab Bar Interface&lt;/h3&gt;
+
+&lt;p&gt;For Safari 15, Apple tried to minimize the tab bar interface to occupy
+less screen real estate and stand out less from the content of Web pages
+by co-opting the color of each page. Early betas were met with a litany
+of complaints from testers, and Apple pulled back in the eventual
+releases, offering settings that let you retain the old interface. How
+that plays out varies between the iPhone, iPad, and Mac:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;iPhone:&lt;/strong&gt; Apple combined the address bar and tab bar into a single
+set of controls at the bottom of the screen, where they’re easier to
+reach with your thumb while working one-handed and where you can
+swipe left and right to switch tabs. Plus, the status bar area at
+the top of the screen takes on the color from the current site,
+which isn’t necessarily a visual win. This is a huge change from the
+controls appearing at the top, so if you don’t like it, go to
+Settings &amp;gt; Safari and switch from Tab Bar (below left) to Single Tab
+(below right). Turn off Allow Website Tinting (also below right) if
+you don’t like the colorizing.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;iPad:&lt;/strong&gt; Displays on the iPad are relatively small, so saving some
+vertical space with the new Compact Tab Bar could be helpful.
+However, since the tab bar automatically minimizes when you scroll
+down a page, reducing its size when it’s visible isn’t as much of a
+win as it might seem. And the colorized tab bar can be shockingly
+bright. In Settings &amp;gt; Safari, you can choose between Compact Tab Bar
+(below top) and Separate Tab Bar (below bottom); either way,
+consider disabling Show Color in Tab Bar.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Laptop screens aren’t huge, and Safari doesn’t minimize its
+tab bar when you scroll, as it does on the iPhone and iPad, so
+saving some vertical space might be welcome on a smaller screen. But
+the way the Compact layout embeds the address field inside a tab and
+reduces the number of buttons you can see may perturb you (below
+top). Once again, the colorized tab bar can be glaring. To revert to
+something closer to the old look, in Safari &amp;gt; Preferences &amp;gt; Tabs,
+select Separate for the tab layout (below bottom), and disable Show
+Color in Tab Bar to keep the controls gray regardless of the site
+color.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image4.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;voice-search&quot;&gt;Voice Search&lt;/h3&gt;
+
+&lt;p&gt;For many searches, it’s easier to speak than type, and Apple has made
+doing that even faster with Voice Search on the iPhone and iPad. Tap the
+current tab to display the address field, tap the microphone button, and
+speak instead of typing. As soon as you stop, Safari performs the
+search. You can even navigate directly to a site by speaking its URL,
+like “apple dot com.” Sadly, Apple didn’t extend this feature to the Mac
+version of Safari 15.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tab-switcher&quot;&gt;Tab Switcher&lt;/h3&gt;
+
+&lt;p&gt;In iOS 14 and earlier, Safari used a card stack metaphor for its tab
+switcher (below left), which could make it hard to see what each tab
+contained. In Safari in iOS 15, Apple took a cue from the iPad and Mac
+versions of the app and moved to a grid interface for the tab switcher
+(below right). You can drag the tab thumbnails around to organize them
+and remove them by tapping an X button (weirdly located in the
+upper-right corner) or swiping them left off-screen. You can also bring
+up the option to close all open tabs by pressing and holding Done at the
+lower right corner of the screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;tab-groups&quot;&gt;Tab Groups&lt;/h3&gt;
+
+&lt;p&gt;If you struggle under the cognitive load of dozens of unrelated tabs,
+the new Tab Groups feature might help. With it, you can collect tabs
+into as many groups as you like and switch among them. You work with tab
+groups in either the tab switcher interface (iPhone and iPad with the
+Separate Tab Bar) or the sidebar (Mac and iPad with the Compact Tab
+Bar).&lt;/p&gt;
+
+&lt;p&gt;To open the tab switcher on the iPhone, tap the tab button in the lower-right corner of the
+screen; on the iPad, tap the different-looking tab button in the upper-right corner. Once
+you have the tab switcher open, tap X Tabs to reveal the Tab Groups
+menu. To show the sidebar on either the iPad or the Mac, tap or click
+the sidebar button in the upper-left corner of the
+tab bar.&lt;/p&gt;
+
+&lt;p&gt;Once you have the Tab Groups menu or sidebar showing:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To create a new tab group on the iPhone’s or iPad’s Tab Groups menu,
+tap New Empty Tab Group, name it, and tap Save. In the sidebar on a
+Mac or iPad, use the New Tab Group button at the top (or choose File &amp;gt;
+New Empty Tab Group on the Mac). You can also use New Tab Group from
+X Tabs to create a tab group from currently open tabs.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To switch to a different tab group, tap it in the Tab Groups menu on
+an iPhone or iPad, or access it from the sidebar on a Mac or iPad.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;To delete a tab group, swipe left on it in the Tab Groups menu or
+sidebar to reveal a delete icon on an iPhone or iPad; on the Mac,
+Control-click it and choose Delete.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image11.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;shared-with-you&quot;&gt;Shared with You&lt;/h3&gt;
+
+&lt;p&gt;Ever gone spelunking through Messages to find a link someone sent you?
+Safari 15’s new Shared with You feature should help. It automatically
+collects all Web pages you receive in Messages into a new Shared with
+You section of the Safari start page. On the iPad and Mac, there’s also
+a Shared with You item in the sidebar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image12.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;customizable-start-page&quot;&gt;Customizable Start Page&lt;/h3&gt;
+
+&lt;p&gt;Speaking of the start page, if you want to customize which headings
+appear and in what order, you can now do that on the iPhone and iPad.
+(Choosing which headings appear has long been possible on the Mac by
+clicking the little settings button in the lower-right corner, but
+reordering isn’t possible there.)&lt;/p&gt;
+
+&lt;p&gt;Create a new tab to view the start page, scroll to the bottom, and tap
+Edit. Then disable any headings you don’t want to see and drag the
+remaining ones into your desired order. You can also choose among
+several Apple-provided background images and have your start page
+settings sync to your other devices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image13.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;other-stuff&quot;&gt;Other Stuff&lt;/h3&gt;
+
+&lt;p&gt;Two final new features may be welcome but probably won’t rock your
+world:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Pull to refresh:&lt;/strong&gt; If you need to reload a Web page on the iPhone
+or iPad, either you can tap the reload button in the address field
+if it’s visible with your tab bar settings, or you can now just pull
+down with your finger from the top of a page.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;HTTPS upgrade:&lt;/strong&gt; If you visit a website that supports encrypted
+HTTPS but is also loading insecure content over unencrypted HTTP,
+Safari will now ensure that you connect to it over HTTPS so your
+entire connection is secure.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There you have it! Check out the new features in Safari 15 and let them
+improve your browsing experience.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">New Features to Try (Or Not) in Safari 15</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-SafariiOS.png" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-SafariiOS.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Forget Wi-Fi Networks</title><link href="https://grovetech.co/blog/forget-wi-fi-networks/" rel="alternate" type="text/html" title="Forget Wi-Fi Networks" /><published>2021-10-14T00:00:00-04:00</published><updated>2021-10-14T00:00:00-04:00</updated><id>https://grovetech.co/blog/Forget-Wi-Fi-Networks.docx</id><content type="html" xml:base="https://grovetech.co/blog/forget-wi-fi-networks/">&lt;h2 id=&quot;when-it-comes-to-wi-fi-networks-sometimes-its-better-to-forget&quot;&gt;When It Comes to Wi-Fi Networks, Sometimes It’s Better to Forget&lt;/h2&gt;
+
+&lt;p&gt;It’s easy, particularly when traveling, to end up connecting to a Wi-Fi
+network that doesn’t provide Internet access, requires credentials you
+don’t have, or lacks access to the network’s printer. Unfortunately,
+once your iPhone, iPad, or Mac has connected to such a network, it may
+reconnect to it later, causing consternation when things don’t work. The
+solution? Whenever you realize a Wi-Fi network is worthless, forget it.
+(The network, that is.) On the Mac, open System Preferences &amp;gt; Network &amp;gt; Wi-Fi &amp;gt; Advanced &amp;gt; Wi-Fi, select the network in the list (you don’t
+have to be connected to it), click the – button, and click Remove. On
+an iPhone or iPad, when you’re connected to the offending network, go to
+Settings &amp;gt; Wi-Fi, tap the i button to the right of the current network,
+and tap Forget This Network on the next screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Fo/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">When It Comes to Wi-Fi Networks, Sometimes It’s Better to Forget</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iOSWiFi.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iOSWiFi.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

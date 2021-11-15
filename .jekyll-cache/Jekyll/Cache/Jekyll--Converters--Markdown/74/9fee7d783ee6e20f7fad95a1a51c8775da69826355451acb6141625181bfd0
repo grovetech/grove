@@ -1,0 +1,92 @@
+I"�<p>Apple has made accessibility for differently abled people a cornerstone of iPhones and iDevices since 2007, and most of us never bother to explore these controls on our iPhone unless there is a specific need.</p>
+
+<p>Well one really useful Accessibility tool is the AssistiveTouch feature, if your iPhone power button stops working for example how can you restart the device or lock the screen?
+(hint the iPhone will turn on if it has switched itself off when you connect the charging cable).</p>
+
+<h2 id="enabling-assistivetouch">Enabling AssistiveTouch</h2>
+<p>Go To:
+Settings &gt; General &gt; Accessibility</p>
+
+<p>Then:
+Tap on “AssistiveTouch”</p>
+
+<p>Enable AssistiveTouch and a little box with a circle in it appears on the right-hand side.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image1.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>The AssistiveTouch button is pretty smart it even disappears when you take a screenshot with it on screen! That’s why we had to take a picture of the screen to show it to you!</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image1.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Once you’ve enabled AssistiveTouch tap on its button then Device &gt; More &gt; Restart</p>
+
+<p>To lock the screen, its Device &gt; Lock Screen</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image2.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image4.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image5.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>There is a treasure trove of controls that are now accessible via the AssistiveTouch button and often it is faster to use.</p>
+
+<p>You can customize the look and which controls are available in Settings &gt; General &gt; Accessibility &gt; AssistiveTouch</p>
+
+<p>Tap on Customize Top Level menu…</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image7.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Then you can set how many Icons show up on first tap:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image6.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Tap on the new empty icon with the + symbol in it and choose the control you want to add:</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image9.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>You can also change a default icon simply by tapping on the icon you want to change.</p>
+
+<p>If the AssistiveTouch button is in the way when using your device simply drag it to another edge 
+of the screen, the AssistiveTouch button will always stick to an edge!</p>
+
+<p>Most of the Accessibility tools can now be accessed from within the AssistiveTouch button, however here are some Accessibility tools that are not.</p>
+
+<h2 id="display-zoom">Display Zoom</h2>
+<p>iPhones come with beautiful retina displays and the content on them is nicely spaced to look great. However, when your eyes are tired the screen on your iPhone can make you squint.</p>
+
+<p>Simply go to:
+Settings &gt; Display &amp; Brightness
+Scroll down to View and tap on it</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image8.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Then set Display Zoom to “Zoomed’</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image12.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Now everything on the screen is slightly larger and easier to read.</p>
+
+<h2 id="speech">Speech</h2>
+<p>This feature is seldom used on iPhones but you may be aware of it on your Mac after all if you’ve been using Macs since the 90’s it was one of the first Star Trek esque features built right into your computer.</p>
+
+<p>To enable Text-To-Speech simply go to:
+General &gt; Accessibility &gt; Speech</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image10.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>I find the most useful is to enable Speak Selection which provides an extra button to the selection contextual menu.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image11.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image13.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>You can also use Highlight Content which will highlight the words as they are being spoken in a karaoke esque manner.</p>
+
+<p>It is worth tuning the “Speaking Rate” of the Speech setting depending on your intelligibility of the iOS voice.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/assistive/image14.png" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>Now you are aware of the usefulness of the Accessibility features in iOS I’m sure you will be exploring them in greater detail especially the ‘AssistiveTouch” button which has to be the most underused feature in iOS and is really useful and less invasive than the control center.</p>
+
+<p>Leave us a comment on how you use the Accessibility features and what features you would like Apple to develop in the future.</p>
+:ET

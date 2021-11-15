@@ -1,0 +1,161 @@
+I"�3<p>Theres no doubt that the security of our computers these days is a very sensitive topic. I have helped several of my clients protect their Mac systems by setting firmware passwords. But what if you have hundreds or thousands of computers you want to have a firmware password set on?</p>
+
+<p>What if you don’t have the luxury of a system like JAMF Pro or its predecesor the Casper Suite? Enter Munki, one of the most versatile, open source Mac Management tools. If your reading this you likely already have Munki. In this blog were going to walk through the approach of creating and deploying a package via Munki that can set or reset the firmware password on computers in your environment.</p>
+
+<h2 id="understanding-how-a-firmware-password-works">Understanding how a Firmware Password works</h2>
+<hr />
+
+<p>On 10.6.0 - 10.9.5 firmware passwords are managed by the binary application setregproptool. This binary only exists in the OS installer and on the Recovery Partition, it doesn’t actually exist in the OS natively. This is to ensure that the Firmware password cannot be reset unless you have booted into the recovery partition of either the OS or the OS Installer.</p>
+
+<p>You can however extract this binary and install it in order to use it to reset the password. This is the same method that JAMF uses in its casper suite and its the same method we will use with MUNKI.</p>
+
+<h2 id="extracting-the-binary">Extracting the Binary</h2>
+<hr />
+<p>Lets create a directory where we’ll store the binary, the scripts and the pkg</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">cd</span> <span class="p">;</span> <span class="nb">mkdir </span>firmwareInstaller <span class="p">;</span> <span class="nb">cd </span>firmwareInstaller
+bash-3.2<span class="nv">$ </span>diskutil mount Recovery<span class="se">\ </span>HD
+bash-3.2<span class="nv">$ </span>hdiutil attach <span class="nt">-quiet</span> /Volumes/Recovery<span class="se">\ </span>HD/com.apple.recovery.boot/BaseSystem.dmg
+bash-3.2<span class="nv">$ </span><span class="nb">cp</span> /Volumes/Mac<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Base<span class="se">\ </span>System/Applications/Utilities/Firmware<span class="se">\ </span>Password<span class="se">\ </span>Utility.app/Contents/Resources/setregproptool <span class="nb">.</span>
+bash-3.2<span class="nv">$ </span>hdiutil detach /Volumes/Mac<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Base<span class="se">\ </span>System/
+bash-3.2<span class="nv">$ </span>diskutil unmount Recovery<span class="se">\ </span>HD</code></pre></figure>
+
+<p>Now for the sake of documenting check which version you just got and read through the available switches</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">sudo</span> ./setregproptool</code></pre></figure>
+
+<p>I am getting this on a 10.10</p>
+
+<p>setregproptool v 2.0 (9) Jun 20 2012</p>
+
+<h2 id="deploy-setregproptool">Deploy setregproptool</h2>
+<hr />
+<p>The next step is to package up and deploy the setregproptool binary that we extracted in the above step. I recommend using <a href="https://s.sudre.free.fr/Software/Packages/about.html">Packages</a> a great tool for creating OSX packages. We can always assist if you need a hand but its pretty straight forward. You can set the folder you want the setregproptool binary to be in and then depending on where you put it, is where you would target it in the below scripts. For the sake of this article for example I am putting the binary in /usr/sbin/setregproptool</p>
+
+<h2 id="approach-for-new-or-unprotected-computers">Approach for new or unprotected computers</h2>
+<hr />
+<p>Create the two scripts, one for enabling the firmware password and the second to disable the same. I highly recommend you create the installer and “uninstaller” in pairs and always match the version numbers.</p>
+
+<p>This is especially critical if you are required to change the firmware passwords in the future and versioning starts to be an issue. The main reason for this is that computer models newer than 2010 require the same password to disable the prompt, so the “uninstaller” version should always match the installer version used previously.</p>
+
+<p>This is, for example, you receive a brand new recent model half batch of computers, then you install your firmware password version 1.0. Then the next week you receive the other half of the shipment and install the firmware password version 1.1.</p>
+
+<p>Then if you use the uninstaller 1.0 to target all of them only the first half will have it disabled. What a difficult explanation but I hope is clear</p>
+
+<p>Also it is a good practice that when you set the password to blank when disabling it. This way you won’t face problem if the computer needs to be protected again</p>
+
+<h2 id="creating-the-scripts">Creating the scripts</h2>
+<hr />
+<p>touch enable.postflight.sh disable.postflight.sh</p>
+
+<p>enable.postflight.sh could be something like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+<span class="c">###</span>
+<span class="c"># VERSION 1.0 of the password enabler. Use the same version to disable it.</span>
+<span class="c">###</span>
+<span class="c">## Fix Permissions</span>
+<span class="nb">sleep </span>5
+<span class="nb">chown </span>root:wheel /usr/sbin/setregproptool
+<span class="nb">chmod </span>755 /usr/sbin/setregproptool
+<span class="c"># Deactivating the password if it was set. The script will fail or hang if the firmware password set does not match the one listed below</span>
+/usr/sbin/setregproptool <span class="nt">-d</span> <span class="nt">-o</span> <span class="s2">"veryoldpass"</span>
+<span class="nb">sleep </span>5
+<span class="c"># Setting the password and the mode. This will fail if the old password does not match exactly. </span>
+<span class="c"># for 10.10 use sudo /usr/sbin/firmwarepasswd -verify to verify that the old password equals the veryoldpass below if it doesn't the script won't run.</span>
+<span class="c"># To verify the password on 10.6, 10.7, 10.8 &amp; 10.9 run the BinaryOnly package first then run this command</span>
+<span class="c">#  </span>
+<span class="nb">sudo</span> /usr/sbin/setregproptool <span class="nt">-m</span> <span class="nb">command</span> <span class="nt">-p</span> <span class="s2">"verynewpass"</span> <span class="nt">-o</span> <span class="s2">"veryoldpass"</span>
+<span class="c"># Logging</span>
+<span class="nb">echo</span> <span class="s2">"The firmware password version 1.0 is now set up!"</span>
+<span class="nb">exit </span>0</code></pre></figure>
+
+<p>disable.postflight.sh could be something like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+<span class="c">###</span>
+<span class="c"># VERSION 1.0 of the password disabler. Works only if the password was set up using the same version enabler</span>
+<span class="c">###</span>
+<span class="c"># Setting the password to blank WILL TAKE EFFECT AFTER REBOOT</span>
+<span class="nv">$setregproptool</span> <span class="nt">-p</span> <span class="s2">""</span> <span class="nt">-o</span> <span class="s2">"NewPassword"</span>
+<span class="nb">sleep </span>1
+<span class="c"># Disable the prompt for password</span>
+<span class="nv">$setregproptool</span> <span class="nt">-d</span> <span class="nt">-o</span> <span class="s2">"NewPassword"</span>
+<span class="c"># Logging</span>
+<span class="nb">echo</span> <span class="s2">"Firmware password now set to blank and prompt disabled, reboot for the changes to take effect!"</span>
+<span class="c">#forget that the password was ever installed. Munki likes this</span>
+pkgutil <span class="nt">--forget</span> com.mycompany.pkg.firm.pass
+<span class="nb">exit </span>0</code></pre></figure>
+
+<p>As long a you use the same pkg name you can verify what version of the password a computer has by running `</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pkgutil <span class="nt">--info</span> com.mycompany.pkg.firm.pass</code></pre></figure>
+
+<p>Then use the correct uninstaller</p>
+
+<h2 id="what-if-i-already-have-passwords-set">What if I already have passwords set?</h2>
+<hr />
+<p>Many of my clients already have Firmware Passwords set in their environment. Not to fear you can create a package with a script in it that you can use to wipe out the old password and to reset the new one.</p>
+
+<p>This package script below loops through 2 possible passwords using the tool firmwarepasswd and if one of the passwords works it removes the password from the computer. On reboot the computer will no longer have a firmware password.</p>
+
+<p>On 10.10.0 - 10.11 firmware passwords are managed by the binary application firmwarepasswd. This new binary exists on the Core OS already and is the prefered new method of managing firmware passwords.</p>
+
+<h2 id="caveats">Caveats</h2>
+<hr />
+<p>The only caveats here are understanding that we are using the #!/usr/bin/expect binary to write our scripts, while this is similar to bash, its not the same, and uses its own unique syntax. The reason we use #!/usr/bin/expect is because we will be prompted to enter a password the expect binary lets you send pre filled answers to expected questions in the terminal environment. Since the goal is to loop through a variety of passwords its the best tool for that task.</p>
+
+<p>Installer Script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/expect</span>
+spawn <span class="nb">sudo </span>firmwarepasswd <span class="nt">-setpasswd</span>
+expect <span class="o">{</span>
+    <span class="s2">"Enter password:"</span> <span class="o">{</span>
+        send <span class="s2">"FirstPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+    <span class="s2">"Enter new password:"</span> <span class="o">{</span>
+        send <span class="s2">"SecondPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+    <span class="s2">"Re-enter new password:"</span> <span class="o">{</span>
+        send <span class="s2">"ThirdPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+<span class="o">}</span>
+spawn <span class="nb">sudo </span>bless <span class="nt">-mount</span> /Volumes/Macintosh<span class="se">\ </span>HD <span class="nt">-setBoot</span></code></pre></figure>
+
+<p>Uninstaller Script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/expect</span>
+
+<span class="nb">set </span>verifyPassword <span class="o">[</span><span class="nb">exec sudo </span>firmwarepasswd <span class="nt">-check</span><span class="o">]</span>
+
+<span class="k">if</span> <span class="o">{</span> <span class="nv">$verifyPassword</span> eq <span class="s2">"Password Enabled: Yes"</span> <span class="o">}</span> <span class="o">{</span>
+
+   spawn firmwarepasswd <span class="nt">-delete</span>
+   expect <span class="s2">"Enter password:"</span>
+   send <span class="s2">"FirstPassword</span><span class="se">\r</span><span class="s2">"</span><span class="p">;</span>
+   expect <span class="o">{</span>
+      <span class="s2">"Password incorrect"</span> <span class="o">{</span>
+         puts <span class="s2">"Trying 2nd password"</span>
+         expect eof
+         spawn firmwarepasswd <span class="nt">-delete</span>
+         expect <span class="s2">"Enter password:"</span>
+         send <span class="s2">"SecondPassword</span><span class="se">\r</span><span class="s2">"</span><span class="p">;</span>
+         expect <span class="s2">"Password removed"</span>
+         puts <span class="s2">"Firmware Password Deleted using 2nd Password"</span>
+       <span class="o">}</span>
+      <span class="s2">"Password removed"</span> <span class="o">{</span>
+        puts <span class="s2">"Firmware Password Deleted using 1st Password"</span>
+        <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+		puts <span class="s2">"&lt;result&gt;Not Found&lt;/result&gt;"</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<hr />
+<p>Setting up and managing Firmware Passwords via Munki or JAMF is a tricky proposition but I hope that the information above gives you a little glimpse and or help. If you need assistance or help in any way do not hesitate to reach out to me via the comments section below. Giving credit where credit is due much of this walk through is credited to <a href="https://www.nbalonso.com/install-firmware-passwords/">nbolonso.com</a> who helped point me in the right direction. We then took it to the next level by informing you how to manage the firmware passwords on 10.10 and newer workstations and also how to use the /usr/bin/expect system to reset old password in a loop.</p>
+
+:ET

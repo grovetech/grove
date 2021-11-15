@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-itunes-app" content="app-id=892102469">
+	
+	
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://stats.g.doubleclick.net">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="icon" href="https://grovetech.co/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://grovetech.co/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://grovetech.co/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://grovetech.co/assets/img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="https://grovetech.co/assets/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="">
+  	<meta name="twitter:description" content="">
+	<meta property="og:type" content="">
+	
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Improve webpage speed with Digital Ocean | Mac Support DC</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Improve webpage speed with Digital Ocean" />
+<meta name="author" content="Jon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We don’t often talk much about web development or web optimization but recently we started investigating alternative methods / means to our web hosting environment. Currently we are using JustHost’s shared web hosting for jonbrown.org/blog. We are using their lowest shared hosting tier at which costs us $6 per month. We recently did quite a bit to optimize our site and I figured I would share our secret recipe for success that helped us improve our overall web speed rank by almost 90%. Having a website that is faster obviously is better." />
+<meta property="og:description" content="We don’t often talk much about web development or web optimization but recently we started investigating alternative methods / means to our web hosting environment. Currently we are using JustHost’s shared web hosting for jonbrown.org/blog. We are using their lowest shared hosting tier at which costs us $6 per month. We recently did quite a bit to optimize our site and I figured I would share our secret recipe for success that helped us improve our overall web speed rank by almost 90%. Having a website that is faster obviously is better." />
+<link rel="canonical" href="https://grovetech.co/blog/improve-webpage-speed-with-digital-ocean/" />
+<meta property="og:url" content="https://grovetech.co/blog/improve-webpage-speed-with-digital-ocean/" />
+<meta property="og:site_name" content="Mac Support DC" />
+<meta property="og:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2014-07-27T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="twitter:title" content="Improve webpage speed with Digital Ocean" />
+<meta name="twitter:site" content="@thegrovetech" />
+<meta name="twitter:creator" content="@Jon" />
+<meta property="fb:admins" content="https://www.facebook.com/grovetechnologies" />
+<meta property="article:publisher" content="https://www.facebook.com/grovetechnologies" />
+<meta property="fb:app_id" content="2013404878733742" />
+<meta name="google-site-verification" content="google3e4955832745f7b9" />
+<meta name="msvalidate.01" content="C72803331AF77124C6D411BDE1FD13B3" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jon"},"url":"https://grovetech.co/blog/improve-webpage-speed-with-digital-ocean/","mainEntityOfPage":{"@type":"WebPage","@id":"https://grovetech.co/blog/improve-webpage-speed-with-digital-ocean/"},"image":"https://grovetech.co/assets/img/covers/cover-16.jpg","headline":"Improve webpage speed with Digital Ocean","dateModified":"2014-07-27T00:00:00-04:00","datePublished":"2014-07-27T00:00:00-04:00","description":"We don’t often talk much about web development or web optimization but recently we started investigating alternative methods / means to our web hosting environment. Currently we are using JustHost’s shared web hosting for jonbrown.org/blog. We are using their lowest shared hosting tier at which costs us $6 per month. We recently did quite a bit to optimize our site and I figured I would share our secret recipe for success that helped us improve our overall web speed rank by almost 90%. Having a website that is faster obviously is better.","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://grovetech.co/img/favicons/android-chrome-512x512.png"},"name":"Jon"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	
+	<link rel="manifest" href="https://grovetech.co/assets/js/manifest.json">
+	
+	<!-- Libs CSS -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/libs.bundle.css">
+    <link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/theme.bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+		Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Subscribe to Grove Technologies Notifications', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		},
+		userId: 'user_id', // optional, set custom user ID
+		tags: {
+			'Name': 'John Smith'   	// optional, set custom Tags
+		}										
+	}]);
+	</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://grovetech.co/">
+          <img src="https://grovetech.co/assets/img/header-icon.png" class="navbar-brand-nav" alt="Grove Technologies">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="https://support.grovetech.co/" target="_new">
+                Support
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Security
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/security/training/" title="Security Training">
+                          Security Training
+                        </a>
+                        
+                       
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Strategy <span class="h6 text-uppercase text-primary">(new)</span>
+                        </h6>
+
+                        <!-- List -->
+                       <a class="dropdown-item" href="https://grovetech.co/products/security/cmmc/" title="CMMC Consulting">
+                          CMMC Consulting
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/ciso/" title="Virtual CISO">
+                          Virtual CISO
+                        </a>
+                        
+
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Managed
+                        </h6>
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/fleet/" title="Mac Support">
+                          Mac Support
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/network/" title="Network Services">
+                          Network Support
+                        </a>
+						
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPricing" data-toggle="dropdown" href="https://grovetech.co/pricing" title="Pricing" aria-haspopup="true" aria-expanded="false">
+                Pricing
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarPricing">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="https://grovetech.co/pricing/" title="Mac Support">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5 5v11h14V5H5zm0-2h14c1.42 0 2 .716 2 1.6v12.8c0 .884-.58 1.6-2 1.6H5c-1.42 0-2-.716-2-1.6V4.6C3 3.716 3.58 3 5 3zm7 15a.5.5 0 100-1 .5.5 0 000 1z" fill="#335EEA"/><path fill="#335EEA" opacity=".3" d="M5 5v11h14V5z"/><rect fill="#335EEA" opacity=".3" x="10" y="20" width="4" height="1" rx=".5"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Mac Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Mac Fleets of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="https://grovetech.co/pricing/network/" title="Managed Networks">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M19.366 13.93l-2.104 1.736a6.8 6.8 0 00-5.264-2.484 6.8 6.8 0 00-5.25 2.469l-2.1-1.741a9.527 9.527 0 017.35-3.455 9.527 9.527 0 017.368 3.476zm4.18-3.504l-2.099 1.742a12.242 12.242 0 00-9.449-4.44c-3.695 0-7.12 1.641-9.44 4.428L.463 10.412A14.969 14.969 0 0111.998 5c4.521 0 8.716 2.014 11.548 5.426z" fill="#335EEA" opacity=".3"/><path d="M15.119 17.354l-2.08 1.765-1.077.881-1.029-.851-2.128-1.706a4.085 4.085 0 013.193-1.534c1.217 0 2.35.536 3.121 1.445z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Network Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Networks of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  
+                  <a class="list-group-item" href="https://grovetech.co/pricing/government/" title="Government">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 4l7.631-1.43a2 2 0 01.738 0L20 4v9.283a8.51 8.51 0 01-4 7.217l-3.47 2.169a1 1 0 01-1.06 0L8 20.5a8.51 8.51 0 01-4-7.217V4z" fill="#335EEA" opacity=".3"/><path d="M14.5 11a1 1 0 011 1v3a1 1 0 01-1 1h-5a1 1 0 01-1-1v-3a1 1 0 011-1v-.5a2.5 2.5 0 115 0v.5zM12 9a1.5 1.5 0 00-1.5 1.5v.5h3v-.5A1.5 1.5 0 0012 9z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Government
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Supporting our Federal Agencies
+                      </p>
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarBlog" data-toggle="dropdown" href="https://grovetech.co/blog" title="Mac Support Blog" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarBlog">
+            		<div class="list-group list-group-flush">
+
+                        <!-- List -->
+                        <a class="list-group-item" href="https://grovetech.co/blog/" title="Mac Support Blog">
+                        
+						<!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 Mac Support Blog <span class="h6 text-uppercase text-primary">(new)</span>
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Check Back for New Posts Weekly.
+						  </p>
+						</div>
+                        </a>
+                        <a class="list-group-item" href="https://grovetech.co/blog/category/downloads/" title="E-Books For Download">
+                        <!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#335EEA"/><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#335EEA" opacity=".3"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 E-Books For Download
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Resources for Your Business.
+						  </p>
+						</div>
+
+                        </a>
+
+                    </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://portal.grovetech.co/" target="_blank" title="Login to Client Portal">
+            Login
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+    <!-- IMAGE
+    ================================================== -->
+    <section class="py-11 py-md-11 overlay overlay-black overlay-60 bg-cover" style="background-image:url(https://grovetech.co/assets/img/covers/cover-16.jpg);">
+    <div class="container mt-10">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Improve webpage speed with Digital Ocean
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+        <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                	
+                	<picture>
+						<source srcset="https://grovetech.co/assets/img/avatars/avatar.png" class="avatar-img rounded-circle" style="margin-top: -15px !important;" title="Jon" type="image/webp"> 
+						<img class="avatar-img rounded-circle" src="https://grovetech.co/assets/img/avatars/avatar.png" alt="Jon"> 
+					</picture>
+							
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Jon
+                </h6>
+
+                <!-- Date -->
+                 <time datetime="Jul 27, 2014">Jul 27, 2014</time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style d-none d-md-block" data-a2a-url="https://grovetech.co/blog/improve-webpage-speed-with-digital-ocean/" data-a2a-title="Improve webpage speed with Digital Ocean">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_pinterest"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<script>
+					var a2a_config = a2a_config || {};
+					a2a_config.counts = { recover_domain: 'imamac.guru', recover_protocol: 'http' };
+					</script>
+                </span>
+
+                
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    
+
+
+    <!-- SECTION
+    ================================================== -->
+    <section class="pt-2 pt-md-2 bg-white" id="blog-post">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 blog-post">
+          
+              <p>We don’t often talk much about web development or web optimization but recently we started investigating alternative methods / means to our web hosting environment. Currently we are using JustHost’s shared web hosting for jonbrown.org/blog. We are using their lowest shared hosting tier at which costs us $6 per month. We recently did quite a bit to optimize our site and I figured I would share our secret recipe for success that helped us improve our overall web speed rank by almost 90%. Having a website that is faster obviously is better.</p>
+
+<p>While investigating methods to improve our web hosting I stumbled upon Digital Ocean, these guys are awesome! Digital Ocean boasts a virtual private server environment running various flavors of Linux with amazing CPU and Memory options. Ironically the third tier server with Digital Ocean costing $20 per month together with our website code optimizations put us over the top.</p>
+
+<p>I started my career in the web development field and moved into IT specializing in the Mac environment. Becoming an overall expert and feeling more at home in the Unix core gave me the confidence that I think most people lack. This lack of familiarity in this environment can be a huge hurdle when moving to a VPS server. Digital Ocean with its amazing array of tutorials and amazing customer service makes it easy for the entry level user to feel comfortable spinning up and configuring a very powerful web server.</p>
+
+<h1 id="website-optimization">Website Optimization</h1>
+
+<p>The first thing that we did to help improve our website speed was to remove un-needed CSS code from our website. We removed all drop shadow CSS3 effects, just by doing this we improved the overall speed of our site by 4% this was huge. The result was a more modern flat UI design that loaded faster and looked better. We then removed all references to the Google Font library which we were using throughout the site for a standard thin web font. This removed those lengthy calls to Google and improved our speed by an additional 8%. Once done we minified all CSS and Javascript code. Here are some of the tools we used.</p>
+
+<p><strong>CSS Minification</strong></p>
+
+<p><a href="https://procssorapp.com"> ProCSSor. Beautiful CSS for beautiful websites. </a></p>
+
+<p><strong>JS Minification</strong></p>
+
+<p><a href="https://smallerapp.com"> Smaller Batch minify HTML, PHP, CSS and JavaScript on the Mac. </a></p>
+
+<h1 id="image-optimization">Image Optimization</h1>
+
+<p>Image optimization was the second step. We had many images that we had already uploaded into our WordPress instance and many in our theme images folder that were much larger than they needed to be. We used a great compressor app to compress the images, by doing so we made our website much smaller. A smaller site, loads faster, makes sense right? Well I had no idea just how much it would improve things. We reduced the overall size of the site by 70% just by compressing our images. Here are some of the tools we used to compress the images on our site. This improved site load time by 10%</p>
+
+<p><strong>PNG Crusher</strong></p>
+
+<p><a href="https://wordpress.org/plugins/wp-smushit/"> WP Smush.it – WordPress Plugin </a></p>
+
+<p><strong>Image Optimizer</strong></p>
+
+<p><a href="https://imageoptim.com/"> ImageOptim optimizes images </a></p>
+
+<h1 id="cloudflare--maxcdn">Cloudflare &amp; MaxCDN</h1>
+
+<p>Now that the code, fonts and images are all in place, time to setup a solid plan for proper website caching and image serving. A CDN is a great method that I have employed at many places that I have worked, I have to admit I have seen how a CDN can improve website speed but I had never configured one for my own website. I decided to go with MaxCDN for the ease of configuration with WordPress and the low point of entry as far as cost, I believe I am currently only paying $10 a month. I also recently started taking advantage of Cloudflare a free service if you host with JustHost. Cloudflare will improve the traffic (DNS) requests going to your site and filter out any malicious attacks it also caches the site and helps provide an overall better / faster website loading experience.</p>
+
+<p>I use both of these services in tandem with each other and the only thing you need to know if your going to do so is that you will need to know that Cloudflare adds a cookie to all domain calls, including CDN domain calls. This can cause the site to appear slower due to the lack of a cookie less domain. You can’t turn off cookies for any domain that goes through Cloudflare, period. To use MaxCDN and Cloudflare you need to enable the setting to strip all cookies. The two without this setting can cause a conflict.</p>
+
+<blockquote>
+  <p><a href="https://support.maxcdn.com/howto/use-cdn-with-cloudflare/">Source</a> — When these cookies and headers are sent to our CDN Network, it causes a conflict that prevents us from properly caching your static assets. That results in a very low cache hit percentage, along with an increased number of requests being sent to CloudFlare, which will negatively affect the load speed of your website.</p>
+</blockquote>
+
+<p>Here are the resources that I used to setup Max CDN and Cloudflare.</p>
+
+<p><a href="https://www.maxcdn.com/solutions/cms/wordpress-cdn/"> WordPress CDN Implementation </a> <a href="https://support.cloudflare.com/hc/en-us/articles/201717894-Using-CloudFlare-and-WordPress-Five-Easy-First-Steps"> Using CloudFlare and WordPress </a></p>
+
+<p>Dong this improved the site speed by another 15%. So with all of the above we have improved the site load time by 37%. Not bad, to many this will be a huge improvement. For others like myself I was seeing a huge bounce rate still and an overall page load time of 3 seconds. My goal is to try to get the site to load under 1 second.</p>
+
+<h1 id="speed-tests">Speed Tests</h1>
+
+<p>I used four website tests to benchmark my overall website speed. The 4 sites that I used were.</p>
+
+<ol>
+  <li>Google Page Analyzer – <a href="https://developers.google.com/speed/pagespeed/insights/">https://developers.google.com/speed/pagespeed/insights/</a></li>
+  <li>GTMetrix – <a href="https://gtmetrix.com/reports/jonbrown.org/blog/Q1SeDaVe">https://gtmetrix.com/reports/jonbrown.org/blog/Q1SeDaVe</a></li>
+  <li>Webpagetest – <a href="https://www.webpagetest.org">https://www.webpagetest.org</a></li>
+  <li>Pingdom – <a href="https://tools.pingdom.com/fpt/">https://tools.pingdom.com/fpt/</a></li>
+</ol>
+
+<p>These sites are not only the standard for webpage speed benchmarking but they also all have different tools that will tell you what you should be focusing on. Things like GZIP’ing all items, Putting all JS calls in the footer, CSS calls in the header. Reducing inline CSS, and combining JS files and CSS files into single call resources and using image sprites rather than using separate images for small icons. Still I was seeing a huge initial page hit rate that was not optimal. At this point I started looking at VPS offerings.</p>
+
+<h1 id="vps-digital-ocean-wins">VPS, Digital Ocean Wins!</h1>
+
+<p>I looked into JustHosts VPS offering and I found that it was overpriced and overcomplicated. I knew that having a server that was running something like CPANEL would be convenient but would peg my servers CPU and reduce my overall website load speed. The cheapest VPS that they had was $75 a months.</p>
+
+<p>Then I heard about Linode and Digital Ocean. I tried both and they were both very comparable. I found that sites on Digital Ocean loaded just a tad faster and with their SSD based VPS and easy to use web interface it was a clear winner in my book. The thing that really tipped the scales for me was the fact that there was so many amazing tutorials that easily showed how to setup and migrate a website to their service. Here are the ones that I used.</p>
+
+<p><a href="https://gplclub.org/build-faster-wordpress-sites-nginx-3-lines/"> Build Faster WordPress Sites with Nginx – In 3 Lines! </a></p>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-nginx-php-and-varnish-on-ubuntu-12-04"> How To Install WordPress, Nginx, PHP, and Varnish on Ubuntu 12.04 </a></p>
+
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-virtual-hosts-server-blocks-on-ubuntu-12-04-lts--3"> How To Set Up nginx Virtual Hosts </a></p>
+
+<p>I setup Varnish, Memcached, and NGIX. Between these three amazing technologies this boosted my page speed rank by another 40%, this is HUGE. I never knew how much faster NGIX on Ubuntu could be. Im paying only $20 per month for this server and the reality is that I can run any number of sites that I need which is a huge value that I did not have with JustHost.</p>
+
+<h1 id="wordpress-plugin-combos">WordPress Plugin Combos</h1>
+
+<p>So now heres the secret sauce, its well known that having too many plugins on a WordPress site can severely impact the overall page load speed of the website. Here are the plugins that I am using.</p>
+
+<p><strong><a href="https://wordpress.org/plugins/headjs-loader/">Head JS Loader</a></strong><br />
+It strips out all your old javascript declarations and puts them into head.js calls so that they are loaded in parallel (see the Head JS website for more details).</p>
+
+<p><strong><a href="https://wordpress.org/plugins/speed-booster-pack/">Speed Booster Pack</a></strong><br />
+Speed Booster Pack allows you to improve your page loading speed and get a higher score on the major speed testing services such as GTmetrix, Google PageSpeed, YSlow, Pingdom, Webpagetest or other speed testing tools.</p>
+
+<p><strong><a href="https://wordpress.org/plugins/w3-total-cache/">W3 Total Cache</a></strong><br />
+The only WordPress Performance Optimization (WPO) framework; designed to improve user experience and page speed.</p>
+
+<ol>
+  <li>Page Cache – Disk Enhanced</li>
+  <li>Database Cache – Memcache</li>
+  <li>Object Cache – Memcache</li>
+  <li>Browser Cache – Disabled</li>
+  <li>CDN – Max CDN</li>
+</ol>
+
+<h1 id="results">Results</h1>
+
+<p>Finally here are the results that you just can’t deny. Impressively awesome page load speeds. I have applied these principles to all of my hosted sites and here are the results of just a few. For much less than hosting with a WordPress hosting service like WPEngine and cheap shared hosting services like JustHost.</p>
+
+<p>Webpagetest – <a href="https://www.webpagetest.org">https://www.webpagetest.org</a></p>
+
+<p>Google Page Analyzer – <a href="https://developers.google.com/speed/pagespeed/insights/">https://developers.google.com/speed/pagespeed/insights/</a></p>
+
+<p>Pingdom – <a href="https://tools.pingdom.com/fpt/">https://tools.pingdom.com/fpt/</a></p>
+
+<p>GTMetrix – <a href="https://gtmetrix.com/reports/jonbrown.org/blog/Q1SeDaVe">https://gtmetrix.com/reports/jonbrown.org/blog/Q1SeDaVe</a></p>
+
+<p>These are a few of the scores that I was able to achieve for a new site of mine hosted on Digital Ocean’s platform. I hope that this article helps someone who is obsessed with getting high page load scores on a budget. Obviously as well all the technologies at work here will help any website scale as well. Memcached allows the scaling to a network of memcached servers. Varnish can do this as well and with the CDN and Cloudflare you will have multiple levels of cache redundancy that will ensure that your site never appears offline.</p>
+
+<p>Overall load on my server is less than 10% CPU, less than 1GB memory usage and very low bandwidth throughout due to the overwhelming level of caching implemented here.</p>
+
+
+              
+              
+
+          </div>
+          
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+	    <!-- INFO
+    ================================================== -->
+    <section class="py-5 py-md-6 m-9" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Message Us (SMS)
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+12404518688" title="Text Us" class="h4 text-primary">
+                (240) 451-8688
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Call Us
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+18882539103" title="Call Us" class="h4">
+                (888) 253-9103
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email us
+            </h6>
+
+            <!-- Link -->
+            <a href="matilto:support@grovetech.co" class="h4">
+              support@grovetech.co
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+			
+	<!-- CONTACT FORM
+    ================================================== -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40" style="overflow: hidden;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+                
+                    <!-- Image -->
+                    <div class="text-center">
+                      
+                      <picture>
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.webp" type="image/webp">
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.png" type="image/png" class="img-fluid form-floating w-200"> 
+						<img src="https://grovetech.co/assets/img/illustrations/illustration-2.png" alt="Networking Services" class="img-fluid form-floating w-200">
+					 </picture>
+				
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      We'd like to hear from you
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                      We specialize in business problems and work to help increase profitability by reducing chronic issues.
+                    </p>
+
+                    <!-- Form -->
+                    <form name="form-contact" id="form-contact" action="https://formspree.io/f/xylrgbym" method="POST">
+					  <div class="row">
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+					
+							
+							<!-- Input -->
+							<input type="text" name="Contact[name]" id="contact_name" class="form-control form-control-flush" placeholder="Name" required>
+							<label for="contact_name">Name</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="email" name="Contact[email]" id="contact_email" class="form-control form-control-flush" placeholder="Email" required>
+							<label for="contact_email">Email</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   			
+							<!-- Input -->
+							<input type="text" name="Contact[phone]" id="contact_phone" class="form-control form-control-flush" placeholder="Phone" required>
+							<label for="contact_phone">Phone</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Company Name" required>
+							<label for="contact_subject">Company Name</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="mb-3">
+					
+				   
+
+							<!-- Input -->
+							<textarea name="Contact[message]" id="contact_message" class="form-control form-control-flush" placeholder="What challenges are you facing?" rows="8" required></textarea>
+
+						  </div>
+						</div>
+					  </div> <!-- / .row -->
+					  <div class="justify-content-center">
+				
+				  
+						  <!-- Submit -->
+						  <button type="submit" class="btn d-block w-100 btn-success">
+							Request a Consultation
+						  </button>
+
+			   
+					  </div> <!-- / .row -->
+					  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+					</form>
+					<div id="response-message"></div>   
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-dcab198a-8dc4-4215-959c-460c834666ca"></div>
+
+ <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      <footer class="py-6 py-md-9 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+        
+              <!-- Brand -->
+              <a href="https://consultants.apple.com/us/profile/2045642"><img src="https://grovetech.co/assets/img/icons/ACN.svg" alt="Grove Technologies a member of the Apple Consultants Network" class="footer-brand mb-2"></a>
+
+              <!-- Text -->
+              <p class="text-gray-900 mb-2 py-3">
+                Keeping Companies in DC Safe Since 2014.
+              </p>
+
+              <!-- Social -->
+              <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.instagram.com/thegrovetech/" title="Instagram" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Instagram">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.facebook.com/grovetechnologies" title="Facebook" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Facebook">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://twitter.com/thegrovetech" title="Twitter" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/twitter.svg" class="list-social-icon" alt="Twitter">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item">
+                  <a href="https://www.linkedin.com/company/grove-tech" title="LinkedIn" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="LinkedIn">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+        
+             
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Clients
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/experience" title="Client Experience" class="text-reset">
+                    Client Experience
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://portal.grovetech.co" title="Client Portal" class="text-reset">
+                    Client Portal
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Channels
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/contact" title="Contact Us" class="text-reset">
+                    Contact Us
+                  </a>
+                </li>
+                
+                <li class="mb-3">
+                  <a href="https://grovetech.co/app" title="Download App" class="text-reset">
+                   Download App
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Company
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/about" title="About Us" class="text-reset">
+                    About Us
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://grovetech.co/team" title="Meet the Team" class="text-reset">
+                    Meet the Team
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            
+            <div class="col-12 mt-10">
+        
+              <p class="text-gray-900">
+              	&copy; 2021 <strong>Grove</strong> Technologies is a registered service mark of Grove Technologies LLC. All Rights Reserved. <a href="https://grovetech.co/privacy/" class="text-reset">Privacy Policy.</a>
+              </p>
+
+            </div>
+            
+            
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+    </section>
+    
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120080861-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-120080861-1');
+	</script>
+	<script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+	Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Grove Technologies', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: true, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		}									
+	}]);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/beerslider@1.0.3/dist/BeerSlider.min.js"></script>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    <script src="https://grovetech.co/assets/js/theme.bundle.js"></script>
+    <script src="https://grovetech.co/assets/js/vendor.bundle.js"></script>
+    
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#efefef",
+		  "text": "#404040"
+		},
+		"button": {
+		  "background": "#8ec760",
+		  "text": "#ffffff"
+		}
+	  },
+	  "theme": "edgeless",
+	  "type": "opt-out",
+	  "content": {
+		"href": "https://grovetech.co/privacy/"
+	  }
+	});
+	</script>
+</body>
+</html>

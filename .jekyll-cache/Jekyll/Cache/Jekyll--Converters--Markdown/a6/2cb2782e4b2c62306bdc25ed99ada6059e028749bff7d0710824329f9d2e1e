@@ -1,0 +1,193 @@
+I"+'<p>We’ve long recommended that everyone use a password manager like
+<a href="https://1password.com/">1Password</a> instead of attempting to memorize or
+write down passwords. Although there are other password managers,
+1Password is the leading solution for Apple users, thanks to a focus on
+macOS and iOS from its earliest days.</p>
+
+<p>1Password offers numerous benefits, including:</p>
+
+<ul>
+  <li>Automatic generation of strong passwords so you don’t have to invent them</li>
+  <li>Secure storage of passwords, even if your Mac or iPhone were stolen</li>
+  <li>Automatic entry of usernames and passwords that’s much easier than manual entry</li>
+  <li>Auditing of existing accounts to see how many use the same password</li>
+  <li>Easy access to all your passwords from all your devices (Mac, iOS, Windows, Android)</li>
+  <li>Sharing of passwords among a family or a workgroup</li>
+</ul>
+
+<p>The hardest part of getting started with 1Password, like any password
+manager, is overcoming the inertia of trying something new. Here’s what
+you’ll need to do.​</p>
+
+<h3 id="1-sign-up-for-a-1password-account">1: Sign Up for a 1Password Account</h3>
+
+<p>In this step, you’ll decide which 1Password plan is most appropriate.
+For individuals, <a href="https://1password.com/sign-up/">1Password</a> costs
+$2.99 per month, or <a href="https://1password.com/families/">1Password
+Families</a> is $4.99 per month for a
+family of five. For businesses, <a href="https://1password.com/teams/">1Password
+Teams</a> adds features and admin controls
+for $3.99 per user per month, or <a href="https://1password.com/business/">1Password
+Business</a> provides significantly more
+admin controls for $7.99 per user per month. You can <a href="https://1password.com/sign-up/">compare the
+individual and family accounts</a>, along
+with the <a href="https://1password.com/teams/pricing/">Teams and Business
+plans</a>, but if you’re still unsure
+which to pick, ask us for help.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Once you’ve decided on a plan, click through to the associated page
+linked above and sign up. Of course, if your family or business already
+uses 1Password, the person who created the account should invite you
+first.</p>
+
+<p>Make sure to create a master password that’s strong yet easily typed
+because you’ll need to enter it regularly (or use Touch ID, Face ID, or
+an Apple Watch) to unlock 1Password. Since you’re putting all sorts of
+valuable eggs in your 1Password basket, be sure to download and fill out
+your <a href="https://support.1password.com/emergency-kit/">Emergency Kit</a> in
+case something happens to you. It also contains the QR code that makes
+it easy to sign in on new devices.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image3.png" class="img-fluid rounded m-2" width="400" /></p>
+
+<h3 id="2-install-the-1password-apps-and-extensions">2: Install the 1Password Apps and Extensions</h3>
+
+<p>Next, install the 1Password app on each of your devices and connect it
+to your 1Password account. <a href="https://support.1password.com/get-the-apps/">1Password provides
+instructions</a> for each, but
+in short:</p>
+
+<ul>
+  <li><strong>Mac:</strong>
+    <blockquote>
+      <p><a href="https://1password.com/downloads/mac/">Download and install the app</a>, sign in to your
+1Password account in your Web browser, click your name at the top
+right, and choose Get the Apps. Click “Add your account directly,”
+and let your browser open 1Password. Enter your master password
+and click Sign In.</p>
+    </blockquote>
+  </li>
+  <li><strong>iPhone/iPad:</strong>
+    <blockquote>
+      <p><a href="https://apps.apple.com/app/id568903335">Download and open the app</a>, and tap
+1Password.com &gt; Scan Setup Code. Then <a href="https://support.1password.com/secret-key/">find the Setup
+Code</a> ➊ and scan it
+using the camera. Enter your master password and tap Done. Next,
+go to Settings &gt; Passwords &gt; AutoFill Passwords, enable AutoFill
+Passwords ➋, select 1Password ➌, and deselect Keychain.
+!<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image4.jpeg" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+  <li><strong>Web Browser:</strong> The 1Password X extension makes it easier to sign
+    <blockquote>
+      <p>in to sites using Safari, <a href="https://chrome.google.com/webstore/detail/1password-x-–-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa">Google Chrome</a>,
+<a href="https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/">Firefox</a>,
+<a href="https://microsoftedge.microsoft.com/addons/detail/dppgmdbiimibapkepcbdbmkaabgiofem">Microsoft
+Edge</a>,
+and
+<a href="https://chrome.google.com/webstore/detail/1password-x-–-password-ma/aeblfdkhhhdcdjpifhhbdiojplfjncoa">Brave</a>.
+The 1Password app installs the Safari extension for you; the rest
+you’ll need to get manually.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>With any security solution, there’s a tradeoff between ease of use and
+security. 1Password provides options so you can adjust that tradeoff to
+your liking.</p>
+
+<ul>
+  <li><strong>Mac:</strong> In 1Password &gt; Preferences &gt; Security, you can enable
+    <blockquote>
+      <p><a href="https://support.1password.com/apple-watch-mac/">unlock using an Apple Watch</a> if you have
+both an Apple Watch and a Mac with a Secure Enclave. Also, set the
+various Auto-Lock checkboxes as you desire—if your Mac is in a
+shared space, err on the side of more security; if only you and
+trusted people can access it, you can be less strict.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image5.png" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+  <li><strong>iPhone/iPad:</strong> Tap the Settings button, then Security, and enable
+    <blockquote>
+      <p>Touch ID or Face ID. They let you avoid entering your master
+password to access 1Passsord while maintaining a high level of
+security.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image6.jpeg" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<h3 id="3-save-and-fill-passwords">3: Save and Fill Passwords</h3>
+
+<p>Now it’s time to start using 1Password. The first thing you’ll need to
+do is save your website logins as you go—you’ll need to do this only
+once per site. Again, 1Password provides instructions for both the
+<a href="https://support.1password.com/save-fill-passwords/">Mac</a> and the
+<a href="https://support.1password.com/ios-autofill/">iPhone or iPad</a>, but
+here’s a summary:</p>
+
+<ul>
+  <li><strong>Mac:</strong> Whenever you enter your username and password in a Web
+    <blockquote>
+      <p>login form, 1Password will ask you to save your credentials. Click
+the Save In 1Password button and edit the title of the login
+button if desired. If you don’t yet have an account at the site,
+enter your username, click the 1Password icon in the password
+field, and choose Use Selected Password to accept the strong
+password 1Password has generated for you. Finally, click Save.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image7.png" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+  <li><strong>iPhone/iPad:</strong> When you tap a username or password field, either
+    <blockquote>
+      <p>in an app or in a website in Safari, the iOS keyboard will appear.
+Tap the key icon ➊, and then tap Create Login ➋. Enter your
+credentials. If you don’t yet have an account at the site, enter
+your desired username ➌ and tap the gear icon ➍ to generate a
+strong password. Finally, tap Save &amp; Fill ➎.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image8.jpeg" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>With logins saved in 1Password, when you want to sign in to one of those
+sites in the future, it has just become extremely easy.</p>
+
+<ul>
+  <li><strong>Mac #1:</strong> If you’re already looking at a website’s login fields,
+    <blockquote>
+      <p>click the 1Password button in a username or password field and
+then choose the login you want to fill.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image9.png" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+  <li><strong>Mac #2:</strong> Alternatively, click the 1Password button in the
+    <blockquote>
+      <p>browser’s toolbar. If 1Password’s suggestions aren’t right, type a
+few characters from the site name in the Search field. Click the
+AutoFill button for the desired result to load that site and
+auto-fill your credentials.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image10.png" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+  <li><strong>iPhone/iPad:</strong> Tap a username ➊ or password field in an app or Web
+    <blockquote>
+      <p>page. Your username appears above the keyboard; tap it to fill in
+the username and password and tap Go if necessary. If you have
+multiple logins at that site, tap the key icon ➋ to choose a
+different one ➌.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20210202Ge/image11.jpeg" class="img-fluid rounded m-2" width="400" /></p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>We’ve just scratched the surface of what 1Password can do. If you
+explore the <a href="https://support.1password.com/">1Password support site</a>,
+you can learn how to enter two-factor authentication codes (1Password
+calls them one-time passwords) automatically, create and share vaults
+with others, add and auto-fill credit card information, and use the
+Watchtower feature to see which of your logins use weak or duplicate
+passwords.</p>
+:ET

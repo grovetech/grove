@@ -1,0 +1,51 @@
+I"<h3 id="the-latest-os-update-offers-refinements-to-popular-apps-such-as-photos-mail-and-safari">The latest OS update offers refinements to popular apps such as Photos, Mail and Safari.</h3>
+
+<p>Apple released macOS High Sierra, its latest version of its desktop operating system earlier in June at WWDC in San Jose, CA. The beta version of the software was available to developers to download immediately and now a public version will be available this month at beta.apple.com. The software will be available as a free software update from the Mac App Store this fall. Here’s a preview.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/sierra/mac-sierra-1.jpg" class="img-fluid rounded m-2" width="600" /></p>
+
+<p>Updates include the addition of a new filing system, support for HEVC (High-Efficiency Video Coding) and an update to Metal, Apple’s graphics technology. There’s also refinements to existing apps such as Photos, Safari and Mail.</p>
+
+<h3 id="new-file-system---apfs">New File System - APFS</h3>
+<hr />
+<p>Apple File System (APFS) is a new addition to macOS High Sierra, offering better storage and file sharing options to protect data from power outages, system crashes and make file sharing faster.</p>
+
+<h3 id="new-hevc-support">New HEVC Support</h3>
+<hr />
+<p>Apple’s latest macOS supports industry-standard HEVC video coding for high quality and fast video streaming and playback of 4K video files that have high quality but are smaller in size.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/sierra/mac-sierra-2.jpg" class="img-fluid rounded m-2" width="600" /></p>
+
+<h3 id="updated-metal---version-2">Updated Metal - Version 2</h3>
+<hr />
+<p>Metal gets an upgrade with version 2 offering a better API and improved performance for app development as well as faster, more efficient GPU usage on the Mac. Metal 2 now has support for machine learning that is used in speech recognition, natural language processing and computer vision. You can also access all the hardware and software capabilities via the</p>
+
+<p>External Graphics Developer Kit. Unleash more GPU power while enjoying accelerated graphics and faster computations for creating content, gaming and machine learning.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/sierra/mac-sierra-3.jpg" class="img-fluid rounded m-2" width="600" /></p>
+
+<h3 id="virtual-reality">Virtual Reality</h3>
+<hr />
+<p>macOS High Sierra now offers support for VR content creation for the first time, so that developers can create immersive gaming, 3D and VR content on the Mac. This includes support from leading VR companies such as Unity, Epic and Valve. In addition, Final Cut Pro X offers support for professional 360-degree workflows for 360-degree video.</p>
+
+<h3 id="refinements-to-apps">Refinements to Apps</h3>
+<hr />
+<p>macOS High Sierra also offers refinements to existing popular apps such as Photos, Mail and Safari.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/sierra/mac-sierra-4.jpg" class="img-fluid rounded m-2" width="600" /></p>
+
+<h3 id="photos">Photos</h3>
+<hr />
+<p>Photos now receive a sidebar for showcasing albums and using tools. Edit offers frequently requested features such as Curves for color and contrast (similar to Photoshop) and Selective Color (for choosing a defined color in a range). You can also edit live photos with new fun effects and curate Memories around any topic. Photos now has support for third-party printing and publishing companies like Shutterfly, Wix, Animoto and more.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/sierra/mac-sierra-5.jpg" class="img-fluid rounded m-2" width="600" /></p>
+
+<h3 id="safari">Safari</h3>
+<hr />
+<p>You can use the Reader to open articles and also stop media with audio from playing by using the Autoplay Blocking	. Additional control is offered through Intelligent Tracking Prevention in Safari where you can limit tracking data from advertisers.</p>
+
+<h3 id="mail">Mail</h3>
+<hr />
+<p>Mail search is faster with Top Hits that provides the most relevant results at the top of your message list.</p>
+
+:ET

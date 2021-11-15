@@ -1,0 +1,2 @@
+I"O<p>Beginning with the 0.9.1 builds of the munki tools, Munki can query a webserver to determine if there are available seats for licensed software (or any software you wish to make available via optional_installs, yet control the number of deployed copies). In order to use this wonderful new feature here are the things you need.</p>
+:ET

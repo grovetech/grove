@@ -1,0 +1,70 @@
+I"3<p>If your like me your always looking for ways to be notified of things changing in your IT Environment. There are many tools that you can use to help do this. <a href="https://www.statuscake.com">StatusCake</a> is a great free online tool for monitoring website and IP level uptime and downtime with baked in email notifications. <a href="https://www.nagios.org">Zeonoss</a> and <a href="https://www.zenoss.com">NAGIOS</a> are great tools that can offer the same with SNMP Monitoring baked in as well.</p>
+
+<p>But what about DNS monitoring. You heard me, what if you want to monitor or be notified on DNS record change. I know what your thinking likely DNS changes are cleared by tons of red tape, requiring access to the domain registrar in most cases and when a change is made its typically planned, right? Not always. If your part of a large web team perhaps you want the added peace of mind knowing that you have a monitoring system to notify you if a DNS record changes.</p>
+
+<p>Thats where this little GEM that I wrote today, comes into play. DIG is a little known tool on Linux and OSX servers that allows you to check a DNS record. You can then use Bash to search for a word in the record to ensure that it hasn’t been changed. In this example what I am doing is monitoring a _dmarc record for the word reject. DMARC is a great email DNS tool that forces any email provider to pass SPF and DKIM checks before an email is accepted from their system in an attempt to stop spoofing.</p>
+
+<p>On our team sometimes we change this record to P=NONE while testing and sometimes we forget to put it back to P=REJECT which has caused our fair share of problems. This little script comes in handy to notify us when this is forgotten.</p>
+
+<h2 id="monitoring-script">Monitoring Script</h2>
+<hr />
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<span class="c">#</span>
+<span class="c"># What should we monitor</span>
+<span class="c">#</span>
+<span class="nv">DNS</span><span class="o">=</span>TXT
+<span class="nv">DOMAIN</span><span class="o">=</span>_dmarc.jonbrown.org
+<span class="nv">KEYWORD</span><span class="o">=</span>reject
+<span class="nv">NS</span><span class="o">=</span>cash.cloudflare.net
+<span class="nv">OUTPUT</span><span class="o">=</span><span class="si">$(</span>dig <span class="k">${</span><span class="nv">DNS</span><span class="k">}</span> <span class="k">${</span><span class="nv">DOMAIN</span><span class="k">}</span> @<span class="k">${</span><span class="nv">NS</span><span class="k">}</span> +short 2&gt;&amp;1<span class="si">)</span>
+<span class="c">#</span>
+<span class="c"># EMAIL variables</span>
+<span class="c">#</span>
+<span class="nv">SENDGRIDAPI</span><span class="o">=</span><span class="s1">'G.-_Y5LgAUSkOaLapD6ze1OA.OAAKRv6aLZGuevnqgm0CKwqJ8kvNllRpGqFTazD8'</span> <span class="c"># Your SendGrid API Key</span>
+<span class="nv">TO</span><span class="o">=</span>jon@jonbrown.org 
+<span class="nv">FROM</span><span class="o">=</span>jon@jonbrown.org
+<span class="nv">CC</span><span class="o">=</span>someemail@testdomain.com
+<span class="nv">SUBJECT</span><span class="o">=</span><span class="s1">'Please check this DNS Monitor ${DOMAIN}'</span>
+<span class="nv">MESSAGE</span><span class="o">=</span><span class="s1">'The DNS Monitor for ${DOMAIN} is having issues based on the keyword ${KEYWORD} you set.'</span>
+<span class="c">#</span>
+<span class="c"># Enable this for testing if needed</span>
+<span class="c"># echo ${OUTPUT}</span>
+<span class="c">#</span>
+<span class="c"># Do Not Edit Below this line</span>
+<span class="c">#</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$OUTPUT</span> <span class="o">=</span>~ .<span class="k">*${</span><span class="nv">KEYWORD</span><span class="k">}</span>.<span class="k">*</span> <span class="o">]]</span><span class="p">;</span>
+<span class="k">then
+</span><span class="nb">echo</span> <span class="s2">"match"</span>
+<span class="k">else 
+</span>curl <span class="nt">--request</span> POST <span class="se">\</span>
+  <span class="nt">--url</span> https:#api.sendgrid.com/v3/mail/send <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'authorization: Bearer ${SENDGRIDAPI}'</span> <span class="se">\</span>
+  <span class="nt">--header</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
+  <span class="nt">--data</span> <span class="s1">'{"personalizations": [{"to": [{"email": "${TO}"}],"cc": [{"email":"${CC}"}]}], "from": {"email": "${FROM}"},"subject":"${SUBJECT}", "content": [{"type": "text/plain", "value": "${MESSAGE}"}]}'</span>
+
+<span class="nb">echo</span> <span class="s2">"fail"</span>
+<span class="k">fi</span></code></pre></figure>
+
+<p>As you can see the code is pretty self explanatory and well commented.  I will just note, this script uses <a href="https://sendgrid.com">SendGrid</a> a great tool for adding email notifications to your bash scripts. I highly recommend setting up a free account, you will likely never need to pay for it if its used for daily monitoring. Now lets talk about installation and scheduling.</p>
+
+<h2 id="installation--scheduling">Installation &amp; Scheduling</h2>
+<hr />
+<p>To install this simply copy the script to a file on your server. My favorite method for doing this is using touch.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">touch</span> /location/of/where/you/want/the/script/myscript.sh</code></pre></figure>
+
+<p>Once done, change the permissions on the file to allow it to execute.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">chmod </span>777 /location/of/where/you/want/the/script/myscript.sh</code></pre></figure>
+
+<p>To schedule this setup a CRON JOB on your server by running these commands</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span>crontab <span class="nt">-e</span>
+bash-3.2<span class="nv">$ </span>0 <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /bin/bash /location/of/where/you/want/the/script/myscript.sh</code></pre></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<hr />
+<p>Thats it. I hope you find my script useful. Please post suggestions for improvements and questions in the comments below. If you like it you can check the script out directly at my <a href="https://github.com/jonbrown21/Bash-DNS-Monitoring/blob/master/DNS.sh">GIT Repo</a> and like and follow me there!</p>
+
+:ET

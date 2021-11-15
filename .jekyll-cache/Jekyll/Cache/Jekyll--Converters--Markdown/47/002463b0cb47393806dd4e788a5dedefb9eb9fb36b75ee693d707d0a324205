@@ -1,0 +1,65 @@
+I"ð'<p>So like many other organizations mine was finally fed up with Horde as a webmail system. They had used squirrel mail in the past and was unimpressed by the graphical interface but admitted that it while it lacked glamour it always did perform as they would have expected. Before I had started there their mail system was running on a Linux box using Plesk and running Horde as their primary webmail interface. Immediately I got them into an XServe running OSX mail since their entire organization consisted of Apple iMacs figured it was the way to go, and got them setup with Squirrelmail and Roundcube.</p>
+
+<p>I found Roundcube to be extremely easy to setup, however sort of hard to configure and tweak for use on an OSX Server. The biggest drawback to the old mail system was that while everyone had email accounts they were local accounts meaning their was no LDAP database at work so there was no way to have an auto complete or global LDAP address book that most of the people at our organization really craved. I decided that when moving to 10.6.2 we would have to get this feature established and I am documenting this here clearly as I found there was limited documentation for and I know there are many people using 10.6.2 and Roundcube together.</p>
+
+<p>Once Roundcube is installed head over to main.inc.php in the Roundcube config directory. I wanted the user to have access to the LDAP address book and also have the ability to have their own so on this line make sure that SQL is chosen as the primarty type of address book if this is your intent.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$rcmail_config</span><span class="o">[</span><span class="s1">'address_book_type'</span><span class="o">]</span> <span class="o">=</span> <span class="s1">'sql'</span><span class="p">;</span></code></pre></figure>
+
+<p>in the main.inc.php file the LDAP settings are kind of tricky. It gives you an example of a functional LDAP setup below for an organization named Verisign locate these lines in the main.inc.php file</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">// In order to <span class="nb">enable </span>public ldap search, configure an array like the Verisign
+// example further below. <span class="k">if </span>you would like to <span class="nb">test</span>, simply uncomment the example.
+<span class="nv">$rcmail_config</span><span class="o">[</span><span class="s1">'ldap_public'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>Verisign<span class="o">)</span><span class="p">;</span></code></pre></figure>
+
+<p>Notice that the third line is un-commented meaning that it is an active setting. Which means that what we are about to do below will not register until we comment out this line otherwise there will be two active configurations and neither will work this really tripped me up and had me stumped for days until I realized that I had two</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ $rcmail_config</span><span class="o">[</span><span class="s1">'ldap_public'</span><span class="o">]</span> </code></pre></figure>
+
+<p>attributes at work at the same time so next comment this out as below.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">// In order to <span class="nb">enable </span>public ldap search, configure an array like the Verisign
+// example further below. <span class="k">if </span>you would like to <span class="nb">test</span>, simply uncomment the example.
+// <span class="nv">$rcmail_config</span><span class="o">[</span><span class="s1">'ldap_public'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>Verisign<span class="o">)</span><span class="p">;</span></code></pre></figure>
+
+<p>Once this is done go down to the example below and start uncommenting the LDAP configuration lines one by one and filling out the information as you go here is an example of my configuration for the Name use whatever name you want the address book to show up as in the roundcube address book area. Your host name should be the fully qualified domain name of your directory server. Your default port on an ODM is 389. Only use TLS if you are using a secure SSL connection and always use User Specific so that the user is what is causing the OD Bind during lookups rather than the Directory Admin.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$rcmail_config</span><span class="o">[</span><span class="s1">'ldap_public'</span><span class="o">][</span><span class="s1">'Verisign'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span>
+  <span class="s1">'name'</span>          <span class="o">=&gt;</span> <span class="s1">'Company Name'</span>,
+  <span class="s1">'hosts'</span>         <span class="o">=&gt;</span> array<span class="o">(</span><span class="s1">'fullyqualified.domainofdirectoryserver.com'</span><span class="o">)</span>,
+  <span class="s1">'port'</span>          <span class="o">=&gt;</span> 389,
+  <span class="s1">'use_tls'</span>	    <span class="o">=&gt;</span> <span class="nb">false</span>,
+  <span class="s1">'user_specific'</span> <span class="o">=&gt;</span> <span class="nb">true</span>, </code></pre></figure>
+
+<p>Next you must define the Base Search DN which is always your fully qualified domain name split up using dc= so if your directory name was directory.verisign.com then your base dn would be dc=directory, dc=verisign, dc=com. Here is what is not documented in many places it took me a long time to figure out that the Bind DN must have an active user or the directory admins UID here as well as cn=users, so that it knows how to find that user. I also configured mine to be non writable because I was unsure how safe this would be with the ODM.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="s1">'base_dn'</span>       <span class="o">=&gt;</span> <span class="s1">'dc=fullyqualified,dc=domainofdirectoryserver,dc=com'</span>,
+  <span class="s1">'bind_dn'</span>       <span class="o">=&gt;</span> <span class="s1">'uid=DirAdmin,cn=users,dc=fullyqualified,dc=domainofdirectoryserver,dc=com'</span>,
+  <span class="s1">'bind_pass'</span>     <span class="o">=&gt;</span> <span class="s1">'DirAdmin_Password'</span>,
+  <span class="s1">'writable'</span>      <span class="o">=&gt;</span> <span class="nb">false</span>, </code></pre></figure>
+
+<p>In order to get an actual accurate listing in the address book you must tweak the settings to include the specific user settings int he ODM LDAP directory.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="s1">'LDAP_Object_Classes'</span> <span class="o">=&gt;</span> array<span class="o">(</span><span class="s2">"top"</span>,<span class="s2">"person"</span>,<span class="s2">"inetOrgPerson"</span>,<span class="s2">"abxldapPerson"</span><span class="o">)</span>, 
+  <span class="s1">'required_fields'</span>     <span class="o">=&gt;</span> array<span class="o">(</span><span class="s2">"givenName"</span>, <span class="s2">"cn"</span>, <span class="s2">"sn"</span>, <span class="s2">"mail"</span><span class="o">)</span>,    
+  <span class="s1">'LDAP_rdn'</span>      <span class="o">=&gt;</span> <span class="s1">'mail'</span>, 
+  <span class="s1">'ldap_version'</span>  <span class="o">=&gt;</span> 3,      
+  <span class="s1">'search_fields'</span> <span class="o">=&gt;</span> array<span class="o">(</span><span class="s1">'givenName'</span>, <span class="s1">'cn'</span>, <span class="s1">'sn'</span>, <span class="s1">'mail'</span><span class="o">)</span>,  // fields to search <span class="k">in</span>
+  <span class="s1">'name_field'</span>    <span class="o">=&gt;</span> <span class="s1">'cn'</span>,    
+  <span class="s1">'email_field'</span>   <span class="o">=&gt;</span> <span class="s1">'mail'</span>,  
+  <span class="s1">'surname_field'</span> <span class="o">=&gt;</span> <span class="s1">'sn'</span>,   
+  <span class="s1">'firstname_field'</span> <span class="o">=&gt;</span> <span class="s1">'givenName'</span>, 
+  <span class="s1">'sort'</span>          <span class="o">=&gt;</span> <span class="s1">'givenName'</span>,    
+  <span class="s1">'scope'</span>         <span class="o">=&gt;</span> <span class="s1">'sub'</span>,  
+  <span class="s1">'filter'</span>        <span class="o">=&gt;</span> <span class="s1">'givenName=*'</span>,     
+  <span class="s1">'fuzzy_search'</span>  <span class="o">=&gt;</span> <span class="nb">true</span><span class="o">)</span><span class="p">;</span>  </code></pre></figure>
+
+<p>These settings will help you establish the correct mappings to Last Name, First Name, Email Address and Full Name or Given Name. These settings were very hard to find as there was limited documentation on both Apples part and on the Roundcube forums. Once done here I set it up to auto complete from the sql address book first and then to default over to the LDAP address book.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">// An ordered array of the ids of the addressbooks that should be searched
+// when populating address autocomplete fields server-side. ex: array<span class="o">(</span><span class="s1">'sql'</span>,<span class="s1">'Verisign'</span><span class="o">)</span><span class="p">;</span>
+<span class="nv">$rcmail_config</span><span class="o">[</span><span class="s1">'autocomplete_addressbooks'</span><span class="o">]</span> <span class="o">=</span> array<span class="o">(</span><span class="s1">'sql'</span>,<span class="s1">'Verisign'</span><span class="o">)</span><span class="p">;</span></code></pre></figure>
+
+<p>In parting my only piece of advice is to use the configuration here and remove the term Verisign and replace that variable with one that makes sense for you and your organization. Lastly if this does not work make sure that you have the correct domain name of the server and also ensure that you have enabled users to access the LDAP directory in Workgroup Manager.</p>
+
+:ET

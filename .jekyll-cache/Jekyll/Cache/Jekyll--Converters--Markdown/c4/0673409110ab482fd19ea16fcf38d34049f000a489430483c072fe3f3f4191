@@ -1,0 +1,19 @@
+I"�<h2 id="how-to-recover-space-by-offloading-unused-apps-in-ios-11">How to Recover Space by Offloading Unused Apps in iOS 11</h2>
+<hr />
+
+<p>Running low on space on your iPhone or iPad in iOS 11? This problem may
+be easier to deal with than you expect because Apple has added a quick
+way to free up storage space by removing unneeded apps. Go to Settings
+&gt; General &gt; iPhone/iPad Storage, where you’ll see a Recommendations
+section. This section may include an option to Offload Unused Apps with
+an estimate of how much space you could save. Tap Enable to allow iOS to
+remove apps that you haven’t launched in a while—this happens <em>only</em>
+if you’re low on space. iOS preserves any documents or data associated
+with the offloaded app, and the app’s icon remains on the Home screen,
+with a cloud badge. Tapping the app icon reloads it from the App Store,
+assuming it’s still available. If you find yourself waiting for apps to
+reload often and you can clear space in other ways, you can disable the
+feature in Settings &gt; iTunes &amp; App Store &gt; Offload Unused Apps.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/offloadapps/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+:ET

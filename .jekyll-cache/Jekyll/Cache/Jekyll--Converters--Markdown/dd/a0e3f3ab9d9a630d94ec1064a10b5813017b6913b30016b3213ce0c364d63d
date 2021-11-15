@@ -1,0 +1,29 @@
+I"<p>This isn’t about periscopes or mouthwash—when it comes to searching, a
+<em>scope</em> is the area in which a search takes place. When you use the
+Search field in a Finder window to look for files and folders, you have
+the choice of two scopes: This Mac or the current folder. You can always
+switch the scope after starting the search by clicking the other choice
+near the top of the window, but it’s easier to set the default search
+scope in Finder &gt; Preferences &gt; Advanced so it’s set right to start.
+From the “When performing a search” pop-up menu, choose Search This Mac
+to search across all indexed drives, Search the Current Folder to limit
+the search to the folder showing when you start the search, or Use the
+Previous Search Scope. Most of the time, if you have any idea where the
+item you’re looking for might be, selecting an enclosing folder and then
+searching within it is the best approach.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2020/20200603Fi/Finder-search-scope.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p><br />
+<br />
+<br /></p>
+<h2>Video Blog</h2>
+<hr />
+
+<div class="video-container overlay overlay-black overlay-50 screenshot" style="overflow: hidden;">
+<a data-bigpicture="{&quot;ytSrc&quot;: &quot;FAhJRHV2rj8&quot;}" href="#">
+  <img src="https://grovetech.co/assets/img/2020/Header-Search-Scope.jpg" class="img-fluid" width="700" alt="Blog Post" />
+  <img src="https://grovetech.co/assets/img/icons/duotone-icons/Media/Play.svg" class="play" />
+</a>
+</div>
+:ET

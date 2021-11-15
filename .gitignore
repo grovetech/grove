@@ -1,0 +1,7 @@
+
+.DS_Store
+compiler
+assets/.DS_Store
+RakeFile
+assets/.DS_Store
+node_modules

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-itunes-app" content="app-id=892102469">
+	
+	
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://stats.g.doubleclick.net">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="icon" href="https://grovetech.co/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://grovetech.co/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://grovetech.co/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://grovetech.co/assets/img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="https://grovetech.co/assets/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="">
+  	<meta name="twitter:description" content="">
+	<meta property="og:type" content="">
+	
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Deploy Firmware Passwords | Mac Support DC</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Deploy Firmware Passwords" />
+<meta name="author" content="Jon Brown" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Theres no doubt that the security of our computers these days is a very sensitive topic. I have helped several of my clients protect their Mac systems by setting firmware passwords. But what if you have hundreds or thousands of computers you want to have a firmware password set on?" />
+<meta property="og:description" content="Theres no doubt that the security of our computers these days is a very sensitive topic. I have helped several of my clients protect their Mac systems by setting firmware passwords. But what if you have hundreds or thousands of computers you want to have a firmware password set on?" />
+<link rel="canonical" href="https://grovetech.co/blog/deploy-firmware-passwords/" />
+<meta property="og:url" content="https://grovetech.co/blog/deploy-firmware-passwords/" />
+<meta property="og:site_name" content="Mac Support DC" />
+<meta property="og:image" content="https://grovetech.co/assets/img/2017/firmware.jpeg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-07T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://grovetech.co/assets/img/2017/firmware.jpeg" />
+<meta property="twitter:title" content="Deploy Firmware Passwords" />
+<meta name="twitter:site" content="@thegrovetech" />
+<meta name="twitter:creator" content="@Jon Brown" />
+<meta property="fb:admins" content="https://www.facebook.com/grovetechnologies" />
+<meta property="article:publisher" content="https://www.facebook.com/grovetechnologies" />
+<meta property="fb:app_id" content="2013404878733742" />
+<meta name="google-site-verification" content="google3e4955832745f7b9" />
+<meta name="msvalidate.01" content="C72803331AF77124C6D411BDE1FD13B3" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jon Brown"},"url":"https://grovetech.co/blog/deploy-firmware-passwords/","mainEntityOfPage":{"@type":"WebPage","@id":"https://grovetech.co/blog/deploy-firmware-passwords/"},"image":"https://grovetech.co/assets/img/2017/firmware.jpeg","headline":"Deploy Firmware Passwords","dateModified":"2017-06-07T00:00:00-04:00","datePublished":"2017-06-07T00:00:00-04:00","description":"Theres no doubt that the security of our computers these days is a very sensitive topic. I have helped several of my clients protect their Mac systems by setting firmware passwords. But what if you have hundreds or thousands of computers you want to have a firmware password set on?","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://grovetech.co/img/favicons/android-chrome-512x512.png"},"name":"Jon Brown"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	
+	<link rel="manifest" href="https://grovetech.co/assets/js/manifest.json">
+	
+	<!-- Libs CSS -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/libs.bundle.css">
+    <link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/theme.bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+		Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Subscribe to Grove Technologies Notifications', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		},
+		userId: 'user_id', // optional, set custom user ID
+		tags: {
+			'Name': 'John Smith'   	// optional, set custom Tags
+		}										
+	}]);
+	</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://grovetech.co/">
+          <img src="https://grovetech.co/assets/img/header-icon.png" class="navbar-brand-nav" alt="Grove Technologies">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="https://support.grovetech.co/" target="_new">
+                Support
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Security
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/security/training/" title="Security Training">
+                          Security Training
+                        </a>
+                        
+                       
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Strategy <span class="h6 text-uppercase text-primary">(new)</span>
+                        </h6>
+
+                        <!-- List -->
+                       <a class="dropdown-item" href="https://grovetech.co/products/security/cmmc/" title="CMMC Consulting">
+                          CMMC Consulting
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/ciso/" title="Virtual CISO">
+                          Virtual CISO
+                        </a>
+                        
+
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Managed
+                        </h6>
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/fleet/" title="Mac Support">
+                          Mac Support
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/network/" title="Network Services">
+                          Network Support
+                        </a>
+						
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPricing" data-toggle="dropdown" href="https://grovetech.co/pricing" title="Pricing" aria-haspopup="true" aria-expanded="false">
+                Pricing
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarPricing">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="https://grovetech.co/pricing/" title="Mac Support">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5 5v11h14V5H5zm0-2h14c1.42 0 2 .716 2 1.6v12.8c0 .884-.58 1.6-2 1.6H5c-1.42 0-2-.716-2-1.6V4.6C3 3.716 3.58 3 5 3zm7 15a.5.5 0 100-1 .5.5 0 000 1z" fill="#335EEA"/><path fill="#335EEA" opacity=".3" d="M5 5v11h14V5z"/><rect fill="#335EEA" opacity=".3" x="10" y="20" width="4" height="1" rx=".5"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Mac Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Mac Fleets of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="https://grovetech.co/pricing/network/" title="Managed Networks">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M19.366 13.93l-2.104 1.736a6.8 6.8 0 00-5.264-2.484 6.8 6.8 0 00-5.25 2.469l-2.1-1.741a9.527 9.527 0 017.35-3.455 9.527 9.527 0 017.368 3.476zm4.18-3.504l-2.099 1.742a12.242 12.242 0 00-9.449-4.44c-3.695 0-7.12 1.641-9.44 4.428L.463 10.412A14.969 14.969 0 0111.998 5c4.521 0 8.716 2.014 11.548 5.426z" fill="#335EEA" opacity=".3"/><path d="M15.119 17.354l-2.08 1.765-1.077.881-1.029-.851-2.128-1.706a4.085 4.085 0 013.193-1.534c1.217 0 2.35.536 3.121 1.445z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Network Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Networks of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  
+                  <a class="list-group-item" href="https://grovetech.co/pricing/government/" title="Government">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 4l7.631-1.43a2 2 0 01.738 0L20 4v9.283a8.51 8.51 0 01-4 7.217l-3.47 2.169a1 1 0 01-1.06 0L8 20.5a8.51 8.51 0 01-4-7.217V4z" fill="#335EEA" opacity=".3"/><path d="M14.5 11a1 1 0 011 1v3a1 1 0 01-1 1h-5a1 1 0 01-1-1v-3a1 1 0 011-1v-.5a2.5 2.5 0 115 0v.5zM12 9a1.5 1.5 0 00-1.5 1.5v.5h3v-.5A1.5 1.5 0 0012 9z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Government
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Supporting our Federal Agencies
+                      </p>
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarBlog" data-toggle="dropdown" href="https://grovetech.co/blog" title="Mac Support Blog" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarBlog">
+            		<div class="list-group list-group-flush">
+
+                        <!-- List -->
+                        <a class="list-group-item" href="https://grovetech.co/blog/" title="Mac Support Blog">
+                        
+						<!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 Mac Support Blog <span class="h6 text-uppercase text-primary">(new)</span>
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Check Back for New Posts Weekly.
+						  </p>
+						</div>
+                        </a>
+                        <a class="list-group-item" href="https://grovetech.co/blog/category/downloads/" title="E-Books For Download">
+                        <!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#335EEA"/><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#335EEA" opacity=".3"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 E-Books For Download
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Resources for Your Business.
+						  </p>
+						</div>
+
+                        </a>
+
+                    </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://portal.grovetech.co/" target="_blank" title="Login to Client Portal">
+            Login
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+    <!-- IMAGE
+    ================================================== -->
+    <section class="py-11 py-md-11 overlay overlay-black overlay-60 bg-cover" style="background-image:url(https://grovetech.co/assets/img/2017/firmware.jpeg);">
+    <div class="container mt-10">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Deploy Firmware Passwords
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+        <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                	
+                	<picture>
+						<source srcset="https://grovetech.co/assets/img/avatars/avatar.png" class="avatar-img rounded-circle" style="margin-top: -15px !important;" title="Jon Brown" type="image/webp"> 
+						<img class="avatar-img rounded-circle" src="https://grovetech.co/assets/img/avatars/avatar.png" alt="Jon Brown"> 
+					</picture>
+							
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Jon Brown
+                </h6>
+
+                <!-- Date -->
+                 <time datetime="Jun 7, 2017">Jun 7, 2017</time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style d-none d-md-block" data-a2a-url="https://grovetech.co/blog/deploy-firmware-passwords/" data-a2a-title="Deploy Firmware Passwords">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_pinterest"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<script>
+					var a2a_config = a2a_config || {};
+					a2a_config.counts = { recover_domain: 'imamac.guru', recover_protocol: 'http' };
+					</script>
+                </span>
+
+                
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    
+
+
+    <!-- SECTION
+    ================================================== -->
+    <section class="pt-2 pt-md-2 bg-white" id="blog-post">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 blog-post">
+          
+              <p>Theres no doubt that the security of our computers these days is a very sensitive topic. I have helped several of my clients protect their Mac systems by setting firmware passwords. But what if you have hundreds or thousands of computers you want to have a firmware password set on?</p>
+
+<p>What if you don’t have the luxury of a system like JAMF Pro or its predecesor the Casper Suite? Enter Munki, one of the most versatile, open source Mac Management tools. If your reading this you likely already have Munki. In this blog were going to walk through the approach of creating and deploying a package via Munki that can set or reset the firmware password on computers in your environment.</p>
+
+<h2 id="understanding-how-a-firmware-password-works">Understanding how a Firmware Password works</h2>
+<hr />
+
+<p>On 10.6.0 - 10.9.5 firmware passwords are managed by the binary application setregproptool. This binary only exists in the OS installer and on the Recovery Partition, it doesn’t actually exist in the OS natively. This is to ensure that the Firmware password cannot be reset unless you have booted into the recovery partition of either the OS or the OS Installer.</p>
+
+<p>You can however extract this binary and install it in order to use it to reset the password. This is the same method that JAMF uses in its casper suite and its the same method we will use with MUNKI.</p>
+
+<h2 id="extracting-the-binary">Extracting the Binary</h2>
+<hr />
+<p>Lets create a directory where we’ll store the binary, the scripts and the pkg</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">cd</span> <span class="p">;</span> <span class="nb">mkdir </span>firmwareInstaller <span class="p">;</span> <span class="nb">cd </span>firmwareInstaller
+bash-3.2<span class="nv">$ </span>diskutil mount Recovery<span class="se">\ </span>HD
+bash-3.2<span class="nv">$ </span>hdiutil attach <span class="nt">-quiet</span> /Volumes/Recovery<span class="se">\ </span>HD/com.apple.recovery.boot/BaseSystem.dmg
+bash-3.2<span class="nv">$ </span><span class="nb">cp</span> /Volumes/Mac<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Base<span class="se">\ </span>System/Applications/Utilities/Firmware<span class="se">\ </span>Password<span class="se">\ </span>Utility.app/Contents/Resources/setregproptool <span class="nb">.</span>
+bash-3.2<span class="nv">$ </span>hdiutil detach /Volumes/Mac<span class="se">\ </span>OS<span class="se">\ </span>X<span class="se">\ </span>Base<span class="se">\ </span>System/
+bash-3.2<span class="nv">$ </span>diskutil unmount Recovery<span class="se">\ </span>HD</code></pre></figure>
+
+<p>Now for the sake of documenting check which version you just got and read through the available switches</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash-3.2<span class="nv">$ </span><span class="nb">sudo</span> ./setregproptool</code></pre></figure>
+
+<p>I am getting this on a 10.10</p>
+
+<p>setregproptool v 2.0 (9) Jun 20 2012</p>
+
+<h2 id="deploy-setregproptool">Deploy setregproptool</h2>
+<hr />
+<p>The next step is to package up and deploy the setregproptool binary that we extracted in the above step. I recommend using <a href="https://s.sudre.free.fr/Software/Packages/about.html">Packages</a> a great tool for creating OSX packages. We can always assist if you need a hand but its pretty straight forward. You can set the folder you want the setregproptool binary to be in and then depending on where you put it, is where you would target it in the below scripts. For the sake of this article for example I am putting the binary in /usr/sbin/setregproptool</p>
+
+<h2 id="approach-for-new-or-unprotected-computers">Approach for new or unprotected computers</h2>
+<hr />
+<p>Create the two scripts, one for enabling the firmware password and the second to disable the same. I highly recommend you create the installer and “uninstaller” in pairs and always match the version numbers.</p>
+
+<p>This is especially critical if you are required to change the firmware passwords in the future and versioning starts to be an issue. The main reason for this is that computer models newer than 2010 require the same password to disable the prompt, so the “uninstaller” version should always match the installer version used previously.</p>
+
+<p>This is, for example, you receive a brand new recent model half batch of computers, then you install your firmware password version 1.0. Then the next week you receive the other half of the shipment and install the firmware password version 1.1.</p>
+
+<p>Then if you use the uninstaller 1.0 to target all of them only the first half will have it disabled. What a difficult explanation but I hope is clear</p>
+
+<p>Also it is a good practice that when you set the password to blank when disabling it. This way you won’t face problem if the computer needs to be protected again</p>
+
+<h2 id="creating-the-scripts">Creating the scripts</h2>
+<hr />
+<p>touch enable.postflight.sh disable.postflight.sh</p>
+
+<p>enable.postflight.sh could be something like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+<span class="c">###</span>
+<span class="c"># VERSION 1.0 of the password enabler. Use the same version to disable it.</span>
+<span class="c">###</span>
+<span class="c">## Fix Permissions</span>
+<span class="nb">sleep </span>5
+<span class="nb">chown </span>root:wheel /usr/sbin/setregproptool
+<span class="nb">chmod </span>755 /usr/sbin/setregproptool
+<span class="c"># Deactivating the password if it was set. The script will fail or hang if the firmware password set does not match the one listed below</span>
+/usr/sbin/setregproptool <span class="nt">-d</span> <span class="nt">-o</span> <span class="s2">"veryoldpass"</span>
+<span class="nb">sleep </span>5
+<span class="c"># Setting the password and the mode. This will fail if the old password does not match exactly. </span>
+<span class="c"># for 10.10 use sudo /usr/sbin/firmwarepasswd -verify to verify that the old password equals the veryoldpass below if it doesn't the script won't run.</span>
+<span class="c"># To verify the password on 10.6, 10.7, 10.8 &amp; 10.9 run the BinaryOnly package first then run this command</span>
+<span class="c">#  </span>
+<span class="nb">sudo</span> /usr/sbin/setregproptool <span class="nt">-m</span> <span class="nb">command</span> <span class="nt">-p</span> <span class="s2">"verynewpass"</span> <span class="nt">-o</span> <span class="s2">"veryoldpass"</span>
+<span class="c"># Logging</span>
+<span class="nb">echo</span> <span class="s2">"The firmware password version 1.0 is now set up!"</span>
+<span class="nb">exit </span>0</code></pre></figure>
+
+<p>disable.postflight.sh could be something like this</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/sh</span>
+<span class="c">###</span>
+<span class="c"># VERSION 1.0 of the password disabler. Works only if the password was set up using the same version enabler</span>
+<span class="c">###</span>
+<span class="c"># Setting the password to blank WILL TAKE EFFECT AFTER REBOOT</span>
+<span class="nv">$setregproptool</span> <span class="nt">-p</span> <span class="s2">""</span> <span class="nt">-o</span> <span class="s2">"NewPassword"</span>
+<span class="nb">sleep </span>1
+<span class="c"># Disable the prompt for password</span>
+<span class="nv">$setregproptool</span> <span class="nt">-d</span> <span class="nt">-o</span> <span class="s2">"NewPassword"</span>
+<span class="c"># Logging</span>
+<span class="nb">echo</span> <span class="s2">"Firmware password now set to blank and prompt disabled, reboot for the changes to take effect!"</span>
+<span class="c">#forget that the password was ever installed. Munki likes this</span>
+pkgutil <span class="nt">--forget</span> com.mycompany.pkg.firm.pass
+<span class="nb">exit </span>0</code></pre></figure>
+
+<p>As long a you use the same pkg name you can verify what version of the password a computer has by running `</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pkgutil <span class="nt">--info</span> com.mycompany.pkg.firm.pass</code></pre></figure>
+
+<p>Then use the correct uninstaller</p>
+
+<h2 id="what-if-i-already-have-passwords-set">What if I already have passwords set?</h2>
+<hr />
+<p>Many of my clients already have Firmware Passwords set in their environment. Not to fear you can create a package with a script in it that you can use to wipe out the old password and to reset the new one.</p>
+
+<p>This package script below loops through 2 possible passwords using the tool firmwarepasswd and if one of the passwords works it removes the password from the computer. On reboot the computer will no longer have a firmware password.</p>
+
+<p>On 10.10.0 - 10.11 firmware passwords are managed by the binary application firmwarepasswd. This new binary exists on the Core OS already and is the prefered new method of managing firmware passwords.</p>
+
+<h2 id="caveats">Caveats</h2>
+<hr />
+<p>The only caveats here are understanding that we are using the #!/usr/bin/expect binary to write our scripts, while this is similar to bash, its not the same, and uses its own unique syntax. The reason we use #!/usr/bin/expect is because we will be prompted to enter a password the expect binary lets you send pre filled answers to expected questions in the terminal environment. Since the goal is to loop through a variety of passwords its the best tool for that task.</p>
+
+<p>Installer Script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/expect</span>
+spawn <span class="nb">sudo </span>firmwarepasswd <span class="nt">-setpasswd</span>
+expect <span class="o">{</span>
+    <span class="s2">"Enter password:"</span> <span class="o">{</span>
+        send <span class="s2">"FirstPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+    <span class="s2">"Enter new password:"</span> <span class="o">{</span>
+        send <span class="s2">"SecondPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+    <span class="s2">"Re-enter new password:"</span> <span class="o">{</span>
+        send <span class="s2">"ThirdPassword</span><span class="se">\r</span><span class="s2">"</span>
+        exp_continue
+    <span class="o">}</span>
+<span class="o">}</span>
+spawn <span class="nb">sudo </span>bless <span class="nt">-mount</span> /Volumes/Macintosh<span class="se">\ </span>HD <span class="nt">-setBoot</span></code></pre></figure>
+
+<p>Uninstaller Script</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/usr/bin/expect</span>
+
+<span class="nb">set </span>verifyPassword <span class="o">[</span><span class="nb">exec sudo </span>firmwarepasswd <span class="nt">-check</span><span class="o">]</span>
+
+<span class="k">if</span> <span class="o">{</span> <span class="nv">$verifyPassword</span> eq <span class="s2">"Password Enabled: Yes"</span> <span class="o">}</span> <span class="o">{</span>
+
+   spawn firmwarepasswd <span class="nt">-delete</span>
+   expect <span class="s2">"Enter password:"</span>
+   send <span class="s2">"FirstPassword</span><span class="se">\r</span><span class="s2">"</span><span class="p">;</span>
+   expect <span class="o">{</span>
+      <span class="s2">"Password incorrect"</span> <span class="o">{</span>
+         puts <span class="s2">"Trying 2nd password"</span>
+         expect eof
+         spawn firmwarepasswd <span class="nt">-delete</span>
+         expect <span class="s2">"Enter password:"</span>
+         send <span class="s2">"SecondPassword</span><span class="se">\r</span><span class="s2">"</span><span class="p">;</span>
+         expect <span class="s2">"Password removed"</span>
+         puts <span class="s2">"Firmware Password Deleted using 2nd Password"</span>
+       <span class="o">}</span>
+      <span class="s2">"Password removed"</span> <span class="o">{</span>
+        puts <span class="s2">"Firmware Password Deleted using 1st Password"</span>
+        <span class="o">}</span>
+   <span class="o">}</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+		puts <span class="s2">"&lt;result&gt;Not Found&lt;/result&gt;"</span>
+<span class="o">}</span></code></pre></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+<hr />
+<p>Setting up and managing Firmware Passwords via Munki or JAMF is a tricky proposition but I hope that the information above gives you a little glimpse and or help. If you need assistance or help in any way do not hesitate to reach out to me via the comments section below. Giving credit where credit is due much of this walk through is credited to <a href="https://www.nbalonso.com/install-firmware-passwords/">nbolonso.com</a> who helped point me in the right direction. We then took it to the next level by informing you how to manage the firmware passwords on 10.10 and newer workstations and also how to use the /usr/bin/expect system to reset old password in a loop.</p>
+
+
+              
+              
+
+          </div>
+          
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+	    <!-- INFO
+    ================================================== -->
+    <section class="py-5 py-md-6 m-9" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Message Us (SMS)
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+12404518688" title="Text Us" class="h4 text-primary">
+                (240) 451-8688
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Call Us
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+18882539103" title="Call Us" class="h4">
+                (888) 253-9103
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email us
+            </h6>
+
+            <!-- Link -->
+            <a href="matilto:support@grovetech.co" class="h4">
+              support@grovetech.co
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+			
+	<!-- CONTACT FORM
+    ================================================== -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40" style="overflow: hidden;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+                
+                    <!-- Image -->
+                    <div class="text-center">
+                      
+                      <picture>
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.webp" type="image/webp">
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.png" type="image/png" class="img-fluid form-floating w-200"> 
+						<img src="https://grovetech.co/assets/img/illustrations/illustration-2.png" alt="Networking Services" class="img-fluid form-floating w-200">
+					 </picture>
+				
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      We'd like to hear from you
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                      We specialize in business problems and work to help increase profitability by reducing chronic issues.
+                    </p>
+
+                    <!-- Form -->
+                    <form name="form-contact" id="form-contact" action="https://formspree.io/f/xylrgbym" method="POST">
+					  <div class="row">
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+					
+							
+							<!-- Input -->
+							<input type="text" name="Contact[name]" id="contact_name" class="form-control form-control-flush" placeholder="Name" required>
+							<label for="contact_name">Name</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="email" name="Contact[email]" id="contact_email" class="form-control form-control-flush" placeholder="Email" required>
+							<label for="contact_email">Email</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   			
+							<!-- Input -->
+							<input type="text" name="Contact[phone]" id="contact_phone" class="form-control form-control-flush" placeholder="Phone" required>
+							<label for="contact_phone">Phone</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Company Name" required>
+							<label for="contact_subject">Company Name</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="mb-3">
+					
+				   
+
+							<!-- Input -->
+							<textarea name="Contact[message]" id="contact_message" class="form-control form-control-flush" placeholder="What challenges are you facing?" rows="8" required></textarea>
+
+						  </div>
+						</div>
+					  </div> <!-- / .row -->
+					  <div class="justify-content-center">
+				
+				  
+						  <!-- Submit -->
+						  <button type="submit" class="btn d-block w-100 btn-success">
+							Request a Consultation
+						  </button>
+
+			   
+					  </div> <!-- / .row -->
+					  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+					</form>
+					<div id="response-message"></div>   
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-dcab198a-8dc4-4215-959c-460c834666ca"></div>
+
+ <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      <footer class="py-6 py-md-9 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+        
+              <!-- Brand -->
+              <a href="https://consultants.apple.com/us/profile/2045642"><img src="https://grovetech.co/assets/img/icons/ACN.svg" alt="Grove Technologies a member of the Apple Consultants Network" class="footer-brand mb-2"></a>
+
+              <!-- Text -->
+              <p class="text-gray-900 mb-2 py-3">
+                Keeping Companies in DC Safe Since 2014.
+              </p>
+
+              <!-- Social -->
+              <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.instagram.com/thegrovetech/" title="Instagram" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Instagram">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.facebook.com/grovetechnologies" title="Facebook" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Facebook">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://twitter.com/thegrovetech" title="Twitter" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/twitter.svg" class="list-social-icon" alt="Twitter">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item">
+                  <a href="https://www.linkedin.com/company/grove-tech" title="LinkedIn" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="LinkedIn">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+        
+             
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Clients
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/experience" title="Client Experience" class="text-reset">
+                    Client Experience
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://portal.grovetech.co" title="Client Portal" class="text-reset">
+                    Client Portal
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Channels
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/contact" title="Contact Us" class="text-reset">
+                    Contact Us
+                  </a>
+                </li>
+                
+                <li class="mb-3">
+                  <a href="https://grovetech.co/app" title="Download App" class="text-reset">
+                   Download App
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Company
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/about" title="About Us" class="text-reset">
+                    About Us
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://grovetech.co/team" title="Meet the Team" class="text-reset">
+                    Meet the Team
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            
+            <div class="col-12 mt-10">
+        
+              <p class="text-gray-900">
+              	&copy; 2021 <strong>Grove</strong> Technologies is a registered service mark of Grove Technologies LLC. All Rights Reserved. <a href="https://grovetech.co/privacy/" class="text-reset">Privacy Policy.</a>
+              </p>
+
+            </div>
+            
+            
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+    </section>
+    
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120080861-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-120080861-1');
+	</script>
+	<script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+	Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Grove Technologies', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: true, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		}									
+	}]);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/beerslider@1.0.3/dist/BeerSlider.min.js"></script>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    <script src="https://grovetech.co/assets/js/theme.bundle.js"></script>
+    <script src="https://grovetech.co/assets/js/vendor.bundle.js"></script>
+    
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#efefef",
+		  "text": "#404040"
+		},
+		"button": {
+		  "background": "#8ec760",
+		  "text": "#ffffff"
+		}
+	  },
+	  "theme": "edgeless",
+	  "type": "opt-out",
+	  "content": {
+		"href": "https://grovetech.co/privacy/"
+	  }
+	});
+	</script>
+</body>
+</html>

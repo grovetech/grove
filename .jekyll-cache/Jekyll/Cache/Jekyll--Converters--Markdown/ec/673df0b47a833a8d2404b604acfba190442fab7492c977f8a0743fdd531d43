@@ -1,0 +1,102 @@
+I"[<h2 id="seriously-cool-features-of-macos-1014-mojave-you-wont-want-to-miss">Seriously Cool Features of macOS 10.14 Mojave You Won’t Want to Miss</h2>
+<hr />
+
+<p>With last year’s macOS 10.13 High Sierra, Apple made no sweeping
+changes, instead focusing on refinements and bug fixes. In keeping with
+the company’s alternating cycle of releases, this year’s macOS 10.14
+Mojave boasts plenty of new features.</p>
+
+<h3 id="dark-mode-and-dynamic-desktop">Dark Mode and Dynamic Desktop</h3>
+<hr />
+<p>In a major visual change, Mojave features a new Dark mode that reverses
+the standard black-on-white look with light gray text on a dark
+background throughout the interface—change it in System Preferences &gt;
+General. If your eyes find white window backgrounds too bright, Dark
+mode will be a boon. Or, if the current bright approach doesn’t bother
+you, Dark mode may seem muddy and hard to read because of its reduced
+contrast.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Dark mode may be useful, but Dynamic Desktop is just eye candy. Select
+either Mojave or Solar Gradients in System Preferences &gt; Desktop &amp;
+Screen Saver &gt; Desktop, and your wallpaper will change throughout the
+day.</p>
+
+<h3 id="finder-stacks-and-groups">Finder Stacks and Groups</h3>
+<hr />
+<p>Turning to more practical changes, Mojave’s Finder boasts a few new
+features to help you better navigate a cluttered Desktop and overflowing
+folders. Control-click the Desktop and choose Use Stacks, and the Finder
+will combine all the related icons on your Desktop into <em>stacks</em>. It
+collects them by kind by default, but you can instead have it group them
+by various dates or even by tags. Click a stack to see what’s inside.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image3.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>Groups are like Stacks, but within a Finder window. With a Finder window
+open, choose View &gt; Use Groups, and note that you can use the View &gt;
+Group By submenu to change the grouping from kind to application, date,
+size, and tag.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image4.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="quick-actions-in-the-finder-and-quick-look">Quick Actions in the Finder and Quick Look</h3>
+<hr />
+<p>The Finder’s new tricks go even further, with Quick Actions. Controlled
+in System Preferences &gt; Extensions &gt; Finder, these quick actions let
+you rotate or mark up a document within the Finder’s preview pane or a
+Quick Look window (select a file and press the Space bar). Other quick
+actions let you create PDFs and trim video.</p>
+
+<p>Most useful of these is the Markup quick action, which gives you most of
+Preview’s editing tools—cropping, annotating, and more—right in a
+Finder or Quick Look window.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image5.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="still-and-video-screen-captures-with-editing">Still and Video Screen Captures, with Editing</h3>
+<hr />
+<p>Markup also features prominently in Mojave’s new screen capture
+interface. You’ve long been able to press Command-Shift-3 for a
+screenshot of the entire screen and Command-Shift-4 for a portion of the
+screen. Now, press Command-Shift-5 for an interface to those
+capabilities, plus video screen recording, which was also possible
+before with QuickTime Player.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image6.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>These capabilities may not be new, but they’re a lot easier to use in
+Mojave, and there are a few new options, such as being able to keep the
+same size selection across multiple screen captures and include the
+pointer in screenshots.</p>
+
+<h3 id="continuity-camera-with-iphone">Continuity Camera with iPhone!</h3>
+<hr />
+<p>Have you ever wanted to insert a photo or scanned page into an email
+message or document? Mojave makes this easier with Continuity Camera, a
+feature that lets you use your iPhone within a Mac app. In Mail, for
+instance, start a new message, and then choose File &gt; Insert from
+iPhone &gt; Take Photo/Scan Documents. Either way, your iPhone immediately
+switches to the appropriate photo or scanning mode, and the resulting
+photo or scan lands in your message.</p>
+
+<h3 id="ios-apps-news-stocks-voice-memos-home">iOS Apps: News, Stocks, Voice Memos, Home</h3>
+<hr />
+<p>Apple has been emphatic that it is <em>not</em> planning to retire macOS in
+favor of iOS. However, the company does want to make it easier for
+developers to write apps that run in both operating systems. As the
+first phase of that strategy, Apple has ported four iOS apps to the Mac:
+News, Stocks, Voice Memos, and Home.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/mojave/image8.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>They look a little different from their iOS cousins, as they should, but
+they work similarly, and you can sync their settings and data between
+your devices via iCloud (look in System Preferences &gt; iCloud on the Mac
+and in Settings &gt; <em>Your Name</em> &gt; iCloud in iOS).</p>
+
+<p>There are a variety of other small changes throughout Mojave and in
+Apple’s standard apps, and we’ll share more of those in future posts, so
+stay tuned!</p>
+:ET

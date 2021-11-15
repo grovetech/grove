@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-itunes-app" content="app-id=892102469">
+	
+	
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+  	
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://stats.g.doubleclick.net">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="icon" href="https://grovetech.co/assets/img/favicons/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://grovetech.co/assets/img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://grovetech.co/assets/img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://grovetech.co/assets/img/favicons/favicon-16x16.png">
+	<link rel="mask-icon" href="https://grovetech.co/assets/img/favicons/safari-pinned-tab.png" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="keywords" content="">
+  	<meta name="twitter:description" content="">
+	<meta property="og:type" content="">
+	
+	<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Web Help Desk on Amazon EC2 | Mac Support DC</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Web Help Desk on Amazon EC2" />
+<meta name="author" content="Jon" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="If your like me you have run several servers and you have learned that running your own servers and server hardware either locally or remotely is a huge commitment. A commitment of time, money and precious resources that many in the IT community can not afford. Since the inception of virtual environments people have been making their lives easier with simpler more disposable methods of hosting and that is what led me to the holy grail of virtual environments the Amazon EC2 server." />
+<meta property="og:description" content="If your like me you have run several servers and you have learned that running your own servers and server hardware either locally or remotely is a huge commitment. A commitment of time, money and precious resources that many in the IT community can not afford. Since the inception of virtual environments people have been making their lives easier with simpler more disposable methods of hosting and that is what led me to the holy grail of virtual environments the Amazon EC2 server." />
+<link rel="canonical" href="https://grovetech.co/blog/install-webhelpdesk-on-amazon-ec2/" />
+<meta property="og:url" content="https://grovetech.co/blog/install-webhelpdesk-on-amazon-ec2/" />
+<meta property="og:site_name" content="Mac Support DC" />
+<meta property="og:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2013-06-04T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://grovetech.co/assets/img/covers/cover-16.jpg" />
+<meta property="twitter:title" content="Web Help Desk on Amazon EC2" />
+<meta name="twitter:site" content="@thegrovetech" />
+<meta name="twitter:creator" content="@Jon" />
+<meta property="fb:admins" content="https://www.facebook.com/grovetechnologies" />
+<meta property="article:publisher" content="https://www.facebook.com/grovetechnologies" />
+<meta property="fb:app_id" content="2013404878733742" />
+<meta name="google-site-verification" content="google3e4955832745f7b9" />
+<meta name="msvalidate.01" content="C72803331AF77124C6D411BDE1FD13B3" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Jon"},"url":"https://grovetech.co/blog/install-webhelpdesk-on-amazon-ec2/","mainEntityOfPage":{"@type":"WebPage","@id":"https://grovetech.co/blog/install-webhelpdesk-on-amazon-ec2/"},"image":"https://grovetech.co/assets/img/covers/cover-16.jpg","headline":"Web Help Desk on Amazon EC2","dateModified":"2013-06-04T00:00:00-04:00","datePublished":"2013-06-04T00:00:00-04:00","description":"If your like me you have run several servers and you have learned that running your own servers and server hardware either locally or remotely is a huge commitment. A commitment of time, money and precious resources that many in the IT community can not afford. Since the inception of virtual environments people have been making their lives easier with simpler more disposable methods of hosting and that is what led me to the holy grail of virtual environments the Amazon EC2 server.","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://grovetech.co/img/favicons/android-chrome-512x512.png"},"name":"Jon"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+	
+	<link rel="manifest" href="https://grovetech.co/assets/js/manifest.json">
+	
+	<!-- Libs CSS -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/libs.bundle.css">
+    <link rel="stylesheet" type="text/css" href="https://grovetech.co/assets/css/theme.bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+		Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Subscribe to Grove Technologies Notifications', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: false, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		},
+		userId: 'user_id', // optional, set custom user ID
+		tags: {
+			'Name': 'John Smith'   	// optional, set custom Tags
+		}										
+	}]);
+	</script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white border-bottom">
+      <div class="container">
+    
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://grovetech.co/">
+          <img src="https://grovetech.co/assets/img/header-icon.png" class="navbar-brand-nav" alt="Grove Technologies">
+        </a>
+    
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+    
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fe fe-x"></i>
+          </button>
+    
+          <!-- Navigation -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link"  href="https://support.grovetech.co/" target="_new">
+                Support
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarPages">
+                <div class="row gx-0">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Security
+                        </h6>
+
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/security/training/" title="Security Training">
+                          Security Training
+                        </a>
+                        
+                       
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Strategy <span class="h6 text-uppercase text-primary">(new)</span>
+                        </h6>
+
+                        <!-- List -->
+                       <a class="dropdown-item" href="https://grovetech.co/products/security/cmmc/" title="CMMC Consulting">
+                          CMMC Consulting
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/ciso/" title="Virtual CISO">
+                          Virtual CISO
+                        </a>
+                        
+
+                      </div>
+                      <div class="col-12 col-md-4 pb-3">
+
+                        <!-- Heading -->
+                        <h6 class="dropdown-header py-3">
+                          Managed
+                        </h6>
+                        <!-- List -->
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/fleet/" title="Mac Support">
+                          Mac Support
+                        </a>
+                        <a class="dropdown-item" href="https://grovetech.co/products/hosted/network/" title="Network Services">
+                          Network Support
+                        </a>
+						
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- / .row -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarPricing" data-toggle="dropdown" href="https://grovetech.co/pricing" title="Pricing" aria-haspopup="true" aria-expanded="false">
+                Pricing
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarPricing">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="https://grovetech.co/pricing/" title="Mac Support">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5 5v11h14V5H5zm0-2h14c1.42 0 2 .716 2 1.6v12.8c0 .884-.58 1.6-2 1.6H5c-1.42 0-2-.716-2-1.6V4.6C3 3.716 3.58 3 5 3zm7 15a.5.5 0 100-1 .5.5 0 000 1z" fill="#335EEA"/><path fill="#335EEA" opacity=".3" d="M5 5v11h14V5z"/><rect fill="#335EEA" opacity=".3" x="10" y="20" width="4" height="1" rx=".5"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Mac Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Mac Fleets of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  <a class="list-group-item" href="https://grovetech.co/pricing/network/" title="Managed Networks">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M19.366 13.93l-2.104 1.736a6.8 6.8 0 00-5.264-2.484 6.8 6.8 0 00-5.25 2.469l-2.1-1.741a9.527 9.527 0 017.35-3.455 9.527 9.527 0 017.368 3.476zm4.18-3.504l-2.099 1.742a12.242 12.242 0 00-9.449-4.44c-3.695 0-7.12 1.641-9.44 4.428L.463 10.412A14.969 14.969 0 0111.998 5c4.521 0 8.716 2.014 11.548 5.426z" fill="#335EEA" opacity=".3"/><path d="M15.119 17.354l-2.08 1.765-1.077.881-1.029-.851-2.128-1.706a4.085 4.085 0 013.193-1.534c1.217 0 2.35.536 3.121 1.445z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Network Support
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Managing Networks of All Sizes
+                      </p>
+
+                    </div>
+
+                  </a>
+                  
+                  <a class="list-group-item" href="https://grovetech.co/pricing/government/" title="Government">
+
+                    <!-- Icon -->
+                    <div class="icon icon-sm text-primary">
+						<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M4 4l7.631-1.43a2 2 0 01.738 0L20 4v9.283a8.51 8.51 0 01-4 7.217l-3.47 2.169a1 1 0 01-1.06 0L8 20.5a8.51 8.51 0 01-4-7.217V4z" fill="#335EEA" opacity=".3"/><path d="M14.5 11a1 1 0 011 1v3a1 1 0 01-1 1h-5a1 1 0 01-1-1v-3a1 1 0 011-1v-.5a2.5 2.5 0 115 0v.5zM12 9a1.5 1.5 0 00-1.5 1.5v.5h3v-.5A1.5 1.5 0 0012 9z" fill="#335EEA"/></g></svg>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="ms-4">
+
+                      <!-- Heading -->
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">
+                        Government
+                      </h6>
+
+                      <!-- Text -->
+                      <p class="fs-sm text-gray-700 mb-0">
+                        Supporting our Federal Agencies
+                      </p>
+
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarBlog" data-toggle="dropdown" href="https://grovetech.co/blog" title="Mac Support Blog" aria-haspopup="true" aria-expanded="false">
+                Blog
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarBlog">
+            		<div class="list-group list-group-flush">
+
+                        <!-- List -->
+                        <a class="list-group-item" href="https://grovetech.co/blog/" title="Mac Support Blog">
+                        
+						<!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 Mac Support Blog <span class="h6 text-uppercase text-primary">(new)</span>
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Check Back for New Posts Weekly.
+						  </p>
+						</div>
+                        </a>
+                        <a class="list-group-item" href="https://grovetech.co/blog/category/downloads/" title="E-Books For Download">
+                        <!-- Icon -->
+						<div class="icon icon-sm text-primary">
+						  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M13.686 18.708C15.91 17.82 18.683 17.25 22 17V5.506a.5.5 0 00-.513-.5C18.658 5.078 15.83 5.743 13 7v11.244a.5.5 0 00.686.464z" fill="#335EEA"/><path d="M2.686 18.708C4.91 17.82 7.683 17.25 11 17V5.506a.5.5 0 00-.513-.5C7.658 5.078 4.83 5.743 2 7v11.244a.5.5 0 00.686.464z" fill="#335EEA" opacity=".3"/></g></svg>
+						</div>
+
+						<!-- Content -->
+						<div class="ms-4">
+
+						  <!-- Heading -->
+						  <h6 class="fw-bold text-uppercase text-primary mb-0">
+							 E-Books For Download
+						  </h6>
+
+						  <!-- Text -->
+						  <p class="fs-sm text-gray-700 mb-0">
+							Resources for Your Business.
+						  </p>
+						</div>
+
+                        </a>
+
+                    </div>
+              </div>
+            </li>
+          </ul>
+    
+          <!-- Button -->
+          <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://portal.grovetech.co/" target="_blank" title="Login to Client Portal">
+            Login
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+    <!-- IMAGE
+    ================================================== -->
+    <section class="py-11 py-md-11 overlay overlay-black overlay-60 bg-cover" style="background-image:url(https://grovetech.co/assets/img/covers/cover-16.jpg);">
+    <div class="container mt-10">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            
+            <!-- Heading -->
+            <h1 class="display-2 text-white">
+              Web Help Desk on Amazon EC2
+            </h1>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+        <!-- HEADER
+    ================================================== -->
+    <section class="pt-8 pt-md-11 bg-white">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                	
+                	<picture>
+						<source srcset="https://grovetech.co/assets/img/avatars/avatar.png" class="avatar-img rounded-circle" style="margin-top: -15px !important;" title="Jon" type="image/webp"> 
+						<img class="avatar-img rounded-circle" src="https://grovetech.co/assets/img/avatars/avatar.png" alt="Jon"> 
+					</picture>
+							
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Jon
+                </h6>
+
+                <!-- Date -->
+                 <time datetime="Jun 4, 2013">Jun 4, 2013</time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style d-none d-md-block" data-a2a-url="https://grovetech.co/blog/install-webhelpdesk-on-amazon-ec2/" data-a2a-title="Web Help Desk on Amazon EC2">
+					<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_pinterest"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_linkedin"></a>
+					</div>
+					<script async src="https://static.addtoany.com/menu/page.js"></script>
+					<script>
+					var a2a_config = a2a_config || {};
+					a2a_config.counts = { recover_domain: 'imamac.guru', recover_protocol: 'http' };
+					</script>
+                </span>
+
+                
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+    
+
+
+    <!-- SECTION
+    ================================================== -->
+    <section class="pt-2 pt-md-2 bg-white" id="blog-post">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8 blog-post">
+          
+              <p>If your like me you have run several servers and you have learned that running your own servers and server hardware either locally or remotely is a huge commitment. A commitment of time, money and precious resources that many in the IT community can not afford. Since the inception of virtual environments people have been making their lives easier with simpler more disposable methods of hosting and that is what led me to the holy grail of virtual environments the Amazon EC2 server.</p>
+
+<p>We have been looking at several help desk software solutions and the one that won was <a href="https://www.solarwinds.com">Solarwinds</a> (formerly MacsDesign Studio’s) <a href="https://www.webhelpdesk.com">Web Help Desk</a>. I have used this for years in other places and I love how it integrates with ARD and JAMF important for us Mac Administrators trying to stay on top of our inventory.</p>
+
+<p>While investigating I noticed that there were basically two models. Run WHD yourself on your own server or virtual instance, or have it hosted. The hosted model is run by a company called Loop1. A great company but due to their limitations there are 2 concepts that you have to be comfortable with when hosting with them. First you have no control of the data backup and you have no control of the data. Meaning you can’t extract or dump the data. That was too restrictive for us so we decided to run it ourself but to do so in an Amazon EC2 environment.</p>
+
+<p>There was no documentation on how to do this and the sales team had only hinted that it may be possible. I decided to give it a go and learned quite a lot in the process. I hope that this will help out a few people and help expand the pool of Web Help Desk and Amazon EC2 users.</p>
+
+<p><strong>Sign up / Log in to your AWS Account</strong><br />
+If you do not have an AWS account then you can signup for the <a href="https://aws.amazon.com/free/">free usage tier</a> and login to your account.</p>
+
+<p><strong>Setting up our server</strong><br />
+After you have logged in to AWS account, click “My Account / Console” in top right corner of the screen and then click on “AWS Management Console”. You will be presented with something like this:</p>
+
+<p>Click on “EC2″ link and you will be taken to the EC2 Dashboard. Click on “Launch Instance” button to create a new instance. Follow the “Classic Wizard” as shown below:</p>
+
+<p>Click “Continue” and on the next screen select “Ubuntu Server 12.04.2 LTS”</p>
+
+<p>On the next screen, you can proceed with the default settings. Make sure that “Instance Type” is set to “Micro” because that comes free with AWS Free Usage Tier. Click “Continue”</p>
+
+<p>Click “Continue” on the next screen:</p>
+
+<p>Again, click continue on the next screen. After that you can add a “Name” for your instance for better organization. I have named it as “Web Help Desk”.</p>
+
+<p>Now, you need to create a “Key Pair” so that you can connect easily with your server via SSH. Give an easy to remember name to your key pair and download the file. Keep the file in a place that you can remember. As you will need this file to connect with your server.</p>
+
+<p>Next step is to configure the Firewall and make sure that only required ports are open for our server. Create a new security group. I have named it as “WHD2”. Now, click the dropdown for “Create a new rule” select SSH and click “Add Rule”. Repeat it for HTTP. You will also need to create a custom rule for port 8081 as that is the port for Web Help Desk.</p>
+
+<p>And we are done, setting up our instance. Click “Launch”.</p>
+
+<p>Go to “Instances” page and you will see your new server being initialized and in some time it will be up and running. But, it’s not yet ready to run a Web Help Desk site. We need to setup the essential services to run Web Help Desk : Apache, PHP and MySQL.</p>
+
+<p><strong>Connect via Terminal</strong><br />
+Select the instance which we created above and click “Instance Actions”, in the pop-up menu click on “Connect”</p>
+
+<p>Click on “Stand Alone SSH Client” once done you will be presented with the proper method for connecting to your instance. For me my command looked like this.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ssh <span class="nt">-i</span> /path/to/my/certificate/file.pem ubuntu@xx.xx.xx.xx</code></pre></figure>
+
+<p>(Where xx.xx.xx.xx was the hostname or IP of my instance). The best method to connect was to CD into the directory where my pem file was and then run the command from there. More than a few directories seemed to cause the connection to fail. Connecting can be cumbersome or it can just work it took me a few tries to connect with the hostname before I decided to change to an Elastic IP.</p>
+
+<p><strong>Mapping Domain Name</strong><br />
+Now we have everything ready in place and all we need to do is map our domain with our virtual server. For this you will have to associate an IP with the instance and map the domain name to that IP.</p>
+
+<p>Head back to EC2 console and click “Elastic IPs” in the left pane. Click “Allocate New Address”. Now, you will see a new IP address in the console. Click “Associate Address” to associate this IP with your instance.</p>
+
+<p>Now, switch to back to “Instances” panel and you can check the attachment status. You will need to connect to your server by IP address now. Your hostname (public DNS) will no longer work, and if you detach the IP, your instance will be assigned a different hostname (public DNS). So, it’s best to not to change IP or detach it. You can map your domain name to this elastic IP and it will work perfectly.</p>
+
+<p><strong>Setting up Apache</strong><br />
+Now, we are connected to our server. Next step is to setup Apache. By default, you will be logged in as user : ubuntu. Let’s switch the user to “root” so that we can get complete access. Use the following command to do so</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>su</code></pre></figure>
+
+<p>Use the following command in terminal to install Apache on your server:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>apache2</code></pre></figure>
+
+<p>After the installation is complete, look for Public DNS of your instance (Or IP address as shown above). Copy this Public DNS and paste it in browser’s address bar. You will see a test page for Apache like below:</p>
+
+<p><strong>Installing PHP5</strong><br />
+Our Apache is working and now we will install PHP5. For installing PHP5 use following commands in your terminal:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>php5
+apt-get <span class="nb">install </span>libapache2-mod-php5
+/etc/init.d/apache2 restart</code></pre></figure>
+
+<p>Note: If your PHP installation fails with a message such as “Unable to fetch some archives…” then run the following command and repeat the above process:</p>
+
+<p>apt-get update</p>
+
+<p>Now, your web files placed in /var/www/ can be accessed in the browser via Public DNS.</p>
+
+<p>Let’s create a test PHP file to make sure that we have PHP running properly. Use the following command to do so</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /var/www/
+pico mytest.php</code></pre></figure>
+
+<p>This will create a new PHP file and open editor. Follow the following steps to add content to file :</p>
+
+<ol>
+  <li>Type</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">&lt;?php phpinfo<span class="o">()</span> ?&gt;</code></pre></figure>
+
+<ol>
+  <li>Hit escape key</li>
+  <li>Type command+x to write the contents to file and quit the editor.</li>
+  <li>Move the file into the appropriate directory.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">mv </span>mytest.php html/</code></pre></figure>
+
+<p>After creating the file run the file in your browser using the address as your-public-dns/mytest.php and it will show a page like below</p>
+
+<p>Now that PHP is running perfectly on our Apache. We need MySQL for creating database.</p>
+
+<p><strong>Install MySQL</strong><br />
+Process for installing MySQL is similar to the process we followed for installing PHP. Use the following command in terminal to install MySQL</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>mysql-server</code></pre></figure>
+
+<p>During installation process you will be asked to create a password for “root” user. Keep this password safe in your memory or computer because this will be required to access the database later on.</p>
+
+<p>Since we need to run PHP5 with MySQL, we will also install PHP module for MySQL using the following command</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>php5-mysql
+apt-get <span class="nb">install </span>libapache2-mod-auth-mysql</code></pre></figure>
+
+<p>After this we can create database and continue with setting up Web Help Desk. But, it will be nice to setup phpMyAdmin visual interface. So, let’s go ahead with it.</p>
+
+<p><strong>Installing phpMyAdmin</strong><br />
+Use the following command to install phpMyAdmin and make sure you configure it for “Apache2″ web server</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>phpmyadmin</code></pre></figure>
+
+<p>Follow the instructions on screen and remember the password that you enter in each field. After the installation of phpMyAdmin is complete we need to configure our Apache to make phpMyAdmin accessible via browser.</p>
+
+<p>Use the following command for configuring Apache</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">ln</span> <span class="nt">-s</span> /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin.conf
+<span class="k">in </span>some systems you may need
+<span class="nb">ln</span> <span class="nt">-s</span> /etc/phpmyadmin/apache.conf /etc/apache2/conf-enabled/phpmyadmin.conf
+/etc/init.d/apache2 reload</code></pre></figure>
+
+<p>We restart the apache web server so that it picks up our changes. That’s all done. Now, you can access phpMyAdmin in browser via your-public-dns/phpmyadmin Enter username : root and the password which you created while installing MySQL.</p>
+
+<p>Login to the admin and create a new database that we will use later for installing Web Help Desk. Now, we have all essential elements on our virtual server for running Web Help Desk and everything is working perfectly. So, let’s install Web Help Desk.</p>
+
+<p><strong>Install Java 7</strong></p>
+
+<p>You will need to install Java since Web Help Desk uses java to run. I recommend using the latest version at the time of this tutorial Java 7 was the latest. To install Java on Debian Linux run the following commands.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>default-jre</code></pre></figure>
+
+<p><strong>Downloading Web Help Desk</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://downloads.solarwinds.com/solarwinds/Release/WebHelpDesk/12.0.0/webhelpdesk-12.0.0.x86_64.rpm.gz</code></pre></figure>
+
+<p><strong>Unzip Web Help Desk</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">gunzip </span>webhelpdesk-12.0.0.x86_64.rpm.gz</code></pre></figure>
+
+<p>Before we can install Web Help Desk we need to install Alien a platform that allows the conversion and installation of Red Hat packages on a Debian platform. According to Ubuntu’s website <a href="https://help.ubuntu.com/community/RPM/AlienHowto">https://help.ubuntu.com/community/RPM/AlienHowto</a></p>
+
+<blockquote>
+  <p>Alien converts an RPM package file into a Debian package file or Alien can install an RPM file directly. This is not the recommended way to install software packages in Ubuntu. If at all possible, install packages from Ubuntu’s repositories using Add/Remove, apt-get, or the Synaptic Package Manager. Package dependency conflicts may occur when attempting to install RPM packages. The Synaptic Package Manager may be able to fix or remove any broken packages.</p>
+</blockquote>
+
+<p><strong>Install Alien</strong></p>
+
+<p>In a terminal, enter:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>alien</code></pre></figure>
+
+<p>Installing the WHD RPM file directly In a terminal, enter:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>alien <span class="nt">-i</span> webhelpdesk-12.0.0.x86_64.rpm</code></pre></figure>
+
+<p>This will install Web Help Desk into the following location /usr/local/webhelpdesk to start Web Help Desk issue this command in the terminal.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo</span> /usr/local/webhelpdesk/whd start</code></pre></figure>
+
+<p>At this point in the installation you technically have Web Help Desk installed however. Solarwinds has put in a few checks. You are not allowed to run through the setup wizard of Web Help Desk using anything but 127.0.0.1:8081 which means that if your trying to load your WHD instance odds are that you are getting an error screen. The work around here is to install a GUI interface in your Amazon Instance and then login, open the browser and configure the software. Once done you can uninstall the GUI and start Web Help Desk from the terminal. (This took me hours to figure out by the way and a lot of back and forth with Solarwinds.)</p>
+
+<p><strong>Increase the instance size</strong><br />
+Because we have to install a GUI interface and connect over VNC you must increase the processor speed of the server from Micro to anything but micro. Go to the AWS console through the URL <a href="https://aws.amazon.com/console">https://aws.amazon.com/console</a>.</p>
+
+<ol>
+  <li>In your AWS Management Console, go to the EC2 Tab.</li>
+  <li>Check the instance you want to change (from micro to large, for example)</li>
+  <li>Put the instance in a ‘Stopped’ state.</li>
+  <li>Click the ‘Instance Actions’ menu, and choose ‘Change Instance Type’</li>
+  <li>Choose the level you want the instance to run at (small, medium, large)</li>
+  <li>Click ‘Yes, Change’.</li>
+  <li>Restart the instance in question.</li>
+</ol>
+
+<p><strong>Install a GUI interface</strong><br />
+Amazon EC2 Linux servers does not come with GUI, all the operations have to be done using ssh client like putty. So if you wish to have a GUI for your amazon Linux instances, you can achieve it pretty easily. Once you installed the GUI essentials on your server, you can access it via windows remote desktop client. If you are using Linux , then you can use VNC viewer as a remote desktop client. In order to have a GUI a light weight lxde desktop has to be installed on your server. Enter LXDE!</p>
+
+<p><strong>LXDE:</strong></p>
+
+<ol>
+  <li>Specially designed for cloud-based servers</li>
+  <li>Light weight GUI for Linux</li>
+  <li>Better interface</li>
+  <li>Multi-language support</li>
+  <li>Supports standard keyboard shortcuts</li>
+  <li>Fast performance</li>
+</ol>
+
+<blockquote>
+  <p>Make sure that RDP port is enabled on the ubuntu instance in which you are going to install lxde. Update the server and install lxde using the following commands.</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get update 
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>lxde</code></pre></figure>
+
+<p>Once lxde is installed on your server , start the ldxe using the following command</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>start lxdm</code></pre></figure>
+
+<p><strong>Enable VNC</strong><br />
+Install xrdp to establish a remote desktop connection since you cant have a GUI using putty. Use the following command to install xrdp.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>xrdp</code></pre></figure>
+
+<p>Set a password for the default user “ubuntu” ,since remote desktop connection requires username and password.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>passwd ubuntu</code></pre></figure>
+
+<p><strong>Login through VNC</strong><br />
+Start the windows remote desktop client and enter the public DNS or the elastic ip of your server instance and hit connect.</p>
+
+<p>Enter the user name and password of the server instance and hit ok as shown below.</p>
+
+<p>You can start using your Ubuntu server with GUI via remote desktop connection.</p>
+
+<p><strong>Install JDBC Driver</strong><br />
+Now that you have logged into your new EC2 instance you need to install the latest JDBC driver. This is what Web Help Desk needs to run properly and to be in compliance with Oracle this is not packaged in the installer. Follow these instructions.</p>
+
+<ol>
+  <li>
+    <p>Download the latest MySQL JDBC Driver from https://dev.mysql.com/downloads/connector/j/</p>
+  </li>
+  <li>
+    <p>Copy the JDBC driver into one of the following extension directories.</p>
+  </li>
+</ol>
+
+<p>– Windows \Program Files\WebHelpDesk\bin\jre\lib\ext<br />
+– Mac /Library/Java/Extensions<br />
+– Linux /usr/local/webhelpdesk/bin/jre/lib/ext</p>
+
+<ol>
+  <li>Restart Web Help Desk.</li>
+</ol>
+
+<p><strong>Configure Web Help Desk</strong><br />
+I am not going to bore you with the details but Solarwinds has improved the setup of this product. Navigate to https://127.0.0.1:8081 and your new WHD instance should load in the web browser. If not then make sure that WHD is running and that you have a browser that can handle Java installed in your instance. I installed Firefox in my instance. This PDF file is a great resource as well and starting on page 43 you will find a detailed guide on how to setup and initialize WHD.</p>
+
+<p><a href="https://www.solarwinds.com/documentation/WebHelpDesk/docs/WHDAdminGuide.pdf">https://www.solarwinds.com/documentation/WebHelpDesk/docs/WHDAdminGuide.pdf</a></p>
+
+<p><strong>Reduce the Instance size</strong><br />
+Now that you have installed and configured WHD you should probably reduce the instance size you can do so the same way we outlined above. You pay per hour based on the size of your instance. Micro is about 2 cents an hour, Large can be up to $2 dollars or more per hour so it makes a huge difference.</p>
+
+<p>Once your done SSH into your instance and start WHD (I have mine running in Small) and off you go! What I have noticed is that once you start WHD let it run for about 30 min before actually throwing any traffic at it. This allows it to load tomcat, and everything else it needs to run. For me performance improved substantially after this initial period of sluggishness.</p>
+
+
+              
+              
+
+          </div>
+          
+          
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+    
+	    <!-- INFO
+    ================================================== -->
+    <section class="py-5 py-md-6 m-9" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Message Us (SMS)
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+12404518688" title="Text Us" class="h4 text-primary">
+                (240) 451-8688
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Call Us
+            </h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="tel:+18882539103" title="Call Us" class="h4">
+                (888) 253-9103
+              </a>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">
+              Email us
+            </h6>
+
+            <!-- Link -->
+            <a href="matilto:support@grovetech.co" class="h4">
+              support@grovetech.co
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </section>
+			
+	<!-- CONTACT FORM
+    ================================================== -->
+    <section class="py-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            
+            <!-- Card -->
+            <div class="card card-border border-primary shadow-light-lg" data-jarallax-element="-40" style="overflow: hidden;">
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xl-11">
+                
+                    <!-- Image -->
+                    <div class="text-center">
+                      
+                      <picture>
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.webp" type="image/webp">
+						<source srcset="https://grovetech.co/assets/img/illustrations/illustration-2.png" type="image/png" class="img-fluid form-floating w-200"> 
+						<img src="https://grovetech.co/assets/img/illustrations/illustration-2.png" alt="Networking Services" class="img-fluid form-floating w-200">
+					 </picture>
+				
+                    </div>
+
+                    <!-- Heading -->
+                    <h2 class="fw-bold text-center mb-1">
+                      We'd like to hear from you
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
+                      We specialize in business problems and work to help increase profitability by reducing chronic issues.
+                    </p>
+
+                    <!-- Form -->
+                    <form name="form-contact" id="form-contact" action="https://formspree.io/f/xylrgbym" method="POST">
+					  <div class="row">
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+					
+							
+							<!-- Input -->
+							<input type="text" name="Contact[name]" id="contact_name" class="form-control form-control-flush" placeholder="Name" required>
+							<label for="contact_name">Name</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="email" name="Contact[email]" id="contact_email" class="form-control form-control-flush" placeholder="Email" required>
+							<label for="contact_email">Email</label>
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   			
+							<!-- Input -->
+							<input type="text" name="Contact[phone]" id="contact_phone" class="form-control form-control-flush" placeholder="Phone" required>
+							<label for="contact_phone">Phone</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="form-floating">
+					
+				   
+							
+							<!-- Input -->
+							<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Company Name" required>
+							<label for="contact_subject">Company Name</label>
+							
+						  </div>
+						</div>
+						<div class="col-12 col-md-12">
+						  <div class="mb-3">
+					
+				   
+
+							<!-- Input -->
+							<textarea name="Contact[message]" id="contact_message" class="form-control form-control-flush" placeholder="What challenges are you facing?" rows="8" required></textarea>
+
+						  </div>
+						</div>
+					  </div> <!-- / .row -->
+					  <div class="justify-content-center">
+				
+				  
+						  <!-- Submit -->
+						  <button type="submit" class="btn d-block w-100 btn-success">
+							Request a Consultation
+						  </button>
+
+			   
+					  </div> <!-- / .row -->
+					  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+					</form>
+					<div id="response-message"></div>   
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative mt-n16">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-dcab198a-8dc4-4215-959c-460c834666ca"></div>
+
+ <!-- FOOTER
+    ================================================== -->
+    <section class="pt-16 bg-dark">
+      <footer class="py-6 py-md-9 bg-dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+        
+              <!-- Brand -->
+              <a href="https://consultants.apple.com/us/profile/2045642"><img src="https://grovetech.co/assets/img/icons/ACN.svg" alt="Grove Technologies a member of the Apple Consultants Network" class="footer-brand mb-2"></a>
+
+              <!-- Text -->
+              <p class="text-gray-900 mb-2 py-3">
+                Keeping Companies in DC Safe Since 2014.
+              </p>
+
+              <!-- Social -->
+              <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.instagram.com/thegrovetech/" title="Instagram" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Instagram">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.facebook.com/grovetechnologies" title="Facebook" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Facebook">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://twitter.com/thegrovetech" title="Twitter" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/twitter.svg" class="list-social-icon" alt="Twitter">
+                  </a>
+                </li>
+                <li class="list-inline-item list-social-item">
+                  <a href="https://www.linkedin.com/company/grove-tech" title="LinkedIn" class="text-decoration-none">
+                    <img src="https://grovetech.co/assets/img/icons/social/linkedin.svg" class="list-social-icon" alt="LinkedIn">
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-12 col-md-4 col-lg-2">
+        
+             
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Clients
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-6 mb-md-8 mb-lg-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/experience" title="Client Experience" class="text-reset">
+                    Client Experience
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://portal.grovetech.co" title="Client Portal" class="text-reset">
+                    Client Portal
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Channels
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/contact" title="Contact Us" class="text-reset">
+                    Contact Us
+                  </a>
+                </li>
+                
+                <li class="mb-3">
+                  <a href="https://grovetech.co/app" title="Download App" class="text-reset">
+                   Download App
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+        
+              <!-- Heading -->
+              <h5 class="fw-bold text-uppercase text-gray-900 py-3">
+                Company
+              </h5>
+
+              <!-- List -->
+              <ul class="list-unstyled text-gray-900 mb-0">
+                <li class="mb-3">
+                  <a href="https://grovetech.co/about" title="About Us" class="text-reset">
+                    About Us
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a href="https://grovetech.co/team" title="Meet the Team" class="text-reset">
+                    Meet the Team
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+            
+            <div class="col-12 mt-10">
+        
+              <p class="text-gray-900">
+              	&copy; 2021 <strong>Grove</strong> Technologies is a registered service mark of Grove Technologies LLC. All Rights Reserved. <a href="https://grovetech.co/privacy/" class="text-reset">Privacy Policy.</a>
+              </p>
+
+            </div>
+            
+            
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
+    </section>
+    
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120080861-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-120080861-1');
+	</script>
+	<script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+	<script type="text/javascript">
+	var Pushwoosh = Pushwoosh || [];
+	Pushwoosh.push(['init', {
+		logLevel: 'info', // possible values: error, info, debug
+		applicationCode: 'A35F6-C4EAE', // you application code from Pushwoosh Control Panel
+		safariWebsitePushID: 'web.macgurus.site', //  unique reverse-domain string, obtained in you Apple Developer Portal. Only needed if you send push notifications to Safari browser
+		defaultNotificationTitle: 'Grove Technologies', // sets a default title for push notifications
+		defaultNotificationImage: 'https://grovetech.co/assets/img/favicons/android-chrome-192x192.png', // URL to custom custom notification image
+		autoSubscribe: true, // or true. If true, prompts a user to subscribe for pushes upon SDK initialization
+		subscribeWidget: {
+		  enabled: true
+		}									
+	}]);
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/beerslider@1.0.3/dist/BeerSlider.min.js"></script>
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    
+    <script src="https://grovetech.co/assets/js/theme.bundle.js"></script>
+    <script src="https://grovetech.co/assets/js/vendor.bundle.js"></script>
+    
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+		"popup": {
+		  "background": "#efefef",
+		  "text": "#404040"
+		},
+		"button": {
+		  "background": "#8ec760",
+		  "text": "#ffffff"
+		}
+	  },
+	  "theme": "edgeless",
+	  "type": "opt-out",
+	  "content": {
+		"href": "https://grovetech.co/privacy/"
+	  }
+	});
+	</script>
+</body>
+</html>

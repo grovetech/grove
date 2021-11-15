@@ -1,0 +1,136 @@
+I"�<p>It’s common to want to share files, photos, and other data between your
+devices—or with friends and family. When the desired person or device
+isn’t nearby, it’s easiest to use Messages or Mail. But what if you want
+to move a file between two of your Macs, from your iPhone to your Mac,
+or to your friend who’s across the table? For transfers within immediate
+proximity, Apple provides AirDrop, a quick and easy way to move data
+between devices.​</p>
+
+<h3 id="make-sure-airdrop-is-ready-to-go">Make Sure AirDrop Is Ready to Go</h3>
+
+<p>First off, AirDrop requires both Wi-Fi and Bluetooth, so make sure both
+are enabled. If you use wired Ethernet on your Mac, enable Wi-Fi as
+well, but put the Wi-Fi service beneath the Ethernet service in System
+Preferences &gt; Network (click the down-pointing arrow under the list and
+choose Set Service Order).</p>
+
+<p>Next, make sure other devices can discover you. On the Mac, choose Go &gt;
+AirDrop and, near the bottom of the Finder window that appears, choose
+Everyone from the pop-up menu. (If you’re out in public and random
+people keep trying to send you files, which would be weird, choose
+Contacts Only instead.) On an iPhone or iPad, go to Settings &gt; General</p>
+<blockquote>
+  <p>AirDrop and select Everyone.</p>
+</blockquote>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Sh/image2.jpeg" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="send-a-file-or-photo-via-airdrop">Send a File or Photo via AirDrop</h3>
+
+<p>Apple has integrated AirDrop into the standard sharing mechanism in
+macOS, iOS, and iPadOS, so sharing via AirDrop works the same as sharing
+via most other apps.</p>
+
+<p>In the Finder on the Mac, the easiest approach may be to select AirDrop
+in a Finder window’s sidebar and then drag files to the icon
+representing the destination device (below left). You can also select
+one or more files and choose File &gt; Share &gt; AirDrop or Control-click
+them and choose Share &gt; AirDrop, both of which present a dialog from
+which you can select the destination (below right). The right-hand
+dialog is also what you’ll see if you use the Share option in Photos or
+any other app.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Sh/image3.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<p>On an iPhone or iPad, when you’re viewing the item you want to share,
+tap the Share button to bring up the Share sheet. You may be able to tap
+the AirDrop icon for the desired destination directly in the top row,
+but if it doesn’t show what you want, tap the general AirDrop icon in
+the second row to display the AirDrop screen with icons for all
+available destinations. Either way, tap the destination to send the
+file.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Sh/image4.jpeg" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="receive-data-via-airdrop">Receive Data via AirDrop</h3>
+
+<p>On the receiving side, AirDrop is utterly simple, particularly when
+transferring files between your devices, though the experience varies a
+little depending on the direction and file type.</p>
+
+<ul>
+  <li>
+    <p><strong>Receiving on a Mac:</strong> If you’re transferring between your own
+devices, you don’t need to do anything; the file will appear in the
+Downloads folder of the destination Mac. Files sent from other
+people will appear there too, but you’ll get a prompt asking you to
+accept or decline the file, and if you accept, an option to open it
+in the appropriate app.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Sh/image5.png" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+  <li>
+    <p><strong>Receiving on an iPhone/iPad:</strong> Receiving on an iPhone or iPad is
+similar, with one additional step. Unless iOS/iPadOS knows where the
+file should go (images always import into Photos automatically, for
+instance), it prompts you with a list of apps that can open the
+file. Files you transfer between your own devices are accepted
+automatically; for files from other people, you must tap the Accept
+button first.
+<img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210802Sh/image6.jpeg" class="img-fluid rounded m-2" width="700" /></p>
+  </li>
+</ul>
+
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<p>AirDrop has been around since Mac OS X 10.7 Lion in 2011 and has seen
+significant updates since then. So if you had trouble getting AirDrop to
+work years ago, it’s worth revisiting the feature. That said, problems
+can still crop up:</p>
+
+<ul>
+  <li>
+    <p>If a Mac doesn’t appear as an AirDrop destination, make sure it has
+Wi-Fi active. Ethernet is not sufficient. Also, if the Mac’s
+firewall is active, check that it allows incoming connections. Open
+System Preferences &gt; Security &amp; Privacy &gt; Firewall &gt; Firewall
+Options and deselect “Block all incoming connections.”</p>
+  </li>
+  <li>
+    <p>If an iPhone doesn’t appear as an AirDrop destination, make sure
+Personal Hotspot is turned off in Settings &gt; Personal Hotspot.</p>
+  </li>
+  <li>
+    <p>Because AirDrop relies on Bluetooth and Wi-Fi, interference with
+either, or a separation between devices of more than 30 feet (9
+meters), can cause performance and reliability to suffer.</p>
+  </li>
+  <li>
+    <p>For best results, make sure you’re using recent Apple hardware
+running the latest versions of macOS, iOS, and iPadOS. Apple has
+improved AirDrop over the years, and it works significantly better
+than it did years ago. Technically, AirDrop requires a Mac
+introduced in 2012 (excluding the 2012 Mac Pro) or later running OS
+X 10.10 Yosemite or later. On the mobile device side, the iPhone,
+iPad, or iPod touch must be running at least iOS 7.</p>
+  </li>
+  <li>
+    <p>If you’re prompted to accept transfers between your own devices,
+that’s an indication that the devices aren’t logged in to the same
+iCloud account.</p>
+  </li>
+  <li>
+    <p>Although AirDrop has no explicit size limit, very large files (over
+500 MB) will take a long time to transfer and are more likely to
+fail due to network issues during the transfer.</p>
+  </li>
+  <li>
+    <p>If you can’t find a transferred file in the destination Mac’s
+Downloads folder, remember that it retains its original creation and
+modification dates, so it might be sorting differently than you
+expect.</p>
+  </li>
+</ul>
+
+<p>Next time you need to move data between nearby Apple devices, give
+AirDrop a try!</p>
+:ET

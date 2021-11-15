@@ -1,0 +1,8 @@
+I"ù<p>The new update to the ageing HFS+ file system will bring higher performance, better data integrity, and a vastly improved Time Machine.</p>
+
+<p>Don‚Äôt worry it is not a step into the unknown APFS is already running on your iOS device (ipad,iphone etc).</p>
+
+<p>When and if you upgrade your system to High Sierra (macOS  10.13), it will automatically during installation upgrade the file system to APFS on the system drive, the internal drive usually named Macintosh HD.</p>
+
+<p>External drives and non system drives must be upgraded manually, via Disk Utility. Select the volume to be upgraded, left click, and the contextual menu has a Convert to APFS option.</p>
+:ET

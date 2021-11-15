@@ -1,0 +1,37 @@
+I"À
+<p>When you have upgraded to a new iPhone, you will still want access to your old iPhone data and settings. You may have already set up your new iPhone, enjoying its new settings but not transferred your data from your older device. Hereâ€™s how you can do that.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/iosrestore/apple_restore_1.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<ol>
+  <li>First check that that you have data backed up on your older device. If not, open iTunes, select the device icon and click Back Up Now. You can check for an existing backup by going to Tunes &gt; Preferences &gt; Devices and looking for the device name and the date and time of the last backup.</li>
+  <li>After your data is backed up, turn to the new device and make sure that any new data you have saved on this device whether it is photos you have taken, videos you have shot or audio you have recorded is copied or synced (through iCloud or other methods). If you are using iCloud Photo Library, for instance, all photos and videos should be synced to iCloud, and will simply sync back after the device is restored from the older iOS hardware. After you have confirmed your data is saved, you can erase it.</li>
+  <li>Turn off Find My iPhone/iPad first and then erase the data by tapping Settings &gt; General &gt; Reset, entering in your password or Apple ID password and then waiting for it to finish.</li>
+  <li>Do a restore from the backup of your older device. If this is also an iPhone or iPad, swap the SIM from the older to newer device before you restore it.</li>
+</ol>
+
+<p><img src="https://grovetech.co/assets/img/blog/2018/iosrestore/apple_restore_3.jpg" class="img-fluid rounded m-2" width="450" /></p>
+
+<p>You can restore it in 2 ways, via Tunes or via iCloud.</p>
+
+<h3 id="via-itunes">via iTunes:</h3>
+<hr />
+
+<ol>
+  <li>Go through the setup of your new device until you reach the Apps &amp; Data screen where you are asked how you want to set up the device. Select Restore from iTunes Backup.</li>
+  <li>Connect the iPhone or iPad over USB to the computer on which you performed an iTunes backup.</li>
+  <li>Click Restore Backup.</li>
+  <li>Choose the backup you just made.</li>
+  <li>Follow the remaining prompts until the restore is complete.</li>
+</ol>
+
+<h3 id="via-icloud">via iCloud:</h3>
+<hr />
+
+<ol>
+  <li>Go through the setup of your new device until you reach the Apps &amp; Data screen where you are asked how you want to set up the device. Select Restore from iCloud Backup.</li>
+  <li>Sign into the same iCloud account you used to perform the backup above.</li>
+  <li>Choose the backup you made from the list that appears.</li>
+  <li>Follow the remaining prompts until the restore is complete.</li>
+</ol>
+:ET

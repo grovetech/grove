@@ -1,0 +1,54 @@
+I"�<p>You can easily share and transfer files between iPhones, iPads and Macs. AirDrop uses Bluetooth LE to discover connections and broadcast them and Wi-Fi to transfer data. It’s fast, easy to use and secure.</p>
+
+<p>Files you can AirDrop include:</p>
+<ul>
+  <li>photos</li>
+  <li>videos</li>
+  <li>contacts</li>
+  <li>docs</li>
+  <li>passbook passes</li>
+  <li>voice Memos</li>
+  <li>map Locations</li>
+</ul>
+
+<h3 id="turn-on-airdrop">Turn on AirDrop</h3>
+<hr />
+<p>On Mac computers, select Go from the Finder menu. AirDrop appears in the menu.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/airdrop/AirDrop_image1.png" class="img-fluid rounded m-2" width="548" /></p>
+
+<p>On iOS devices from iPhones to iPads, you can turn on AirDrop from the Control Center by just swiping up from the bottom of the screen. You’ll need both your Bluetooth and Wi-Fi to be on and active. Then just tap AirDrop to turn it on. You can also turn it off by just tapping again. You can also choose either to share your files with just your contacts or everyone.</p>
+
+<ul>
+  <li>Tap Contacts Only so that only your contacts can AirDrop you.</li>
+  <li>Tap Everyone to let AirDrop be accessible to everyone.</li>
+</ul>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/airdrop/AirDrop_image2.png" class="img-fluid rounded m-2" width="715" /></p>
+
+<h3 id="how-to-airdrop-files-from-your-iphone-or-ipad">How to AirDrop Files from your iPhone or iPad</h3>
+<hr />
+<p>Share files via AirDrop on your iPhone or iPad using the built-in Share option (a box with an arrow coming out of the top). You will be able to send files to anyone who shows up on the list on your Share sheet by just tapping on the person or device listed.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/airdrop/AirDrop_image3.png" class="img-fluid rounded m-2" width="750" /></p>
+
+<p>When you choose Everyone, you will be prompted every time anyone tries to send you a file through AirDrop, which can include senders you don’t know. You can always choose to not accept the files.</p>
+
+<p>When a file is sent through AirDrop, it appears in the app that usually opens such files. For example, photos will appear in the Photos app.</p>
+
+<h3 id="for-security-how-to-block-airdrop-with-restrictions">For Security: How To Block AirDrop with Restrictions</h3>
+<hr />
+<p>Whether you want to block access for children or anyone else, you can set specific restrictions or parental controls to block AirDrop on iPhones and iPads.</p>
+
+<p>Launch the Settings app on your iPhone or iPad. Then tap on General and top on Restrictions. Tap on Enable Restrictions at the top. You will be prompted to enter a passcode that you can use to both enable and disable apps. Switch AirDrop to Off.</p>
+
+<p><img src="https://grovetech.co/assets/img/blog/2017/airdrop/AirDrop_image4.png" class="img-fluid rounded m-2" width="750" /></p>
+
+<h3 id="how-to-airdrop-using-drag-and-drop-from-your-mac">How to AirDrop using Drag and Drop from your Mac</h3>
+<hr />
+<p>You can quickly share files using drag and drop. Just launch Finder from your Mac. Pull up the files that you want to AirDrop and drag them over AirDrop in the sidebar. Hover until the Finder changes to the AirDrop window. Drop the files onto the picture of the contact you want to share them with.</p>
+
+<h3 id="how-to-airdrop-using-the-context-menu-from-your-mac">How to AirDrop using the context menu from your Mac</h3>
+<hr />
+<p>You can press control or right click from your Mac and access AirDrop also. Again, launch Finder from your Mac. Find the file that you want to share. Press control or right click from your Mac and choose Share from the menu. Choose AirDrop from the submenu. Then just click on the picture of the person that you want to share with.</p>
+:ET

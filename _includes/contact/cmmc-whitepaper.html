@@ -1,0 +1,48 @@
+
+
+<!-- Card -->
+<div class="card shadow-light-lg lift lift-lg" style="overflow: hidden;">
+
+  <!-- Image -->
+  <img src="{{ site.site_cdn }}/assets/img/photos/cmmc-photos.png" alt="Best CMMC Consulting DC" class="card-img-top">
+
+  <!-- Shape -->
+  <div class="position-relative">
+	<div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+	  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>
+	</div>
+  </div>
+
+  <!-- Body -->
+  <div class="card-body">
+
+	<!-- Form -->
+	<form name="form-cmmc" id="form-cmmc" action="https://formspree.io/f/mqkggbjl" method="POST">
+	  <div class="form-floating">
+		<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Full Name" required>
+        <label for="contact_subject">Full Name</label>
+	  </div>
+	  <div class="form-floating">
+		<input type="email" name="Contact[email]" class="form-control form-control-flush" id="contact_email" placeholder="Email" required>
+        <label for="contact_email">Email</label>
+	  </div>
+	  <div class="form-floating">
+		<input type="text" name="Contact[phone]" class="form-control form-control-flush" id="contact_phone" placeholder="Phone" required>
+        <label for="contact_phone">Phone Number</label>
+	  </div>
+	  <div class="mt-6">
+		<button class="btn d-block w-100 btn-success lift" type="submit" id="contact-submit">
+		  Get CMMC Readiness White Paper
+		</button>
+	  </div>
+	  <div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+	</form>
+	<div id="response-message"></div>
+  </div>
+
+</div>

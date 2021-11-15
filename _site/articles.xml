@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+	<channel>
+		<title>Grove Technologies - Articles</title>
+		<description>Posts categorized as 'Articles'</description>
+		<sy:updatePeriod>daily</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<link>https://grovetech.co</link>
+		<atom:link href="https://grovetech.co/articles.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Tue, 23 Feb 2021 00:00:00 -0500</lastBuildDate>
+		
+		
+			<item>
+				<title>Download our White Paper - Penetration Testing for your Business</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/photos/penetration-testing.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h3 id=&quot;what-is-a-pentest-and-why-should-i-have-it-performed&quot;&gt;What is a pentest and why should I have it performed?&lt;/h3&gt;
+&lt;p&gt;Organizations are faced with the increasing scrutiny of more complex and sophisticated attacks by threat actors against key information systems that are essential to the organization.  Complex attacks such as ransomware and data exfiltration are being used against organizations or systems that they encounter or somehow get access to.  When an attacker wants to break into a system, they will typically choose the easiest and most direct methods in means in order to access it.  The problem is an organization may not have a full understanding of the complex attack vectors that a threat actor may use to exploit an information system to gain access.&lt;/p&gt;
+
+&lt;p&gt;The old saying goes to beat a hacker you must think like a hacker and this is exactly the type of scenario that many information systems must have the proper controls and hardening in place to prevent or mitigate.  In order to confirm that the controls on an information system have been properly implemented, the only tried and true method is to actually attempt to hack into it using the same types of tools, techniques, and methodologies that a threat actor would attempt in order to bypass the security controls in order to gain access.  This process, known as pentesting, is an essential part of any information security program to ensure that an information system can mitigate or prevent a potential threat actor from accessing them.  Pentesting is not considered an attack simulation either, it applies real world techniques using the latest types of attack vectors to ensure that your system can prevent varying types of attack vectors against it.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-compliance-angle&quot;&gt;The compliance angle&lt;/h3&gt;
+&lt;p&gt;A pentest is not also considered a good security measure for a mature information security program, it can also be mandated or required based on either a cyber security requirement, regulation, or customer mandate.  A pentest is required for many cyber security compliance programs including FedRamp, SOC2, CMMC ML4, and HIPAA.  The system and the scope of it is often required to undertake a pentest for varying compliance requirements to meet or satisfy the control implementations as mandated by the compliance program.  While it is not spelled out exactly as the frequency may vary, but typically most cybersecurity compliance programs require that an organization or an information system as part of that compliance program be pentested at least annually or sooner based on a significant change or architectural update to that system.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card card-row shadow-dark-lg mb-6&quot; style=&quot;overflow: hidden;&quot;&gt;
+  &lt;div class=&quot;row gx-0&quot;&gt;
+	&lt;div class=&quot;col-12&quot;&gt;
+	  
+	  &lt;!-- Badge --&gt;
+	  &lt;span class=&quot;badge rounded-pill bg-light badge-float badge-float-inside&quot;&gt;
+		&lt;span class=&quot;h6 text-uppercase&quot;&gt;Download&lt;/span&gt;
+	  &lt;/span&gt;
+
+	&lt;/div&gt;
+	&lt;a class=&quot;col-12 col-md-6 order-md-1 bg-cover card-img-right&quot; style=&quot;background-image:url(https://grovetech.co/assets/img/photos/penetration-testing.png&quot;&gt;
+
+	  &lt;!-- Image (placeholder) --&gt;
+	  &lt;img src=&quot;https://grovetech.co/assets/img/photos/photo-23.jpg&quot; alt=&quot;Penetration Testing DC&quot; class=&quot;img-fluid d-md-none invisible&quot; /&gt;
+
+	  &lt;!-- Shape --&gt;
+	  &lt;div class=&quot;shape shape-end shape-fluid-y svg-shim text-white d-none d-md-block&quot;&gt;
+		&lt;svg viewBox=&quot;0 0 112 690&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M116 0H51v172C76 384 0 517 0 517v173h116V0z&quot; fill=&quot;currentColor&quot; /&gt;&lt;/svg&gt;
+	  &lt;/div&gt;
+
+	&lt;/a&gt;
+	&lt;div class=&quot;col-12 col-md-6 order-md-2 p-6&quot;&gt;
+
+	  
+		&lt;!-- Form --&gt;
+		&lt;form name=&quot;form-penetration&quot; id=&quot;form-penetration&quot; action=&quot;https://formspree.io/f/maylznrd&quot; method=&quot;POST&quot;&gt;
+		&lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[subject]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_subject&quot; placeholder=&quot;Full Name&quot; required=&quot;&quot; /&gt;
+		&lt;label for=&quot;contact_subject&quot;&gt;Full Name&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;email&quot; name=&quot;Contact[email]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_email&quot; placeholder=&quot;Email&quot; required=&quot;&quot; /&gt;
+		&lt;label for=&quot;contact_email&quot;&gt;Email&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[phone]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_phone&quot; placeholder=&quot;Phone&quot; required=&quot;&quot; /&gt;
+		&lt;label for=&quot;contact_phone&quot;&gt;Phone Number&lt;/label&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;mt-6&quot;&gt;
+		&lt;button class=&quot;btn d-block w-100 btn-success lift&quot; type=&quot;submit&quot; id=&quot;contact-submit&quot;&gt;
+		Download White Paper
+		&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row mt-4&quot;&gt;
+                        &lt;div class=&quot;col-12&quot;&gt;
+                      &lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf&quot;&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+		&lt;/form&gt;           
+		&lt;div id=&quot;response-message&quot;&gt;&lt;/div&gt;
+		
+
+	&lt;/div&gt;
+
+  &lt;/div&gt; &lt;!-- / .row --&gt;
+&lt;/div&gt;
+
+</description>
+				
+				<pubDate>Tue, 23 Feb 2021 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/Whitepaper-Penetration-testing-and-Why-You-Need-them-In-2021/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/Whitepaper-Penetration-testing-and-Why-You-Need-them-In-2021/</guid>
+			</item>
+		
+			<item>
+				<title>Download our White Paper - Why your Small Business needs a vCISO</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/photos/vCISO-Header.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h3 id=&quot;cybersecurity-threats-and-talent-shortage&quot;&gt;Cybersecurity Threats and Talent Shortage&lt;/h3&gt;
+
+&lt;p&gt;Cybersecurity risks and threats are issues that all organizations, large and small, must deal with.  Whether the issues are information security program related or a technical challenge, organizations need to have the personnel resources to solve the cybersecurity issues as aligned to the business requirements set forth.  In an ever-growing cloud-based services industry, information security risk is never greater.  Cyberattacks are growing in impact and frequency.  Not a week passes without a headline of another cybersecurity attack such as a data breach or a ransomware attack.  Cyber criminals are becoming more sophisticated with their attack methods and motivations.  How an organization protects customer information and implements required security controls is becoming of utmost importance.&lt;/p&gt;
+
+&lt;p&gt;Some of the common cybersecurity issues an organization must face and answer:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Is your network protected against vulnerabilities?&lt;/li&gt;
+  &lt;li&gt;Do you have a comprehensive remediation plan to keep assets up to date and safe?&lt;/li&gt;
+  &lt;li&gt;Does your organization have a cybersecurity framework you have implemented and must align to?&lt;/li&gt;
+  &lt;li&gt;Are your customers requiring you to implement a new cyber security solution you may not have the experience in-house or expertise to facilitate it?&lt;/li&gt;
+  &lt;li&gt;Does the organization understand current and future threats and how they might impact the organization?&lt;/li&gt;
+  &lt;li&gt;In the event of a breach, how quickly can your organization contain it and respond to the incident in terms of data recovery and systems uptime?&lt;/li&gt;
+  &lt;li&gt;Do you have employees who can quickly help you fill the gaps for key, critical projects that arise in a short period of time they may not have the expertise with?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you have answered ‘no’ to any of these questions your organization might be vulnerable to certain cybersecurity threats and risks that you need to take into consideration.  The biggest challenge for many organizations that lack appropriate cybersecurity personal is lack of budget and resources.  Demand for skilled cybersecurity professionals such as a CISO are at an all-time high which has resulted in a significant shortage of this needed leadership.  Furthermore, this high demand and low supply creates the situation that high premiums are paid for these skilled cybersecurity professionals that make it hard for small to midsize organizations to be able to practically afford these resources.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-full-white-paper-and-see-why-grove-is-the-fastest-growing-cybersecurity-provider-in-dc&quot;&gt;Download the full White Paper and see why Grove is the fastest growing Cybersecurity Provider in D.C.&lt;/h3&gt;
+
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card shadow-light-lg lift lift-lg&quot; style=&quot;overflow: hidden;&quot;&gt;
+
+  &lt;!-- Image --&gt;
+  &lt;img src=&quot;https://grovetech.co/assets/img/photos/vCISO-Header.png&quot; alt=&quot;Best vCISO Consulting DC&quot; class=&quot;card-img-top&quot; /&gt;
+
+  &lt;!-- Shape --&gt;
+  &lt;div class=&quot;position-relative&quot;&gt;
+	&lt;div class=&quot;shape shape-bottom shape-fluid-x svg-shim text-white&quot;&gt;
+	  &lt;svg viewBox=&quot;0 0 2880 48&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z&quot; fill=&quot;currentColor&quot; /&gt;&lt;/svg&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Body --&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+
+	&lt;!-- Form --&gt;
+	&lt;form name=&quot;form-vciso&quot; id=&quot;form-vciso&quot; action=&quot;https://formspree.io/f/maylznvl&quot; method=&quot;POST&quot;&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[subject]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_subject&quot; placeholder=&quot;Full Name&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_subject&quot;&gt;Full Name&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;email&quot; name=&quot;Contact[email]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_email&quot; placeholder=&quot;Email&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_email&quot;&gt;Email&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[phone]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_phone&quot; placeholder=&quot;Phone&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_phone&quot;&gt;Phone Number&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;mt-6&quot;&gt;
+		&lt;button class=&quot;btn d-block w-100 btn-success lift&quot; type=&quot;submit&quot; id=&quot;contact-submit&quot;&gt;
+		 Download the vCISO for Small Businesses Guide
+		&lt;/button&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;row mt-4&quot;&gt;
+                        &lt;div class=&quot;col-12&quot;&gt;
+                      &lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf&quot;&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+	  &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+	&lt;/form&gt;
+	&lt;div id=&quot;response-message&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Sat, 13 Feb 2021 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/Whitepaper-vCISO-Why-You-Need-One-In-2021/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/Whitepaper-vCISO-Why-You-Need-One-In-2021/</guid>
+			</item>
+		
+			<item>
+				<title>Download our White Paper - Cybersecurity Training 101 For Small Businesses</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/photos/cybersecurity-header.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h3 id=&quot;why-is-a-cybersecurity-training-so-important&quot;&gt;Why is a cybersecurity training so important?&lt;/h3&gt;
+
+&lt;p&gt;Security awareness training is one of the most critical and important security requirements for any size organization to consider implementing within their environment. Arguably, the greatest risk faced by any organization is the danger of insider threat as employees are can be considered a weak link in the chain as they are susceptible to curiosity, greed, envy, etc. To further increase risk, employees may be faced with the threat of social engineering attacks including phishing, baiting, spear phishing, tailgating, scareware, pretexting, quid pro quo, etc. To combat these risks,
+a strong security awareness training program can be leveraged to properly inform employees of the security risks they may be presented within the workplace and how to properly observe, defend, and report any suspected malicious activity.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-social-engineering-and-am-i-affected&quot;&gt;What is social engineering and am I affected?&lt;/h3&gt;
+
+&lt;p&gt;Simply speaking, there is more to cybersecurity than computers and how they work. This statement includes how your network is setup or even how your firewall is configured, etc. Within cybersecurity there is actually a heavy emphasis on people as they interact directly with data within the organization. These people (employees) can have duties such as maintaining computers, configuring computers, helping others with computer problems, etc. and tend
+to not be as rational as computers as they can be swayed by emotion. This human factor is what social engineering attacks attempt to exploit to achieve whatever malicious goal may be present. In many serious cases, this can result in an attacker gaining access to systems that they would not normally be authorized.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-full-white-paper-here&quot;&gt;Download the full White Paper Here!&lt;/h3&gt;
+
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card shadow-light-lg lift lift-lg&quot; style=&quot;overflow: hidden;&quot;&gt;
+
+  &lt;!-- Image --&gt;
+  &lt;img src=&quot;https://grovetech.co/assets/img/photos/cybersecurity-header.png&quot; alt=&quot;Best Cyberseucurity Training in DC&quot; class=&quot;card-img-top&quot; /&gt;
+
+  &lt;!-- Shape --&gt;
+  &lt;div class=&quot;position-relative&quot;&gt;
+	&lt;div class=&quot;shape shape-bottom shape-fluid-x svg-shim text-white&quot;&gt;
+	  &lt;svg viewBox=&quot;0 0 2880 48&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z&quot; fill=&quot;currentColor&quot; /&gt;&lt;/svg&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Body --&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+
+	&lt;!-- Form --&gt;
+	&lt;form name=&quot;form-training&quot; id=&quot;form-training&quot; action=&quot;https://formspree.io/f/xoqpbalk&quot; method=&quot;POST&quot;&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[subject]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_subject&quot; placeholder=&quot;Full Name&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_subject&quot;&gt;Full Name&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;email&quot; name=&quot;Contact[email]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_email&quot; placeholder=&quot;Email&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_email&quot;&gt;Email&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[phone]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_phone&quot; placeholder=&quot;Phone&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_phone&quot;&gt;Phone Number&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;mt-6&quot;&gt;
+		&lt;button class=&quot;btn d-block w-100 btn-success lift&quot; type=&quot;submit&quot; id=&quot;contact-submit&quot;&gt;
+		  Get The Training White Paper
+		&lt;/button&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;row mt-4&quot;&gt;
+                        &lt;div class=&quot;col-12&quot;&gt;
+                      &lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf&quot;&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+	&lt;/form&gt;
+	&lt;div id=&quot;response-message&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Tue, 26 Jan 2021 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/whitepaper-cybersecurity-training-in-dc-grove-technologies/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/whitepaper-cybersecurity-training-in-dc-grove-technologies/</guid>
+			</item>
+		
+			<item>
+				<title>Download our White Paper - Cybersecurity Risk Assessments For Small Businesses</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/photos/Risk-Assessment-Whitepaper.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h3 id=&quot;why-is-a-risk-assessment-so-important&quot;&gt;Why is a risk assessment so important?&lt;/h3&gt;
+
+&lt;p&gt;A cyber security risk assessment is a critical activity performed on your company’s security policy procedures and infrastructure to reveal potential threats to key corporate assets and vulnerabilities in your current security controls as implemented.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-the-goal-of-a-risk-assessment&quot;&gt;What is the goal of a risk assessment?&lt;/h3&gt;
+
+&lt;p&gt;The goal of a security risk assessment is to define the appropriate safeguards that your company will need to implement in order to align to your company’s risk assessment objective, profile, and priorities.&lt;/p&gt;
+
+&lt;p&gt;An organization faces many types of threats and risks that can impact its overall cybersecurity posture. While many organizations think of risks in terms of things, they understand such as natural disasters insider threats, the majority of risks faced by an organization are based on a combination of logical and technical controls on key assets and systems not being implemented or hardened to a level of security needed. In the evolving cybersecurity landscape, threats that may not have existed a few years ago or their impact have increased significantly.&lt;/p&gt;
+
+&lt;p&gt;This can lead to increasing vulnerabilities that an organization may not be aware of or have gaps in their current cybersecurity posture as implemented. Ransomware, for example, is an evolving and highly impactful cybersecurity threat that requires a complex combination
+of logical, technical, and policy-based controls that need to be carefully implemented to reduce this overall risk. Organizations might find that they have not implemented adequate controls to reduce this risk.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-full-white-paper-here&quot;&gt;Download the full White Paper Here!&lt;/h3&gt;
+
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card shadow-light-lg lift lift-lg&quot; style=&quot;overflow: hidden;&quot;&gt;
+
+  &lt;!-- Image --&gt;
+  &lt;img src=&quot;https://grovetech.co/assets/img/photos/Risk-Assessment-Whitepaper.png&quot; alt=&quot;Best CMMC Consulting DC&quot; class=&quot;card-img-top&quot; /&gt;
+
+  &lt;!-- Shape --&gt;
+  &lt;div class=&quot;position-relative&quot;&gt;
+	&lt;div class=&quot;shape shape-bottom shape-fluid-x svg-shim text-white&quot;&gt;
+	  &lt;svg viewBox=&quot;0 0 2880 48&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z&quot; fill=&quot;currentColor&quot; /&gt;&lt;/svg&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Body --&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+
+	&lt;!-- Form --&gt;
+	&lt;form name=&quot;form-risk&quot; id=&quot;form-risk&quot; action=&quot;https://formspree.io/f/maylznvl&quot; method=&quot;POST&quot;&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[subject]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_subject&quot; placeholder=&quot;Full Name&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_subject&quot;&gt;Full Name&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;email&quot; name=&quot;Contact[email]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_email&quot; placeholder=&quot;Email&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_email&quot;&gt;Email&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[phone]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_phone&quot; placeholder=&quot;Phone&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_phone&quot;&gt;Phone Number&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;mt-6&quot;&gt;
+		&lt;button class=&quot;btn d-block w-100 btn-success lift&quot; type=&quot;submit&quot; id=&quot;contact-submit&quot;&gt;
+		  Get The Risk Assessment White Paper
+		&lt;/button&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;row mt-4&quot;&gt;
+                        &lt;div class=&quot;col-12&quot;&gt;
+                      &lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf&quot;&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+	&lt;/form&gt;
+	&lt;div id=&quot;response-message&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Tue, 26 Jan 2021 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/whitepaper-risk-assessments-in-dc-grove-technologies/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/whitepaper-risk-assessments-in-dc-grove-technologies/</guid>
+			</item>
+		
+			<item>
+				<title>Download our CMMC White Paper and learn what CMMC means for your small business.</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/photos/cmmc-photos.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h3 id=&quot;what-is-the-cmmc-cybersecurity-maturity-model-and-what-does-it-mean-for-you&quot;&gt;What is the CMMC (Cybersecurity Maturity Model), and what does it mean for you?&lt;/h3&gt;
+
+&lt;p&gt;The Cybersecurity Maturity Model Certification (CMMC) is the Department of Defense’s (DoD) latest cybersecurity program designed to ensure that cybersecurity controls and processes adequately protect Controlled Unclassified Information (CUI) that resides on Defense Industrial Base (DIB) systems and networks.  The DIB consists of all suppliers of DOD related services including primes/subs/consultants that provide any type of service on a DOD related contract.&lt;/p&gt;
+
+&lt;p&gt;The DoD implemented requirements for safeguarding CUI information and cyber incidents through the release of Defense Federal Acquisition Regulation Supplement (DFARS) 252.204-7012 in October 2016.  The DFARS directed DoD Contractors to self-attest that adequate security controls were implemented within contractor systems to ensure that CDI confidentiality was maintained.&lt;/p&gt;
+
+&lt;h3 id=&quot;download-the-full-white-paper-here&quot;&gt;Download the full White Paper Here!&lt;/h3&gt;
+
+&lt;!-- Card --&gt;
+&lt;div class=&quot;card shadow-light-lg lift lift-lg&quot; style=&quot;overflow: hidden;&quot;&gt;
+
+  &lt;!-- Image --&gt;
+  &lt;img src=&quot;https://grovetech.co/assets/img/photos/cmmc-photos.png&quot; alt=&quot;Best CMMC Consulting DC&quot; class=&quot;card-img-top&quot; /&gt;
+
+  &lt;!-- Shape --&gt;
+  &lt;div class=&quot;position-relative&quot;&gt;
+	&lt;div class=&quot;shape shape-bottom shape-fluid-x svg-shim text-white&quot;&gt;
+	  &lt;svg viewBox=&quot;0 0 2880 48&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z&quot; fill=&quot;currentColor&quot; /&gt;&lt;/svg&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Body --&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+
+	&lt;!-- Form --&gt;
+	&lt;form name=&quot;form-cmmc&quot; id=&quot;form-cmmc&quot; action=&quot;https://formspree.io/f/mqkggbjl&quot; method=&quot;POST&quot;&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[subject]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_subject&quot; placeholder=&quot;Full Name&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_subject&quot;&gt;Full Name&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;email&quot; name=&quot;Contact[email]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_email&quot; placeholder=&quot;Email&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_email&quot;&gt;Email&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;form-floating&quot;&gt;
+		&lt;input type=&quot;text&quot; name=&quot;Contact[phone]&quot; class=&quot;form-control form-control-flush&quot; id=&quot;contact_phone&quot; placeholder=&quot;Phone&quot; required=&quot;&quot; /&gt;
+        &lt;label for=&quot;contact_phone&quot;&gt;Phone Number&lt;/label&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;mt-6&quot;&gt;
+		&lt;button class=&quot;btn d-block w-100 btn-success lift&quot; type=&quot;submit&quot; id=&quot;contact-submit&quot;&gt;
+		  Get CMMC Readiness White Paper
+		&lt;/button&gt;
+	  &lt;/div&gt;
+	  &lt;div class=&quot;row mt-4&quot;&gt;
+                        &lt;div class=&quot;col-12&quot;&gt;
+                      &lt;div class=&quot;g-recaptcha&quot; data-sitekey=&quot;6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf&quot;&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;input type=&quot;text&quot; name=&quot;_gotcha&quot; style=&quot;display:none&quot; /&gt;
+	&lt;/form&gt;
+	&lt;div id=&quot;response-message&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</description>
+				
+				<pubDate>Thu, 21 Jan 2021 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/whitepaper-cmmc-cybersecurity-caturity-codel-in-dc/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/whitepaper-cmmc-cybersecurity-caturity-codel-in-dc/</guid>
+			</item>
+		
+			<item>
+				<title>So Are Apples New M1 Based Macs Any Good</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/2020/Header-NewLaptop.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;In November, Apple unveiled its new M1 chip and three new Macs that use
+it: the &lt;a href=&quot;https://www.apple.com/macbook-air/&quot;&gt;MacBook Air&lt;/a&gt;, &lt;a href=&quot;https://www.apple.com/macbook-pro-13/&quot;&gt;13-inch
+MacBook Pro&lt;/a&gt;, and &lt;a href=&quot;https://www.apple.com/mac-mini/&quot;&gt;Mac
+mini&lt;/a&gt;. The M1-based MacBook Air
+replaces the previous Intel-based MacBook Air, but with the 13-inch
+MacBook Pro and the Mac mini, Apple continues to sell some Intel-based
+models with beefier specs—most notably a higher memory ceiling.&lt;/p&gt;
+
+&lt;p&gt;Even though Apple makes impressive performance claims for the new Macs,
+the community was still somewhat skeptical. Were these new Macs as fast
+as Apple said? Would they be limited in some other way? And the biggest
+question of all, should we be buying untested M1-based Macs or
+tried-and-true Intel-based models? Now that these new Macs are shipping
+and people have had a chance to try them, let’s address these and other
+questions so you can plan your future Mac purchases appropriately.​&lt;/p&gt;
+
+&lt;h3 id=&quot;are-these-new-macs-fast&quot;&gt;Are these new Macs fast?&lt;/h3&gt;
+
+&lt;p&gt;It’s hard to overstate just how astonishing the performance benchmarks
+for these new Macs are. In single-core &lt;a href=&quot;https://browser.geekbench.com/mac-benchmarks/&quot;&gt;GeekBench 5
+tests&lt;/a&gt;, the M1-based Macs
+beat &lt;em&gt;every existing Mac&lt;/em&gt; by a lot: the most recent 27-inch iMac clocked
+in at a benchmark score of 1250, whereas the M1 Macs hovered around&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;(The Mac Pro and iMac Pro are tweaked for faster multi-core
+performance instead, so they fare even worse on the GeekBench 5
+single-core benchmarks.) For many everyday apps, single-core performance
+is what you’ll notice.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202So/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, the top-of-the-line 28-core Mac Pro and its siblings
+outperform the 8-core M1-based Macs in the GeekBench 5 multi-core
+benchmarks, but if you focus on the new M1 Macs in the multi-core
+rankings below, you can see that they’re just behind the fastest 27-inch
+iMacs and low-end Pro models. That’s doubly impressive when you remember
+that the Mac Pro in the screenshot below costs $6000, compared to $700
+for the Mac mini.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202So/image3.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Benchmarks don’t lie, but they also don’t tell the whole story. These
+new Macs feel fast. Apps launch with only a bounce or two of the icon on
+the Dock. The MacBook Air and MacBook Pro wake from sleep and unlock
+with an Apple Watch so quickly that they’re ready to use by the time
+you’ve finished opening the screen. We can’t promise you’ll never see
+the spinning beachball wait cursor, but we haven’t so far. In some ways,
+using these new Macs feels more like using a fast iPad or iPhone, where
+everything happens nearly instantly.&lt;/p&gt;
+
+&lt;p&gt;Finally, note that only apps that have been rewritten to support the M1
+chip receive the full speed boost. Older apps must be “translated” by
+Apple’s Rosetta 2, which converts apps from Intel instructions to the
+Arm instructions needed by the M1. That happens at launch, after which
+macOS launches the translated app. The first launch might be slow, but
+subsequent launches are faster. Although emulation environments are
+generally quite slow, early tests show apps translated by Rosetta 2 as
+running at about 80% of native speed. The upshot of that is that even
+translated apps might run faster than the equivalent app running on an
+Intel-based Mac.​&lt;/p&gt;
+
+&lt;h3 id=&quot;whats-the-deal-with-the-new-m1-based-macs-having-only-8-gb-or-16-gb-of-ram&quot;&gt;What’s the deal with the new M1-based Macs having only 8 GB or 16 GB of RAM?&lt;/h3&gt;
+
+&lt;p&gt;With the new M1-based Macs, you can choose between 8 GB and 16 GB of
+RAM, and that’s it. In contrast, the current Intel-based 13-inch MacBook
+Pro lets you go up to 32 GB, and the Intel-based Mac mini can take up to
+64 GB.&lt;/p&gt;
+
+&lt;p&gt;Although 16 GB of RAM sounds limiting, that doesn’t seem to be nearly as
+concerning as one might think. The reason is that the M1 chips use what
+Apple calls “unified memory,” which is built onto the M1 chip itself and
+shared by the CPU, GPU, and Neural Engine. A significant performance
+bottleneck in modern computers is moving data around in memory.
+Benchmarks suggest that the memory bandwidth on the M1 chip is about 3x
+faster than on a 16-inch MacBook Pro. The faster that data can be moved
+around in memory and shared between the processing cores, the less
+memory is needed.&lt;/p&gt;
+
+&lt;p&gt;The speed of their SSDs also lets the M1-based Macs get away with less
+memory. When macOS uses all its physical RAM, it falls back on virtual
+memory, which effectively involves moving data on and off the SSD as
+needed. When Macs used hard drives, swapping memory to and from disk was
+very slow, but modern SSDs are fast enough to hide swapping delays.&lt;/p&gt;
+
+&lt;p&gt;To be fair, there are still memory-intensive tasks that will run better
+on Macs with lots of physical RAM. That’s a big reason Apple kept the
+Intel versions of the 13-inch MacBook Pro and Mac mini for sale. On the
+very high end, you can put a whopping 1.5 TB of RAM in a Mac Pro, and if
+you need that kind of RAM for your work, you’ll need to stick with
+Intel-based Macs for now.​&lt;/p&gt;
+
+&lt;h3 id=&quot;how-will-the-m1-based-macs-fit-into-a-workflow&quot;&gt;How will the M1-based Macs fit into a workflow?&lt;/h3&gt;
+
+&lt;p&gt;Here’s where things get tricky. If you have an office full of Macs,
+there are some good reasons why you might want to stick with Intel-based
+Macs for a while.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Big Sur:&lt;/strong&gt; The M1-based Macs require macOS 11 Big Sur. In general,
+we recommend that people hold off on upgrading to Big Sur until
+Apple has released maintenance updates to solidify stability and
+compatibility. Plus, mixing versions of operating systems and apps
+can lead to interoperability problems.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Apps:&lt;/strong&gt; Although Rosetta 2 appears to do a good job translating
+older apps, there may still be quirks or performance hits,
+particularly for complex apps.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Memory:&lt;/strong&gt; As mentioned above, there are some tasks where lots of
+physical RAM is essential, and there’s currently no way to go above
+16 GB on an M1-based Mac.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But here’s the thing. Apple very intentionally focused its initial
+M1-based Mac models on the low end of the Mac product line. These Macs
+are ideal for students and individuals, or as auxiliary or traveling
+Macs for office workers, particularly given the startlingly good battery
+life in the laptops. They won’t be replacing a Mac Pro or even a 27-inch
+iMac right now, but no one would have replaced such a machine with a
+MacBook Air, 13-inch MacBook Pro, or Mac mini before either.&lt;/p&gt;
+
+&lt;p&gt;In the end, we’re bullish on these new M1-based Macs. They’ve redefined
+what the most inexpensive Macs can do, making them compelling for those
+who don’t require more than 16 GB of physical RAM or need to slot them
+into highly specific workflows.&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 24 Dec 2020 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/so-are-apples-new-m1-based-macs-any-good/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/so-are-apples-new-m1-based-macs-any-good/</guid>
+			</item>
+		
+			<item>
+				<title>Take a Few Minutes to Lock Down Your Facebook Privacy Settings</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/2020/Header-FBPrivacy.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;Even beyond its often controversial behavior in the 2020 US presidential
+election, Facebook continually makes news headlines for its numerous
+privacy and security problems. Most notable, of course, were the &lt;a href=&quot;https://www.theguardian.com/uk-news/2018/mar/22/cambridge-analytica-scandal-the-biggest-revelations-so-far&quot;&gt;50
+million Facebook profiles gathered for Cambridge
+Analytica&lt;/a&gt;
+for the 2016 election. Closer to home, the company pushed a VPN service
+in the Facebook iOS app that &lt;a href=&quot;https://techcrunch.com/2018/02/12/facebook-starts-pushing-its-data-tracking-onavo-vpn-within-its-main-mobile-app/&quot;&gt;collected all your mobile data traffic for
+Facebook&lt;/a&gt;.
+After pressure from Apple, Facebook pulled the VPN but reused it for the
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Onavo#Facebook_Research&quot;&gt;Facebook
+Research&lt;/a&gt;
+program, which paid users as young as 13 for their data. Apple caused
+that to be shut down too.&lt;/p&gt;
+
+&lt;p&gt;Facebook has also &lt;a href=&quot;https://www.nytimes.com/2018/12/18/technology/facebook-privacy.html&quot;&gt;silently shared user data with other tech
+giants&lt;/a&gt;,
+&lt;a href=&quot;https://www.theverge.com/2019/2/22/18236398/facebook-mobile-apps-data-sharing-ads-health-fitness-privacy-violation&quot;&gt;received confidential health data from other
+apps&lt;/a&gt;
+without users’ informed consent, and &lt;a href=&quot;https://techcrunch.com/2019/04/18/instagram-password-leak-millions/&quot;&gt;stored hundreds of millions of
+Facebook and Instagram
+passwords&lt;/a&gt;
+in an unencrypted form, among much else. The &lt;a href=&quot;https://en.wikipedia.org/wiki/Criticism_of_Facebook&quot;&gt;criticisms of Facebook go
+on and on&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Because of this, many have encouraged Facebook users to delete their
+accounts. That even includes &lt;a href=&quot;https://www.theverge.com/2018/3/20/17145200/brian-acton-delete-facebook-whatsapp&quot;&gt;the billionaire co-founder of the WhatsApp
+messaging
+service&lt;/a&gt;,
+which Facebook bought in 2014. If you’re done with Facebook, you’re
+welcome to deactivate or even delete your account. &lt;a href=&quot;https://www.facebook.com/help/250563911970368&quot;&gt;Facebook provides
+instructions&lt;/a&gt; for both
+actions. Deactivating your account just makes you invisible on Facebook,
+whereas deleting your account may eventually (up to 3 months) result in
+most of the data being removed.&lt;/p&gt;
+
+&lt;p&gt;The problem is that Facebook can be useful. It may be the only
+connection you have with certain friends or family members, and many
+informal groups use Facebook for meetup logistics. For many, losing
+access to Facebook would hurt real-world relationships and activities.
+Plus, lots of companies have Facebook pages, and taking those down might
+result in a loss of business from customers who would find out about the
+firm only through Facebook. What to do?&lt;/p&gt;
+
+&lt;p&gt;If you’re a business, the most sensible approach is to keep your
+Facebook page but avoid relying on it. Remember, Facebook is not your
+friend. Back in 2018, Facebook said it would be &lt;a href=&quot;https://newsroom.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/&quot;&gt;prioritizing posts from
+friends and family over public
+content&lt;/a&gt;,
+which is a nice way of saying that Facebook is deprecating
+business-related posts. So make sure you have a Web site that you
+control, and make sure that customers can easily find it and contact you
+through it. It’s also a good idea to offer customers multiple ways to
+contact you, particularly via email.&lt;/p&gt;
+
+&lt;p&gt;On a personal level, there are two ways to think about privacy on
+Facebook: limiting the information you share with other people on
+Facebook and limiting the information that you’re willing to provide to
+Facebook. If Facebook doesn’t have data about you, it can’t sell it to
+the highest bidder, let it be harvested by hackers, or use it in ways
+you might find creepy.&lt;/p&gt;
+
+&lt;p&gt;Facebook’s Privacy Checkup walks you through many of Facebook’s privacy
+settings:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;On the Mac, sign in to the Facebook website, click the down-pointing
+arrow button on the top-right corner of the page, click Settings &amp;amp;
+Privacy, and click &lt;a href=&quot;https://www.facebook.com/privacy/checkup/&quot;&gt;Privacy
+Checkup&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In Facebook’s iOS app, tap the hamburger button in the bottom-right
+corner, scroll down to and expand Settings &amp;amp; Privacy, tap Privacy
+Shortcuts, and then tap “Review a few important privacy settings.”&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ta/image2.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For each of the five tiles in the Privacy Checkup, work through the
+steps to make sure you’re comfortable with the settings. Although all of
+them are important, pay special attention to “Your data settings on
+Facebook,” which lets you control what apps could leak data about you,
+whether Facebook can use facial recognition to identify you in photos
+and videos, and if Facebook can know your precise location.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ta/image3.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don’t want to go through the entire Privacy Checkup just to check
+a single setting, look at Facebook’s &lt;a href=&quot;https://www.facebook.com/settings?tab=privacy&quot;&gt;Privacy Settings and
+Tools&lt;/a&gt; in the overall
+Settings collection (accessible from that dropdown menu on the
+Mac—choose Settings &amp;amp; Privacy &amp;gt; Settings &amp;gt; Privacy, or from the iOS
+app’s hamburger button—tap Settings &amp;amp; Privacy &amp;gt; Settings &amp;gt; Privacy
+Settings). This page also provides a link to help you review the posts
+you’re tagged in, removing those that you don’t want on your timeline.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ta/image4.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Beware that you could also be sharing information about everyone you
+know—Facebook loves to know who you know, even if they don’t have
+Facebook accounts. You can prevent this, but doing so requires two
+steps, one on Facebook’s &lt;a href=&quot;https://www.facebook.com/mobile/facebook/contacts/&quot;&gt;Manage Your Invites and Uploaded
+Contacts&lt;/a&gt; page and
+another on Messenger’s &lt;a href=&quot;https://www.facebook.com/mobile/messenger/contacts/&quot;&gt;Manage Your Uploaded
+Contacts&lt;/a&gt; page.
+Just delete them all. Otherwise, you’re giving away your contacts’
+personal information without their permission.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ta/image5.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To ensure that contact uploading doesn’t happen again, in the Facebook
+iOS app, tap the hamburger button, scroll down, and then tap Settings &amp;amp;
+Privacy &amp;gt; Settings &amp;gt; Upload Contacts (at the bottom) and make sure the
+switch is off. In the Messenger app, tap your avatar in the upper-left
+corner, tap Phone Contacts &amp;gt; Upload Contacts, and make sure it’s off.&lt;/p&gt;
+
+&lt;p&gt;Also, in the iPhone Facebook app, tap the hamburger button again and
+then Settings &amp;amp; Privacy &amp;gt; Settings &amp;gt; Location, and turn off all the
+settings. Facebook doesn’t need to know everywhere you go.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ta/image6.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re perturbed by the way Facebook’s iOS app is trying to capture
+your contacts and locations, you could delete it from your devices and
+rely instead on the Facebook website, which can’t access as much
+information about you. To make it easier to open, in Safari, visit
+facebook.com, tap the Share button, and then tap Add to Home Screen in
+the share sheet.&lt;/p&gt;
+
+&lt;p&gt;Let us leave you with one thought. &lt;em&gt;Always&lt;/em&gt; assume that anything you
+post to Facebook or allow Facebook to have access to could end up in the
+hands of companies who want to exploit you or on the front page of your
+local newspaper… or the &lt;em&gt;New York Times&lt;/em&gt;. Nothing on Facebook is ever
+private—Facebook has shown that it isn’t trustworthy or reliable—and
+the best way to ensure confidential or embarrassing information doesn’t
+leak inadvertently is to avoid posting it to Facebook in the first
+place.&lt;/p&gt;
+</description>
+				
+				<pubDate>Fri, 18 Dec 2020 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/take-a-few-minutes-to-lock-down-your-facebook-privacy-settings/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/take-a-few-minutes-to-lock-down-your-facebook-privacy-settings/</guid>
+			</item>
+		
+			<item>
+				<title>Want to Send Holiday Cards This Year Try Building Them with Motif for Photos</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/2020/Header-HolidayCards.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;In 2018, Apple dropped support for creating print projects from within
+Photos, including greeting cards, calendars, and books. Instead, Apple
+allowed other print-service companies to build Photos Project extensions
+that gave users the same sort of capabilities. At first, they didn’t
+match up with what Apple had previously provided, but they’ve improved
+over time.&lt;/p&gt;
+
+&lt;p&gt;It’s the holiday card season again, and given how little we’ve all been
+able to see friends and family, we expect a lot more people will be
+sending cards this year. You’re welcome to use &lt;a href=&quot;https://www.mimeophotos.com/&quot;&gt;Mimeo
+Photos&lt;/a&gt;,
+&lt;a href=&quot;https://www.shutterfly.com/&quot;&gt;Shutterfly&lt;/a&gt;, &lt;a href=&quot;https://pg-sg.fujifilm.com/&quot;&gt;Fujifilm Prints &amp;amp;
+Gifts&lt;/a&gt;, &lt;a href=&quot;https://www.mpix.com/&quot;&gt;Mpix&lt;/a&gt;, or
+&lt;a href=&quot;https://www.whitewall.com/&quot;&gt;WhiteWall&lt;/a&gt;, but we’re going to focus on
+&lt;a href=&quot;https://www.motifphotos.com/&quot;&gt;Motif&lt;/a&gt;, which generally performed well in
+our testing.&lt;/p&gt;
+
+&lt;p&gt;To begin, &lt;a href=&quot;https://apps.apple.com/us/app/motif-photobook-album-maker/id1404636482?mt=12&quot;&gt;install the Motif
+app&lt;/a&gt;
+from the Mac App Store, which also adds the Motif extension to System
+Preferences &amp;gt; Extensions &amp;gt; Photos Projects. Once you have the
+extension installed, here’s what you do:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Select photos:&lt;/strong&gt; Although you can add photos to your card project
+at any time by dragging them into the project in the Photos sidebar,
+it’s easiest to make a new album that contains a dozen or so of the
+best candidates for your card. If you don’t already know exactly
+what you want, don’t be picky at this point because it’s easier to
+choose the final images from within the card layout.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Create the card:&lt;/strong&gt; With your new album selected, choose File &amp;gt;
+Create &amp;gt; Card &amp;gt; Motif. Then select either a 5x7 folded card or a
+4x6 flat double-sided card, in either portrait or landscape
+orientation.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image2.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Select a theme:&lt;/strong&gt; Motif provides various themes, and although it
+doesn’t currently include any holiday themes for cards, they’re all
+completely customizable. Since cards have relatively few images, we
+recommend clicking Don’t Autoflow and placing images by hand. (For a
+book or a calendar, autoflow would be a boon.)
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image3.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Choose layouts:&lt;/strong&gt; Although every card page starts with a default
+layout, you can customize every page in various ways. Would you
+prefer a single image on the front, rather than a multi-photo
+layout? Click the layout button below the
+page to open the Page Layout screen, click a number corresponding to
+how many images you want, and click the desired layout. (A bug in
+the current version prevents this from working on pages containing
+text blocks, but you can still tweak such pages—see the
+instructions below for adding, removing, resizing, and rearranging
+blocks.)
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image5.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add photos:&lt;/strong&gt; To add a photo to a blank spot on the card, drag it
+from the photo tray at the bottom of the window, which shows all the
+available images (scroll to the right to see all the photos if
+necessary). Dragging a photo on top of a placed image replaces it,
+pushing the previous one back into the image tray.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image6.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add and edit text:&lt;/strong&gt; Themes come with pre-defined text blocks, but
+you can always add your own by clicking the Aa button under the
+page. You can tweak the font face, style, size, color, and more in
+the controls that appear whenever you select a text box.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image7.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Although that’s the basics of what you need to know to create and
+customize a card. Motif provides numerous other options that may prove
+helpful:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Move between pages:&lt;/strong&gt; Arrow buttons on the left and right side of
+the screen let you move between the pages of a card, but it’s easier
+to press the left and right arrow keys. If you prefer to see all
+your pages at once, click the right side of the page button in the upper-right corner of the
+window.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Resize blocks:&lt;/strong&gt; You can resize any image or text block by
+clicking it and dragging its blue size handles. If the Magic Resize
+ button in the top right of the window is
+selected, other blocks will resize to fit.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image10.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Rearrange image blocks:&lt;/strong&gt; To move a block within a layout, click
+it, click the Move button in the control
+bar that appears, and then drag the block to a new location.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Wa/image12.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Add or delete a block:&lt;/strong&gt; You can add or delete an image block
+without going through the Page Layout screen. To add a block, drag
+an image from the tray to a blank spot in between other blocks. To
+remove a block, select it and click the trash icon in the control
+bar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Edit photos:&lt;/strong&gt; To edit a photo from within the project, select it
+and then double-click it again to open it in the regular Photos
+editing view. Other tools in the control bar let you zoom the image
+(drag the zoomed image to move it within the block), rotate the
+image, and change its opacity—for all three, adjust the changes
+with the slider underneath.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Overlay text:&lt;/strong&gt; Once you’ve placed a text block on a page, resize
+or move it so it overlaps an image. If the text doesn’t appear
+because it’s underneath the image, choose Send Backward from the
+control bar’s Arrange menu.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Change page color:&lt;/strong&gt; In the Page Layout screen, find the Page
+Color button. Click it to change the color using the standard macOS
+color picker.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some people may be able to create a card, drop a few photos in, change
+the text, and be done in minutes. Others will want to tweak every last
+detail to get things just so—if you’re particular, you can probably
+spend hours on it.&lt;/p&gt;
+
+&lt;p&gt;Either way, when you’re done, it’s time to place your order. You’ll need
+to create an account with Motif and run through a six-step process of
+choosing the number of cards you want, providing your billing
+information, picking shipping options, and entering your payment
+details.&lt;/p&gt;
+
+&lt;p&gt;After that, it’s merely a matter of waiting until they arrive and then
+stuffing envelopes, addressing them, and popping them in a mailbox.&lt;/p&gt;
+</description>
+				
+				<pubDate>Fri, 11 Dec 2020 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/want-to-send-holiday-cards-this-year-try-building-them-with-motif-for-photos/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/want-to-send-holiday-cards-this-year-try-building-them-with-motif-for-photos/</guid>
+			</item>
+		
+			<item>
+				<title>Overwhelmed by Apps- Use iOS 14s App Library to Manage Your Home Screens</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/2020/Header-AppLibrary.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;Many of us have been using iPhones for years, and apps we bought or
+downloaded long ago molder in corners of our Home screens. Even if you
+haven’t played Flappy Bird in years, its pixelated icon still stares
+glumly at you every time you peer at its Home screen, and it’s far from
+alone. To find out how many apps you have, go to Settings &amp;gt; General &amp;gt;
+About and look next to Applications. So where are they all?&lt;/p&gt;
+
+&lt;p&gt;Unless you’re one of those highly organized people who keeps every app
+in a folder (we’re jealous), you probably have quite a few Home screens
+holding all those apps. The first one or two may be nicely laid out,
+with your most frequently used apps close at hand. But after that? We
+can never find little-used apps on the fourth or sixth Home screen.
+Instead, we search for such apps—swipe down on a Home screen and type
+a few characters from its name. But wouldn’t it be nice to see an
+alphabetically sorted list of all your installed apps?&lt;/p&gt;
+
+&lt;p&gt;That’s what iOS 14’s App Library provides, though it may not be evident
+at first glance. (Sadly, the App Library isn’t available in iPadOS 14.)
+A new screen to the right of your last Home screen, the App Library
+collects all your apps into folders. At the top, Suggestions includes
+four suggested apps based on time, location, or activity, and Recently
+Added shows the apps you’ve downloaded lately. The rest of the folders
+organize apps by category. In a folder grid, tapping a large icon opens
+that app, while tapping the group of four small icons in the lower-right
+corner opens the folder. When in jiggle mode, you can also drag an app
+out of the App Library to a Home screen or tap the X badge on an app
+icon to delete it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ov/image2.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since you can’t rename any of the App Library folders or move apps
+between them, most of them aren’t that useful for finding something
+quickly, though you may enjoy browsing in them. However, if you tap the
+App Library search field at the top, it displays a lovely alphabetical
+list of all the apps installed on your iPhone. Finally! You can tap a
+letter on the right to jump to that spot in the list (D in the left-hand
+screenshot below), or enter a couple of characters to filter the list by
+name and category (which is why a search for “Flight” also finds travel
+apps like Kayak and Expedia in the right-hand screenshot).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ov/image3.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Perhaps most important, you need to understand that the App Library
+always contains all the apps installed on your iPhone. If you delete an
+app from the App Library, you’re deleting it from your iPhone.&lt;/p&gt;
+
+&lt;p&gt;Now that you know what the App Library is, what does it enable you to
+do?​&lt;/p&gt;
+
+&lt;h3 id=&quot;remove-apps-from-your-home-screens&quot;&gt;Remove Apps from Your Home Screens&lt;/h3&gt;
+
+&lt;p&gt;Because all apps are accessible from the App Library, they no longer
+need to be on a Home screen. That means you can take seldom-used apps
+off your Home screens and access them from the App Library. To do this,
+first touch and hold an empty spot on any Home screen to enter jiggle
+mode. Tap the minus sign &lt;strong&gt;–&lt;/strong&gt; badge on any app ➊, and then tap Remove
+from Home Screen ➋. That’s effective but slow, since you have to remove
+apps one at a time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ov/image4.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here’s a faster approach. In jiggle mode, start dragging an app with
+your thumb. Then, with another finger, tap other apps to add them to the
+stack. Once you’ve collected all the apps you want to remove from the
+Home screen, drag them to the right (or swipe left on the Home screen
+with another finger) until you get to the App Library. Then lift your
+thumb.&lt;/p&gt;
+
+&lt;p&gt;If you’d rather sweep your apps under a virtual rug, you can hide entire
+Home screens. They still exist; you just don’t see them until you reveal
+them again. (You could also create a Home screen that contains just
+travel-related apps and show it only when you’re on vacation.) When in
+jiggle mode, tap the lozenge that indicates the number of Home screens
+(➌ above) and then tap the circle ➍ under each Home screen thumbnail to
+show (checked) or hide (empty) it. Tap Done when you’re finished.​&lt;/p&gt;
+
+&lt;h3 id=&quot;organize-your-main-home-screens&quot;&gt;Organize Your Main Home Screens&lt;/h3&gt;
+
+&lt;p&gt;Before the App Library, creating focused Home screens was a nightmare
+because you had no idea where the apps you wanted to bring together
+might be located. With the App Library, that’s no longer an issue. Try
+these steps to create a new Home screen that contains a particular
+subset of your apps.&lt;/p&gt;
+
+&lt;p&gt;In the App Library, tap the search field to display the alphabetic list of all apps.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Touch and hold the app you want to add to a Home screen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keep your finger down without moving; you should feel a tap of
+feedback and a menu will appear.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Continue holding down on the app without moving your finger; a
+second or two later, iOS will display the rightmost Home screen.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lift your finger to drop the app; it will show up in a few seconds.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Swipe back to the App Library and repeat these steps.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That approach is effective but a bit slow. Here’s a faster way. Enter
+jiggle mode, go to the App Library, navigate into a folder, and start
+dragging an app with your thumb. iOS will immediately send you to the
+last Home screen, but use another finger to swipe left so you go back to
+the App Library. Then navigate into a folder and tap desired apps to add
+them to your stack. Once you’ve collected everything, swipe right with
+your other finger to return to the last Home screen and lift your thumb
+to drop all the apps.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve populated the Home screen with your desired apps, rearrange
+them as desired while still in jiggle mode. Remember that you can also
+create folders by dragging one app onto another, and put apps in folders
+by dragging them in.​&lt;/p&gt;
+
+&lt;h3 id=&quot;focus-on-newly-downloaded-apps&quot;&gt;Focus on Newly Downloaded Apps&lt;/h3&gt;
+
+&lt;p&gt;The App Library also addresses the problem of what to do with newly
+downloaded apps. Previously, they’d show up at the bottom-right of some
+Home screen, but you couldn’t always predict which one. In iOS 14, you
+can now control that behavior in Settings &amp;gt; Home Screen. If you select
+Add to Home Screen, iOS will continue to add apps that you download to a
+Home screen. But if you prefer a clean screen, select App Library Only
+instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ov/image5.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the latter case, newly downloaded apps appear in the Recently Added
+folder on the main App Library screen, with the three most recent apps
+represented with large icons. Remember that you can tap the large icons
+to open the associated app or tap the four small icons to open the
+folder. The folder shows only the eight most recently downloaded apps,
+sorted alphabetically. And, of course, all the new apps also appear in
+the App Library’s alphabetical list and in the appropriate category
+folders.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2020/20201202Ov/image6.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’ve been suffering under the cognitive load of numerous
+unorganized Home screens, think about how you can use the App Library in
+iOS 14 to streamline your iPhone experience. You might even find that
+you like having just a couple of Home screens and leaving everything
+else in the App Library.&lt;/p&gt;
+</description>
+				
+				<pubDate>Fri, 04 Dec 2020 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/overwhelmed-by-apps--use-ios-14s-app-library-to-manage-your-home-screens/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/overwhelmed-by-apps--use-ios-14s-app-library-to-manage-your-home-screens/</guid>
+			</item>
+		
+			<item>
+				<title>Whats MDM, and Why Is It Useful for Organizations</title>
+				
+					<description>&lt;img src=&quot;https://grovetech.co/assets/img/2020/Header-MDMBenefits.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;For those who work in organizations, regardless of size, you know how
+much effort is involved with coordinating a group’s technology. It can
+take quite some time to set up a new Mac, iPad, or iPhone with all the
+right apps, settings, and logins. And that’s just to get started—on an
+everyday basis, maintaining solid security practices is essential, and
+support requests are inevitable.&lt;/p&gt;
+
+&lt;p&gt;The solution to all this is MDM, or mobile device management, which is a
+way of centrally administering computers, tablets, and smartphones to
+simplify setup and ensure peace of mind for both employers and
+employees. Apple strongly encourages the use of MDM; the company
+continually enhances the core capabilities that MDM systems expose for
+IT administrators. If the benefits we outline here interest you, contact
+us to talk about your needs.​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Benefits to the Organization&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;MDM is a big win for organizations, including businesses, non-profits,
+schools, government agencies, and more. It’s just too hard—and too
+insecure—to deal with every device individually. With MDM,
+organizations benefit in the following ways.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Quick, consistent setup:&lt;/strong&gt; With MDM,
+organizations can create &lt;em&gt;profiles&lt;/em&gt;—collections of settings and
+account information—and install them automatically as part of a
+deployment strategy. In the best case, users have to do little more
+than power on the device and sign in; it automatically checks with
+the MDM server and downloads the necessary information. MDM
+solutions also let organizations install and configure approved sets
+of apps to ensure that every employee has the tools they need at
+their fingertips.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Improved security:&lt;/strong&gt; A great deal of digital
+security comes down to policies: requiring a strong passcode,
+ensuring secure settings for things like screensavers, requiring
+that backups be encrypted, and more. All these options are easily
+set and enforced by MDM profiles. Plus, MDM can separate personal
+and business accounts and data and even ensure encryption of
+on-device data. And perhaps most important, MDM enables remote
+locating, locking, and wiping of lost devices.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Lower costs:&lt;/strong&gt; Although MDM solutions usually
+come with a monthly cost, research shows that organizations save
+money overall in two main ways. Initially, MDM reduces setup costs
+by replacing an hour or two of hands-on effort with remotely pushed
+deployment. Over time, the consistency of setup and app availability
+dramatically reduces ongoing support costs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Asset tracking:&lt;/strong&gt; An MDM solution enables
+information-rich asset tracking, making it easy for an organization
+to see exactly what devices it owns, which employees have them, and
+where they’re located. Such a system enables more efficient use of
+existing resources and easier lifecycle management.​&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Benefits to the User&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Although it might seem as though MDM is primarily aimed at helping and
+protecting the organization, individual users benefit as well.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Personal/work separation:&lt;/strong&gt; MDM makes it
+possible to separate personal and work accounts and data, which can
+eliminate the need to carry both personal and work phones at all
+times. In some cases, MDM can also make it so employees can securely
+use their own devices—which might be newer or more powerful—with
+organizational data and accounts.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Faster, easier setup:&lt;/strong&gt; Most people don’t
+look forward to setting up and configuring devices, particularly
+when typing in usernames and passwords for numerous accounts. MDM
+does much of that, so employees can focus on their actual jobs.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Peace of mind:&lt;/strong&gt; With the security policies
+enforced by MDM, users can have confidence that they haven’t
+inadvertently done anything to expose confidential data. Plus,
+mistakes happen, and devices are lost or stolen. An MDM solution
+might be able to locate a lost device, and if not, it can ensure
+that the device is both worthless and unable to reveal anything
+damaging.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As helpful as MDM is once your organization is using it, we won’t
+pretend that choosing and setting up an MDM solution is trivial. Unless
+you have significant IT staff and resources, it makes sense to work with
+people who already have considerable MDM experience. We do, and we’d be
+happy to discuss a custom approach that fits your needs.&lt;/p&gt;
+</description>
+				
+				<pubDate>Thu, 26 Nov 2020 00:00:00 -0500</pubDate>
+				<link>https://grovetech.co/blog/whats-mdm,-and-why-is-it-useful-for-organizations/</link>
+				<guid isPermaLink="true">https://grovetech.co/blog/whats-mdm,-and-why-is-it-useful-for-organizations/</guid>
+			</item>
+		
+	</channel>
+</rss>

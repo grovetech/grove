@@ -1,0 +1,1994 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<rss xmlns:atom="https://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Grove Technologies App</title>
+        <link>https://grovetech.co</link>
+        <description>A feed for the iOS Grove Technologies App</description>
+        <language>en</language>
+        <pubDate>2021-11-12 16:38:51 -0500</pubDate>
+        <lastBuildDate>2021-11-12 16:38:51 -0500</lastBuildDate>
+        <atom:link href="https://grovetech.co/app/out.xml" rel="self" type="application/rss+xml"/>
+        
+         
+        <item>
+          <title>Need to Resize Images in Various Ways? Give Preview a Try</title>
+          <description><![CDATA[ Need to Resize Images in Various Ways? Give Preview a Try
+
+Even those of us who don’t work with graphics professionally often find
+ourselves needing to resize images. Perhaps you have a large square
+headshot, but the site to which you’re uploading requires it to be
+exactly 100 by 100 pixels. Or maybe you have an iPhone 13 Pro photo
+that’s 4032 by 3024, but you need the long side to be 1280 pixels and
+the short side to be 800 pixels. You might even need to cut out an
+800-by-600 rectangle from a much larger image.
+
+These tasks are easily accomplished with professional graphics apps like
+Photoshop, but you don’t need to pay for or learn Photoshop for a quick
+resizing and cropping of an image. That’s because Preview, which is
+built into macOS, can do many of these tasks with aplomb.
+
+One note: You can resize images to be smaller with little or no loss of
+quality, but you can’t make images bigger without them looking fuzzier
+unless you employ specialized tools.
+
+Shrink an Image without Changing Aspect Ratio
+
+Let’s take our first example above. We have a square headshot that we
+need to upload to an account, but the site won’t accept an image larger
+than 100 pixels square. To shrink the image to the specified size, we’ll
+first make a copy in the Finder or we’ll open the file in Preview and
+choose File  Duplicate. Then, with the image open in Preview, we’ll
+choose Tools  Adjust Size, make sure “pixels” is chosen to the right
+of the Width and Height fields, and enter 100 into the Width field.
+Because Scale Proportionally is selected, Height automatically changes
+to 100 to match. We’ll click OK to exit the dialog and then save the
+file.
+
+
+
+Shrink an Image and Crop to Different Dimensions
+
+Let’s move on to our second example above. We have a photo of some
+home-baked bread loaves that we’ve taken with the iPhone, and we need to
+resize it to 1280 by 800 pixels before uploading it to our food blog.
+There are two problems: the image is much larger than we need to start,
+and when we try resizing it to the desired pixel count in one dimension,
+the other dimension is wrong.
+
+We’ll start the same way we did before, by making a copy of the original
+and in Preview choosing Tools  Adjust Size. In the Image Dimensions
+dialog, we’ll first type 1280 into the Width field. In this example,
+doing that causes the Height field to change to 752, which is too small
+(below left). Remember, shrinking images is easy and works well, but
+expanding them is hard. So instead, we’ll type 800 into the Height
+field, which causes the Width field to change to 1361 (below right).
+That’s good; we’ll click OK to resize the image. It will look small, but
+we can zoom it back to the window size by choosing View  Zoom to Fit.
+
+
+
+For the next step, we need to get the image width down from 1361 to 1280
+pixels, which we do by cropping. Choose Edit  Select All (or just
+press Command-A), and notice that there’s a selection rectangle around
+the entire image, with blue drag handles in the middle of each side and
+at each corner. We’ll need to take some off each side to keep the loaves
+centered, so we’ll drag the left side in a little to start. If you have
+trouble grabbing the blue drag handles instead of the edge of Preview’s
+window, choose View  Zoom Out to zoom out one step and separate the
+handles from the window edges.
+
+
+
+Next, we’ll drag the right side in. Notice that as we drag, Preview
+displays the image dimensions in a little lozenge (at the right in the
+screenshot)—we’ve stopped at 1280. Since we’re moving only the edges,
+only the width changes—resizing from the corners would be much harder
+because both dimensions would change simultaneously.
+
+One tip. If you’ve gotten the selection rectangle to 1280 by 800, but
+the content under it isn’t centered as you’d like, press and hold the
+left or right arrow key to move the selection rectangle to the left or
+right.
+
+Once we have the selection rectangle at the right size and in the right
+place, we’ll choose Tools  Crop to discard the image content outside
+the selection.
+
+Extract a Portion of an Image with Specific Dimensions
+
+For our final example, let’s assume that we have a large picture of
+cherry tomatoes, and we need to cut out just the black tomatoes for a
+Web page that requires an 800-by-600 image. Once again, the image is too
+large, but the trickier problem is that we only need a small portion of
+it.
+
+We’ll start by dragging out a selection rectangle that’s roughly 800 by
+600, using Preview’s measurement lozenge. All we’re doing here is
+getting a sense of what the shape of 800 by 600 looks like. Then we make
+another selection around the black cherry tomatoes that’s roughly the
+same aspect ratio, wider than it is tall. The details don’t matter much
+at this point.
+
+
+
+The next step is to crop the photo to the selection with Tools  Crop.
+Then we choose Tools  Adjust Size and set the Width field to 800 to
+get the width correct. That reveals that the height of our rough crop
+was slightly too large, at 630 pixels. We’ll click OK to resize the
+image to those dimensions.
+
+
+
+Finally, we’ll use the same technique we did in the example above, with
+Select All, dragging the top handle down until the dimensions are 800 by
+600, and then using Tools  Crop to discard the extra content.
+
+
+
+As you can see, you can do a lot with just three basic techniques in
+Preview:
+
+
+  
+    Using Tools  Adjust Size to resize the entire image
+  
+  
+    Dragging out selection rectangles while paying attention to the
+measurements
+  
+  
+    Using Tools  Crop to get rid of content outside the selection
+rectangle
+  
+
+
+We won’t pretend that Preview is the ultimate graphics tool, but it’s
+capable, easy to use, and on every Mac.
+ ]]></description>
+          <pubDate>Thu, 11 Nov 2021 00:00:00 -0500</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Resize.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</title>
+          <description><![CDATA[ Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More
+
+Have you ever wanted to identify a plant, flower, or pet breed, or find
+out what that famous painting is called? Us too. In iOS 15 and iPadOS
+15, Apple added a new AI-driven feature called Visual Look Up that
+provides more information about photos of plants, flowers, pets, books,
+artworks, and landmarks. When you’re viewing a photo, swipe up or tap
+the sparkle-badged info button ➊ to see metadata about the image (camera
+model, image details, location, and more) and then tap Look Up to learn
+more ➋. Depending on the item recognized, it will suggest Wikipedia
+articles, similar images from the Web, websites, bookstores, map
+locations, and more. Tap a suggestion to switch to Safari or another app
+for details. (If the info button doesn’t have the sparkle badge, Visual
+Look Up hasn’t identified anything in the photo.)
+
+
+ ]]></description>
+          <pubDate>Tue, 09 Nov 2021 00:00:00 -0500</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>The Best Apple-Related Gifts for 2021</title>
+          <description><![CDATA[ The Best Apple-Related Gifts for 2021
+
+It may seem early to start thinking about the holiday shopping season,
+but with the global supply chain suffering pandemic-related slowdowns,
+there’s no telling how long it will take to get something you order
+today. Apple has generally done a good job of managing its supply chain
+issues, but even still, if you want to make sure you have an Apple
+something for that special someone, we recommend buying it soon. Here
+are our recommendations.
+
+AirTag
+
+Do you know someone who’s always misplacing their keys, purse, or
+backpack? Apple’s new AirTag
+tracker is the perfect gift for such a person. Attach one to a keyring
+(with a separate $29 AirTag
+Loop
+or $39 AirTag Leather
+Loop)
+or drop it in a bag, and from then on, the person can use the Find My
+app to see where they left their stuff. Support for ultra-wideband
+enables precision finding with an iPhone 11 or later—with earlier
+iPhones, the detected location won’t be quite so precise. AirTag uses
+the Find My network, so even if the item is far away, passing Apple
+devices that detect it can securely share its location with you. One
+AirTag costs $29, or you can get a pack of four for $99. You can even
+have Apple personalize each AirTag with custom text and emoji.
+
+
+
+AirPods and AirPods Pro
+
+Apple’s wireless earbuds remain popular, and the company just released
+the third-generation
+AirPods to
+supplement the second-generation
+AirPods and the
+AirPods Pro. All three make
+excellent gifts. The second-generation AirPods cost $129, have a
+relatively long stalk, and boast up to 5 hours of listening on one
+charge. The $179 third-generation AirPods shrink the stalk, switch to a
+force sensor for controls, add support for spatial audio with dynamic
+head tracking, feature sweat and water resistance, have a MagSafe
+wireless charging case, and last up to 6 hours on a single charge. For
+$249, the AirPods Pro include the features of the third-generation
+AirPods and add silicone ear tips and active noise cancellation with
+optional transparency mode, but they have only 4.5 hours of listening
+time. All three have charging cases, support Hey Siri commands, and
+automatically switch between Apple devices.
+
+
+
+HomePod mini
+
+Earlier this year, Apple discontinued the full-size HomePod, which
+wasn’t a big hit at its relatively high price of $299. However, the
+$99 HomePod mini remains
+available, and Apple is now selling it in five colors, with blue,
+orange, and yellow joining white and black. (The new colors will become
+available at some point in November.) The grapefruit-sized HomePod mini
+may be small, but it produces great sound for its size, and it can do
+pretty much everything the larger HomePod could do. You can control it
+entirely via Siri, pair two for stereo sound, use it as a hub for your
+HomeKit home automation accessories, and even have it play the sound
+from your Apple TV. Put a HomePod mini in different rooms in the house,
+and you can use Intercom to communicate with family members using your
+voice. If you’re giving it as a gift, remember that it’s best when
+paired with an Apple Music
+subscription.
+
+
+
+iPad and iPad mini
+
+If you’re looking to give an iPad as a gift, you have a lot of choice.
+The top-of-the-line iPad Pro
+may be overkill for most given its power and price—$799 for the
+11-inch model and $1099 for the 12.9-inch model. But the
+fourth-generation iPad Air,
+which starts at $599, provides sufficient power for even the most
+intensive tasks, especially when coupled with a second-generation
+Apple Pencil ($129) and
+either a Magic Keyboard
+($299) or Smart Keyboard
+Folio ($179).
+
+If those possibilities seem pricey for an iPad that’s destined for a kid
+or an adult with basic needs, look no further than the new
+ninth-generation iPad, which
+remains a bargain at $329. It works with the first-generation Apple
+Pencil ($99), and those who
+need to write can add the $159 Smart
+Keyboard. Finally, don’t
+forget the sixth-generation iPad
+mini, which benefited from a
+major redesign back in September. It’s now more like a diminutive
+version of the iPad Air, with more colors and a squared-off industrial
+design compatible with the second-generation Apple Pencil. It’s $499,
+and if you need a keyboard, you’ll have to look to a third-party
+manufacturer or use a standard Bluetooth wireless keyboard.
+
+
+
+Apple Watch Gift Certificate
+
+Last but far from least, we love the Apple
+Watch, and it would seem to make a
+great gift. However, we urge caution. Apple provides a dizzying number
+of options for case size, material, and color, plus the band and color,
+making it difficult to know what would be most appreciated. So we’d
+encourage giving a certificate that’s good for a conversation about what
+to purchase. Then sit down with the recipient to run through all the
+decisions in the Apple Watch
+Studio.
+
+There are three options this year: the new Apple Watch Series
+7 (starting at
+$399), last year’s less expensive Apple Watch
+SE (starting at $279), or
+the much older Apple Watch Series
+3 (starting at
+$199). Get the Series 7 if you want an Always-On Display, blood oxygen
+sensor, and ECG capabilities—it also boasts a larger screen than last
+year’s Series 6 while remaining compatible with all the bands. The Apple
+Watch SE lacks the Series 7’s advanced sensors and has a slightly
+smaller screen size, but it still provides the compass, altimeter, and
+fall detection features. The screen on the Series 3 is smaller yet, and
+it lacks a number of key features. Unless keeping the cost to a minimum
+is essential, we have a hard time recommending the Series 3—it’s
+getting too old. Apple has a helpful comparison
+tool.
+
+
+
+You may have noticed that we didn’t include any Macs in this article.
+They are worthy gifts, but they’re quite a bit more expensive and more
+difficult to select without extensive discussion of the recipient’s
+needs. Let us know if you need help choosing the right Mac for someone
+on your list, but we’re partial to the M1-based MacBook
+Air and 24-inch
+iMac for many users.
+ ]]></description>
+          <pubDate>Thu, 04 Nov 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>With Apple Watch Faces, Too Much Choice Can Be Confusing</title>
+          <description><![CDATA[ With Apple Watch Faces, Too Much Choice Can Be Confusing
+
+The Apple Watch has a lot to offer older people, including heart rate
+monitoring, atrial fibrillation detection, fall detection, and
+electrocardiogram recording. But if you are—or are helping someone who
+is—of the generation where watches once did nothing beyond telling the
+time, too many options can be overwhelming. Adding to the confusion is
+how easy it is to create and accidentally swipe between multiple watch
+faces, making it so the Apple Watch suddenly looks and works completely
+differently. If that’s an issue, use the Watch app to delete all but the
+preferred watch face. In Watch  My Watch, tap Edit to the right of My
+Faces ➊, tap the red delete button next to a face ➋, and then tap Remove
+➌.
+
+
+ ]]></description>
+          <pubDate>Tue, 02 Nov 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>iPadOS Multitasking</title>
+          <description><![CDATA[ Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It
+
+Multitasking has long been a mess on the iPad, not so much because it
+didn’t work but because it was tough to memorize the secret swipes
+necessary to put multiple apps into Split View, work with multiple
+windows in apps that supported them, and hide and show what you wanted
+in Slide Over. In iPadOS 15, Apple hasn’t changed the underlying
+multitasking capabilities much, but it has made them far more
+discoverable with onscreen controls and tips that supplement the
+previous gestures.
+
+Use the Multitasking Menu
+
+Most important is the new multitasking menu button that appears in the
+top center of every app, represented by •••. Tap it to reveal a control
+with three options—Full Screen, Split View, and Slide Over—and then
+tap one of those to put the current app into that mode. From left:
+
+
+  
+    Full Screen: When only a single app is showing, the leftmost
+button is selected. When you have an app in Split View or Slide
+Over, tap the Full Screen button to make that app the only one
+onscreen.
+
+  
+  
+    Split View: Tap the middle button to shove the current app to
+the left edge of the screen, revealing the Home screen and the Dock.
+A little lozenge replaces the multitasking menu, telling you that
+you’re working with Split View and to choose another app. Tap any
+other app to open it (on the right side) with the current app (on
+the left side), and remember that you can resize each app using the
+handle on the black bar in the middle.
+
+  
+  
+    Slide Over: In the current app window, tap the rightmost button
+to push the app to the side of the screen, again revealing the Home
+screen and the Dock and showing a lozenge that tells you that you’re
+working with Slide Over and to choose another app. Tap any other to
+open it full screen but with the current app floating above it in
+Slide Over mode, and remember that you can hide the Slide Over app
+easily by swiping it to the right.
+
+  
+
+
+Use the App Switcher
+
+Apple also made it much easier to see and manage your Split View
+combinations by using the App Switcher. Once you go into it by swiping
+up from the bottom of the screen (or double-pressing the Home button, if
+your iPad has one), you have several multitasking-related options:
+
+
+  
+    Switch among apps: Tap any app, Split View combination, or Slide
+Over app (located on the right side of the App Switcher) to switch
+to it.
+  
+  
+    Make a Split View: Drag any app or window onto another one to
+combine them into a Split View (as is shown with Drive and Docs
+below). Before you start to drag, pause for a moment to pick up the
+app; drag until the items turn into icon-emblazoned gray rectangles.
+  
+  
+    Replace a Split View app: Drag any app or window onto the left
+or right side of a Split View combination to replace that app or
+window.
+  
+  
+    Break a Split View combination: Drag the left or right side of a
+Split View combination off until it displays as a full-screen
+thumbnail.
+  
+
+
+
+
+In the screenshot above, note the red arrow pointing to the little
+stacked square icons above the Safari Split View windows. Those indicate
+that the app in question has multiple windows. Tap the icon to display
+just that app’s windows in the App Switcher.
+
+
+
+Use the Shelf
+
+The App Switcher may make it easier to see and switch among multiple
+windows in apps, but another new multitasking feature, the Shelf, is
+even more useful. When you use the Dock or a search to open an app with
+multiple windows available, the Shelf displays them all at the bottom of
+the screen. The Shelf doesn’t appear when you switch to an app using the
+App Switcher or four-finger swipe, but you can bring it up at any time
+by tapping the multitasking menu button at the top of the screen.
+
+When you’re looking at items on the Shelf, tap one to switch to it. You
+can also swipe up on windows on the Shelf to close them. As soon as you
+tap anywhere else in the app to start working, the Shelf disappears.
+
+
+
+Use Center Windows
+
+In at least some apps with sidebars, such as Mail and Notes, you can now
+open an item like a message or a note in its own window in the center of
+the screen. That’s useful for previewing the full content of the item,
+and you can swipe down on the multitasking menu button to put the window
+on the Shelf, which keeps it available for quick reference while you
+work on something else. To create a center window, touch and hold the
+item in the sidebar and then tap Open in New Window. To close it, tap
+Close or swipe up on its Shelf thumbnail.
+
+
+
+Use the Multitasking Keyboard Shortcuts
+
+If you’re seriously interested in using multitasking on an iPad, you’re
+probably also working with a physical keyboard much of the time. In
+iPadOS 15, Apple added a useful set of keyboard shortcuts that you can
+learn about by pressing and holding the Globe key and then tapping the
+Multitasking tab at the bottom. It may take a little while to
+internalize the shortcuts, but if you do most of your work on an iPad,
+you will probably find the effort worthwhile.
+
+
+
+If you like the idea of multitasking on the iPad but have never been
+able to remember all the necessary gestures, iPadOS 15’s changes will be
+welcome. Give them a try—we think they finally make multitasking
+obvious enough for everyone.
+ ]]></description>
+          <pubDate>Thu, 28 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/ipados-multitasking/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/ipados-multitasking/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>iPhone 13 Upgrade Quick Start</title>
+          <description><![CDATA[ When Migrating to a New iPhone or iPad, Try Quick Start First
+
+You have a new iPhone or iPad—congratulations! When transferring your
+data to the new device, you have three options: Quick
+Start, an iCloud
+backup, or a Mac
+backup. All will work,
+but they don’t quite provide the same end result (particularly if you
+didn’t encrypt your Mac backup). Our advice—backed by this post from
+Apple expert John
+Gruber—is
+to try Quick Start first because it transfers everything directly from
+your old device to your new one, maintaining app logins in most cases
+and allowing you to transfer your Apple Watch pairing. It may seem like
+it’s taking a long time before you can use the device, but it’s worth it
+to avoid logging in to numerous apps and unpairing and repairing your
+Apple Watch.
+
+
+ ]]></description>
+          <pubDate>Tue, 26 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-QuickStart.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/iphone-upgrade-quick-start/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/iphone-upgrade-quick-start/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>iMessages not delivered</title>
+          <description><![CDATA[ Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data
+
+Here’s a tricky situation that threw one of our clients for a loop
+recently. Texts they sent in Messages via iMessage (indicated by blue
+bubbles) to their son, letting him know they were stopping by weren’t
+being delivered, making their visits a surprise. But other texts worked
+fine. The problem, it turned out, was that Cellular Data had somehow
+gotten turned off in Settings  Cellular. So messages worked fine as
+long as the iPhone was on Wi-Fi at home, but as soon as they were on the
+road using a cellular connection, the iPhone could no longer communicate
+with the Internet. In theory, Messages should fall back to SMS
+(indicated by green bubbles), which doesn’t require cellular data, but
+that doesn’t always happen. The fix? Just enable Settings  Cellular 
+Cellular Data again.
+
+
+ ]]></description>
+          <pubDate>Thu, 21 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-SMS.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/imessages-not-delivered/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/imessages-not-delivered/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros</title>
+          <description><![CDATA[ Last year, Apple started to transition Macs away from Intel processors
+to its custom M1 system-on-a-chip. The M1’s performance is stellar, but
+Apple has used it only in low-end models so far: the MacBook Air,
+13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals
+looking for more power, Apple unveiled the future of high-end Macs at
+its October 18th
+Unleashed
+event.
+
+Two new chips—the M1 Pro and M1 Max—increase performance
+significantly beyond the M1, and Apple built them into new 14-inch and
+16-inch MacBook Pro models along with features that respond to
+criticisms of previous models. Welcome as these new MacBook Pros are,
+many people were also hoping to see an Apple silicon refresh of the
+popular 27-inch iMac. That didn’t happen, but Apple released several
+other music-related products and services at the event.
+
+AirPods, HomePod mini, Apple Music, and Monterey Announcements
+
+In a quick set of announcements at the start of its event, Apple
+revealed an update to the popular AirPods, new colors of the HomePod
+mini, and a budget pricing tier for Apple Music. Plus, press releases
+revealed the ship date for macOS 12 Monterey.
+
+
+  
+    Third-generation AirPods: Building on the success of the classic
+AirPods and AirPods Pro, Apple redesigned the third-generation
+AirPods to
+have shorter mic stalks, force sensor controls, support for spatial
+audio, Adaptive EQ, longer battery life, wireless case charging, and
+sweat and water resistance. They cost $179; the second-generation
+AirPods remain available for $129.
+
+  
+  
+    New HomePod mini colors: Looking to coordinate your electronics
+with your decor? In November, the $99 HomePod
+mini will be available
+in blue, orange, and yellow, as well as the traditional black and
+white.
+
+  
+  
+    Apple Music Voice Plan: A new $4.99-per-month Apple Music
+Voice Plan reduces the
+cost of Apple Music for those who interact with the streaming
+service largely through Siri, but it lacks lyrics, music videos,
+spatial and lossless audio, and support for non-Apple devices.
+
+  
+  
+    macOS 12 Monterey release date: Hidden in the fine print in
+Apple’s press releases was the fact that macOS 12
+Monterey—along with
+iOS 15.1, iPadOS 15.1, watchOS 8.1, and tvOS 15.1—will become
+available on October 25th. We strongly recommend that you do not
+upgrade to Monterey until we give the go-ahead. If you’ve already
+upgraded to the other new operating systems, it should be safe to
+install those updates a week or two after release.
+  
+
+
+New 14-inch and 16-inch MacBook Pros Answer Customer Desires
+
+Apple’s professional MacBook
+Pro has been a workhorse of
+the Mac lineup for years, offering high-end performance in a portable
+package. Since 2016, however, customers have expressed irritation at
+Apple’s removal of ports other than Thunderbolt 3, the loss of MagSafe
+magnetic charging, and the Touch Bar replacing traditional F-keys.
+Here’s how the new MacBook Pros respond to those concerns.
+
+
+  
+    Ports: Previously, the MacBook Pro had just four Thunderbolt 3
+ports, forcing users to carry dongles to connect to legacy devices.
+The new models still lack USB-A ports but supplement three
+Thunderbolt 4 ports with an HDMI port for video, an SDXC card slot
+for camera media, and a headphone jack.
+
+  
+  
+    MagSafe: Although you can charge using the Thunderbolt 4 ports,
+most people will rely on the dedicated MagSafe 3 charging port. The
+MacBook Pros (apart from the low-end 14-inch model) include powerful
+chargers and a USB-C to MagSafe 3 charging cable capable of
+fast-charging the devices. They should also provide longer battery
+life than previous models.
+
+  
+  
+    F-keys with Touch ID: The Touch Bar hasn’t been a success, never
+migrating to any other Mac models and eliciting tepid support from
+developers. With these new MacBook Pros, Apple has reversed course,
+replacing the Touch Bar with traditional F-keys. A Touch ID sensor
+remains available for authentication at the top-right corner of the
+keyboard.
+  
+
+
+Although Apple did equip the 13-inch MacBook Pro with an M1 chip in
+November 2020, it wasn’t notably faster than the cheaper but largely
+comparable M1-based MacBook Air. We suspect no one will be complaining
+about the performance of the new 14-inch and 16-inch models thanks to
+the addition of Apple’s just-released M1 Pro and M1 Max chips.
+
+
+
+
+  
+    M1: For reference, last year’s M1 chip—widely acclaimed for
+providing excellent performance—offers an 8-core CPU with four
+performance and four efficiency cores, a 7-core or 8-core GPU, and
+either 8 GB or 16 GB of unified memory.
+  
+  
+    M1 Pro: The M1 Pro offers up to 1.7 times the performance of the
+M1 thanks to a 10-core CPU that has eight performance and two
+efficiency cores. Plus, its 16-core GPU is up to twice as fast as
+the M1. The M1 Pro provides either 16 GB or 32 GB of unified memory,
+and it increases the memory bandwidth by nearly three times, up to
+200 gigabytes per second (GBps). To provide lower price points for
+14-inch MacBook Pro configurations, Apple offers versions of the M1
+Pro with an 8-core CPU (six performance and two efficiency cores) or
+a 14-core GPU.
+  
+  
+    M1 Max: The M1 Max has the same 10-core CPU as the M1 Pro but
+provides a massive 32-core GPU with up to four times the performance
+of the M1. The largest chip Apple has ever made, the M1 Max offers
+either 32 GB or 64 GB of memory, and it doubles the M1 Pro’s memory
+bandwidth to 400 GBps, nearly six times faster than the M1. A
+lower-cost M1 Max configuration has a 24-core GPU.
+  
+
+
+Both the M1 Pro and M1 Max feature an Apple-designed media engine that
+accelerates video processing while maximizing battery life. Both also
+have dedicated acceleration for the ProRes professional video codec for
+working with 4K and 8K video. The M1 Max doubles the M1 Pro’s
+performance for video encoding and provides two ProRes accelerators. In
+other words, if you’re working with video, these new Macs are going to
+scream, particularly with an M1 Max.
+
+Apple didn’t stop after radically improving performance and bringing
+back beloved features. The new MacBook Pros feature new Liquid Retina
+XDR displays based on technology used in the latest iPad Pro models.
+
+Most notably, for those who need more screen space than the 13-inch
+MacBook Pro can provide, the new MacBook Pro models have higher
+resolution displays. The 14-inch screen has a 3024-by-1964 native
+resolution that’s slightly larger than the previous 16-inch MacBook Pro
+(3072‑by‑1920), and the new 16-inch model offers even more pixels with a
+3456-by-2234 resolution. The new displays are more than twice as bright
+as the previous models, and they support ProMotion, which adjusts the
+screen refresh rate (and thus power consumption) to match the needs of
+the onscreen content.
+
+On the downside, Apple brought the new displays so close to the case
+edges that the new 1080p FaceTime HD camera (better videoconferencing
+quality but no Center Stage support) lives in an iPhone-like notch that
+cuts the Mac menu bar in half. Full-screen apps can avoid the notch.
+Although the notch isn’t ideal, iPhone users seldom notice it after a
+short while, and we expect the same will be true here.
+
+
+
+The only other negative for the new 14-inch and 16-inch MacBook Pro
+models is weight. They’re both about 0.4 pounds (0.18 kg) heavier than
+the models they replace, at 3.5 pounds (1.6 kg) for the 14-inch model
+and 4.7 or 4.8 pounds (2.1 or 2.2 kg) for the 16-inch model—the M1 Max
+configurations are a bit heavier.
+
+Despite the notch and the weight, these are impressive new entries in
+the Mac lineup, and we anticipate they’ll be well-received by users who
+are happy to pay more for top-of-the-line machines. The 14-inch MacBook
+Pro starts at $1999 and the 16-inch model at $2499. Numerous options
+are available, so you can choose an M1 Pro or M1 Max for either size,
+and pick from 16 GB, 32 GB, and 64 GB unified memory configurations.
+When it comes to storage (which Apple says is also more than twice as
+fast as previous SSDs), your choices are 512 GB, 1 TB, 2 TB, 4 TB, and 8
+TB. Beware that the 8 TB SSD will cost you $2400.
+
+
+
+We can’t make informed recommendations about what options you should
+choose until users start testing their real-world workflows against the
+M1 Pro and M1 Max and see how much memory is really necessary. For now,
+let your budget be your guide, and aim for an M1 Max if you work with
+video. You can place orders with Apple now, but be warned that global
+supply chain issues may mean waiting for some configurations.
+ ]]></description>
+          <pubDate>Tue, 19 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Unleashed.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/new-macbooks/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/new-macbooks/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Safari 15</title>
+          <description><![CDATA[ New Features to Try (Or Not) in Safari 15
+
+Along with a new version of Safari in iOS 15 and iPadOS 15, Apple has
+released Safari 15 for macOS 11 Big Sur and macOS 10.15 Catalina. Why do
+this before macOS 12 Monterey ships? Some of the browser’s new
+capabilities—notably the Tab Groups feature—integrate it more deeply
+into your Apple device experience by syncing across devices. So,
+assuming you have Safari 15 on at least some of your devices, what’s
+new, and is it any good?
+
+New Tab Bar Interface
+
+For Safari 15, Apple tried to minimize the tab bar interface to occupy
+less screen real estate and stand out less from the content of Web pages
+by co-opting the color of each page. Early betas were met with a litany
+of complaints from testers, and Apple pulled back in the eventual
+releases, offering settings that let you retain the old interface. How
+that plays out varies between the iPhone, iPad, and Mac:
+
+
+  
+    iPhone: Apple combined the address bar and tab bar into a single
+set of controls at the bottom of the screen, where they’re easier to
+reach with your thumb while working one-handed and where you can
+swipe left and right to switch tabs. Plus, the status bar area at
+the top of the screen takes on the color from the current site,
+which isn’t necessarily a visual win. This is a huge change from the
+controls appearing at the top, so if you don’t like it, go to
+Settings  Safari and switch from Tab Bar (below left) to Single Tab
+(below right). Turn off Allow Website Tinting (also below right) if
+you don’t like the colorizing.
+
+  
+  
+    iPad: Displays on the iPad are relatively small, so saving some
+vertical space with the new Compact Tab Bar could be helpful.
+However, since the tab bar automatically minimizes when you scroll
+down a page, reducing its size when it’s visible isn’t as much of a
+win as it might seem. And the colorized tab bar can be shockingly
+bright. In Settings  Safari, you can choose between Compact Tab Bar
+(below top) and Separate Tab Bar (below bottom); either way,
+consider disabling Show Color in Tab Bar.
+
+  
+  
+    Mac: Laptop screens aren’t huge, and Safari doesn’t minimize its
+tab bar when you scroll, as it does on the iPhone and iPad, so
+saving some vertical space might be welcome on a smaller screen. But
+the way the Compact layout embeds the address field inside a tab and
+reduces the number of buttons you can see may perturb you (below
+top). Once again, the colorized tab bar can be glaring. To revert to
+something closer to the old look, in Safari  Preferences  Tabs,
+select Separate for the tab layout (below bottom), and disable Show
+Color in Tab Bar to keep the controls gray regardless of the site
+color.
+
+  
+
+
+Voice Search
+
+For many searches, it’s easier to speak than type, and Apple has made
+doing that even faster with Voice Search on the iPhone and iPad. Tap the
+current tab to display the address field, tap the microphone button, and
+speak instead of typing. As soon as you stop, Safari performs the
+search. You can even navigate directly to a site by speaking its URL,
+like “apple dot com.” Sadly, Apple didn’t extend this feature to the Mac
+version of Safari 15.
+
+
+
+Tab Switcher
+
+In iOS 14 and earlier, Safari used a card stack metaphor for its tab
+switcher (below left), which could make it hard to see what each tab
+contained. In Safari in iOS 15, Apple took a cue from the iPad and Mac
+versions of the app and moved to a grid interface for the tab switcher
+(below right). You can drag the tab thumbnails around to organize them
+and remove them by tapping an X button (weirdly located in the
+upper-right corner) or swiping them left off-screen. You can also bring
+up the option to close all open tabs by pressing and holding Done at the
+lower right corner of the screen.
+
+
+
+Tab Groups
+
+If you struggle under the cognitive load of dozens of unrelated tabs,
+the new Tab Groups feature might help. With it, you can collect tabs
+into as many groups as you like and switch among them. You work with tab
+groups in either the tab switcher interface (iPhone and iPad with the
+Separate Tab Bar) or the sidebar (Mac and iPad with the Compact Tab
+Bar).
+
+To open the tab switcher on the iPhone, tap the tab button in the lower-right corner of the
+screen; on the iPad, tap the different-looking tab button in the upper-right corner. Once
+you have the tab switcher open, tap X Tabs to reveal the Tab Groups
+menu. To show the sidebar on either the iPad or the Mac, tap or click
+the sidebar button in the upper-left corner of the
+tab bar.
+
+Once you have the Tab Groups menu or sidebar showing:
+
+
+  
+    To create a new tab group on the iPhone’s or iPad’s Tab Groups menu,
+tap New Empty Tab Group, name it, and tap Save. In the sidebar on a
+Mac or iPad, use the New Tab Group button at the top (or choose File 
+New Empty Tab Group on the Mac). You can also use New Tab Group from
+X Tabs to create a tab group from currently open tabs.
+  
+  
+    To switch to a different tab group, tap it in the Tab Groups menu on
+an iPhone or iPad, or access it from the sidebar on a Mac or iPad.
+  
+  
+    To delete a tab group, swipe left on it in the Tab Groups menu or
+sidebar to reveal a delete icon on an iPhone or iPad; on the Mac,
+Control-click it and choose Delete.
+  
+
+
+
+
+Shared with You
+
+Ever gone spelunking through Messages to find a link someone sent you?
+Safari 15’s new Shared with You feature should help. It automatically
+collects all Web pages you receive in Messages into a new Shared with
+You section of the Safari start page. On the iPad and Mac, there’s also
+a Shared with You item in the sidebar.
+
+
+
+Customizable Start Page
+
+Speaking of the start page, if you want to customize which headings
+appear and in what order, you can now do that on the iPhone and iPad.
+(Choosing which headings appear has long been possible on the Mac by
+clicking the little settings button in the lower-right corner, but
+reordering isn’t possible there.)
+
+Create a new tab to view the start page, scroll to the bottom, and tap
+Edit. Then disable any headings you don’t want to see and drag the
+remaining ones into your desired order. You can also choose among
+several Apple-provided background images and have your start page
+settings sync to your other devices.
+
+
+
+Other Stuff
+
+Two final new features may be welcome but probably won’t rock your
+world:
+
+
+  
+    Pull to refresh: If you need to reload a Web page on the iPhone
+or iPad, either you can tap the reload button in the address field
+if it’s visible with your tab bar settings, or you can now just pull
+down with your finger from the top of a page.
+  
+  
+    HTTPS upgrade: If you visit a website that supports encrypted
+HTTPS but is also loading insecure content over unencrypted HTTP,
+Safari will now ensure that you connect to it over HTTPS so your
+entire connection is secure.
+  
+
+
+There you have it! Check out the new features in Safari 15 and let them
+improve your browsing experience.
+ ]]></description>
+          <pubDate>Mon, 18 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-SafariiOS.png</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-SafariiOS.png" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/safari/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/safari/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Forget Wi-Fi Networks</title>
+          <description><![CDATA[ When It Comes to Wi-Fi Networks, Sometimes It’s Better to Forget
+
+It’s easy, particularly when traveling, to end up connecting to a Wi-Fi
+network that doesn’t provide Internet access, requires credentials you
+don’t have, or lacks access to the network’s printer. Unfortunately,
+once your iPhone, iPad, or Mac has connected to such a network, it may
+reconnect to it later, causing consternation when things don’t work. The
+solution? Whenever you realize a Wi-Fi network is worthless, forget it.
+(The network, that is.) On the Mac, open System Preferences  Network  Wi-Fi  Advanced  Wi-Fi, select the network in the list (you don’t
+have to be connected to it), click the – button, and click Remove. On
+an iPhone or iPad, when you’re connected to the offending network, go to
+Settings  Wi-Fi, tap the i button to the right of the current network,
+and tap Forget This Network on the next screen.
+
+
+ ]]></description>
+          <pubDate>Thu, 14 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-iOSWiFi.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-iOSWiFi.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/forget-wi-fi-networks/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/forget-wi-fi-networks/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>434: Interview With Jon Brown CEO of Grove Technologies</title>
+          <description><![CDATA[ Topics:
+
+
+  
+    We welcome Jon Brown of Grove Technologies. Jon is a long time VIP supporter of the show.
+  
+  
+    Jon recalls attending a WWE even with the CCP crew, thanks to Joe’s sister.
+  
+  
+    Starting a new business proved to be challenging initially. He talks about his learning curve and experiences building his current business.
+  
+  
+    Jon has a concept like Uber for Tech Support.
+  
+  
+    Grove Technologies is going to offer its internal SaaS based tool for other businesses and industries. There are integrations built for other tools like Addigy, Watchman, Jamf, etc.
+  
+  
+    Working with others as a sub contractor can help broaden your area of expertise as a company.
+  
+  
+    Hiring remote technicians has proven to be useful to Jon’s business model.
+  
+  
+    Should you increase your onsite rate vs remote?
+  
+  
+    Do your clients care if you or your staff make onsite visits to their offices?
+  
+  
+    Grove Technologies has put their stake in the ground about being a remote only support company.
+  
+  
+    People still don’t seem to grasp the concept of password management or Multi-Factor Authentication.
+  
+  
+    Cybersecurity training for end users can be incredibly useful. It can also provide some discounts with insurance.
+  
+  
+    Malwarebytes for Mac proves to be less powerful than the Windows version.
+  
+  
+    Hook Security and Breach Secure Now are two big services to help with employee training.
+  
+  
+    Jerry has some recommended security methods for his clients.
+  
+  
+    Customers have a tendency to conflate security terms like VPN vs firewall.
+  
+  
+    Jon wants you to become a sponsor of the show!
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+ ]]></description>
+          <pubDate>Wed, 13 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-CMDCTRLPWR.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-CMDCTRLPWR.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/command-control-power-10-13-21-interview-with-jon=brown-ceo-grove-technologies/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/command-control-power-10-13-21-interview-with-jon=brown-ceo-grove-technologies/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>iCloud Plus</title>
+          <description><![CDATA[ What Is iCloud+ and What Can You Do With It?
+
+As you upgrade to iOS 15, iPadOS 15 (and macOS 12 Monterey by the end of
+the year), you’re going to see references to iCloud+. You might even
+already be an iCloud+ subscriber! That’s because
+iCloud+ is Apple’s
+new name for what you get if you pay for additional iCloud storage for
+yourself and up to five family members, which has been possible for a
+long time.
+
+iCloud+ comes with some new features as well, namely iCloud Private
+Relay (still in beta), Hide My Email, and Custom Email Domain, along
+with expanded HomeKit Secure Video support. Three tiers of iCloud+ match
+up with the previous storage tiers:
+
+
+  
+    50 GB for $0.99 per month gets you all the iCloud+ features
+plus HomeKit Secure Video support for one camera
+  
+  
+    200 GB for $2.99 per month gets you all the iCloud+ features
+plus HomeKit Secure Video support for five cameras
+  
+  
+    2 TB for $9.99 per month gets you all the iCloud+ features plus
+HomeKit Secure Video support for unlimited cameras
+  
+
+
+We expect that most people will subscribe to iCloud+ largely for the
+extra storage—Apple provides only 5 GB of iCloud storage for
+free—but once you’re paying for more storage, the other new features
+are welcome. Let’s look at each.
+
+
+
+iCloud Private Relay
+
+Whenever you browse the Internet, your privacy can be compromised in two
+ways. First, anyone on your local network can see the names of the
+websites you access based on your DNS lookups. Second, the websites you
+visit record the IP address of your computer, which makes it easier for
+advertisers to track you across multiple sites.
+
+iCloud Private Relay,
+which Apple says will come out of beta by the end of the year, attempts
+to block such tracking by encrypting your Safari traffic (plus DNS
+queries and most non-HTTPS Web queries), sending it through two proxy
+servers, and associating it with a geographically reasonable but
+otherwise anonymous IP address. That way, the first proxy server (which
+Apple runs) knows who you are but not what site you’re visiting. The
+second proxy server (run by companies other than Apple) knows what site
+you’re visiting, but not who you are.
+
+
+
+Although Apple’s technique appeared to work well and early reports
+suggest that it didn’t slow down traffic noticeably, networking is
+notoriously complex. Apple wanted more time to ensure that iCloud
+Private Relay works as promised with all network traffic, which is why
+the feature remains in beta. However, nothing prevents you from trying
+it out now. After you turn it on, you shouldn’t notice any difference
+when using the Internet. Just make sure that if you have network-related
+troubles, you remember to turn off iCloud Private Relay to remove it
+from the troubleshooting equation.
+
+To enable the feature, go to Settings  Your Name  iCloud 
+Private Relay (Beta) and turn on the switch for Private Relay (Beta). In
+the IP Address Location Settings screen, you can choose whether iCloud
+Private Relay should try to maintain your general location or just make
+sure it gets your country and time zone correct.
+
+
+
+Hide My Email
+
+Have you ever felt icky giving your email address to a questionable
+website, knowing that it’s probably going to spam you with unwanted
+solicitations? The new Hide My
+Email service that’s
+part of iCloud+ creates random, unique email addresses that
+automatically forward to your inbox, either your Apple ID address or
+another address associated with an email account configured on your
+device. In fact, Apple has provided this option for some time with apps
+that use the Sign in with Apple service—you can opt to give them a
+random address instead of your real address.
+
+To use Hide My Email, go to Settings  Your Name  iCloud  Hide My
+Email. Make sure the Forward To address is the one you want, and then
+tap Create New Address at the top. Either accept the address provided or
+ask for a different one, give it a label and optional note so you know
+where you used it, tap Next, and tap Done.
+
+
+
+To stop receiving email from an address, tap it in the list and tap
+Deactivate Email Address. In the Inactive Addresses list, you can see
+such addresses and leave them for reference, reactivate them, or delete
+them.
+
+
+
+Custom Email Domain
+
+Throughout the history of iCloud (including its predecessors iTools,
+Mac.com, and MobileMe), users have received email addresses that end
+with the mac.com, me.com, and icloud.com domains. If you wanted to
+register your own custom email domain (like hoopyfroodemail.com, for
+instance) and use that in a personalized email address, you had to rely
+on another service like Gmail or Fastmail.
+
+With iCloud+, it is at long last possible to connect up to five custom
+domains and use them in
+addition to the standard domains. You (and each person in your Family
+Sharing group) can have up to three addresses for each domain. Note that
+you must have a primary iCloud Mail email address set up and have
+two-factor authentication enabled for your Apple ID.
+
+Although the process for setting up a custom email domain isn’t that
+difficult, it’s beyond the scope of this article. You need to have a
+domain registered, update DNS records with your domain registrar,
+associate email addresses with the custom domain, and verify your
+settings. Apple provides
+instructions,
+and you should also read How to Set Up Custom Email Domains with
+iCloud
+Mail
+from TidBITS for more real-world coverage. Reach out if you need help.
+
+Our take is that this feature is welcome, but it’s just for hobbyists
+and families. If you’re running a business of any sort, you should have
+a custom email domain with a full-fledged email service. Contact us for
+advice on the best solution for your particular situation—this is very
+much not a “one size fits all” scenario.
+
+HomeKit Secure Video
+
+The final iCloud+ feature is HomeKit Secure Video, previously a free
+bonus with the higher-level iCloud storage plans. It requires a
+compatible third-party security camera and takes over from the
+manufacturer’s app to ensure that no one can access your video,
+including the camera maker and Apple. That’s a big deal—one of the
+main problems with many third-party security cameras is that they
+transmit and store video in insecure ways, making it possible for
+evildoers to capture video from inside your house. (Yeah, it
+happens.)
+
+All that seems to have changed with iCloud+ is that Apple has added
+HomeKit Secure Video to the 50 GB plan with support for one camera,
+increased the number of supported cameras on the 200 GB plan to five,
+and allowed an unlimited number of cameras for 2 TB plans.
+
+As with custom email domains, the steps necessary to set up a security
+camera in the Home app and work with HomeKit Secure Video are beyond the
+scope of this article. Apple provides basic
+instructions,
+and the year-old article Apple’s HomeKit Secure Video Leverages iCloud
+Storage and Preserves
+Privacy
+from TidBITS explains more and provides context.
+
+Welcome as these features may be, they’re unlikely to compel upgrades
+for those who don’t need more than the 5 GB of free iCloud storage.
+However, it’s so common to need more iCloud space for photos, backups,
+and files that we anticipate lots of people taking advantage of the
+iCloud+ features that come along for the ride.
+ ]]></description>
+          <pubDate>Tue, 12 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-iCloudPlus.png</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-iCloudPlus.png" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/icloud-plus/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/icloud-plus/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Update DND in Focus</title>
+          <description><![CDATA[ After Upgrading to iOS 15, Check Do Not Disturb in Focus Settings
+
+In iOS 15 and iPadOS 15, Apple expanded the concept of Do Not Disturb to
+what it calls Focus. You can create a Focus for different types of
+activities, so only specific people and apps can break through your cone
+of silence at appropriate times. Focus subsumes the old Do Not Disturb
+functionality, and your settings may not transfer when you upgrade,
+leaving you open to being woken at night by a previously silenced
+notification. To check and reset things to your liking, visit Settings  Focus  Do Not Disturb. If necessary, tap Add Schedule or Automation
+to set a schedule or try the new Smart Activation option. Then decide
+who, potentially beyond those in your Favorites, should be able to get
+through, along with any apps that might be essential. Note that you
+shouldn’t enable the Do Not Disturb switch at the top—that turns on
+the Do Not Disturb Focus immediately.
+
+
+ ]]></description>
+          <pubDate>Thu, 07 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-DND.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-DND.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/update-dnd-in-focus/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/update-dnd-in-focus/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Bulging batteries</title>
+          <description><![CDATA[ Beware the Bulging Battery! (And What to Do If Yours Expands)
+
+We’ve been seeing a spate of bulging batteries of late, both in Mac
+laptops and iPhones. A bulging battery is a Very Bad Thing™ and must be
+dealt with immediately because it could catch fire or even explode. As
+lithium-ion batteries age, the chemical reactions that produce power no
+longer complete fully, resulting in the creation of gasses that can
+cause the battery to swell. Additionally, manufacturing errors or damage
+to the membranes that separate the internal layers of the battery can
+also lead to swelling.
+
+What to Look For
+
+With Mac laptops, a variety of problems—some rather subtle—can
+indicate that the internal battery is swelling, including the screen not
+closing properly, a gap between the upper and lower parts of the case, a
+failure to sit perfectly flat, problems clicking the trackpad, or
+keyboard keys malfunctioning.
+
+
+
+With an iPhone or iPad, a swollen battery is usually obvious because it
+starts to warp the case and can even crack the screen—it all depends
+on where the swelling takes place and what part of the device gives way
+first.
+
+
+
+What to Do
+
+When you discover a bulging battery, unplug the device immediately and
+turn it off as soon as you can. Continued charging or use could lead to
+a fire or explosion. However, if the device is still functional and you
+need to copy data off or let a final backup run, try to put it in a
+place where it’s less likely to cause problems—on a concrete, stone,
+or tile surface, for instance, and preferably outside as long as it’s
+not wet, hot, or in the sun.
+
+In some cases, as with older MacBooks, it’s relatively easy to
+disassemble the case and remove the battery. If you feel comfortable
+doing that, you may be able to reduce the chances of further damage.
+It’s much harder to work on iPhones and iPads.
+
+Make sure you’re somewhere well-ventilated and safe, with easy access to
+outside and preferably a foam-based fire extinguisher at hand. If a fire
+does start, water will also put it out—make sure to have plenty on
+hand. Be sure to wear eye protection and gloves. Also, make sure you
+have somewhere safe to store the battery once removed, such as a metal
+can with a lid or with sand in it. Finally, be super careful around the
+battery, and whatever you do, do not puncture the swollen cell—some of
+the gases could be harmful.
+
+Once you’ve removed the battery from the device, you must take it
+somewhere for recycling. Under no circumstances should you send it via
+the mail or put it in the regular garbage. Although various
+companies—including Apple, Best Buy, Home Depot, and Lowes—recycle
+batteries, call your local store first to see if they take swollen
+batteries (they may not be equipped to do so safely). Better yet, check
+with your county or municipality to see where you should take hazardous
+waste.
+
+For additional details and advice, see iFixit’s
+guide
+and the many comments.
+
+Getting Your Device Fixed
+
+The best-case scenario is that you have AppleCare+ on the device such
+that Apple will fix it for you. However, that’s a bit unlikely because
+batteries usually bulge only on older devices. Regardless of AppleCare
+status, Apple offers battery service and
+recycling,
+and if you have an Apple
+Store or
+Apple Authorized Service Provider
+nearby, that’s a good option. Independent repair shops can also likely
+do this work; make sure they have plenty of experience with your device
+and offer a warranty for their parts and labor.
+
+Although it’s possible to replace batteries yourself—refer to the
+iFixit site for instructions and links
+to replacement batteries—it can be finicky work, particularly in
+iPhones and iPads, and you may not save that much money in the end.
+
+Sadly, particularly with an older iPhone, the damage from the bulging
+battery may prevent a repair from being worthwhile. The iPhone X
+pictured above still worked fine even though the swollen battery broke
+its screen, but it wasn’t worth the money to replace the battery and the
+screen for a 4-year-old iPhone. In such cases, recycle the entire unit
+with the appropriate hazardous waste facility.
+ ]]></description>
+          <pubDate>Tue, 05 Oct 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-MacbookBatteries.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-MacbookBatteries.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/bulging-batteries/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/bulging-batteries/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>About That Worrying Message Saying Your Password Has Been Breached?</title>
+          <description><![CDATA[ In iOS 14, Apple added a feature that warns you when one of your website
+passwords stored in iCloud Keychain has appeared in a data breach. We’ve
+fielded some questions of late from people worrying if the message is
+legitimate, and if so, what they should do. What has happened is that
+online criminals have stolen username and password data from a company,
+and your credentials were included in that data breach. You should
+indeed change your password immediately, and it’s fine to let the iPhone
+suggest a strong password for you. Or, if it makes you feel more
+comfortable, you can usually change the password in Safari on your Mac
+instead. Either way, make sure it’s unique—never reuse passwords
+across multiple sites!
+
+
+ ]]></description>
+          <pubDate>Tue, 28 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-iOSSecurity.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-iOSSecurity.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/about-that-worrying-message-saying-your-password-has-been-breached-/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/about-that-worrying-message-saying-your-password-has-been-breached-/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>The Plug Is Mightier Than the Puck - Wireless Charging Is Wildly Inefficient</title>
+          <description><![CDATA[ In 2017, Apple added support for Qi wireless charging to the iPhone 8
+and iPhone X, and with the iPhone 12 lineup, it introduced its own
+MagSafe wireless charging technology. There’s no denying the convenience
+of wireless charging, but keep in mind that it’s extremely inefficient
+compared to wired charging. Individually, that may not matter much when
+you’re charging overnight from a wall-connected charger. But across
+billions of phones, it’s more problematic. One estimate suggests that
+wireless charging requires nearly 50% more
+power
+than cable. And if you’re charging from a wireless battery pack, wasting
+that juice means less of a top-up before exhausting the battery pack.
+Charging speed suffers too. In short, to charge your iPhone quickly and
+efficiently, whether from a wall-connected charger or a battery pack,
+stick with the traditional Lightning cable.
+
+
+ ]]></description>
+          <pubDate>Thu, 23 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Charging.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Charging.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/the-plug-is-mightier-than-the-puck-wireless-charging-is-wildly-inefficient/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/the-plug-is-mightier-than-the-puck-wireless-charging-is-wildly-inefficient/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Sort Your Lists Differently in Reminders in iOS 14 and Big Sur</title>
+          <description><![CDATA[ For many years, Apple’s Reminders app let you sort your lists, but in
+just one way that applied to all lists equally. That was a problem if
+you had a to-do list that you wanted to sort by Due Date and a list of
+foods in your freezer that you wanted to sort by Creation Date (to see
+which were older) or Title (for a simple alphabetical sort). Happily, in
+iOS 14 and macOS 11 Big Sur, Apple finally addressed this limitation,
+letting you sort each list independently. Your choices even sync across
+all your devices! So if you had given up on sorting, or given up on
+Reminders entirely because of this limitation, on the Mac, check out the
+View  Sort By menu, and in iOS and iPadOS, tap the ••• button and then
+Sort By.
+
+
+ ]]></description>
+          <pubDate>Tue, 21 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Stickies.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Stickies.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/sort-your-lists-differently-in-reminders-in-ios-14-and-big-sur/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/sort-your-lists-differently-in-reminders-in-ios-14-and-big-sur/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Losing the Occasional Important Message? Set up a Ham Filter</title>
+          <description><![CDATA[ Although spam remains as much of a scourge as ever, spam filters have
+improved enough that most people see relatively little spam and lose
+relatively few legitimate messages (known as “ham”) to spam filters.
+However, good email messages are still sometimes caught by spam filters.
+To reduce the chance of missing an important message, consider making a
+“ham filter.” A ham filter looks for certain words—usually proper
+nouns—that are likely to appear only in legitimate messages and then
+marks such messages as Not Spam or moves them out of a Spam folder.
+(This capability is available in Gmail and can be emulated with multiple
+rules that you create in Apple’s Mail preferences, and likely in other
+systems as well; ask us about yours if you’re not sure.) Useful ham
+words include the name of your city, local high school or college names,
+club names or abbreviations, industry-specific terms, and any other
+words that are specific to your community or profession. Always test a
+possible ham word by first searching for it in your Spam folder to make
+sure it appears only in legitimate messages.
+
+
+
+ ]]></description>
+          <pubDate>Thu, 16 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Spam.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Spam.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/losing-the-occasional-important-message-set-up-a-ham-filter/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/losing-the-occasional-important-message-set-up-a-ham-filter/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Apples 2021 Crop. Four iPhones, Two iPads and an Apple Watch</title>
+          <description><![CDATA[ September is traditionally when new iPhones are ripe for the picking,
+and this year’s crop is no exception. At its California
+Streaming
+event on September 14th, Apple unveiled four iPhone 13 models. Apple
+also announced the expected Apple Watch Series 7, but entirely
+unanticipated were an upgrade to the iPad and a redesigned iPad mini.
+
+Left to the fine print in Apple’s press releases was the fact that iOS
+15, iPadOS 16, and watchOS 8 will become available for download on
+September 20th. As we’ve said before, you should wait at least a week or
+two before installing them on essential devices, just in case some
+unpleasant bug manifests itself. Regardless of when you upgrade, make a
+backup right beforehand, just in case something goes wrong and you need
+to erase and restore.
+
+Let’s look at each of the new products.
+
+iPhone 13 Models Evolve from Their iPhone 12 Equivalents
+
+Some new iPhones are revolutionary, others are evolutionary. The iPhone
+13, iPhone 13 mini, iPhone 13 Pro, and iPhone 13 Pro Max fall into the
+latter category, improving on their iPhone 12 equivalents in numerous
+ways while maintaining the same industrial design (albeit with a smaller
+front notch) and core capabilities. There’s no shame in that, and these
+are without a doubt the best iPhones Apple has ever made. So what’s new?
+
+
+
+Most of Apple’s attention went into improving the cameras and photo- and
+video-related functionality. The rear-facing dual-camera systems in the
+iPhone 13 and iPhone 13 mini
+have larger pixels and the sensor-shift optical image stabilization that
+was previously available only in the iPhone 12 Pro Max, providing better
+images in low-light photos and videos. The triple-camera systems in the
+iPhone 13 Pro and iPhone 13 Pro
+Max receive new sensors and
+lenses that also improve low-light performance and enable 3x zoom (up
+from 2x and 2.5x in the iPhone 12 equivalents). The new ultra-wide
+camera in the Pro models also significantly improves macro photography,
+capturing tiny subjects with a minimum focus distance of 2 centimeters.
+
+All the iPhone 13 models offer three new and improved computational
+photography features: Photographic Styles, Smart HDR 4, and Cinematic
+mode. With Photographic Styles, the camera system automatically applies
+your photographic preferences (a bit like custom filters) to photos in
+real-time. Smart HDR 4 provides improved color, contrast, and lighting
+for each subject in group photos.
+
+Cinematic mode brings to iPhone videos a cinematic technique called
+rack focus
+that emphasizes people or objects in a shot by focusing on them while
+blurring the rest of the scene. When enabled, Cinematic mode makes focus
+changes automatically during shots, for example in response to a person
+looking in a different direction or someone walking into the scene. You
+can also manually change the focus during or after capture.
+
+
+
+Beyond the cameras, Apple put effort into several other important iPhone
+subsystems:
+
+
+  
+    A15 Bionic: Apple says the new A15 Bionic chip is the fastest
+smartphone chip ever, though it never said how much faster it is
+than last year’s A14 Bionic. Nevertheless, the A15 Bionic provides
+stellar performance that enables the near-magical computational
+photography features like Cinematic mode.
+  
+  
+    Improved displays: The iPhone 13 and iPhone 13 mini have a
+brighter Super Retina XDR display with a higher contrast ratio for
+true blacks, all while being more power-efficient. The display in
+the iPhone 13 Pro and iPhone 13 Pro Max is brighter yet and supports
+Apple’s ProMotion technology that dynamically changes the screen
+refresh rate as needed from 10 Hz to 120 Hz, either preserving
+battery life or offering smooth video for games and movies.
+  
+  
+    Longer battery life: Apple improved battery life with more
+power-efficient components, larger batteries, and technologies like
+ProMotion and Smart Data mode (which switches to LTE when 5G isn’t
+needed). The iPhone 13 mini and iPhone 13 Pro offer 1.5 hours more
+battery life than their predecessors, while the iPhone 13 and iPhone
+13 Pro Max provide 2.5 hours more than theirs.
+  
+  
+    5G in more countries: The iPhone 13 models support more 5G bands
+for broader coverage and faster performance. Apple says that 5G
+support on the iPhone 13 will include 200 carriers in 60 countries
+and regions by the end of the year.
+  
+
+
+All four iPhone 13 models now start at 128 GB of storage, and the Pro
+models offer a new 1 TB tier for those shooting a lot of video. Here are
+the 128 GB prices; add $100 for 256 GB, $300 for 512 GB, and $500 for
+1 TB:
+
+
+  
+    iPhone 13 mini: $699
+  
+  
+    iPhone 13: $799
+  
+  
+    iPhone 13 Pro: $999
+  
+  
+    iPhone 13 Pro Max: $1099
+  
+
+
+You can pre-order starting at 5 AM Pacific on September 17th, with
+delivery and in-store availability on September 24th. The iPhone 13 and
+iPhone 13 mini come in five colors: pink, blue, midnight, starlight, and
+(PRODUCT)RED. In contrast, the iPhone 13 Pro and iPhone 13 Pro Max come
+in graphite, gold, silver, and sierra blue. The second-generation iPhone
+SE ($399), iPhone 11 ($499), and iPhone 12 ($599) remain for sale as
+well.
+
+Generally speaking, we wouldn’t recommend upgrading from an iPhone 12
+model unless you’re switching to the iPhone 13 mini to get a smaller
+form factor or to one of the Pro models for the ultimate camera
+capabilities. It’s easier to recommend an upgrade from an iPhone 11
+model or earlier, given the easier-to-hold squared-off industrial design
+and innovations like 5G and MagSafe that debuted with the iPhone 12 and
+continue in the iPhone 13.
+
+Apple Watch Series 7 Is Bigger, Brighter, and Incrementally Better
+
+Much as with the iPhone 13, the new Apple Watch Series
+7 doesn’t offer any
+new sensors or surprising new features. Instead, it improves on last
+year’s Series 6 in subtle yet welcome ways. Most notably, it boasts a
+larger display with nearly 20% more screen area than the Series 6 and
+over 50% more than the Series 3.
+
+
+
+The larger screen can display about 50% more text than on the Series 6,
+making it easier to read text messages or emails with less scrolling.
+Apple also took advantage of the extra real-estate to add a full
+keyboard in watchOS 8, enabling you to enter text by either tapping or
+sliding your finger from letter to letter using Apple’s QuickPath
+technology.
+
+
+
+A couple of new watch faces take advantage of the larger display. The
+dynamic Contour face animates throughout the day, pushing the dial to
+the edge of the display and emphasizing the current hour. Plus, a new
+Modular Duo face leverages the extra space to provide a pair of large,
+data-rich complications.
+
+
+
+A physical consequence of the larger display is that the Series 7 comes
+in 41 mm and 45 mm sizes, replacing the 40 mm and 44 mm Series 6 models.
+However, existing bands remain compatible. The front crystal has a
+stronger and more robust geometry that’s over 50% thicker than on the
+Series 6, making it more crack-resistant. It’s also now IP6X
+dust-resistant for dirty environments, and it retains its WR50
+water-resistance rating for swimming (but not scuba diving).
+
+When your wrist is down, the Series 7’s always-on display is 70%
+brighter indoors, making it easier to check the time discreetly. Despite
+this, it continues to provide 18-hour battery life, and it charges 33%
+faster than the Series 6, thanks to a new charging architecture and
+Magnetic Fast Charger USB-C Cable. Charging for 45 minutes will get you
+an 80% charge, and 8 minutes of juicing up before bed is enough for 8
+hours of sleep tracking.
+
+There are a few new fitness-related features, such as automatic
+detection of Outdoor Cycle workouts and better fall detection algorithms
+during workouts—including cycling—but most of them come with watchOS
+8 and will work on older Apple Watch models as well.
+
+Pricing for the Apple Watch Series 7 will start at $399, although it’s
+easy to spend a lot more on different case materials, bands, and Hermès
+models. The aluminum models will come in five colors: midnight,
+starlight, green, a new blue, and (PRODUCT)RED; the stainless steel and
+Apple Watch Edition models continue in existing colors. There will also
+be new band colors. Apple hasn’t provided a date when you can order a
+Series 7, saying only “later this fall.”
+
+We can’t recommend an upgrade from the Apple Watch Series 6 or Series 5,
+but if you’re limping along with an older watch whose battery is getting
+weak, the Series 7 will be a compelling upgrade.
+
+Upgraded iPad Gets Better Camera, True Tone, and More Storage
+
+The base-model iPad has long been Apple’s best value, and with the
+changes the company brought to the ninth-generation iPad, it’s even more
+so. Apple improved the ninth-generation iPad in four ways:
+
+
+  
+    New front-facing FaceTime HD camera: This is the big one. Apple
+replaced the anemic 1.2-megapixel front-facing FaceTime HD camera
+with a 12-megapixel ultra-wide camera that supports the Center Stage
+technology previously available only on the iPad Pro. Center Stage
+zooms and pans to keep whoever is on camera centered and in focus.
+And yes, the front-facing camera is now nominally better than the
+8-megapixel rear-facing camera, which is a little weird.
+  
+  
+    A13 Bionic chip: It’s not the latest and greatest, but the A13
+Bionic is a generation newer than the previous iPad’s A12 Bionic,
+and it should provide plenty of performance.
+  
+  
+    True Tone display: Another feature swiped from the iPad Pro,
+True Tone automatically adjusts the display’s color temperature
+based on the ambient lighting conditions, making the screen easier
+to read in different environments.
+  
+  
+    Double the storage: Previously, the iPad started at 32 GB of
+storage, which wasn’t enough to do much. Apple has now doubled the
+base storage level to 64 GB and the next level to 256 GB.
+  
+
+
+
+
+Despite these improvements, the price for the basic iPad remains $329
+($299 for education) in silver and space gray. It jumps to $479 for
+256 GB of storage, and another $130 gives you 4G LTE connectivity at
+either storage level. Overall, the ninth-generation iPad is a better
+value than ever, and if you’re buying an iPad for anyone who doesn’t
+need lots of power, it’s a no-brainer. It’s available now.
+
+Redesigned iPad mini Mimics iPad Air
+
+Even more surprising than the upgraded iPad was the redesigned
+sixth-generation iPad mini. It resembles nothing so much as a smaller
+iPad Air, with the same squared-off case design, an edge-to-edge
+8.3-inch Liquid Retina display, Touch ID in the top button, and USB-C
+charging and connectivity. It’s powered by the same new A15 Bionic chip
+that’s in the iPhone 13 Pro.
+
+Apple also significantly improved the iPad mini’s cameras, outfitting it
+with a pair of 12-megapixel cameras. The rear-facing camera can now
+shoot video in 4K resolution, and the front-facing camera supports
+Center Stage. For ultimate portable connectivity, you can now get the
+iPad mini with optional 5G wireless connectivity.
+
+
+
+The main place where the sixth-generation iPad mini falls behind the
+iPad Air is in accessories. It does support the second-generation Apple
+Pencil, which sticks magnetically to the side, but it lacks the Smart
+Connector that enables Apple’s well-regarded keyboards. You can still
+use Bluetooth keyboards, but they don’t provide as integrated an
+experience.
+
+Storage options remain the same, but Apple dropped the price by $30,
+making it $499 for a 64 GB configuration and $649 for 256 GB. Add
+$150 to either configuration for 5G wireless connectivity. The iPad
+mini comes in space gray, pink, purple, and starlight, and it’s
+available now.
+
+Realistically, you’re buying an iPad mini only if you value its
+diminutive size over all else. It may not be worth upgrading from a
+fifth-generation iPad mini unless it no longer meets your needs in some
+way, but anyone who wants full iPad power in a small form factor will
+appreciate the redesigned sixth-generation iPad mini.
+ ]]></description>
+          <pubDate>Wed, 15 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Streaming.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Streaming.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/apples-2021-crop-four-iphones-two-ipads-and-an-apple-watch/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/apples-2021-crop-four-iphones-two-ipads-and-an-apple-watch/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>When Should You Upgrade to macOS 12 Monterey, iOS 15, iPadOS 15, watchOS 8, and tvOS 15?</title>
+          <description><![CDATA[ September is here, which means that Apple will soon start releasing
+major upgrades for all its operating systems. Apple previewed these
+releases at its Worldwide Developers Conference in June, and many people
+have been testing the public betas since. Once Apple judges macOS 12
+Monterey, iOS 15, iPadOS 15, watchOS 8, and tvOS 15 to be ready for
+prime time, the question arises—when should you install them?
+
+(Note that we say when and not if. There’s no harm in delaying a
+major operating system upgrade until Apple has sanded off rough edges
+that slipped through testing. But waiting too long puts you at risk from
+security vulnerabilities, increases compatibility annoyances, and
+prevents you from taking advantage of new features. Plus, when you buy a
+new Mac, iPhone, or iPad after these operating systems have shipped,
+you’ll get the latest version, which could pose problems for your
+existing apps. It’s best to be prepared if you have to replace a device
+unexpectedly.)
+
+In the past, we’ve offered separate takes on when you should install
+each of Apple’s operating systems, but many of this year’s new features
+are spread across multiple operating systems. For instance, the marquee
+feature of this season’s releases is SharePlay, which promises to let
+users watch videos, listen to audio, share screens, and more, all while
+on a FaceTime call that could involve an iPhone, iPad, Mac, or Apple TV.
+SharePlay sounds technically impressive—we’ll let you decide if it
+interests you—but it’s not a reason to upgrade right away. Apple has
+already announced that SharePlay is delayed and won’t ship until later
+in the year.
+
+So here’s the general upgrade order that we suggest, starting with the
+iPad. Remember, always make a backup before upgrading a Mac, iPhone, or
+iPad so you can revert right away if necessary.​
+
+iPadOS 15
+
+Upgrade your iPad to iPadOS
+15 first. For the most
+part, iPadOS is a superset of iOS, so why should you upgrade your iPad
+before your iPhone? The big reason is that Apple has again taken a swing
+at improving iPad multitasking, and the changes are worth investigating.
+People who rely heavily on iPads will likely appreciate the new
+multitasking features, and those for whom the iPad is less important
+have nothing to lose by upgrading shortly after release.
+
+Particularly welcome is a Multitasking menu at the top center of every
+window that lets you create a full screen, Split View, Slide Over, and
+in some cases (like Mail), a center window. There’s also a shelf at the
+bottom of the screen that shows open windows within an app. You can
+create Split View spaces by dragging one app from the App Switcher onto
+another. Finally, a list of keyboard shortcuts appears when you press
+and hold the Command key on an external keyboard. At long last,
+discoverability comes to multitasking!
+
+
+
+Apple migrated some iOS 14 improvements to iPadOS 15. Widgets can now
+appear anywhere on the Home screen, and a new larger widget size lets
+apps display more information. Also coming to iPadOS 15 is the App
+Library, which automatically organizes all your apps into categories and
+enables you to avoid cluttered Home screens.
+
+If you’re a Notes user, you’ll appreciate the new Quick Note feature,
+which lets you create a note with a swipe up from the corner of the
+screen using your finger or an Apple Pencil. Quick Note can
+automatically pull in highlighted text or links to a website or app, and
+it’s easy to add more with the Apple Pencil or keyboard.
+
+Other welcome changes include a Focus mode that reduces distractions;
+voice searching and tab groups in Safari; FaceTime improvements; Live
+Text that allows you to search for, select, copy, and translate text in
+photos (on iPads with an A12 Bionic chip or later); and increased city
+detail in Maps. ​
+
+iOS 15
+
+It’s usually safe to upgrade iOS fairly quickly because Apple puts
+significant effort into ensuring that the new iOS version is a good
+experience for those who buy the new iPhones that come with it. However,
+because iPhones are so crucial to our everyday lives, it’s probably
+worth delaying the upgrade to iOS
+15 for a few weeks, just in
+case. After that, you can install it and enjoy the new features.
+
+Although SharePlay won’t arrive on day one, FaceTime still gets welcome
+improvements inspired by competing videoconferencing systems. There’s
+finally a grid view, Portrait mode for blurring the background,
+different mic modes for focusing on your voice or on sound in the room,
+the capability to include Windows and Android users, and FaceTime Web
+links for scheduling and sharing calls.
+
+
+
+Messages will collect links, images, and other content that your friends
+have sent you in a new Shared with You section, which you’ll also find
+in other Apple apps like Photos, Safari, Apple News, Music, and
+Podcasts. Plus, when someone sends you multiple photos in Messages, they
+appear as either a collage or a stack that you can swipe through. There
+are also new Memoji options to try if you’re into that.
+
+Other new features are similar to those in iPadOS 15, including Focus
+mode, voice searches and tab groups in Safari, Live Text in Camera and
+Photos, and improved city detail in Maps, which also gains immersive
+walking instructions. ​
+
+watchOS 8
+
+Once you upgrade your iPhone to iOS 15, go ahead and upgrade your Apple
+Watch to watchOS 8
+right away. You may not even notice the difference since none of the
+changes will force changes in your existing usage patterns.
+
+New features include Portrait mode photos on your watch face, Memories
+from Photos pushed to your watch, the capability to share photos via
+Messages and Mail, integration with HomeKit security cameras, more
+control over scenes and devices in the Home app, digital keys for
+HomeKit locks, a new Mindfulness app that replaces the Breathe app, a
+Pilates option in the Workout app, tracking of your sleeping respiratory
+rate, and a Find Devices app for locating lost devices from your wrist.
+
+
+
+tvOS 15
+
+Why put tvOS ahead of macOS? The decision to upgrade to tvOS
+15
+is easy for most people. It’s unlikely to cause problems for your Apple
+TV, and the new features won’t get in the way of basic TV watching.
+Plus, if you have automatic updates turned on in Settings  Software
+Updates, it will install automatically at some point after release.
+
+You might not want to wait for the automatic update, though. There are
+plenty of small but welcome improvements, such as the capability to sign
+in to Apple TV apps using Face ID or Touch ID on your iPhone. The
+playback interface has a redesigned scrubber that displays more
+information. The Apple TV will automatically detect nearby AirPods and
+show a notification to connect them, saving you a manual step. If you
+have AirPods Pro or AirPods Max, you can listen to Apple TV audio with
+dynamic head tracking. The TV app will include a “For All of You” row
+based on the interests of everyone in the house (via Family Sharing).
+Finally, you can ask a HomePod to play a particular show on the Apple TV
+and even use one or two HomePod mini speakers as the default audio
+output.
+
+
+
+macOS 12 Monterey
+
+The hardest upgrade decision revolves around your Mac, as always. For
+the most part, macOS 11 Big Sur has been relatively solid, with fewer
+complaints than plagued macOS 10.15 Catalina. Some beta testers believe
+that macOS 12 Monterey is more of a refinement upgrade without the major
+architectural changes that marked Big Sur and Catalina. That would
+suggest more stability and the possibility of an easier and earlier
+upgrade.
+
+Plus, Monterey has some unique features. Most notable is Universal
+Control, which lets you work seamlessly between multiple Macs and your
+iPad, connected wirelessly or via USB. You can move the pointer from a
+Mac to the iPad, type into iPad apps with your Mac’s keyboard, and even
+drag and drop content from one Mac to another. Another welcome addition
+is the option to use AirPlay to display video, play audio, or present
+content from another Apple device to a Mac, something that has
+previously been possible only in the other direction. Finally, Monterey
+brings the Shortcuts automation app to the Mac, making it easier to
+automate repetitive tasks without learning AppleScript or using the
+aging Automator.
+
+
+
+Apart from those features, you’ve already read about most of the
+changes. They include FaceTime improvements, support for Focus mode,
+Shared with You collections in Apple apps, tab groups (but not voice
+searching, sadly) in Safari, a Quick Note hot corner activation option,
+Live Text, and Maps enhancements.
+
+You may find some of these features compelling, but we recommend waiting
+to upgrade to Monterey for at least a few months. App compatibility
+isn’t usually a big problem with the other operating systems, but most
+of us rely on specific Mac apps—sometimes older versions—to get our
+work done. Even once you’re confident your apps will work properly in
+Monterey, there may be workflow or intra-office compatibility concerns
+if some people upgrade and others don’t. And, of course, unanticipated
+bugs could crop up at professionally inconvenient times—important work
+takes place on Macs! So please, do not upgrade to Monterey without
+checking with us first. With luck, the start of the new year will have
+brought both the bug fixes and app updates necessary to give the green
+light.
+ ]]></description>
+          <pubDate>Tue, 14 Sep 2021 00:00:00 -0400</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-UpgradeWhen.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-UpgradeWhen.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/when-should-you-upgrade-to-macos-12-monterey-ios-15-ipados-15-watchos-8-and-tvos-15-/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/when-should-you-upgrade-to-macos-12-monterey-ios-15-ipados-15-watchos-8-and-tvos-15-/</guid>
+        </item>
+        
+        
+    </channel>
+</rss>

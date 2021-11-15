@@ -1,0 +1,139 @@
+I"�<p>We’re cautious when it comes to recommending upgrades to new versions of
+macOS. Apple makes the upgrade process easy—though it can be
+time-consuming—but upgrading can create workflow interruptions, render
+favorite apps inoperable, and have other consequences. At the same time,
+it’s important to stay in sight of the cutting edge for security reasons
+and to take advantage of advances from Apple and other developers.
+Upgrading is not an <em>if</em> question; it’s a <em>when</em> question.</p>
+
+<p>We’re not saying that everyone needs to upgrade to <a href="https://www.apple.com/macos/big-sur/">macOS 11 Big
+Sur</a> now, but if you want to, it
+should be safe now that Apple has released several bug-fix updates.
+However, there are still a few caveats, and preparation is essential.​</p>
+
+<h3 id="reasons-not-to-upgrade">Reasons Not to Upgrade</h3>
+
+<p>Some people should continue to delay upgrades to Big Sur due to software
+incompatibilities. Most software under steady development will have been
+updated for Big Sur by now, but some workflows rely on older versions of
+apps where an upgrade isn’t practical or possible (ancient versions of
+Adobe Creative Suite, for instance), or on obsolete apps that will never
+be updated. You may be able to <a href="https://roaringapps.com/apps?platform=osx">learn more at
+RoaringApps</a>, but those who
+haven’t yet upgraded past 10.14 Mojave may have to upgrade or replace
+32-bit apps that ceased working starting with 10.15 Catalina.</p>
+
+<p>The other app category that continues to have trouble with Big Sur are
+backup apps that make bootable duplicates. Catalina moved macOS to its
+own read-only volume, and Big Sur goes a step further by applying
+cryptographic signatures that make it even harder for an attacker to
+compromise the operating system. Unfortunately, that also makes creating
+a bootable duplicate difficult. <a href="https://bombich.com/blog/2021/11/03/yes-you-can-have-bootable-backups-on-macos-big-sur">Carbon Copy
+Cloner</a>
+and
+<a href="https://www.econtechnologies.com/chronosync/TN-CS-BigSurBootable.html">ChronoSync</a>
+have developed workarounds;
+<a href="https://www.shirtpocket.com/blog/index.php/shadedgrey/comments/thats_big_sir_to_you/">SuperDuper</a>
+remains incompatible at this point, although an older version can create
+data-only backups. If you rely on one of these apps for critical
+backups, make sure you know what you’re getting into before upgrading or
+<a href="https://tidbits.com/2021/02/23/the-role-of-bootable-duplicates-in-a-modern-backup-strategy/">reassess your backup
+strategy</a>.​</p>
+
+<h3 id="before-you-upgrade">Before You Upgrade</h3>
+
+<p>Once you’ve decided to upgrade to Big Sur, you have three main tasks:</p>
+
+<ul>
+  <li>
+    <p><strong>Update apps:</strong> Make sure all your apps are as up-to-date as
+possible. If you regularly put off updates, now’s the time to let
+them complete so you have Big Sur-compatible versions.</p>
+  </li>
+  <li>
+    <p><strong>Clear space:</strong> Big Sur needs a minimum of 35.5 GB to upgrade, and
+as of macOS 11.2.1, the installer won’t proceed unless there’s
+enough space. Don’t cut this close—you should always have at least
+10–20% free space for virtual memory, cache files, and breathing
+room.</p>
+  </li>
+  <li>
+    <p><strong>Make a backup:</strong> Never, ever install a major upgrade to macOS
+without ensuring that you have at least one current backup first. In
+an ideal world, you’d have an updated Time Machine backup, a
+bootable duplicate, and an Internet backup. That way, if something
+goes wrong as thousands of files are moved around on your drive, you
+can easily restore.</p>
+  </li>
+</ul>
+
+<p>After those tasks are complete, make sure you don’t need your Mac for a
+few hours. There’s no telling exactly how long the upgrade will take,
+especially if it has to convert your drive to APFS, so never start an
+upgrade if you need the Mac soon.</p>
+
+<p>Initiating the upgrade is just a matter of opening System Preferences &gt;
+Software Update, clicking the Upgrade Now button, and following the
+instructions.</p>
+
+<p><img alt="Blog Photo" src="https://grovetech.co/assets/img/blog/2021/20210302It/image2.png" class="img-fluid rounded m-2" width="700" /></p>
+
+<h3 id="after-you-upgrade">After You Upgrade</h3>
+
+<p>Part of the reason to set aside plenty of time for your Big Sur upgrade
+is that there are always clean-up tasks afterward. We can’t predict
+precisely what you’ll run into, but here are a few situations we’ve
+noticed:</p>
+
+<ul>
+  <li>
+    <p>macOS will probably need to update its authentication situation by
+asking for your Apple ID password, your Mac’s password, and if you
+have another Mac, its password too. Don’t worry that this is a
+security breach—it’s fine.</p>
+  </li>
+  <li>
+    <p>Some apps may have to ask for permission to access your contacts and
+calendar even though you previously granted permission. Again,
+that’s fine.</p>
+  </li>
+  <li>
+    <p>If you use your Apple Watch to unlock your Mac and apps (and you
+should, it’s great!), you’ll need to re-enable that in System
+Preferences &gt; Security &amp; Privacy &gt; General.</p>
+  </li>
+  <li>
+    <p>If you use Gmail or Google Calendar or other Google services, you
+may need to log in to your Google account again.</p>
+  </li>
+  <li>
+    <p>Websites that usually remember your login state will likely require
+that you log in again. If you’re using a password manager like
+<a href="https://1password.com/">1Password</a>, that’s easy.</p>
+  </li>
+  <li>
+    <p>You may have to re-enable text-message forwarding to your Mac on
+your iPhone in Settings &gt; Messages &gt; Text Message Forwarding.</p>
+  </li>
+  <li>
+    <p>Those who use Backblaze for Internet backups will find their backups
+have been “safety frozen.” <a href="https://help.backblaze.com/hc/en-us/articles/217666178-Safety-Freeze-Your-Backup-is-Safety-Frozen-">Follow these
+instructions</a>
+for thawing your account.</p>
+  </li>
+</ul>
+
+<p>Finally, Time Machine in Big Sur now <a href="https://support.apple.com/guide/mac-help/types-of-disks-you-can-use-with-time-machine-mh15139/mac">supports and prefers
+APFS-formatted
+drives</a>,
+and all of Apple’s development is going in that direction now. You can
+keep using your existing Time Machine backup in Big Sur, but after
+you’re confident that everything is working well—and you have another
+backup—it’s worth removing your Time Machine backup drive in System
+Preferences &gt; Time Machine &gt; Select Disk, reformatting the drive as
+APFS in Disk Utility, and restarting the backup in the Time Machine
+preference pane.</p>
+
+<p>With all that housekeeping done, it’s time to check out all the <a href="https://www.apple.com/macos/big-sur/features/">new
+features in Big Sur</a>!</p>
+:ET

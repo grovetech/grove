@@ -1,0 +1,70 @@
+I"’<h3 id="what-is-a-pentest-and-why-should-i-have-it-performed">What is a pentest and why should I have it performed?</h3>
+<p>Organizations are faced with the increasing scrutiny of more complex and sophisticated attacks by threat actors against key information systems that are essential to the organization.  Complex attacks such as ransomware and data exfiltration are being used against organizations or systems that they encounter or somehow get access to.  When an attacker wants to break into a system, they will typically choose the easiest and most direct methods in means in order to access it.  The problem is an organization may not have a full understanding of the complex attack vectors that a threat actor may use to exploit an information system to gain access.</p>
+
+<p>The old saying goes to beat a hacker you must think like a hacker and this is exactly the type of scenario that many information systems must have the proper controls and hardening in place to prevent or mitigate.  In order to confirm that the controls on an information system have been properly implemented, the only tried and true method is to actually attempt to hack into it using the same types of tools, techniques, and methodologies that a threat actor would attempt in order to bypass the security controls in order to gain access.  This process, known as pentesting, is an essential part of any information security program to ensure that an information system can mitigate or prevent a potential threat actor from accessing them.  Pentesting is not considered an attack simulation either, it applies real world techniques using the latest types of attack vectors to ensure that your system can prevent varying types of attack vectors against it.</p>
+
+<h3 id="the-compliance-angle">The compliance angle</h3>
+<p>A pentest is not also considered a good security measure for a mature information security program, it can also be mandated or required based on either a cyber security requirement, regulation, or customer mandate.  A pentest is required for many cyber security compliance programs including FedRamp, SOC2, CMMC ML4, and HIPAA.  The system and the scope of it is often required to undertake a pentest for varying compliance requirements to meet or satisfy the control implementations as mandated by the compliance program.  While it is not spelled out exactly as the frequency may vary, but typically most cybersecurity compliance programs require that an organization or an information system as part of that compliance program be pentested at least annually or sooner based on a significant change or architectural update to that system.</p>
+
+<p><br /><br /></p>
+
+<!-- Card -->
+<div class="card card-row shadow-dark-lg mb-6" style="overflow: hidden;">
+  <div class="row gx-0">
+	<div class="col-12">
+	  
+	  <!-- Badge -->
+	  <span class="badge rounded-pill bg-light badge-float badge-float-inside">
+		<span class="h6 text-uppercase">Download</span>
+	  </span>
+
+	</div>
+	<a class="col-12 col-md-6 order-md-1 bg-cover card-img-right" style="background-image:url(https://grovetech.co/assets/img/photos/penetration-testing.png">
+
+	  <!-- Image (placeholder) -->
+	  <img src="https://grovetech.co/assets/img/photos/photo-23.jpg" alt="Penetration Testing DC" class="img-fluid d-md-none invisible" />
+
+	  <!-- Shape -->
+	  <div class="shape shape-end shape-fluid-y svg-shim text-white d-none d-md-block">
+		<svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor" /></svg>
+	  </div>
+
+	</a>
+	<div class="col-12 col-md-6 order-md-2 p-6">
+
+	  
+		<!-- Form -->
+		<form name="form-penetration" id="form-penetration" action="https://formspree.io/f/maylznrd" method="POST">
+		<div class="form-floating">
+		<input type="text" name="Contact[subject]" class="form-control form-control-flush" id="contact_subject" placeholder="Full Name" required="" />
+		<label for="contact_subject">Full Name</label>
+		</div>
+		<div class="form-floating">
+		<input type="email" name="Contact[email]" class="form-control form-control-flush" id="contact_email" placeholder="Email" required="" />
+		<label for="contact_email">Email</label>
+		</div>
+		<div class="form-floating">
+		<input type="text" name="Contact[phone]" class="form-control form-control-flush" id="contact_phone" placeholder="Phone" required="" />
+		<label for="contact_phone">Phone Number</label>
+		</div>
+		<div class="mt-6">
+		<button class="btn d-block w-100 btn-success lift" type="submit" id="contact-submit">
+		Download White Paper
+		</button>
+		</div>
+		<div class="row mt-4">
+                        <div class="col-12">
+                      <div class="g-recaptcha" data-sitekey="6LfbeLEcAAAAACEzjNbjfZWbF4jJX0u_gotEJsDf"></div>
+                      </div>
+                      </div>
+                      <input type="text" name="_gotcha" style="display:none" />
+		</form>           
+		<div id="response-message"></div>
+		
+
+	</div>
+
+  </div> <!-- / .row -->
+</div>
+
+:ET
