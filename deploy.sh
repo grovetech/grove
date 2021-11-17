@@ -8,4 +8,4 @@ git add .
 
 git commit -m "Blog Posts"
 
-git push origin main
+git push -f origin main

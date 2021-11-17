@@ -9,6 +9,33 @@
     
     
       <item>
+        <title>Apple Provides Temporary iCloud Backup Space for New Device Transfers</title>
+        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-iCloudBackupTemp.png&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;apple-provides-temporary-icloud-backup-space-for-new-device-transfers&quot;&gt;Apple Provides Temporary iCloud Backup Space for New Device Transfers&lt;/h2&gt;
+
+&lt;p&gt;When you move from an old iPhone or iPad to a new one, the easiest
+approach is often the Quick Start device-to-device transfer. But if that
+doesn’t work, or if you have to give up one device before receiving the
+other, iCloud Backup is a fine alternative. Fine, that is, if you have
+enough iCloud storage space, which many people with the free 5 GB plan
+do not. For devices running iOS 15 or iPadOS 15, Apple just introduced
+the option to &lt;a href=&quot;https://support.apple.com/en-ca/HT212732&quot;&gt;[create a temporary iCloud
+backup]{.ul}&lt;/a&gt; that’s larger
+than the available space. Tap Settings &amp;gt; General &amp;gt; Transfer or Reset
+&lt;em&gt;Device&lt;/em&gt; &amp;gt; Get Started to create the backup. You have 21 days (plus
+another 21 if necessary) to restore that backup, and it sticks around
+for another 7 days after you restore.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ap/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 16 Nov 2021 00:00:00 -0500</pubDate>
+        <link>https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/</link>
+        <guid isPermaLink="true">https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/</guid>
+      </item>
+      
+    
+    
+    
+      <item>
         <title>Need to Resize Images in Various Ways? Give Preview a Try</title>
         <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-Resize.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;need-to-resize-images-in-various-ways-give-preview-a-try&quot;&gt;Need to Resize Images in Various Ways? Give Preview a Try&lt;/h2&gt;
 
@@ -938,32 +965,6 @@ improve your browsing experience.&lt;/p&gt;
         <pubDate>Mon, 18 Oct 2021 00:00:00 -0400</pubDate>
         <link>https://grovetech.co/blog/safari/</link>
         <guid isPermaLink="true">https://grovetech.co/blog/safari/</guid>
-      </item>
-      
-    
-    
-    
-      <item>
-        <title>Forget Wi-Fi Networks</title>
-        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-iOSWiFi.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;when-it-comes-to-wi-fi-networks-sometimes-its-better-to-forget&quot;&gt;When It Comes to Wi-Fi Networks, Sometimes It’s Better to Forget&lt;/h2&gt;
-
-&lt;p&gt;It’s easy, particularly when traveling, to end up connecting to a Wi-Fi
-network that doesn’t provide Internet access, requires credentials you
-don’t have, or lacks access to the network’s printer. Unfortunately,
-once your iPhone, iPad, or Mac has connected to such a network, it may
-reconnect to it later, causing consternation when things don’t work. The
-solution? Whenever you realize a Wi-Fi network is worthless, forget it.
-(The network, that is.) On the Mac, open System Preferences &amp;gt; Network &amp;gt; Wi-Fi &amp;gt; Advanced &amp;gt; Wi-Fi, select the network in the list (you don’t
-have to be connected to it), click the – button, and click Remove. On
-an iPhone or iPad, when you’re connected to the offending network, go to
-Settings &amp;gt; Wi-Fi, tap the i button to the right of the current network,
-and tap Forget This Network on the next screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Fo/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 14 Oct 2021 00:00:00 -0400</pubDate>
-        <link>https://grovetech.co/blog/forget-wi-fi-networks/</link>
-        <guid isPermaLink="true">https://grovetech.co/blog/forget-wi-fi-networks/</guid>
       </item>
       
     
