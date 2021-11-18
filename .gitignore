@@ -8,3 +8,7 @@ node_modules
 Dockerfile
 docker-compose.yml
 build.yml
+.forestry
+.jekyll-cache/Jekyll/Cache
+.saas-cache
+deploy.sh
