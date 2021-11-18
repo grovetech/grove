@@ -10,5 +10,5 @@ docker-compose.yml
 build.yml
 .forestry
 .jekyll-cache/Jekyll/Cache
-.saas-cache
+.sass-cache
 deploy.sh
