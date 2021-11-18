@@ -1,4 +1,0 @@
-I"1<p>In my organization we use Microsoft SCCM for managing Windows clients and Munki for managins OS X clients.</p>
-
-<p>I have used SCCM for a while now and have to say that I find it very very powerful. The fact that collects plenty of information from the clients, uploads it to a SQL db and keeps a history, plus the ability of create dynamic computer collections based on querys to the SQL and then target those groups with tasks makes it extremely useful in an enterprise environment. Plus the amazing reports you can get if you have an SQL guru around!</p>
-:ET

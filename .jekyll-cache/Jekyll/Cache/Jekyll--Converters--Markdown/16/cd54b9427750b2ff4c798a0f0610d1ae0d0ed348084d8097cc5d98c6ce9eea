@@ -1,2 +1,0 @@
-I"ê<p>Before migrating to 10.6 Server we were running our entire mailstore on the 10.5.8 platform. Say what you will about Leopard, once we had it set up correctly it ran fine. We migrated because of the greater benefits of Dovecot over Cyrus. Many of the other features intriqued us as well such as the improved Wiki server and iCal server. However we were really excited about Dovecots ability to repair itself basically doing away with the need to ever have to rebuild a users mailbox.</p>
-:ET

@@ -1,2 +1,0 @@
-I"(<p>Recently I have undergone a massive change, we have decided at our organization to go with Snow Leopard server in place of our Leopard Servers. Knowing that this could be problematic to use Apples built in GUI for migrating data I decided to start with a 100% clean configured Snow Leopard server and slowly start to migrate items over to the new server. Our current Leopard Server was running an DNS, Open Directory Master, Mail, and Wiki Server services. I have decided to share my experience in migrating our mail from one server to another.</p>
-:ET
