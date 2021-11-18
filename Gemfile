@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sass'
-gem 'jekyll'
+gem 'github-pages'
 gem "jekyll-paginate"
 gem "jekyll-seo-tag"
 gem 'jekyll-compress-images'

@@ -5,3 +5,6 @@ assets/.DS_Store
 RakeFile
 assets/.DS_Store
 node_modules
+Dockerfile
+docker-compose.yml
+build.yml

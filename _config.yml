@@ -30,8 +30,8 @@ webmaster_verifications:
   bing: C72803331AF77124C6D411BDE1FD13B3
 lang: en_US
 future: false
-port: 5000
-host: 192.168.208.4
+#port: 5000
+#host: 192.168.208.4
 
 # Site settings
 collections:
@@ -59,8 +59,8 @@ base_href:          https://grovetech.co
 
 production:          true
 
-#site_cdn:           http://192.168.208.4:5000
-#base_href:          http://192.168.208.4:5000
+#site_cdn:           http://localhost:4000
+#base_href:          http://localhost:4000
 
  
 compress_images:

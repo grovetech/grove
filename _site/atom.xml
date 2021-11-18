@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://grovetech.co/atom.xml" rel="self" type="application/atom+xml" /><link href="https://grovetech.co/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2021-11-17T09:52:24-05:00</updated><id>https://grovetech.co/atom.xml</id><title type="html"> - Mac Support DC</title><subtitle>Grove Technologies - Washington DC's best Mac Support company for Digital Agencies, Creative Professionals &amp; Non Profits.</subtitle><author><name>Jon Brown</name></author><entry><title type="html">Apple Provides Temporary iCloud Backup Space for New Device Transfers</title><link href="https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/" rel="alternate" type="text/html" title="Apple Provides Temporary iCloud Backup Space for New Device Transfers" /><published>2021-11-16T00:00:00-05:00</published><updated>2021-11-16T00:00:00-05:00</updated><id>https://grovetech.co/blog/Apple-Provides-Temporary-iCloud-Backup-Space-for-New-Device-Transfers.docx</id><content type="html" xml:base="https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/">&lt;h2 id=&quot;apple-provides-temporary-icloud-backup-space-for-new-device-transfers&quot;&gt;Apple Provides Temporary iCloud Backup Space for New Device Transfers&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://grovetech.co/atom.xml" rel="self" type="application/atom+xml" /><link href="https://grovetech.co/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2021-11-18T14:55:58-06:00</updated><id>https://grovetech.co/atom.xml</id><title type="html"> - Mac Support DC</title><subtitle>Grove Technologies - Washington DC's best Mac Support company for Digital Agencies, Creative Professionals &amp; Non Profits.</subtitle><author><name>Jon Brown</name></author><entry><title type="html">Avoid Unusual Top-Level Domains in Custom Domain Names</title><link href="https://grovetech.co/blog/avoid-unusual-top-level-domains-in-custom-domain-names/" rel="alternate" type="text/html" title="Avoid Unusual Top-Level Domains in Custom Domain Names" /><published>2021-11-18T00:00:00-06:00</published><updated>2021-11-18T00:00:00-06:00</updated><id>https://grovetech.co/blog/Avoid-Unusual-Top-Level-Domains-in-Custom-Domain-Names.docx</id><content type="html" xml:base="https://grovetech.co/blog/avoid-unusual-top-level-domains-in-custom-domain-names/">&lt;h2 id=&quot;avoid-unusual-top-level-domains-in-custom-domain-names&quot;&gt;Avoid Unusual Top-Level Domains in Custom Domain Names&lt;/h2&gt;
+
+&lt;p&gt;Remember the heady dotcom days, when businesses were desperate to get a
+short, memorable, easily typed .com domain? It quickly became difficult
+to get what you wanted—so much so that deep-pocketed companies paid
+&lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_most_expensive_domain_names&quot;&gt;exorbitant
+sums&lt;/a&gt;
+for just the right domain.&lt;/p&gt;
+
+&lt;p&gt;Before we go any further, let’s make sure we’re all on the same page.
+Domain names are necessary because computers on the Internet are all
+identified by inscrutable numeric IP addresses. You can remember and
+type apple.com easily; 184.31.17.21 not so much. Domain names have two
+or more parts: the top-level domain (read from the end, such as com) and
+the second-level domain (like apple), plus optional third-level domains
+(which could give you support.apple.com).&lt;/p&gt;
+
+&lt;p&gt;Since the days of speculating in .com domains, however, &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains&quot;&gt;hundreds of
+additional top-level
+domains&lt;/a&gt;
+have been opened up, including domains from .aaa to .zone. There are now
+top-level domains for .doctor, .florist, .lawyer, and many more,
+including the general .xyz. It might be tempting to switch from the
+awkward dewey-cheatham-howe.com to the shorter and more memorable
+dch.lawyer. And even if there isn’t a profession-specific top-level
+domain that works for you, you may think that if abc.xyz is good enough
+for Google’s parent company Alphabet, surely it’s good enough for you.&lt;/p&gt;
+
+&lt;p&gt;Alas, much as we appreciate the creativity and flexibility offered by
+these alternative top-level domains, we’d like to dissuade you from
+using one, if possible. Problems include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Email deliverability:&lt;/strong&gt; If you’re sending email using an
+alternative top-level domain or including links to that domain, it’s
+much more likely that your email will be considered spam by
+receiving systems.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SMS deliverability:&lt;/strong&gt; Some SMS text message providers will
+automatically delete messages containing URLs with alternative
+top-level domains in an effort to protect their customers from
+phishing attacks.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Social media spam filtering:&lt;/strong&gt; As with SMS text messages, social
+media posts that include URLs with alternative top-level domains may
+be categorized as spam or as linking to a malicious site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Firewall blocking:&lt;/strong&gt; &lt;a href=&quot;https://krebsonsecurity.com/2018/06/bad-men-at-work-please-dont-click/&quot;&gt;Abuse of alternative top-level
+domains&lt;/a&gt;
+has become so commonplace by scammers that some companies prevent
+their employees from accessing websites using certain alternative
+top-level domains at the firewall level.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;User perception:&lt;/strong&gt; Although there’s no telling how anyone will
+react to a particular top-level domain, people won’t think twice
+about .com but might think .ooo seems sketchy. (We would.)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Obviously, it may not be possible to get the domain name you want in
+.com. What to do? There are a few strategies:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Expand or abbreviate:&lt;/strong&gt; At this time, people mostly don’t see,
+remember, or type domains apart from those that go with businesses
+that do a lot of real-world advertising. So if you need to add or
+subtract words (or letters) in your domain to find a unique one,
+that can work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Use a country domain:&lt;/strong&gt; Two-letter top-level domains are
+restricted for use by countries, so .us is for the United States,
+.ca for Canada, and .au for Australia. Every country has different
+rules for who can register them. For instance, it’s possible to get
+a domain ending in .it (Italy) as long as you work through a
+registrar that acts as your representative there. .io (British
+Indian Ocean Territory) and .ai (Anguilla) are popular top-level
+domains among tech companies.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Stick with better, pricier alternatives:&lt;/strong&gt; Not all alternative
+top-level domains are equally problematic. The classic .net and .org
+are fine, and .biz isn’t bad. But how to determine that? When you’re
+checking to see if a domain name is available, compare prices. For
+instance, at one domain name registrar, iphonewhisperer.xyz costs
+only $1 per year, whereas the iphonewhisperer.biz version is $4.98
+per year, iphonewhisperer.net is $9.18 per year, and
+iphonewhisperer.studio is $11.98 per year. The more you pay, the
+less likely that domain has been abused by spammers and marked for
+filtering.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the end, when it comes to domain names, it’s best to be conservative
+and stick with a top-level domain that won’t cause people or filters to
+think twice. That’s probably .com, if you can make the rest of the name
+work for you.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Avoid Unusual Top-Level Domains in Custom Domain Names</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-DomainName.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-DomainName.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Apple Provides Temporary iCloud Backup Space for New Device Transfers</title><link href="https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/" rel="alternate" type="text/html" title="Apple Provides Temporary iCloud Backup Space for New Device Transfers" /><published>2021-11-16T00:00:00-06:00</published><updated>2021-11-16T00:00:00-06:00</updated><id>https://grovetech.co/blog/Apple-Provides-Temporary-iCloud-Backup-Space-for-New-Device-Transfers.docx</id><content type="html" xml:base="https://grovetech.co/blog/apple-provides-temporary-icloud-backup-space-for-new-device-transfers/">&lt;h2 id=&quot;apple-provides-temporary-icloud-backup-space-for-new-device-transfers&quot;&gt;Apple Provides Temporary iCloud Backup Space for New Device Transfers&lt;/h2&gt;
 
 &lt;p&gt;When you move from an old iPhone or iPad to a new one, the easiest
 approach is often the Quick Start device-to-device transfer. But if that
@@ -13,7 +115,7 @@ than the available space. Tap Settings &amp;gt; General &amp;gt; Transfer or Res
 another 21 if necessary) to restore that backup, and it sticks around
 for another 7 days after you restore.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ap/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Apple Provides Temporary iCloud Backup Space for New Device Transfers</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iCloudBackupTemp.png" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iCloudBackupTemp.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Need to Resize Images in Various Ways? Give Preview a Try</title><link href="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/" rel="alternate" type="text/html" title="Need to Resize Images in Various Ways? Give Preview a Try" /><published>2021-11-11T00:00:00-05:00</published><updated>2021-11-11T00:00:00-05:00</updated><id>https://grovetech.co/blog/Need-to-Resize-Images-in-Various-Ways-Give-Preview-a-Try.docx</id><content type="html" xml:base="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/">&lt;h2 id=&quot;need-to-resize-images-in-various-ways-give-preview-a-try&quot;&gt;Need to Resize Images in Various Ways? Give Preview a Try&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Ap/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Apple Provides Temporary iCloud Backup Space for New Device Transfers</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iCloudBackupTemp.png" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iCloudBackupTemp.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Need to Resize Images in Various Ways? Give Preview a Try</title><link href="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/" rel="alternate" type="text/html" title="Need to Resize Images in Various Ways? Give Preview a Try" /><published>2021-11-11T00:00:00-06:00</published><updated>2021-11-11T00:00:00-06:00</updated><id>https://grovetech.co/blog/Need-to-Resize-Images-in-Various-Ways-Give-Preview-a-Try.docx</id><content type="html" xml:base="https://grovetech.co/blog/need-to-resize-images-in-various-ways-give-preview-a-try/">&lt;h2 id=&quot;need-to-resize-images-in-various-ways-give-preview-a-try&quot;&gt;Need to Resize Images in Various Ways? Give Preview a Try&lt;/h2&gt;
 
 &lt;p&gt;Even those of us who don’t work with graphics professionally often find
 ourselves needing to resize images. Perhaps you have a large square
@@ -144,7 +246,7 @@ rectangle&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;We won’t pretend that Preview is the ultimate graphics tool, but it’s
-capable, easy to use, and on every Mac.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Need to Resize Images in Various Ways? Give Preview a Try</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</title><link href="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/" rel="alternate" type="text/html" title="Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More" /><published>2021-11-09T00:00:00-05:00</published><updated>2021-11-09T00:00:00-05:00</updated><id>https://grovetech.co/blog/Use-Visual-Look-Up-in-Photos-in-iOS-15-to-Identify-Plants,-Pets,-and-More.docx</id><content type="html" xml:base="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/">&lt;h2 id=&quot;use-visual-look-up-in-photos-in-ios-15-to-identify-plants-pets-and-more&quot;&gt;Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More&lt;/h2&gt;
+capable, easy to use, and on every Mac.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Need to Resize Images in Various Ways? Give Preview a Try</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Resize.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</title><link href="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/" rel="alternate" type="text/html" title="Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More" /><published>2021-11-09T00:00:00-06:00</published><updated>2021-11-09T00:00:00-06:00</updated><id>https://grovetech.co/blog/Use-Visual-Look-Up-in-Photos-in-iOS-15-to-Identify-Plants,-Pets,-and-More.docx</id><content type="html" xml:base="https://grovetech.co/blog/use-visual-look-up-in-photos-in-ios-15-to-identify-plants,-pets,-and-more/">&lt;h2 id=&quot;use-visual-look-up-in-photos-in-ios-15-to-identify-plants-pets-and-more&quot;&gt;Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More&lt;/h2&gt;
 
 &lt;p&gt;Have you ever wanted to identify a plant, flower, or pet breed, or find
 out what that famous painting is called? Us too. In iOS 15 and iPadOS
@@ -159,7 +261,7 @@ locations, and more. Tap a suggestion to switch to Safari or another app
 for details. (If the info button doesn’t have the sparkle badge, Visual
 Look Up hasn’t identified anything in the photo.)&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Us/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Best Apple-Related Gifts for 2021</title><link href="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/" rel="alternate" type="text/html" title="The Best Apple-Related Gifts for 2021" /><published>2021-11-04T00:00:00-04:00</published><updated>2021-11-04T00:00:00-04:00</updated><id>https://grovetech.co/blog/The-Best-Apple-Related-Gifts-for-2021.docx</id><content type="html" xml:base="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/">&lt;h2 id=&quot;the-best-apple-related-gifts-for-2021&quot;&gt;The Best Apple-Related Gifts for 2021&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Us/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Use Visual Look Up in Photos in iOS 15 to Identify Plants, Pets, and More</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPhoneVisualLookup.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Best Apple-Related Gifts for 2021</title><link href="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/" rel="alternate" type="text/html" title="The Best Apple-Related Gifts for 2021" /><published>2021-11-04T00:00:00-05:00</published><updated>2021-11-04T00:00:00-05:00</updated><id>https://grovetech.co/blog/The-Best-Apple-Related-Gifts-for-2021.docx</id><content type="html" xml:base="https://grovetech.co/blog/the-best-apple-related-gifts-for-2021/">&lt;h2 id=&quot;the-best-apple-related-gifts-for-2021&quot;&gt;The Best Apple-Related Gifts for 2021&lt;/h2&gt;
 
 &lt;p&gt;It may seem early to start thinking about the holiday shopping season,
 but with the global supply chain suffering pandemic-related slowdowns,
@@ -299,7 +401,7 @@ difficult to select without extensive discussion of the recipient’s
 needs. Let us know if you need help choosing the right Mac for someone
 on your list, but we’re partial to the M1-based &lt;a href=&quot;https://www.apple.com/macbook-air/&quot;&gt;MacBook
 Air&lt;/a&gt; and &lt;a href=&quot;https://www.apple.com/imac-24/&quot;&gt;24-inch
-iMac&lt;/a&gt; for many users.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">The Best Apple-Related Gifts for 2021</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</title><link href="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/" rel="alternate" type="text/html" title="With Apple Watch Faces, Too Much Choice Can Be Confusing" /><published>2021-11-02T00:00:00-04:00</published><updated>2021-11-02T00:00:00-04:00</updated><id>https://grovetech.co/blog/With-Apple-Watch-Faces,-Too-Much-Choice-Can-Be-Confusing.docx</id><content type="html" xml:base="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/">&lt;h2 id=&quot;with-apple-watch-faces-too-much-choice-can-be-confusing&quot;&gt;With Apple Watch Faces, Too Much Choice Can Be Confusing&lt;/h2&gt;
+iMac&lt;/a&gt; for many users.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">The Best Apple-Related Gifts for 2021</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleGiftGuide.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</title><link href="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/" rel="alternate" type="text/html" title="With Apple Watch Faces, Too Much Choice Can Be Confusing" /><published>2021-11-02T00:00:00-05:00</published><updated>2021-11-02T00:00:00-05:00</updated><id>https://grovetech.co/blog/With-Apple-Watch-Faces,-Too-Much-Choice-Can-Be-Confusing.docx</id><content type="html" xml:base="https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/">&lt;h2 id=&quot;with-apple-watch-faces-too-much-choice-can-be-confusing&quot;&gt;With Apple Watch Faces, Too Much Choice Can Be Confusing&lt;/h2&gt;
 
 &lt;p&gt;The Apple Watch has a lot to offer older people, including heart rate
 monitoring, atrial fibrillation detection, fall detection, and
@@ -313,7 +415,7 @@ preferred watch face. In Watch &amp;gt; My Watch, tap Edit to the right of My
 Faces ➊, tap the red delete button next to a face ➋, and then tap Remove
 ➌.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Wi/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPadOS Multitasking</title><link href="https://grovetech.co/blog/ipados-multitasking/" rel="alternate" type="text/html" title="iPadOS Multitasking" /><published>2021-10-28T00:00:00-04:00</published><updated>2021-10-28T00:00:00-04:00</updated><id>https://grovetech.co/blog/iPadOS-Multitasking.docx</id><content type="html" xml:base="https://grovetech.co/blog/ipados-multitasking/">&lt;h2 id=&quot;apple-radically-improved-multitasking-in-ipados-15-heres-how-to-use-it&quot;&gt;Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Wi/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">With Apple Watch Faces, Too Much Choice Can Be Confusing</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-AppleWatchFace.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPadOS Multitasking</title><link href="https://grovetech.co/blog/ipados-multitasking/" rel="alternate" type="text/html" title="iPadOS Multitasking" /><published>2021-10-28T00:00:00-05:00</published><updated>2021-10-28T00:00:00-05:00</updated><id>https://grovetech.co/blog/iPadOS-Multitasking.docx</id><content type="html" xml:base="https://grovetech.co/blog/ipados-multitasking/">&lt;h2 id=&quot;apple-radically-improved-multitasking-in-ipados-15-heres-how-to-use-it&quot;&gt;Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It&lt;/h2&gt;
 
 &lt;p&gt;Multitasking has long been a mess on the iPad, not so much because it
 didn’t work but because it was tough to memorize the secret swipes
@@ -445,7 +547,7 @@ you will probably find the effort worthwhile.&lt;/p&gt;
 &lt;p&gt;If you like the idea of multitasking on the iPad but have never been
 able to remember all the necessary gestures, iPadOS 15’s changes will be
 welcome. Give them a try—we think they finally make multitasking
-obvious enough for everyone.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPhone 13 Upgrade Quick Start</title><link href="https://grovetech.co/blog/iphone-upgrade-quick-start/" rel="alternate" type="text/html" title="iPhone 13 Upgrade Quick Start" /><published>2021-10-26T00:00:00-04:00</published><updated>2021-10-26T00:00:00-04:00</updated><id>https://grovetech.co/blog/iPhone-upgrade-Quick-Start.docx</id><content type="html" xml:base="https://grovetech.co/blog/iphone-upgrade-quick-start/">&lt;h2 id=&quot;when-migrating-to-a-new-iphone-or-ipad-try-quick-start-first&quot;&gt;When Migrating to a New iPhone or iPad, Try Quick Start First&lt;/h2&gt;
+obvious enough for everyone.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iPhone 13 Upgrade Quick Start</title><link href="https://grovetech.co/blog/iphone-upgrade-quick-start/" rel="alternate" type="text/html" title="iPhone 13 Upgrade Quick Start" /><published>2021-10-26T00:00:00-05:00</published><updated>2021-10-26T00:00:00-05:00</updated><id>https://grovetech.co/blog/iPhone-upgrade-Quick-Start.docx</id><content type="html" xml:base="https://grovetech.co/blog/iphone-upgrade-quick-start/">&lt;h2 id=&quot;when-migrating-to-a-new-iphone-or-ipad-try-quick-start-first&quot;&gt;When Migrating to a New iPhone or iPad, Try Quick Start First&lt;/h2&gt;
 
 &lt;p&gt;You have a new iPhone or iPad—congratulations! When transferring your
 data to the new device, you have three options: &lt;a href=&quot;https://support.apple.com/en-us/HT210216&quot;&gt;Quick
@@ -463,7 +565,7 @@ it’s taking a long time before you can use the device, but it’s worth it
 to avoid logging in to numerous apps and unpairing and repairing your
 Apple Watch.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">When Migrating to a New iPhone or iPad, Try Quick Start First</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iMessages not delivered</title><link href="https://grovetech.co/blog/imessages-not-delivered/" rel="alternate" type="text/html" title="iMessages not delivered" /><published>2021-10-21T00:00:00-04:00</published><updated>2021-10-21T00:00:00-04:00</updated><id>https://grovetech.co/blog/iMessages-not-delivered.docx</id><content type="html" xml:base="https://grovetech.co/blog/imessages-not-delivered/">&lt;h2 id=&quot;messages-not-being-delivered-to-blue-bubble-friends-check-cellular-data&quot;&gt;Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">When Migrating to a New iPhone or iPad, Try Quick Start First</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-QuickStart.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">iMessages not delivered</title><link href="https://grovetech.co/blog/imessages-not-delivered/" rel="alternate" type="text/html" title="iMessages not delivered" /><published>2021-10-21T00:00:00-05:00</published><updated>2021-10-21T00:00:00-05:00</updated><id>https://grovetech.co/blog/iMessages-not-delivered.docx</id><content type="html" xml:base="https://grovetech.co/blog/imessages-not-delivered/">&lt;h2 id=&quot;messages-not-being-delivered-to-blue-bubble-friends-check-cellular-data&quot;&gt;Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data&lt;/h2&gt;
 
 &lt;p&gt;Here’s a tricky situation that threw one of our clients for a loop
 recently. Texts they sent in Messages via iMessage (indicated by blue
@@ -478,7 +580,7 @@ with the Internet. In theory, Messages should fall back to SMS
 that doesn’t always happen. The fix? Just enable Settings &amp;gt; Cellular &amp;gt;
 Cellular Data again.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iM/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros</title><link href="https://grovetech.co/blog/new-macbooks/" rel="alternate" type="text/html" title="New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros" /><published>2021-10-19T00:00:00-04:00</published><updated>2021-10-19T00:00:00-04:00</updated><id>https://grovetech.co/blog/New-MacBooks.docx</id><content type="html" xml:base="https://grovetech.co/blog/new-macbooks/">&lt;p&gt;Last year, Apple started to transition Macs away from Intel processors
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iM/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-SMS.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros</title><link href="https://grovetech.co/blog/new-macbooks/" rel="alternate" type="text/html" title="New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros" /><published>2021-10-19T00:00:00-05:00</published><updated>2021-10-19T00:00:00-05:00</updated><id>https://grovetech.co/blog/New-MacBooks.docx</id><content type="html" xml:base="https://grovetech.co/blog/new-macbooks/">&lt;p&gt;Last year, Apple started to transition Macs away from Intel processors
 to its custom M1 system-on-a-chip. The M1’s performance is stellar, but
 Apple has used it only in low-end models so far: the MacBook Air,
 13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals
@@ -669,175 +771,4 @@ choose until users start testing their real-world workflows against the
 M1 Pro and M1 Max and see how much memory is really necessary. For now,
 let your budget be your guide, and aim for an M1 Max if you work with
 video. You can place orders with Apple now, but be warned that global
-supply chain issues may mean waiting for some configurations.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Last year, Apple started to transition Macs away from Intel processors to its custom M1 system-on-a-chip. The M1’s performance is stellar, but Apple has used it only in low-end models so far: the MacBook Air, 13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals looking for more power, Apple unveiled the future of high-end Macs at its October 18th Unleashed event.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Safari 15</title><link href="https://grovetech.co/blog/safari/" rel="alternate" type="text/html" title="Safari 15" /><published>2021-10-18T00:00:00-04:00</published><updated>2021-10-18T00:00:00-04:00</updated><id>https://grovetech.co/blog/Safari.docx</id><content type="html" xml:base="https://grovetech.co/blog/safari/">&lt;h2 id=&quot;new-features-to-try-or-not-in-safari-15&quot;&gt;New Features to Try (Or Not) in Safari 15&lt;/h2&gt;
-
-&lt;p&gt;Along with a new version of Safari in iOS 15 and iPadOS 15, Apple has
-released Safari 15 for macOS 11 Big Sur and macOS 10.15 Catalina. Why do
-this before macOS 12 Monterey ships? Some of the browser’s new
-capabilities—notably the Tab Groups feature—integrate it more deeply
-into your Apple device experience by syncing across devices. So,
-assuming you have Safari 15 on at least some of your devices, what’s
-new, and is it any good?&lt;/p&gt;
-
-&lt;h3 id=&quot;new-tab-bar-interface&quot;&gt;New Tab Bar Interface&lt;/h3&gt;
-
-&lt;p&gt;For Safari 15, Apple tried to minimize the tab bar interface to occupy
-less screen real estate and stand out less from the content of Web pages
-by co-opting the color of each page. Early betas were met with a litany
-of complaints from testers, and Apple pulled back in the eventual
-releases, offering settings that let you retain the old interface. How
-that plays out varies between the iPhone, iPad, and Mac:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;iPhone:&lt;/strong&gt; Apple combined the address bar and tab bar into a single
-set of controls at the bottom of the screen, where they’re easier to
-reach with your thumb while working one-handed and where you can
-swipe left and right to switch tabs. Plus, the status bar area at
-the top of the screen takes on the color from the current site,
-which isn’t necessarily a visual win. This is a huge change from the
-controls appearing at the top, so if you don’t like it, go to
-Settings &amp;gt; Safari and switch from Tab Bar (below left) to Single Tab
-(below right). Turn off Allow Website Tinting (also below right) if
-you don’t like the colorizing.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;iPad:&lt;/strong&gt; Displays on the iPad are relatively small, so saving some
-vertical space with the new Compact Tab Bar could be helpful.
-However, since the tab bar automatically minimizes when you scroll
-down a page, reducing its size when it’s visible isn’t as much of a
-win as it might seem. And the colorized tab bar can be shockingly
-bright. In Settings &amp;gt; Safari, you can choose between Compact Tab Bar
-(below top) and Separate Tab Bar (below bottom); either way,
-consider disabling Show Color in Tab Bar.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Mac:&lt;/strong&gt; Laptop screens aren’t huge, and Safari doesn’t minimize its
-tab bar when you scroll, as it does on the iPhone and iPad, so
-saving some vertical space might be welcome on a smaller screen. But
-the way the Compact layout embeds the address field inside a tab and
-reduces the number of buttons you can see may perturb you (below
-top). Once again, the colorized tab bar can be glaring. To revert to
-something closer to the old look, in Safari &amp;gt; Preferences &amp;gt; Tabs,
-select Separate for the tab layout (below bottom), and disable Show
-Color in Tab Bar to keep the controls gray regardless of the site
-color.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image4.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;voice-search&quot;&gt;Voice Search&lt;/h3&gt;
-
-&lt;p&gt;For many searches, it’s easier to speak than type, and Apple has made
-doing that even faster with Voice Search on the iPhone and iPad. Tap the
-current tab to display the address field, tap the microphone button, and
-speak instead of typing. As soon as you stop, Safari performs the
-search. You can even navigate directly to a site by speaking its URL,
-like “apple dot com.” Sadly, Apple didn’t extend this feature to the Mac
-version of Safari 15.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;tab-switcher&quot;&gt;Tab Switcher&lt;/h3&gt;
-
-&lt;p&gt;In iOS 14 and earlier, Safari used a card stack metaphor for its tab
-switcher (below left), which could make it hard to see what each tab
-contained. In Safari in iOS 15, Apple took a cue from the iPad and Mac
-versions of the app and moved to a grid interface for the tab switcher
-(below right). You can drag the tab thumbnails around to organize them
-and remove them by tapping an X button (weirdly located in the
-upper-right corner) or swiping them left off-screen. You can also bring
-up the option to close all open tabs by pressing and holding Done at the
-lower right corner of the screen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;tab-groups&quot;&gt;Tab Groups&lt;/h3&gt;
-
-&lt;p&gt;If you struggle under the cognitive load of dozens of unrelated tabs,
-the new Tab Groups feature might help. With it, you can collect tabs
-into as many groups as you like and switch among them. You work with tab
-groups in either the tab switcher interface (iPhone and iPad with the
-Separate Tab Bar) or the sidebar (Mac and iPad with the Compact Tab
-Bar).&lt;/p&gt;
-
-&lt;p&gt;To open the tab switcher on the iPhone, tap the tab button in the lower-right corner of the
-screen; on the iPad, tap the different-looking tab button in the upper-right corner. Once
-you have the tab switcher open, tap X Tabs to reveal the Tab Groups
-menu. To show the sidebar on either the iPad or the Mac, tap or click
-the sidebar button in the upper-left corner of the
-tab bar.&lt;/p&gt;
-
-&lt;p&gt;Once you have the Tab Groups menu or sidebar showing:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;To create a new tab group on the iPhone’s or iPad’s Tab Groups menu,
-tap New Empty Tab Group, name it, and tap Save. In the sidebar on a
-Mac or iPad, use the New Tab Group button at the top (or choose File &amp;gt;
-New Empty Tab Group on the Mac). You can also use New Tab Group from
-X Tabs to create a tab group from currently open tabs.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To switch to a different tab group, tap it in the Tab Groups menu on
-an iPhone or iPad, or access it from the sidebar on a Mac or iPad.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;To delete a tab group, swipe left on it in the Tab Groups menu or
-sidebar to reveal a delete icon on an iPhone or iPad; on the Mac,
-Control-click it and choose Delete.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image11.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;shared-with-you&quot;&gt;Shared with You&lt;/h3&gt;
-
-&lt;p&gt;Ever gone spelunking through Messages to find a link someone sent you?
-Safari 15’s new Shared with You feature should help. It automatically
-collects all Web pages you receive in Messages into a new Shared with
-You section of the Safari start page. On the iPad and Mac, there’s also
-a Shared with You item in the sidebar.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image12.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;customizable-start-page&quot;&gt;Customizable Start Page&lt;/h3&gt;
-
-&lt;p&gt;Speaking of the start page, if you want to customize which headings
-appear and in what order, you can now do that on the iPhone and iPad.
-(Choosing which headings appear has long been possible on the Mac by
-clicking the little settings button in the lower-right corner, but
-reordering isn’t possible there.)&lt;/p&gt;
-
-&lt;p&gt;Create a new tab to view the start page, scroll to the bottom, and tap
-Edit. Then disable any headings you don’t want to see and drag the
-remaining ones into your desired order. You can also choose among
-several Apple-provided background images and have your start page
-settings sync to your other devices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001Sa/image13.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;other-stuff&quot;&gt;Other Stuff&lt;/h3&gt;
-
-&lt;p&gt;Two final new features may be welcome but probably won’t rock your
-world:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Pull to refresh:&lt;/strong&gt; If you need to reload a Web page on the iPhone
-or iPad, either you can tap the reload button in the address field
-if it’s visible with your tab bar settings, or you can now just pull
-down with your finger from the top of a page.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;HTTPS upgrade:&lt;/strong&gt; If you visit a website that supports encrypted
-HTTPS but is also loading insecure content over unencrypted HTTP,
-Safari will now ensure that you connect to it over HTTPS so your
-entire connection is secure.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There you have it! Check out the new features in Safari 15 and let them
-improve your browsing experience.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">New Features to Try (Or Not) in Safari 15</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-SafariiOS.png" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-SafariiOS.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+supply chain issues may mean waiting for some configurations.&lt;/p&gt;</content><author><name>Jon Brown</name></author><category term="tips" /><category term="MacOS" /><category term="iOS" /><summary type="html">Last year, Apple started to transition Macs away from Intel processors to its custom M1 system-on-a-chip. The M1’s performance is stellar, but Apple has used it only in low-end models so far: the MacBook Air, 13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals looking for more power, Apple unveiled the future of high-end Macs at its October 18th Unleashed event.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" /><media:content medium="image" url="https://grovetech.co/assets/img/2021/Header-Unleashed.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
