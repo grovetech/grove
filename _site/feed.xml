@@ -9,6 +9,197 @@
     
     
       <item>
+        <title>macOS Safari Reverses Course, Reverts to Old Tab Interface</title>
+        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-SafariTabChanges.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;safari-151-reverses-course-reverts-to-old-tab-interface&quot;&gt;Safari 15.1 Reverses Course, Reverts to Old Tab Interface&lt;/h2&gt;
+
+&lt;p&gt;With the betas of Safari 15 on the Mac and iPad, Apple experimented with
+a variety of interface tweaks related to tabs. By the time Safari 15
+shipped, however, Apple had pulled back on the more radical changes from
+the betas, offering the new Compact Tab Bar layout and colorized tab bar
+as options. Even with the more traditional Separate Tab Bar layout,
+however, tabs appeared as buttons above your favorites, a switch from
+earlier versions of Safari. With Safari 15.1 in macOS and iPadOS 15.1,
+Apple has reverted the Separate Tab Bar layout even further, making the
+tabs look like, well, tabs, moving them below the favorites, and
+eliminating the colorized tab bar (it remains an option in iOS 15.1).
+The Compact Tab Bar option remains available for those who prefer it,
+but if you’ve been feeling the sand shifting under your feet, it’s not
+your imagination—tabs really did change in Safari 15.1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101ma/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Nov 2021 00:00:00 -0600</pubDate>
+        <link>https://grovetech.co/blog/macos-safari-reverses-course,-reverts-to-old-tab-interface/</link>
+        <guid isPermaLink="true">https://grovetech.co/blog/macos-safari-reverses-course,-reverts-to-old-tab-interface/</guid>
+      </item>
+      
+    
+    
+    
+      <item>
+        <title>Live Text Digitizes Text in Photos in iOS 15, iPadOS 15, and macOS 12 Monterey</title>
+        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-LiveText.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;live-text-digitizes-text-in-photos-in-ios-15-ipados-15-and-macos-12-monterey&quot;&gt;Live Text Digitizes Text in Photos in iOS 15, iPadOS 15, and macOS 12 Monterey&lt;/h2&gt;
+
+&lt;p&gt;The most magical feature of Apple’s latest crop of operating
+systems—iOS 15, iPadOS 15, and macOS 12 Monterey—may be Live Text.
+You’re probably familiar with the concept of &lt;em&gt;optical character
+recognition&lt;/em&gt; (OCR), which turns all the text on a scanned page into
+normal text you can select, copy, and edit. Live Text does exactly that
+in Photos, Safari, and the Camera app, plus lets you search for text in
+photos. And it does it in not just in English, but also Chinese, French,
+German, Italian, Portuguese, and Spanish.&lt;/p&gt;
+
+&lt;p&gt;Thanks to the incredible processing power of Apple’s recent devices,
+this digitization of graphics to text takes place instantly—hence
+“live” text. Apple says it works on any Mac that can run Monterey, but
+on the iPhone and iPad, it requires a model with an A12 Bionic processor
+or later, which means anything in this list (check your device in
+Settings &amp;gt; General &amp;gt; About &amp;gt; Model Name):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPhone XR, XS, XS Max, and later, including the iPhone SE (2nd
+generation)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPad Pro 12.9-inch (3rd generation) and later&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPad Pro 11-inch&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPad Air (3rd generation) and later&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPad (8th generation) and later&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;iPad mini (5th generation) and later&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;live-text-in-photos&quot;&gt;Live Text in Photos&lt;/h3&gt;
+
+&lt;p&gt;The main place you’ll use Live Text is in Photos. In iOS and iPadOS,
+when viewing a picture containing text, touch and hold a bit of text
+until it highlights in blue. (For text-intensive images, Photos displays
+a Detect Text button in the lower-right corner; tap it to highlight
+recognized text.) The familiar text popover then appears. Drag the blue
+selection handles to adjust the selection as desired or tap Select All.
+Then you’ll most likely want to copy the text, switch to another app,
+and paste, though you can also do a Web search by tapping Look Up or
+have the device read the text out loud by tapping Speak.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Two quick tips:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Want to copy text from an app that doesn’t even let you select text?
+Take a screenshot of the app and use Live Text to copy it.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If you have an animated Live Photo that contains text, touch and
+hold the text to select it; touch and hold away from the text to
+animate the photo.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In Monterey, move the pointer over the text so it turns to a text
+selection cursor, then select the text, after which you can copy it as
+you would any other text. You can also Control-click the selected text
+to access Look Up or Translate.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As a bonus in iOS 15 and iPadOS 15, text from Photos that Live Text has
+recognized is indexed by the system-wide search. So when you pull down
+from the middle of the Home screen and search, a Text Found in Photos
+section shows images that contain the search text. Tap one to view it,
+and note that there’s a Detect Text button in the preview that
+identifies text you can select right there. Or tap the Photos button in
+the lower-right corner to open the image in Photos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;live-text-in-the-camera-app&quot;&gt;Live Text in the Camera App&lt;/h3&gt;
+
+&lt;p&gt;Sometimes you may want to capture some text in the real world without
+having a photo to store and later delete—getting an appliance’s model
+or serial number is a perfect example. When Live Text detects text in
+the Camera app’s viewfinder, it puts a faint yellow outline around it
+and displays the Detect Text button. Tap the Detect Text button to
+freeze and zoom the selection—it even rotates sideways text to be
+readable—and then tap the text to select and copy it. Tap the Detect
+Text button again when you’re done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s another way to use Live Text in conjunction with the iPhone or
+iPad camera that’s useful if you need to insert a large amount of text
+directly into a document. In an app that supports Live Text, like Notes,
+tap in the text entry area and then tap the Scan Text button. A
+viewfinder appears on the bottom half of the screen, with a yellow
+outline around detected text, and the recognized text above. If that’s
+what you want, tap the Insert button to put the text into your note or
+document.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;live-text-in-safari-and-other-apps&quot;&gt;Live Text in Safari and Other Apps&lt;/h3&gt;
+
+&lt;p&gt;Because Apple integrated Live Text into its operating systems, it’s
+available nearly anywhere you might see an image that contains text. For
+instance, in Safari, you’re likely to run across such images, or you
+might have embedded photos in Notes that contain text. Selecting text
+using Live Text works exactly the same as in Photos—either touch and
+hold on an iPhone or iPad, or just select the text on the Mac. And on
+the Mac, Live Text even works when you select an image in the Finder and
+press the Space bar to view it in Quick Look.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211101Li/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;other-live-text-tricks&quot;&gt;Other Live Text Tricks&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Identify types of data:&lt;/strong&gt; When Live Text recognizes text that
+contains an email address, phone number, postal address, or date,
+you can touch and hold it to bring up special options to send an
+email, call the number, map the address, or make an event or
+reminder.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Translate Live Text:&lt;/strong&gt; The Translate app in iOS 15 and iPadOS 15
+is now a system-wide service, so it can translate any text you can
+select, including text recognized by Live Text in a photo or in the
+Camera app. Just select it and tap Translate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Hear Live Text:&lt;/strong&gt; If you rely on VoiceOver to help you navigate
+your iPhone or iPad, note that you can leverage Live Text to get
+VoiceOver to read text in your photos out loud. Go to Settings &amp;gt;
+Accessibility &amp;gt; VoiceOver &amp;gt; VoiceOver Recognition and turn on Text
+Recognition. Then, while viewing a photo, tap the text in the photo
+to have VoiceOver read to you.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It may take a little while to remember that you can select and copy,
+look up, or translate nearly any text you see in a picture—or in your
+camera viewfinder—but once you’ve tried Live Text a few times, we’re
+betting that you’ll find it surprisingly useful.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 23 Nov 2021 00:00:00 -0600</pubDate>
+        <link>https://grovetech.co/blog/live-text-digitizes-text-in-photos-in-ios-15,-ipados-15,-and-macos-12-monterey-/</link>
+        <guid isPermaLink="true">https://grovetech.co/blog/live-text-digitizes-text-in-photos-in-ios-15,-ipados-15,-and-macos-12-monterey-/</guid>
+      </item>
+      
+    
+    
+    
+      <item>
         <title>Avoid Unusual Top-Level Domains in Custom Domain Names</title>
         <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-DomainName.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;avoid-unusual-top-level-domains-in-custom-domain-names&quot;&gt;Avoid Unusual Top-Level Domains in Custom Domain Names&lt;/h2&gt;
 
@@ -666,236 +857,6 @@ Apple Watch.&lt;/p&gt;
         <pubDate>Tue, 26 Oct 2021 00:00:00 -0500</pubDate>
         <link>https://grovetech.co/blog/iphone-upgrade-quick-start/</link>
         <guid isPermaLink="true">https://grovetech.co/blog/iphone-upgrade-quick-start/</guid>
-      </item>
-      
-    
-    
-    
-      <item>
-        <title>iMessages not delivered</title>
-        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-SMS.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;messages-not-being-delivered-to-blue-bubble-friends-check-cellular-data&quot;&gt;Messages Not Being Delivered to Blue-Bubble Friends? Check Cellular Data&lt;/h2&gt;
-
-&lt;p&gt;Here’s a tricky situation that threw one of our clients for a loop
-recently. Texts they sent in Messages via iMessage (indicated by blue
-bubbles) to their son, letting him know they were stopping by weren’t
-being delivered, making their visits a surprise. But other texts worked
-fine. The problem, it turned out, was that Cellular Data had somehow
-gotten turned off in Settings &amp;gt; Cellular. So messages worked fine as
-long as the iPhone was on Wi-Fi at home, but as soon as they were on the
-road using a cellular connection, the iPhone could no longer communicate
-with the Internet. In theory, Messages should fall back to SMS
-(indicated by green bubbles), which doesn’t require cellular data, but
-that doesn’t always happen. The fix? Just enable Settings &amp;gt; Cellular &amp;gt;
-Cellular Data again.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iM/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 21 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://grovetech.co/blog/imessages-not-delivered/</link>
-        <guid isPermaLink="true">https://grovetech.co/blog/imessages-not-delivered/</guid>
-      </item>
-      
-    
-    
-    
-      <item>
-        <title>New M1 Pro and M1 Max Chips Power the 14-inch and 16-inch MacBook Pros</title>
-        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-Unleashed.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;Last year, Apple started to transition Macs away from Intel processors
-to its custom M1 system-on-a-chip. The M1’s performance is stellar, but
-Apple has used it only in low-end models so far: the MacBook Air,
-13-inch MacBook Pro, Mac mini, and new 24-inch iMac. For professionals
-looking for more power, Apple unveiled the future of high-end Macs at
-its October 18th
-&lt;a href=&quot;https://www.apple.com/apple-events/october-2021/&quot;&gt;Unleashed&lt;/a&gt;
-event.&lt;/p&gt;
-
-&lt;p&gt;Two new chips—the M1 Pro and M1 Max—increase performance
-significantly beyond the M1, and Apple built them into new 14-inch and
-16-inch MacBook Pro models along with features that respond to
-criticisms of previous models. Welcome as these new MacBook Pros are,
-many people were also hoping to see an Apple silicon refresh of the
-popular 27-inch iMac. That didn’t happen, but Apple released several
-other music-related products and services at the event.&lt;/p&gt;
-
-&lt;h3 id=&quot;airpods-homepod-mini-apple-music-and-monterey-announcements&quot;&gt;AirPods, HomePod mini, Apple Music, and Monterey Announcements&lt;/h3&gt;
-
-&lt;p&gt;In a quick set of announcements at the start of its event, Apple
-revealed an update to the popular AirPods, new colors of the HomePod
-mini, and a budget pricing tier for Apple Music. Plus, press releases
-revealed the ship date for macOS 12 Monterey.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Third-generation AirPods:&lt;/strong&gt; Building on the success of the classic
-AirPods and AirPods Pro, Apple redesigned the &lt;a href=&quot;https://www.apple.com/airpods-3rd-generation/&quot;&gt;third-generation
-AirPods&lt;/a&gt; to
-have shorter mic stalks, force sensor controls, support for spatial
-audio, Adaptive EQ, longer battery life, wireless case charging, and
-sweat and water resistance. They cost $179; the second-generation
-AirPods remain available for $129.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;New HomePod mini colors:&lt;/strong&gt; Looking to coordinate your electronics
-with your decor? In November, the $99 &lt;a href=&quot;https://www.apple.com/homepod-mini/&quot;&gt;HomePod
-mini&lt;/a&gt; will be available
-in blue, orange, and yellow, as well as the traditional black and
-white.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Apple Music Voice Plan:&lt;/strong&gt; A new $4.99-per-month &lt;a href=&quot;https://www.apple.com/apple-music/&quot;&gt;Apple Music
-Voice Plan&lt;/a&gt; reduces the
-cost of Apple Music for those who interact with the streaming
-service largely through Siri, but it lacks lyrics, music videos,
-spatial and lossless audio, and support for non-Apple devices.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;macOS 12 Monterey release date:&lt;/strong&gt; Hidden in the fine print in
-Apple’s press releases was the fact that &lt;a href=&quot;https://www.apple.com/macos/monterey/&quot;&gt;macOS 12
-Monterey&lt;/a&gt;—along with
-iOS 15.1, iPadOS 15.1, watchOS 8.1, and tvOS 15.1—will become
-available on October 25th. We strongly recommend that you do not
-upgrade to Monterey until we give the go-ahead. If you’ve already
-upgraded to the other new operating systems, it should be safe to
-install those updates a week or two after release.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;new-14-inch-and-16-inch-macbook-pros-answer-customer-desires&quot;&gt;New 14-inch and 16-inch MacBook Pros Answer Customer Desires&lt;/h3&gt;
-
-&lt;p&gt;Apple’s professional &lt;a href=&quot;https://www.apple.com/macbook-pro/&quot;&gt;MacBook
-Pro&lt;/a&gt; has been a workhorse of
-the Mac lineup for years, offering high-end performance in a portable
-package. Since 2016, however, customers have expressed irritation at
-Apple’s removal of ports other than Thunderbolt 3, the loss of MagSafe
-magnetic charging, and the Touch Bar replacing traditional F-keys.
-Here’s how the new MacBook Pros respond to those concerns.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Ports:&lt;/strong&gt; Previously, the MacBook Pro had just four Thunderbolt 3
-ports, forcing users to carry dongles to connect to legacy devices.
-The new models still lack USB-A ports but supplement three
-Thunderbolt 4 ports with an HDMI port for video, an SDXC card slot
-for camera media, and a headphone jack.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;MagSafe:&lt;/strong&gt; Although you can charge using the Thunderbolt 4 ports,
-most people will rely on the dedicated MagSafe 3 charging port. The
-MacBook Pros (apart from the low-end 14-inch model) include powerful
-chargers and a USB-C to MagSafe 3 charging cable capable of
-fast-charging the devices. They should also provide longer battery
-life than previous models.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;F-keys with Touch ID:&lt;/strong&gt; The Touch Bar hasn’t been a success, never
-migrating to any other Mac models and eliciting tepid support from
-developers. With these new MacBook Pros, Apple has reversed course,
-replacing the Touch Bar with traditional F-keys. A Touch ID sensor
-remains available for authentication at the top-right corner of the
-keyboard.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Although Apple did equip the 13-inch MacBook Pro with an M1 chip in
-November 2020, it wasn’t notably faster than the cheaper but largely
-comparable M1-based MacBook Air. We suspect no one will be complaining
-about the performance of the new 14-inch and 16-inch models thanks to
-the addition of Apple’s just-released M1 Pro and M1 Max chips.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;M1:&lt;/strong&gt; For reference, last year’s M1 chip—widely acclaimed for
-providing excellent performance—offers an 8-core CPU with four
-performance and four efficiency cores, a 7-core or 8-core GPU, and
-either 8 GB or 16 GB of unified memory.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;M1 Pro:&lt;/strong&gt; The M1 Pro offers up to 1.7 times the performance of the
-M1 thanks to a 10-core CPU that has eight performance and two
-efficiency cores. Plus, its 16-core GPU is up to twice as fast as
-the M1. The M1 Pro provides either 16 GB or 32 GB of unified memory,
-and it increases the memory bandwidth by nearly three times, up to
-200 gigabytes per second (GBps). To provide lower price points for
-14-inch MacBook Pro configurations, Apple offers versions of the M1
-Pro with an 8-core CPU (six performance and two efficiency cores) or
-a 14-core GPU.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;M1 Max:&lt;/strong&gt; The M1 Max has the same 10-core CPU as the M1 Pro but
-provides a massive 32-core GPU with up to four times the performance
-of the M1. The largest chip Apple has ever made, the M1 Max offers
-either 32 GB or 64 GB of memory, and it doubles the M1 Pro’s memory
-bandwidth to 400 GBps, nearly six times faster than the M1. A
-lower-cost M1 Max configuration has a 24-core GPU.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Both the M1 Pro and M1 Max feature an Apple-designed media engine that
-accelerates video processing while maximizing battery life. Both also
-have dedicated acceleration for the ProRes professional video codec for
-working with 4K and 8K video. The M1 Max doubles the M1 Pro’s
-performance for video encoding and provides two ProRes accelerators. In
-other words, if you’re working with video, these new Macs are going to
-scream, particularly with an M1 Max.&lt;/p&gt;
-
-&lt;p&gt;Apple didn’t stop after radically improving performance and bringing
-back beloved features. The new MacBook Pros feature new Liquid Retina
-XDR displays based on technology used in the latest iPad Pro models.&lt;/p&gt;
-
-&lt;p&gt;Most notably, for those who need more screen space than the 13-inch
-MacBook Pro can provide, the new MacBook Pro models have higher
-resolution displays. The 14-inch screen has a 3024-by-1964 native
-resolution that’s slightly larger than the previous 16-inch MacBook Pro
-(3072‑by‑1920), and the new 16-inch model offers even more pixels with a
-3456-by-2234 resolution. The new displays are more than twice as bright
-as the previous models, and they support ProMotion, which adjusts the
-screen refresh rate (and thus power consumption) to match the needs of
-the onscreen content.&lt;/p&gt;
-
-&lt;p&gt;On the downside, Apple brought the new displays so close to the case
-edges that the new 1080p FaceTime HD camera (better videoconferencing
-quality but no Center Stage support) lives in an iPhone-like notch that
-cuts the Mac menu bar in half. Full-screen apps can avoid the notch.
-Although the notch isn’t ideal, iPhone users seldom notice it after a
-short while, and we expect the same will be true here.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image8.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The only other negative for the new 14-inch and 16-inch MacBook Pro
-models is weight. They’re both about 0.4 pounds (0.18 kg) heavier than
-the models they replace, at 3.5 pounds (1.6 kg) for the 14-inch model
-and 4.7 or 4.8 pounds (2.1 or 2.2 kg) for the 16-inch model—the M1 Max
-configurations are a bit heavier.&lt;/p&gt;
-
-&lt;p&gt;Despite the notch and the weight, these are impressive new entries in
-the Mac lineup, and we anticipate they’ll be well-received by users who
-are happy to pay more for top-of-the-line machines. The 14-inch MacBook
-Pro starts at $1999 and the 16-inch model at $2499. Numerous options
-are available, so you can choose an M1 Pro or M1 Max for either size,
-and pick from 16 GB, 32 GB, and 64 GB unified memory configurations.
-When it comes to storage (which Apple says is also more than twice as
-fast as previous SSDs), your choices are 512 GB, 1 TB, 2 TB, 4 TB, and 8
-TB. Beware that the 8 TB SSD will cost you $2400.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211019Ne/image9.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We can’t make informed recommendations about what options you should
-choose until users start testing their real-world workflows against the
-M1 Pro and M1 Max and see how much memory is really necessary. For now,
-let your budget be your guide, and aim for an M1 Max if you work with
-video. You can place orders with Apple now, but be warned that global
-supply chain issues may mean waiting for some configurations.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 19 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://grovetech.co/blog/new-macbooks/</link>
-        <guid isPermaLink="true">https://grovetech.co/blog/new-macbooks/</guid>
       </item>
       
     
