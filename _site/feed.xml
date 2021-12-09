@@ -9,6 +9,177 @@
     
     
       <item>
+        <title>Avoid Inclement Weather by Enabling Notifications in iOS Weather App</title>
+        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-NotificationsWeather.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;Thanks to &lt;a href=&quot;https://blog.darksky.net/&quot;&gt;Apple’s 2020 acquisition of weather company Dark
+Sky&lt;/a&gt;, the iPhone’s Weather app has learned
+some new tricks in iOS 15. (It still isn’t available on the iPad,
+oddly.) Most obvious is its addition of weather maps that can show
+precipitation, temperature, and air quality. More subtle are the
+notifications that can alert you to incoming precipitation at your
+precise location. To turn them on in Weather, tap the location button in
+the lower-right corner of the screen, tap Turn On Notifications, and
+agree to the necessary location and notification permissions when
+prompted. (You can also do this later in Settings &amp;gt; Weather &amp;gt; Location
+and Settings &amp;gt; Weather &amp;gt; Notifications.) From then on, whenever
+Weather thinks precipitation is about to start or stop at any of your
+preset locations, you’ll get an alert. Some people find that Weather’s
+notifications aren’t as frequent or accurate as those from other weather
+apps like &lt;a href=&quot;https://www.meetcarrot.com/weather/&quot;&gt;CARROT Weather&lt;/a&gt;, but
+Apple will likely be improving the system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Av/image2.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 09 Dec 2021 00:00:00 -0600</pubDate>
+        <link>https://grovetech.co/blog/avoid-inclement-weather-by-enabling-notifications-in-ios-weather-app/</link>
+        <guid isPermaLink="true">https://grovetech.co/blog/avoid-inclement-weather-by-enabling-notifications-in-ios-weather-app/</guid>
+      </item>
+      
+    
+    
+    
+      <item>
+        <title>Apples Evolution of Do Not Disturb Helps You Focus</title>
+        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-Mindfulness.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;Between texts, alarms, reminders, calls, and myriad other notifications
+on our iPhones, iPads, and Macs, it’s a miracle we get anything done at
+all. To free us from this onslaught, Apple previously provided Do Not
+Disturb, which let you set times during which you could be free from
+interruption.&lt;/p&gt;
+
+&lt;p&gt;In iOS 15, iPadOS 15, and macOS 12 Monterey, Apple has gone even
+further. Do Not Disturb is now called Focus, and Apple has made it more
+powerful and flexible. Focus can turn on automatically at certain times,
+at particular locations, or when you’re using certain apps so you can
+avoid interruptions during activities like working out, doing homework,
+eating dinner, or gaming. But not all interruptions—you can allow
+certain people and apps to break through the cone of silence. A Focus
+can also hide or show certain Home screen pages, prevent notifications
+from appearing on the Lock screen, and more. Plus, all your devices can
+share the same Focus settings—we’re showing iPhone screenshots below,
+but the interface is identical in iPadOS and similar on the Mac, where
+you’ll find it in System Preferences &amp;gt; Notifications &amp;amp; Focus &amp;gt; Focus.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Ap/image2.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In Settings &amp;gt; Focus, Apple provides a pre-built Focus for Do Not
+Disturb, Driving, and Sleep to match the old Do Not Disturb options:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Do Not Disturb:&lt;/strong&gt; This catch-all Focus takes over from the old Do
+Not Disturb setting.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Driving:&lt;/strong&gt; This Focus replaces the old Do Not Disturb While
+Driving option. It’s unusual in that it doesn’t allow any app
+notifications through at all (eyes on the road!). It also lets you
+write a custom auto-reply for those who text you while you’re
+driving.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Sleep:&lt;/strong&gt; If you use Apple’s sleep management features in the
+Health app, you’ll use this Focus to control which notifications can
+get through while you’re asleep.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Apart from those, Apple makes six suggestions: Personal and Work (in the
+main list), and Fitness, Gaming, Mindfulness, and Reading (when you add
+a new Focus). You can also create a custom Focus from scratch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Ap/image3.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Apple’s suggestions are special in one important way. Fitness, Gaming,
+and Mindfulness can turn on automatically: when you’re engaged in a
+workout, when you connect a wireless controller, and when you’re in a
+Mindfulness session started from your Apple Watch, respectively.&lt;/p&gt;
+
+&lt;p&gt;When configuring a suggested Focus or creating a new one from scratch,
+Focus runs you through several setup screens. One has you choose people
+whose notifications you want to come through regardless, and what to do
+about incoming phone calls. The other screen lets you pick which apps
+can notify you when the Focus is active, with an additional option to
+allow notifications marked as Time Sensitive through regardless. (Time
+Sensitive notifications include timed Reminders alerts, for instance,
+and are usually best left enabled.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Ap/image4.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once your Focus is ready, you can configure various options, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Focus Status:&lt;/strong&gt; Enable this option to allow apps to alert those
+who message you that you have notifications silenced.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Home Screen:&lt;/strong&gt; If your Focus involves you using the Home screen a
+lot, you can have it hide notification badges that might lure you
+into another app or even hide entire Home screen pages that could be
+distracting.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Lock Screen:&lt;/strong&gt; If you might be looking at your Lock screen while
+the Focus is active, you can have it dim automatically and hide or
+show silenced notifications as appropriate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Schedule or Automation:&lt;/strong&gt; Although you can turn on any Focus from
+Control Center, it may be easier to have it turn itself on
+automatically at certain times, in particular locations, or when
+certain apps are active.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Ap/image5.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As with any new feature, it’s going to take a bit to figure out how to
+make Focus work best for you. We’re still learning it ourselves, but
+here are some recommendations:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;To identify when a Focus would be helpful, wait until you find
+notifications irritating and then think about which ones you’d want
+a Focus to block.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create just one or two Focuses at first. You don’t want to end up
+with a bunch that interact in unexpected ways and cause you to miss
+important notifications.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Be careful with schedules and automations. An automation that
+invokes the Reading Focus when Books is open might work well for
+reading before bed but could be problematic if you read while
+waiting for a meeting to start.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It may be safest to allow silenced notifications to appear on the
+Lock screen so you can easily see what you missed afterward and
+adjust the Focus as necessary.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can manually invoke a Focus by tapping the Focus button in
+Control Center and selecting the one you want. Tap the ••• button to
+the right of the Focus to specify when it should turn off
+automatically, or just tap the Focus again to turn it off.
+&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211203Ap/image6.jpeg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Newness aside, Focus looks like it will help us all cut down on
+distracting notifications. And if all else fails, stick with just Do Not
+Disturb, Driving, and Sleep to replicate what we had before.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 07 Dec 2021 00:00:00 -0600</pubDate>
+        <link>https://grovetech.co/blog/apples-evolution-of-do-not-disturb-helps-you-focus/</link>
+        <guid isPermaLink="true">https://grovetech.co/blog/apples-evolution-of-do-not-disturb-helps-you-focus/</guid>
+      </item>
+      
+    
+    
+    
+      <item>
         <title>macOS Safari Reverses Course, Reverts to Old Tab Interface</title>
         <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-SafariTabChanges.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;safari-151-reverses-course-reverts-to-old-tab-interface&quot;&gt;Safari 15.1 Reverses Course, Reverts to Old Tab Interface&lt;/h2&gt;
 
@@ -683,180 +854,6 @@ Faces ➊, tap the red delete button next to a face ➋, and then tap Remove
         <pubDate>Tue, 02 Nov 2021 00:00:00 -0500</pubDate>
         <link>https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/</link>
         <guid isPermaLink="true">https://grovetech.co/blog/with-apple-watch-faces,-too-much-choice-can-be-confusing/</guid>
-      </item>
-      
-    
-    
-    
-      <item>
-        <title>iPadOS Multitasking</title>
-        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-iPadOSMulti.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;apple-radically-improved-multitasking-in-ipados-15-heres-how-to-use-it&quot;&gt;Apple Radically Improved Multitasking in iPadOS 15. Here’s How to Use It&lt;/h2&gt;
-
-&lt;p&gt;Multitasking has long been a mess on the iPad, not so much because it
-didn’t work but because it was tough to memorize the secret swipes
-necessary to put multiple apps into Split View, work with multiple
-windows in apps that supported them, and hide and show what you wanted
-in Slide Over. In iPadOS 15, Apple hasn’t changed the underlying
-multitasking capabilities much, but it has made them far more
-discoverable with onscreen controls and tips that supplement the
-previous gestures.&lt;/p&gt;
-
-&lt;h3 id=&quot;use-the-multitasking-menu&quot;&gt;Use the Multitasking Menu&lt;/h3&gt;
-
-&lt;p&gt;Most important is the new multitasking menu button that appears in the
-top center of every app, represented by •••. Tap it to reveal a control
-with three options—Full Screen, Split View, and Slide Over—and then
-tap one of those to put the current app into that mode. From left:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Full Screen:&lt;/strong&gt; When only a single app is showing, the leftmost
-button is selected. When you have an app in Split View or Slide
-Over, tap the Full Screen button to make that app the only one
-onscreen.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.png&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Split View:&lt;/strong&gt; Tap the middle button to shove the current app to
-the left edge of the screen, revealing the Home screen and the Dock.
-A little lozenge replaces the multitasking menu, telling you that
-you’re working with Split View and to choose another app. Tap any
-other app to open it (on the right side) with the current app (on
-the left side), and remember that you can resize each app using the
-handle on the black bar in the middle.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image3.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Slide Over:&lt;/strong&gt; In the current app window, tap the rightmost button
-to push the app to the side of the screen, again revealing the Home
-screen and the Dock and showing a lozenge that tells you that you’re
-working with Slide Over and to choose another app. Tap any other to
-open it full screen but with the current app floating above it in
-Slide Over mode, and remember that you can hide the Slide Over app
-easily by swiping it to the right.
-&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image4.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;use-the-app-switcher&quot;&gt;Use the App Switcher&lt;/h3&gt;
-
-&lt;p&gt;Apple also made it much easier to see and manage your Split View
-combinations by using the App Switcher. Once you go into it by swiping
-up from the bottom of the screen (or double-pressing the Home button, if
-your iPad has one), you have several multitasking-related options:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Switch among apps:&lt;/strong&gt; Tap any app, Split View combination, or Slide
-Over app (located on the right side of the App Switcher) to switch
-to it.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Make a Split View:&lt;/strong&gt; Drag any app or window onto another one to
-combine them into a Split View (as is shown with Drive and Docs
-below). Before you start to drag, pause for a moment to pick up the
-app; drag until the items turn into icon-emblazoned gray rectangles.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Replace a Split View app:&lt;/strong&gt; Drag any app or window onto the left
-or right side of a Split View combination to replace that app or
-window.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Break a Split View combination:&lt;/strong&gt; Drag the left or right side of a
-Split View combination off until it displays as a full-screen
-thumbnail.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image5.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the screenshot above, note the red arrow pointing to the little
-stacked square icons above the Safari Split View windows. Those indicate
-that the app in question has multiple windows. Tap the icon to display
-just that app’s windows in the App Switcher.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image6.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;use-the-shelf&quot;&gt;Use the Shelf&lt;/h3&gt;
-
-&lt;p&gt;The App Switcher may make it easier to see and switch among multiple
-windows in apps, but another new multitasking feature, the Shelf, is
-even more useful. When you use the Dock or a search to open an app with
-multiple windows available, the Shelf displays them all at the bottom of
-the screen. The Shelf doesn’t appear when you switch to an app using the
-App Switcher or four-finger swipe, but you can bring it up at any time
-by tapping the multitasking menu button at the top of the screen.&lt;/p&gt;
-
-&lt;p&gt;When you’re looking at items on the Shelf, tap one to switch to it. You
-can also swipe up on windows on the Shelf to close them. As soon as you
-tap anywhere else in the app to start working, the Shelf disappears.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image7.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;use-center-windows&quot;&gt;Use Center Windows&lt;/h3&gt;
-
-&lt;p&gt;In at least some apps with sidebars, such as Mail and Notes, you can now
-open an item like a message or a note in its own window in the center of
-the screen. That’s useful for previewing the full content of the item,
-and you can swipe down on the multitasking menu button to put the window
-on the Shelf, which keeps it available for quick reference while you
-work on something else. To create a center window, touch and hold the
-item in the sidebar and then tap Open in New Window. To close it, tap
-Close or swipe up on its Shelf thumbnail.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image8.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;use-the-multitasking-keyboard-shortcuts&quot;&gt;Use the Multitasking Keyboard Shortcuts&lt;/h3&gt;
-
-&lt;p&gt;If you’re seriously interested in using multitasking on an iPad, you’re
-probably also working with a physical keyboard much of the time. In
-iPadOS 15, Apple added a useful set of keyboard shortcuts that you can
-learn about by pressing and holding the Globe key and then tapping the
-Multitasking tab at the bottom. It may take a little while to
-internalize the shortcuts, but if you do most of your work on an iPad,
-you will probably find the effort worthwhile.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image9.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you like the idea of multitasking on the iPad but have never been
-able to remember all the necessary gestures, iPadOS 15’s changes will be
-welcome. Give them a try—we think they finally make multitasking
-obvious enough for everyone.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 28 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://grovetech.co/blog/ipados-multitasking/</link>
-        <guid isPermaLink="true">https://grovetech.co/blog/ipados-multitasking/</guid>
-      </item>
-      
-    
-    
-    
-      <item>
-        <title>iPhone 13 Upgrade Quick Start</title>
-        <description>&lt;img src=&quot;https://grovetech.co/assets/img/2021/Header-QuickStart.jpg&quot; class=&quot;aligncenter&quot; /&gt;&lt;br&gt;&lt;br&gt;&lt;h2 id=&quot;when-migrating-to-a-new-iphone-or-ipad-try-quick-start-first&quot;&gt;When Migrating to a New iPhone or iPad, Try Quick Start First&lt;/h2&gt;
-
-&lt;p&gt;You have a new iPhone or iPad—congratulations! When transferring your
-data to the new device, you have three options: &lt;a href=&quot;https://support.apple.com/en-us/HT210216&quot;&gt;Quick
-Start&lt;/a&gt;, an &lt;a href=&quot;https://support.apple.com/en-us/HT204184&quot;&gt;iCloud
-backup&lt;/a&gt;, or a &lt;a href=&quot;https://support.apple.com/en-us/HT204184&quot;&gt;Mac
-backup&lt;/a&gt;. All will work,
-but they don’t quite provide the same end result (particularly if you
-didn’t encrypt your Mac backup). Our advice—backed by &lt;a href=&quot;https://daringfireball.net/linked/2021/09/24/how-to-set-up-a-new-iphone-or-ipad&quot;&gt;this post from
-Apple expert John
-Gruber&lt;/a&gt;—is
-to try Quick Start first because it transfers everything directly from
-your old device to your new one, maintaining app logins in most cases
-and allowing you to transfer your Apple Watch pairing. It may seem like
-it’s taking a long time before you can use the device, but it’s worth it
-to avoid logging in to numerous apps and unpairing and repairing your
-Apple Watch.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt=&quot;Blog Photo&quot; src=&quot;https://grovetech.co/assets/img/blog/2021/20211001iP/image2.jpg&quot; class=&quot;img-fluid rounded m-2&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 26 Oct 2021 00:00:00 -0500</pubDate>
-        <link>https://grovetech.co/blog/iphone-upgrade-quick-start/</link>
-        <guid isPermaLink="true">https://grovetech.co/blog/iphone-upgrade-quick-start/</guid>
       </item>
       
     

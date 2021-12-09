@@ -5,9 +5,182 @@
         <link>https://grovetech.co</link>
         <description>A feed for the iOS Grove Technologies App</description>
         <language>en</language>
-        <pubDate>2021-11-30 14:02:07 -0600</pubDate>
-        <lastBuildDate>2021-11-30 14:02:07 -0600</lastBuildDate>
+        <pubDate>2021-12-09 09:18:11 -0600</pubDate>
+        <lastBuildDate>2021-12-09 09:18:11 -0600</lastBuildDate>
         <atom:link href="https://grovetech.co/app/out.xml" rel="self" type="application/rss+xml"/>
+        
+         
+        <item>
+          <title>Avoid Inclement Weather by Enabling Notifications in iOS Weather App</title>
+          <description><![CDATA[ Thanks to Apple’s 2020 acquisition of weather company Dark
+Sky, the iPhone’s Weather app has learned
+some new tricks in iOS 15. (It still isn’t available on the iPad,
+oddly.) Most obvious is its addition of weather maps that can show
+precipitation, temperature, and air quality. More subtle are the
+notifications that can alert you to incoming precipitation at your
+precise location. To turn them on in Weather, tap the location button in
+the lower-right corner of the screen, tap Turn On Notifications, and
+agree to the necessary location and notification permissions when
+prompted. (You can also do this later in Settings  Weather  Location
+and Settings  Weather  Notifications.) From then on, whenever
+Weather thinks precipitation is about to start or stop at any of your
+preset locations, you’ll get an alert. Some people find that Weather’s
+notifications aren’t as frequent or accurate as those from other weather
+apps like CARROT Weather, but
+Apple will likely be improving the system.
+
+
+ ]]></description>
+          <pubDate>Thu, 09 Dec 2021 00:00:00 -0600</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-NotificationsWeather.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-NotificationsWeather.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/avoid-inclement-weather-by-enabling-notifications-in-ios-weather-app/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/avoid-inclement-weather-by-enabling-notifications-in-ios-weather-app/</guid>
+        </item>
+        
+        
+         
+        <item>
+          <title>Apples Evolution of Do Not Disturb Helps You Focus</title>
+          <description><![CDATA[ Between texts, alarms, reminders, calls, and myriad other notifications
+on our iPhones, iPads, and Macs, it’s a miracle we get anything done at
+all. To free us from this onslaught, Apple previously provided Do Not
+Disturb, which let you set times during which you could be free from
+interruption.
+
+In iOS 15, iPadOS 15, and macOS 12 Monterey, Apple has gone even
+further. Do Not Disturb is now called Focus, and Apple has made it more
+powerful and flexible. Focus can turn on automatically at certain times,
+at particular locations, or when you’re using certain apps so you can
+avoid interruptions during activities like working out, doing homework,
+eating dinner, or gaming. But not all interruptions—you can allow
+certain people and apps to break through the cone of silence. A Focus
+can also hide or show certain Home screen pages, prevent notifications
+from appearing on the Lock screen, and more. Plus, all your devices can
+share the same Focus settings—we’re showing iPhone screenshots below,
+but the interface is identical in iPadOS and similar on the Mac, where
+you’ll find it in System Preferences  Notifications ' Focus  Focus.
+
+
+
+In Settings  Focus, Apple provides a pre-built Focus for Do Not
+Disturb, Driving, and Sleep to match the old Do Not Disturb options:
+
+
+  
+    Do Not Disturb: This catch-all Focus takes over from the old Do
+Not Disturb setting.
+  
+  
+    Driving: This Focus replaces the old Do Not Disturb While
+Driving option. It’s unusual in that it doesn’t allow any app
+notifications through at all (eyes on the road!). It also lets you
+write a custom auto-reply for those who text you while you’re
+driving.
+  
+  
+    Sleep: If you use Apple’s sleep management features in the
+Health app, you’ll use this Focus to control which notifications can
+get through while you’re asleep.
+  
+
+
+Apart from those, Apple makes six suggestions: Personal and Work (in the
+main list), and Fitness, Gaming, Mindfulness, and Reading (when you add
+a new Focus). You can also create a custom Focus from scratch.
+
+
+
+Apple’s suggestions are special in one important way. Fitness, Gaming,
+and Mindfulness can turn on automatically: when you’re engaged in a
+workout, when you connect a wireless controller, and when you’re in a
+Mindfulness session started from your Apple Watch, respectively.
+
+When configuring a suggested Focus or creating a new one from scratch,
+Focus runs you through several setup screens. One has you choose people
+whose notifications you want to come through regardless, and what to do
+about incoming phone calls. The other screen lets you pick which apps
+can notify you when the Focus is active, with an additional option to
+allow notifications marked as Time Sensitive through regardless. (Time
+Sensitive notifications include timed Reminders alerts, for instance,
+and are usually best left enabled.)
+
+
+
+Once your Focus is ready, you can configure various options, including:
+
+
+  
+    Focus Status: Enable this option to allow apps to alert those
+who message you that you have notifications silenced.
+  
+  
+    Home Screen: If your Focus involves you using the Home screen a
+lot, you can have it hide notification badges that might lure you
+into another app or even hide entire Home screen pages that could be
+distracting.
+  
+  
+    Lock Screen: If you might be looking at your Lock screen while
+the Focus is active, you can have it dim automatically and hide or
+show silenced notifications as appropriate.
+  
+  
+    Schedule or Automation: Although you can turn on any Focus from
+Control Center, it may be easier to have it turn itself on
+automatically at certain times, in particular locations, or when
+certain apps are active.
+  
+
+
+
+
+As with any new feature, it’s going to take a bit to figure out how to
+make Focus work best for you. We’re still learning it ourselves, but
+here are some recommendations:
+
+
+  
+    To identify when a Focus would be helpful, wait until you find
+notifications irritating and then think about which ones you’d want
+a Focus to block.
+  
+  
+    Create just one or two Focuses at first. You don’t want to end up
+with a bunch that interact in unexpected ways and cause you to miss
+important notifications.
+  
+  
+    Be careful with schedules and automations. An automation that
+invokes the Reading Focus when Books is open might work well for
+reading before bed but could be problematic if you read while
+waiting for a meeting to start.
+  
+  
+    It may be safest to allow silenced notifications to appear on the
+Lock screen so you can easily see what you missed afterward and
+adjust the Focus as necessary.
+  
+  
+    You can manually invoke a Focus by tapping the Focus button in
+Control Center and selecting the one you want. Tap the ••• button to
+the right of the Focus to specify when it should turn off
+automatically, or just tap the Focus again to turn it off.
+
+  
+
+
+Newness aside, Focus looks like it will help us all cut down on
+distracting notifications. And if all else fails, stick with just Do Not
+Disturb, Driving, and Sleep to replicate what we had before.
+ ]]></description>
+          <pubDate>Tue, 07 Dec 2021 00:00:00 -0600</pubDate>
+          <link>https://grovetech.co/assets/img/2021/Header-Mindfulness.jpg</link>
+          <enclosure url="https://grovetech.co/assets/img/2021/Header-Mindfulness.jpg" length="0" type="image/jpeg"/>
+          <permalink>https://grovetech.co/blog/apples-evolution-of-do-not-disturb-helps-you-focus/</permalink>
+          <guid isPermaLink="true">https://grovetech.co/blog/apples-evolution-of-do-not-disturb-helps-you-focus/</guid>
+        </item>
+        
         
          
         <item>
@@ -1735,59 +1908,6 @@ with the appropriate hazardous waste facility.
           <enclosure url="https://grovetech.co/assets/img/2021/Header-MacbookBatteries.jpg" length="0" type="image/jpeg"/>
           <permalink>https://grovetech.co/blog/bulging-batteries/</permalink>
           <guid isPermaLink="true">https://grovetech.co/blog/bulging-batteries/</guid>
-        </item>
-        
-        
-         
-        <item>
-          <title>About That Worrying Message Saying Your Password Has Been Breached?</title>
-          <description><![CDATA[ In iOS 14, Apple added a feature that warns you when one of your website
-passwords stored in iCloud Keychain has appeared in a data breach. We’ve
-fielded some questions of late from people worrying if the message is
-legitimate, and if so, what they should do. What has happened is that
-online criminals have stolen username and password data from a company,
-and your credentials were included in that data breach. You should
-indeed change your password immediately, and it’s fine to let the iPhone
-suggest a strong password for you. Or, if it makes you feel more
-comfortable, you can usually change the password in Safari on your Mac
-instead. Either way, make sure it’s unique—never reuse passwords
-across multiple sites!
-
-
- ]]></description>
-          <pubDate>Tue, 28 Sep 2021 00:00:00 -0500</pubDate>
-          <link>https://grovetech.co/assets/img/2021/Header-iOSSecurity.jpg</link>
-          <enclosure url="https://grovetech.co/assets/img/2021/Header-iOSSecurity.jpg" length="0" type="image/jpeg"/>
-          <permalink>https://grovetech.co/blog/about-that-worrying-message-saying-your-password-has-been-breached-/</permalink>
-          <guid isPermaLink="true">https://grovetech.co/blog/about-that-worrying-message-saying-your-password-has-been-breached-/</guid>
-        </item>
-        
-        
-         
-        <item>
-          <title>The Plug Is Mightier Than the Puck - Wireless Charging Is Wildly Inefficient</title>
-          <description><![CDATA[ In 2017, Apple added support for Qi wireless charging to the iPhone 8
-and iPhone X, and with the iPhone 12 lineup, it introduced its own
-MagSafe wireless charging technology. There’s no denying the convenience
-of wireless charging, but keep in mind that it’s extremely inefficient
-compared to wired charging. Individually, that may not matter much when
-you’re charging overnight from a wall-connected charger. But across
-billions of phones, it’s more problematic. One estimate suggests that
-wireless charging requires nearly 50% more
-power
-than cable. And if you’re charging from a wireless battery pack, wasting
-that juice means less of a top-up before exhausting the battery pack.
-Charging speed suffers too. In short, to charge your iPhone quickly and
-efficiently, whether from a wall-connected charger or a battery pack,
-stick with the traditional Lightning cable.
-
-
- ]]></description>
-          <pubDate>Thu, 23 Sep 2021 00:00:00 -0500</pubDate>
-          <link>https://grovetech.co/assets/img/2021/Header-Charging.jpg</link>
-          <enclosure url="https://grovetech.co/assets/img/2021/Header-Charging.jpg" length="0" type="image/jpeg"/>
-          <permalink>https://grovetech.co/blog/the-plug-is-mightier-than-the-puck-wireless-charging-is-wildly-inefficient/</permalink>
-          <guid isPermaLink="true">https://grovetech.co/blog/the-plug-is-mightier-than-the-puck-wireless-charging-is-wildly-inefficient/</guid>
         </item>
         
         
